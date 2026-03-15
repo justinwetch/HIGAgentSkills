@@ -1,0 +1,13 @@
+# Ignore everything by default, then explicitly allow the skill content
+
+*
+
+# Allow the skill itself
+!SKILL.md
+!routing-index.md
+!README.md
+!.gitignore
+
+# Allow the distilled reference files
+!distilled/
+!distilled/**
