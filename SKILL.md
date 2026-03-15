@@ -5,9 +5,11 @@ description: >
   platform-specific design rules, component specifications, exact
   measurements, and interaction patterns for iOS, iPadOS, macOS, tvOS,
   visionOS, and watchOS. Use when designing, reviewing, or auditing any
-  Apple platform UI — or when asked about specific HIG components,
+  Apple platform UI, or when asked about specific HIG components,
   sizing, system behaviors, frameworks (HealthKit, SiriKit, ARKit, etc.),
-  or platform conventions.
+  or platform conventions. Also use when the user is designing any
+  digital interface and could benefit from established design principles,
+  even without an explicit Apple platform context.
 ---
 
 # Apple HIG Skill

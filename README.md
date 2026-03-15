@@ -1,12 +1,12 @@
 # apple-hig-skill
 
-A Claude skill containing 150 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across all Apple platforms.
+An agent skill containing 150 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across all Apple platforms.
 
 ## What This Is
 
 The Apple HIG is authoritative and comprehensive, but its full text is too large and too prose-heavy to load directly into an agent's context. This skill addresses that by distilling each HIG topic into a compact, information-dense reference file that preserves every specific rule, measurement, API name, and platform distinction while stripping pedagogical scaffolding and redundant prose.
 
-The result is a corpus that fits within a practical context budget and gives Claude precise, citable answers rather than paraphrased recollections.
+The result is a corpus that fits within a practical context budget and gives the agent precise, citable answers rather than paraphrased recollections.
 
 ## Coverage
 
@@ -38,13 +38,13 @@ The `routing-index.md` file maps 751 trigger keywords to their corresponding ref
 ## File Structure
 
 ```
-SKILL.md               Claude's entry point and loading protocol
+SKILL.md               Agent entry point and loading protocol
 routing-index.md       Keyword-to-file routing map (auto-generated)
 distilled/             150 reference files, one per HIG topic
   *.md
 ```
 
-Each `distilled/*.md` file includes YAML frontmatter with `topic`, `tier`, `platforms`, `category`, `triggers`, and `related` fields. Claude reads these fields to navigate the corpus without loading every file.
+Each `distilled/*.md` file includes YAML frontmatter with `topic`, `tier`, `platforms`, `category`, `triggers`, and `related` fields. The agent reads these fields to navigate the corpus without loading every file.
 
 ## Token Budget
 
@@ -65,7 +65,7 @@ Each compression pass was followed by an evaluation step to confirm that no subs
 
 ## Installation
 
-Drop this directory into your Claude skills path. The skill triggers when a request involves Apple platform design, HIG components, specific measurements, or Apple framework integration.
+Drop this directory into your agent skills path. The skill triggers when a request involves Apple platform design, HIG components, specific measurements, or Apple framework integration.
 
 ## Attribution
 
