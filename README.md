@@ -1,7 +1,5 @@
 # apple-hig-skill
 
-![hero](hero.png)
-
 [![Watch the demo](https://img.youtube.com/vi/UGaSV21ff18/maxresdefault.jpg)](https://www.youtube.com/watch?v=UGaSV21ff18)
 
 An agent skill containing 150 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across all Apple platforms.
