@@ -1,15 +1,16 @@
 ---
 topic: image-wells
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: components/controls
 triggers:
   - "image well"
+  - "NSImageView"
   - "NSImageView drop target"
   - "drag image target"
 related:
-  - drag-and-drop
-  - images
+  - image-views
+  - edit-menus
 ---
 # Image Wells
 

@@ -1,13 +1,16 @@
 ---
 topic: pull-down-buttons
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/controls
 triggers:
   - "pull-down button"
   - "dropdown button"
   - "UIButton menu"
   - "button menu"
+  - "MenuPickerStyle"
+  - "showsMenuAsPrimaryAction"
+  - "pullsDown"
 related:
   - buttons
   - menus
@@ -28,7 +31,7 @@ People choose an item, the menu closes, and the app performs the action. Contras
   - Sort button → select the sort attribute.
   - Back button → jump to a specific history location instead of just the previous one.
 - **Don't hide all of a view's primary actions in one pull-down button** — primary actions must be easily discoverable; don't bury them.
-- **3+ items minimum** — fewer than 3 makes the open-and-pick interaction feel wasteful. For 1–2 items, prefer regular buttons (for actions) or toggles/switches (for selections).
+- **Prefer at least three items** — listing a minimum of three items can make the open-and-pick interaction feel worthwhile. For 1–2 items, consider regular buttons (for actions) or toggles/switches (for selections).
 - **Don't list too many items** — overly long menus make item-finding slow. Balance minimum (3) against scan time.
 - **Title is optional** — only include if it adds meaning beyond the button label and menu item text.
 - **Destructive items:** highlight with red text + show an action sheet (iOS) or popover (iPadOS) for confirmation before completing. This helps prevent accidental data loss.

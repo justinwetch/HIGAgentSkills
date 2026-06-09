@@ -1,16 +1,15 @@
 ---
 topic: activity-views
 tier: 3
-platforms: [ios, ipados, tvos]
+platforms: [ios, ipados, visionos]
 category: components/presentation
 triggers:
   - "activity view"
   - "share sheet"
   - "UIActivityViewController"
-  - "AirDrop share"
 related:
-  - collaboration-and-sharing
-  - action-sheets
+  - sheets
+  - popovers
 ---
 # Activity Views (Share Sheet)
 

@@ -1,7 +1,7 @@
 ---
 topic: apple-pencil-and-scribble
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [ipados]
 category: technologies
 triggers:
   - "Apple Pencil"
@@ -10,9 +10,9 @@ triggers:
   - "drawing input"
   - "handwriting"
   - "PencilKit"
+  - "PaperKit"
 related:
   - gestures
-  - drag-and-drop
   - entering-data
 ---
 # Apple Pencil and Scribble
@@ -52,6 +52,7 @@ Squeeze performs a discrete, single action. Works when Pencil is not touching th
 - **Treat squeeze as a single quick gesture** — don't require holding or repeated squeezing; it's tiring.
 - **Display squeeze UI (e.g., contextual menu) near Apple Pencil Pro tip** — strengthens the connection between gesture and result.
 - **Squeeze actions must be nondestructive and easily undoable** — accidental squeezes happen.
+- People may configure squeeze to run App Shortcuts instead of app-specific actions.
 
 ## Barrel Roll (Apple Pencil Pro)
 

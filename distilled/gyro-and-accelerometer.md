@@ -8,6 +8,8 @@ triggers:
   - "accelerometer"
   - "motion sensor"
   - "CMMotionManager"
+  - "Core Motion"
+  - "Getting processed device-motion data"
   - "device tilt"
 related:
   - gestures
@@ -18,8 +20,8 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
-- iOS, iPadOS, watchOS: full accelerometer + gyroscope support for apps and games.
-- tvOS: gyroscope data available from the Siri Remote.
+- iOS, iPadOS, macOS, tvOS, visionOS, watchOS: use Core Motion when motion data provides tangible user benefit.
+- tvOS: motion data can come from the Siri Remote.
 
 ## Best Practices
 

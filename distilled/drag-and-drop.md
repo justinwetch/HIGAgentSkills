@@ -1,7 +1,7 @@
 ---
 topic: drag-and-drop
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: patterns/interaction
 triggers:
   - "drag"
@@ -48,7 +48,7 @@ Platform interactions: visionOS — pinch and hold, drag in any direction includ
 - **Auto-scroll destination containers** when dragging within them; stop auto-scrolling when dragging leaves the container.
 - **Accept the richest version** of dropped content your app supports.
 - **Extract only relevant parts** of dropped content (e.g., Mail shows name + email from a contact drop, not full address).
-- **Check for Option key at drop time** (macOS) — Option held during same-container drop forces a copy instead of a move. If Option is released before drop, it's a move.
+- **Check for Option key at drop time** when a physical keyboard is attached — Option held during same-container drop forces a copy instead of a move. If Option is released before drop, it's a move.
 - **Show progress for slow transfers** — progress indicator; placeholder at drop location in collections/lists/tables.
 - **Show task initiation** when dropped content triggers an action (e.g., print) — confirm task start and report progress.
 - **Preserve text styling** when source and destination support the same styles. Otherwise apply destination style.

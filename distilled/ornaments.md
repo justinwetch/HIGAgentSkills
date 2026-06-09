@@ -1,17 +1,21 @@
 ---
 topic: ornaments
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [visionos]
 category: patterns/visionos
 triggers:
   - "ornament"
   - "window ornament"
   - "floating controls"
   - "spatial toolbar"
+  - "ornament(visibility:attachmentAnchor:contentAlignment:ornament:)"
+  - "Toolbars"
+  - "visionOS TabView ornament"
 related:
-  - designing-for-visionos
+  - layout
   - toolbars
-  - windows
+  - tab-bars
+  - eyes
 ---
 # Ornaments
 
@@ -20,6 +24,8 @@ related:
 **Platforms:** visionOS only
 
 Ornaments float in a plane parallel to and slightly in front of the window (z-axis). They move with the window; they don't scroll with window content. System toolbars and tab bars in visionOS are automatically implemented as ornaments.
+
+Ornaments can appear on any window edge and can contain buttons, segmented controls, and other views.
 
 ## Best Practices
 

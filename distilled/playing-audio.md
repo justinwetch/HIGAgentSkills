@@ -7,9 +7,11 @@ triggers:
   - "audio"
   - "sound"
   - "AVAudioSession"
+  - "AVAudioSession.Category"
   - "background audio"
   - "Now Playing"
   - "media controls"
+  - "MPVolumeView"
 related:
   - playing-video
   - airplay
@@ -19,6 +21,8 @@ related:
 > People expect audio to automatically adjust when context changes — volume, output, silence mode, and headphone events all require correct behavior.
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
+
+Developer names to preserve: `MPVolumeView`, `AVAudioSession.Category`, `notifyOthersOnDeactivation`, `shouldResume`, Audio Services, Playing Background Audio, Adding a Now Playing View.
 
 ## Core Audio Behaviors
 

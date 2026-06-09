@@ -11,7 +11,6 @@ triggers:
   - "Mac idiom"
 related:
   - designing-for-macos
-  - designing-for-ipados
 ---
 # Mac Catalyst
 

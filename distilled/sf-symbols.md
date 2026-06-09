@@ -34,11 +34,11 @@ Symbols organize paths into primary, secondary, and tertiary **layers**. Four re
 | **Palette** | Two or more colors, one per layer. If only two colors specified for a three-layer symbol, secondary and tertiary share the second color. |
 | **Multicolor** | Intrinsic colors for symbols where color carries meaning (e.g., `leaf` = green, `trash.slash` = red). Some layers can receive additional colors. |
 
-Use system-provided colors in any rendering mode for automatic adaptation to accessibility and Dark Mode. Use the `automatic` setting to get a symbol's preferred mode; still verify legibility in all contexts.
+Use system-provided colors in any rendering mode for automatic adaptation to accessibility and Dark Mode. Use the `automatic` setting to get a symbol's preferred mode; still verify legibility in all contexts. Developer APIs include `renderingMode(_:)`.
 
 ## Gradients (SF Symbols 7+)
 
-Gradient rendering applies a smooth linear gradient from a single source color. Works in all rendering modes, for system and custom colors, and custom symbols. Best at larger sizes.
+Gradient rendering applies a smooth linear gradient from a single source color. Works at any size in all rendering modes, for system and custom colors, and custom symbols; it tends to look best at larger sizes.
 
 ## Variable Color
 
@@ -52,6 +52,7 @@ Represents a changing characteristic (capacity, signal strength) by applying col
 
 - **9 weights** — ultralight to black — matching SF font weights for precise text/symbol weight pairing.
 - **3 scales** — small, medium (default), large — defined relative to SF cap height. Adjusting scale changes symbol emphasis without disrupting weight matching.
+- Developer APIs include `imageScale(_:)`, `UIImage.SymbolScale`, and `NSImage.SymbolConfiguration`.
 
 ## Design Variants
 
@@ -68,7 +69,7 @@ Language-specific variants (Arabic, Hebrew, Hindi, Thai, CJK, Cyrillic, Devanaga
 
 ## Animations
 
-Apply animations judiciously — too many overwhelm the interface. Each animation communicates a specific type of action; verify the meaning matches the intent.
+Apply animations judiciously — too many overwhelm the interface. Each animation communicates a specific type of action; verify the meaning matches the intent. Symbol animations work on SF Symbols and custom symbols across rendering modes, weights, and scales; configure playback once or indefinitely, including speed, repeat, and reverse behavior. Developer APIs include `Symbols` and `SymbolEffect`.
 
 | Animation | Behavior / Use |
 |---|---|
@@ -79,7 +80,7 @@ Apply animations judiciously — too many overwhelm the interface. Each animatio
 | **Pulse** | Opacity variation over time. Pulses annotated layers (optionally all). Use for ongoing activity. |
 | **Variable color** | Incrementally varies opacity of layers. Cumulative: changes persist per layer through cycle. Iterative: one layer at a time. Use for progress, connecting, broadcasting. Supports autoreverse and hiding inactive layers. |
 | **Replace** | Swaps one symbol for another across weights/modes. Configs: Down-up (state change), Up-up (forward progression), Off-up (emphasize next state). |
-| **Magic Replace** | Smart transition between related symbols (slashes draw on/off, badges appear/disappear). Falls back to down-up for unrelated symbols. |
+| **Magic Replace** | Default replace animation. Smart transition between related symbols (slashes draw on/off, badges appear/disappear); unrelated symbols fall back to down-up, with fallback direction customizable. |
 | **Wiggle** | Back-and-forth on a directional axis. Use to highlight change, call to action, or directional meaning. |
 | **Breathe** | Smooth opacity + size variation for a living quality. Use for status changes or ongoing activity (e.g., recording). Differs from Pulse: changes both opacity and size. |
 | **Rotate** | Full or partial rotation. Use for in-progress indicators or real-world rotation behavior (e.g., fan blades via By Layer). |
@@ -91,7 +92,7 @@ Export a similar symbol's template → modify in a vector editor → annotate la
 
 - Match system symbols in detail level, optical weight, alignment, position, and perspective.
 - Custom symbols must be: simple, recognizable, inclusive, and directly related to the concept.
-- Copyright restriction: Apple product/feature symbols cannot be customized.
+- Apple product/feature symbols may be displayed but not customized; the SF Symbols app marks them with an Info badge.
 - Use **negative side margins** when a badge or element increases symbol width (naming pattern: e.g., `left-margin-Regular-M`).
 - **Annotate layers** for variable color and animation support. Use whole shapes (not cutouts) for best animation behavior — use erase layers for negative space.
 - Use the SF Symbols **component library** for common variants (enclosures, badges) — maintains design consistency.

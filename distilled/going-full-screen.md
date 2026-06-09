@@ -6,13 +6,19 @@ category: patterns/system
 triggers:
   - "full screen"
   - "fullscreen"
-  - "immersive view"
   - "Enter Full Screen"
   - "expanded view"
+  - "preferredScreenEdgesDeferringSystemGestures"
+  - "NSWindow.toggleFullScreen(_:)"
+  - "NSApplication.PresentationOptions.hideDock"
 related:
   - the-menu-bar
   - playing-video
   - status-bars
+  - immersive-experiences
+  - windows
+  - layout
+  - multitasking
 ---
 # Going Full Screen
 

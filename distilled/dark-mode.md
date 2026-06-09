@@ -1,7 +1,7 @@
 ---
 topic: dark-mode
 tier: 1
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, tvos]
 category: foundations
 triggers:
   - "dark mode"
@@ -11,6 +11,7 @@ triggers:
 related:
   - color
   - materials
+  - typography
 ---
 # Dark Mode
 

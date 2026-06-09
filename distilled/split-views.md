@@ -10,8 +10,8 @@ triggers:
   - "master detail"
 related:
   - sidebars
-  - multitasking
-  - windows
+  - tab-bars
+  - layout
 ---
 # Split Views
 
@@ -24,7 +24,7 @@ Typical use: sidebar (primary pane) → content list (secondary) → detail (ter
 ## Best Practices
 
 - **Persistently highlight the current selection** in each pane that leads to a detail view — clarifies relationships and keeps people oriented.
-- **Support drag and drop between panes** — convenient for moving content across hierarchy levels.
+- **Consider drag and drop between panes** — convenient for moving content across hierarchy levels.
 
 ## Platform Considerations
 
@@ -41,14 +41,14 @@ Typical use: sidebar (primary pane) → content list (secondary) → detail (ter
 
 - Panes can be arranged vertically, horizontally, or both. Includes resizable dividers.
 - **Reasonable min/max pane sizes** — if a pane gets too small, the divider can appear to disappear.
-- **Allow hiding panes** when it helps focus (e.g., Keynote hides navigator and presenter notes for editing focus). Provide multiple ways to reveal hidden panes (toolbar button, menu command, keyboard shortcut).
+- **Consider allowing pane hiding** when it helps focus (e.g., Keynote hides navigator and presenter notes for editing focus). Provide multiple ways to reveal hidden panes (toolbar button, menu command, keyboard shortcut).
 - **Thin divider (1pt) preferred** — maximum content space while remaining easy to use. Thicker dividers only when thin ones would be hard to distinguish (e.g., both sides have strong linear elements).
 
 ### tvOS
 
 - Good for content filtering: primary pane = filter categories, secondary pane = filtered results.
 - **Balanced layout** — default: ⅓ primary / ⅔ secondary. Half-and-half also available.
-- **Single title above the split view** — people understand split views; no per-pane titles needed. Align based on secondary pane content type: center title if secondary shows a collection; leading title if secondary shows a single important item.
+- **Consider a single title above the split view** — people understand split views; no per-pane titles needed. Align based on secondary pane content type: center title if secondary shows a collection; leading title if secondary shows a single important item.
 
 ### visionOS
 

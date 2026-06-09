@@ -1,14 +1,14 @@
 ---
 topic: apple-pay
 tier: 3
-platforms: [ios, ipados, macos, visionos]
+platforms: [ios, ipados, macos, visionos, watchos]
 category: technologies
 triggers:
   - "Apple Pay"
   - "payment"
   - "checkout"
   - "PKPaymentButton"
-  - "wallet"
+  - "Apple Pay wallet"
 related:
   - in-app-purchase
   - wallet
@@ -23,6 +23,8 @@ related:
 
 ## Offering Apple Pay
 
+- Apple Pay works in apps and any browser. People can authorize with a nearby iPhone or Apple Watch, scan a code, or use device authentication including `Optic ID` where available.
+- Web: use `applePayCapabilities`, semantic markup that search engines can index, a privacy statement, and Apple's acceptable-use requirements.
 - **Offer on all supported devices.** Use Apple Pay APIs to detect support — don't show the option if the device can't use it.
 - **If you use APIs to check for an active card, Apple Pay must be the primary payment option** everywhere you use those APIs.
 - **Feature Apple Pay at least as prominently as other payment options** on every page that offers payment methods.
@@ -33,6 +35,7 @@ related:
 
 ## Streamlining Checkout
 
+- Keep checkout cohesive; don't open new windows or send people to a separate checkout flow.
 - **Present Apple Pay first** — preselect it or display it larger; visually separate it from other options.
 - **Add Apple Pay buttons on product detail pages** for single-item quick purchase (exclude cart contents).
 - **Express checkout** — immediately display the payment sheet for multi-item purchases.
@@ -63,6 +66,7 @@ related:
 
 ## Subscriptions and Donations
 
+- For trials, use line items to show free trial period, discount duration, and first paid renewal. Avoid billing-agreement fields that contradict the sheet's line items.
 - **Subscriptions**: clarify billing frequency before the payment sheet. Line items reiterating frequency, discounts, and upfront fees. Show payment amount clearly in the total.
 - **Only show the payment sheet when a subscription change adds fees.**
 - **Donations**: use a line item to label the donation (e.g., *Donation $50.00*). Offer predefined amount buttons + Other Amount.
@@ -74,8 +78,9 @@ related:
 | Button type | Use when |
 |---|---|
 | Apple Pay | General purchase |
+| Buy with Apple Pay | Product purchase |
 | Pay with Apple Pay | Bill or invoice payment |
-| Check-out with Apple Pay | Cart with "Check out"-labeled buttons |
+| Check Out with Apple Pay | Cart with "Check Out"-labeled buttons |
 | Continue with Apple Pay | Cart with "Continue with"-labeled buttons |
 | Book with Apple Pay | Travel/experiences booking |
 | Donate with Apple Pay | Approved nonprofit donations |
@@ -92,6 +97,8 @@ related:
 
 **Set up Apple Pay button** — display on Settings, profile, or interstitial pages when the device supports Apple Pay but hasn't been set up.
 
+API style names include `PKPaymentButtonStyle.automatic` and `ApplePayButtonStyle`.
+
 ### Button Styles
 
 | Style | Use on |
@@ -104,13 +111,13 @@ related:
 
 | Button | Min width | Min height | Min margin |
 |---|---|---|---|
-| Apple Pay (plain) | 100 pt | 30 pt | 1/10 button height |
-| Book with Apple Pay | 140 pt | 30 pt | 1/10 button height |
-| Buy with Apple Pay | 100 pt | 30 pt | 1/10 button height |
-| Check out with Apple Pay | 100 pt | 30 pt | 1/10 button height |
-| Donate with Apple Pay | 100 pt | 30 pt | 1/10 button height |
-| Set up Apple Pay | 100 pt | 30 pt | 1/10 button height |
-| Subscribe with Apple Pay | 100 pt | 30 pt | 1/10 button height |
+| Apple Pay | 100 pt (100 px @1x, 200 px @2x) | 30 pt (30 px @1x, 60 px @2x) | 1/10 button height |
+| Book with Apple Pay | 140 pt (140 px @1x, 280 px @2x) | 30 pt (30 px @1x, 60 px @2x) | 1/10 button height |
+| Buy with Apple Pay |  |  |  |
+| Check Out with Apple Pay |  |  |  |
+| Donate with Apple Pay |  |  |  |
+| Set Up Apple Pay |  |  |  |
+| Subscribe with Apple Pay |  |  |  |
 
 - **Side-by-side**: Apple Pay button to the right of Add to Cart.
 - **Stacked**: Apple Pay button above Add to Cart.

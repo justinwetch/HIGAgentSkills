@@ -10,6 +10,19 @@ triggers:
   - "annotation"
   - "overlay"
   - "geocoding"
+  - "MKStandardMapConfiguration.EmphasisStyle"
+  - "MKMapFeatureOptions"
+  - "mapItemDetailSelectionAccessory(_:)"
+  - "mapFeatureSelectionAccessory(_:)"
+  - "mapView(_:selectionAccessoryFor:)"
+  - "selectionAccessory"
+  - "selectableMapFeatureSelectionAccessory"
+  - "MapItemDetailSelectionAccessoryStyle"
+  - "MKSelectionAccessory.MapItemDetailPresentationStyle"
+  - "PlaceSelectionAccessoryStyle"
+  - "mapItemDetailSheet(item:displaysMap:)"
+  - "init(mapItem:displaysMap:)"
+  - "WKInterfaceMap"
 related:
   - layout
 ---

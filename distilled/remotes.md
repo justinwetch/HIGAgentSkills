@@ -1,14 +1,15 @@
 ---
 topic: remotes
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [tvos]
 category: components/tvos
 triggers:
   - "Siri Remote"
   - "Apple TV remote"
   - "remote control"
   - "swipe remote"
-  - "click pad"
+  - "clickpad"
+  - "Providing Channel Navigation"
 related:
   - focus-and-selection
   - gestures

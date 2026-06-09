@@ -1,12 +1,13 @@
 ---
 topic: rating-indicators
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: components/controls
 triggers:
   - "rating indicator"
   - "star indicator"
   - "level indicator stars"
+  - "NSLevelIndicator.Style.rating"
 related:
   - ratings-and-reviews
 ---

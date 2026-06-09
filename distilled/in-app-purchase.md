@@ -9,9 +9,16 @@ triggers:
   - "StoreKit"
   - "subscription"
   - "paywall"
+  - "Advanced Commerce API"
+  - "AdvancedCommerceAPI"
+  - "canMakePayments"
+  - "beginRefundRequest(for:in:)"
+  - "presentOfferCodeRedeemSheet(in:)"
+  - "offerCodeRedemption(isPresented:onCompletion:)"
+  - "Product.SubscriptionInfo"
+  - "showManageSubscriptions(in:)"
 related:
   - apple-pay
-  - ratings-and-reviews
 ---
 # In-App Purchase
 
@@ -31,6 +38,8 @@ related:
 | Non-renewing subscription | Fixed-duration access (e.g., battle pass); must repurchase |
 
 ## Best Practices
+
+- Use `Advanced Commerce API` only for exceptional catalogs/add-ons that require it.
 
 - **Let people try your app before buying** — free access increases likelihood of purchase.
 - **Integrated shopping experience** — match the style of your app; don't make it feel like a different app.
@@ -78,6 +87,8 @@ related:
 - Consider supporting in-app redemption with StoreKit (system provides all screens automatically).
 
 ### Subscription Management
+
+- Include a sign-up opportunity in app settings.
 
 - **Show renewal date** in settings or account screen.
 - **Use system-provided sub-management UI** (via StoreKit) for a consistent experience.

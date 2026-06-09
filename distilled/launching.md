@@ -12,7 +12,7 @@ triggers:
   - "state restoration"
 related:
   - onboarding
-  - app-icons
+  - loading
 ---
 # Launching
 

@@ -14,7 +14,7 @@ description: >
 
 # Apple HIG Skill
 
-Reference 150 distilled HIG files in `distilled/` via the routing index at `routing-index.md`.
+Reference 156 distilled HIG files in `distilled/` via the routing index at `routing-index.md`.
 
 ## Loading Protocol
 
@@ -28,11 +28,11 @@ From the user's request, identify:
 
 ### Step 2 — Load Tier 1 (always, every invocation)
 
-Read all 14 files listed in `routing-index.md` under `## tier-1`:
+Read all 16 files listed in `routing-index.md` under `## tier-1`:
 
-`accessibility`, `branding`, `color`, `dark-mode`, `icons`, `images`,
-`inclusion`, `layout`, `materials`, `motion`, `right-to-left`,
-`sf-symbols`, `typography`, `writing`
+`accessibility`, `branding`, `color`, `dark-mode`, `design-principles`,
+`icons`, `images`, `inclusion`, `layout`, `materials`, `motion`,
+`privacy`, `right-to-left`, `sf-symbols`, `typography`, `writing`
 
 These apply universally. Load them before answering.
 

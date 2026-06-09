@@ -1,7 +1,7 @@
 ---
 topic: top-shelf
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [tvos]
 category: components/tvos
 triggers:
   - "Top Shelf"
@@ -9,10 +9,17 @@ triggers:
   - "hero image"
   - "featured content"
   - "tvOS shelf"
+  - "Carousel actions"
+  - "Carousel details"
+  - "sectioned content row"
+  - "scrolling inset banner"
+  - "Top Shelf static image"
 related:
   - live-viewing-apps
   - designing-for-tvos
   - app-icons
+  - voiceover
+  - images
 ---
 # Top Shelf
 
@@ -51,7 +58,7 @@ Focused, scrollable row of labeled content thumbnails. Load enough images to fil
 > Note: Mixed sizes in the same row auto-scale to match the tallest image (e.g., 16:9 scales to 500 pt tall alongside poster/square images).
 
 ### Scrolling Inset Banner
-Large images (~full screen width), auto-scrolled on a timer. Focus applies lighting effects and 3D parallax on layered images. Circular remote gesture pans between banners.
+Large images (~full screen width), auto-scrolled on a timer. Focus applies lighting effects and 3D parallax on layered images. Swiping on the Touch surface pans to the previous or next banner; a circular gesture enacts the system focus effect.
 
 - **3–8 images** recommended. Fewer than 3 = ineffective; more than 8 = hard to navigate.
 - **Text must be baked into the image** — no labels in this layout style. Add text to the accessibility label too.

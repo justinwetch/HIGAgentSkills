@@ -1,7 +1,7 @@
 ---
 topic: researchkit
 tier: 4
-platforms: [ios, tvos, visionos]
+platforms: [ios, ipados]
 category: technologies
 triggers:
   - "ResearchKit"
@@ -9,14 +9,14 @@ triggers:
   - "research app"
   - "consent"
   - "survey"
-  - "task"
+  - "active task"
 related:
   - healthkit
   - carekit
 ---
 # ResearchKit
 
-> ResearchKit provides predesigned screens and transitions for building medical research apps. People can join, consent, contribute data, and track their participation — all on iOS.
+> ResearchKit provides predesigned screens and transitions for building medical research apps. People can join, consent, contribute data, and track their participation on iOS and iPadOS.
 
 **Platforms:** iOS, iPadOS *(not macOS, tvOS, visionOS, watchOS)*
 
@@ -26,7 +26,7 @@ related:
 
 1. **Introduction** — Clearly describe the study's subject and purpose. Let existing participants log in and resume.
 2. **Eligibility** — Determine eligibility as early as possible. Simple language, easy inputs. Don't ask for criteria unnecessary to your study.
-3. **Informed Consent** — Break long consent forms into digestible sections (data gathering, benefits, risks, time commitment, withdrawal process). Use Learn More buttons for detail. Consider a quiz to test understanding. Collect signature and contact info; email a PDF copy.
+3. **Informed Consent** — Break long consent forms into digestible sections (data gathering, benefits, risks, time commitment, withdrawal process). Use Learn More buttons for detail. Consider a quiz to test understanding. Collect signature and contact info; most research apps email a PDF copy.
 4. **Permission Requests** — Ask for only the data critical to the study (location, Health, notifications). Explain clearly why each type of data is needed.
 
 ## Surveys
@@ -45,5 +45,5 @@ related:
 
 ## Dashboard and Profile
 
-- **Profile screen**: lets participants change evolving data (weight, sleep habits), view upcoming activities, withdraw from the study, and access the consent document / privacy policy. Accessible at all times.
-- **Dashboard**: motivates participation with daily progress, weekly assessments, activity results, and (if appropriate) aggregated comparison results. Accessible at all times.
+- **Profile screen**: lets participants change evolving data (weight, sleep habits), view upcoming activities, withdraw from the study, and access the consent document / privacy policy. Ideally accessible at all times.
+- **Dashboard**: motivates participation with daily progress, weekly assessments, activity results, and (if appropriate) aggregated comparison results. Ideally accessible at all times.

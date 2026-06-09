@@ -1,7 +1,7 @@
 ---
 topic: pointing-devices
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: patterns/interaction
 triggers:
   - "pointer"
@@ -11,6 +11,9 @@ triggers:
   - "hover"
   - "pointer interaction"
   - "iPadOS pointer"
+  - "UIBandSelectionInteraction"
+  - "UIPointerAccessory"
+  - "UIPointerShape.roundedRect(_:radius:)"
 related:
   - gestures
   - focus-and-selection
@@ -26,6 +29,7 @@ On Mac: primary alongside keyboard. On iPad and visionOS: additional input, not 
 
 ## Best Practices
 
+- Distinguish pointer and finger input only if doing so provides value.
 - **Consistent gesture behavior** — gestures should work the same across apps (e.g., "swipe between pages" always navigates pages).
 - **Don't redefine systemwide trackpad gestures** — even in games. People expect Dock/Mission Control gestures to work everywhere; they can also customize those gestures.
 - **Consistent cross-input experience** — pointer, touch, eyes, and keyboard should all work fluently; people switch between them without needing to re-learn.
@@ -69,6 +73,8 @@ The iPadOS pointer adapts automatically to context and provides rich visual feed
 
 **Pointer accessories** — secondary visual indicators (e.g., small arrows near a resizable edge). Should be simple images. Use transitions to signal state changes (e.g., `plus` → `circle.slash` when an add action becomes unavailable).
 
+**Band selection** — in iPadOS 15+, standard nonlist collection views support pointer drag-to-select by default. For custom multi-selection views, implement `UIBandSelectionInteraction` when the content model needs it.
+
 ### macOS — Gestures & Mouse/Trackpad
 
 People can customize mouse and trackpad interactions. Key gestures:
@@ -83,6 +89,7 @@ People can customize mouse and trackpad interactions. Key gestures:
 | Swipe between full-screen apps | ✓ | ✓ |
 | Mission Control | ✓ | ✓ |
 | Lookup/data detectors | — | ✓ |
+| Tap to click | — | ✓ |
 | Force click | — | ✓ |
 | Zoom (pinch) | — | ✓ |
 | Rotate | — | ✓ |

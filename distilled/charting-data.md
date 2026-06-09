@@ -18,23 +18,21 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
-Not every dataset needs a chart. If you only need to provide raw data — without conveying insights or supporting analysis — use a list or table (scrollable, searchable, sortable) instead.
+Not every dataset needs a chart. If you only need to provide raw data without conveying insights or supporting analysis, use a scrollable, searchable, sortable list or table instead.
 
-## When to Use a Chart
+## When To Use A Chart
 
-- Analyzing trends from historical or predicted values
-- Visualizing a changing quantity's current state
-- Comparing items or the same item across multiple categories
-
-**Use a chart to highlight important information** — charts are visually prominent and draw attention. Use that prominence to communicate something meaningful.
+- Analyzing trends from historical or predicted values.
+- Visualizing a changing quantity's current state.
+- Comparing items or the same item across multiple categories.
+- **Use charts to highlight important information** - charts are visually prominent, so use that prominence to communicate something meaningful.
 
 ## Best Practices
 
-- **Keep charts simple; let people opt into details** — don't pack in all available data. Too much data obscures relationships and is overwhelming. Provide progressive disclosure (e.g., let people choose scope or detail level). Consider a series of chart versions, each revealing more functionality.
-- **Prefer common chart types** (bar, line, scatter) — familiar types require no learning curve. For novel chart types, teach people how to read them (e.g., Activity rings animate individually on first pairing to show what each ring means).
-- **Multi-level data analysis** — macro (totals, averages), mid-level (subsets), micro (individual values). Displaying data from multiple perspectives encourages engagement.
-- **Add descriptive text** — title, subtitle, annotations emphasize key information and provide glanceable headlines (e.g., Weather: "Chance of light rain in the next hour" above the hourly chart). Descriptive text aids accessibility but doesn't replace accessibility labels.
-- **Match chart size to purpose** — large enough to read details and support interaction; small charts work for glanceable summaries or previews of a full chart.
-- **Consistent style across multiple charts** — if multiple charts serve similar purposes, use the same type, colors, and style. Deviate only to signal meaningful differences.
-- **Maintain continuity across charts for the same dataset** — same type, colors, annotations, layout. Example: Health Trends shows small charts in a consistent style; tapping to expand preserves the same visual language.
-- **Make every chart accessible** — see charts#Enhancing-the-accessibility-of-a-chart for accessibility label and Audio Graphs guidance.
+- **Keep charts simple; let people opt into details** - too much data obscures relationships and becomes overwhelming. Reveal scope/detail progressively.
+- **Make every chart accessible** - provide accessibility labels that describe chart values/components and accessibility elements that help people interact with the chart.
+- **Prefer common chart types** - people are familiar with bar and line charts. For novel charts, teach people how to read them.
+- **Analyze data at multiple levels** - macro (totals/averages), mid-level (subsets), and micro (individual values) can each reveal useful detail.
+- **Add descriptive text** - titles, subtitles, annotations, and concise summaries emphasize key information. They help accessibility but do not replace accessibility labels.
+- **Match chart size to purpose** - large enough for details and interaction; small charts work for glanceable summaries or previews.
+- **Use consistent style across related charts** - same type, colors, annotations, layout, and descriptive text when charts show the same dataset or purpose.

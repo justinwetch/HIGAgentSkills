@@ -1,15 +1,19 @@
 ---
 topic: camera-control
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [ios]
 category: technologies
 triggers:
   - "Camera Control"
   - "iPhone camera button"
   - "hardware camera button"
+  - "AVCaptureControl"
+  - "AVCaptureSlider.localizedValueFormat"
+  - "AVCaptureSlider.prominentValues"
+  - "LockedCameraCapture"
 related:
-  - gestures
-  - app-shortcuts
+  - sf-symbols
+  - controls
 ---
 # Camera Control
 

@@ -12,8 +12,14 @@ triggers:
   - "placeholder"
   - "alert text"
 related:
-  - typography
   - inclusion
+  - accessibility
+  - voiceover
+  - notifications
+  - alerts
+  - action-sheets
+  - settings
+  - text-fields
 ---
 # Writing
 

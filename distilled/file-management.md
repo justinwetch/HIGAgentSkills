@@ -1,13 +1,17 @@
 ---
 topic: file-management
 tier: 3
-platforms: [ios, ipados]
+platforms: [ios, ipados, macos, visionos]
 category: patterns/data
 triggers:
   - "file"
   - "document"
   - "Files app"
   - "DocumentBrowser"
+  - "DocumentGroupLaunchScene"
+  - "File Provider"
+  - "Finder Sync"
+  - "Documents"
   - "iCloud Drive"
   - "file picker"
 related:
@@ -19,7 +23,7 @@ related:
 
 > Document-based apps help people create, edit, and manage files across the system.
 
-**Platforms:** iOS, iPadOS, macOS *(watchOS and tvOS: people don't typically create/edit documents — no file browsing interface provided)*
+**Platforms:** iOS, iPadOS, macOS, visionOS *(tvOS/watchOS: no additional considerations; document browsing is limited or not a typical interface pattern)*
 
 ## Creating and Opening Files
 

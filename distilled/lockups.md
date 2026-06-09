@@ -1,7 +1,7 @@
 ---
 topic: lockups
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [tvos]
 category: components/tvos
 triggers:
   - "lockup"
@@ -9,6 +9,11 @@ triggers:
   - "caption button"
   - "monogram"
   - "poster tvOS"
+  - "TVLockupView"
+  - "TVLockupHeaderFooterView"
+  - "TVCaptionButtonView"
+  - "TVMonogramContentView"
+  - "TVPosterView"
 related:
   - designing-for-tvos
   - focus-and-selection

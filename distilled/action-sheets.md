@@ -1,13 +1,14 @@
 ---
 topic: action-sheets
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, watchos]
 category: components/presentation
 triggers:
   - "action sheet"
   - "bottom action"
   - "destructive action"
-  - "UIActionSheet"
+  - "confirmationDialog"
+  - "UIAlertController.Style.actionSheet"
 related:
   - alerts
   - sheets

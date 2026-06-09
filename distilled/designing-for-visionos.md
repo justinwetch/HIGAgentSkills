@@ -1,18 +1,21 @@
 ---
 topic: designing-for-visionos
 tier: 2
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [visionos]
 category: platforms
 triggers:
   - "visionOS"
   - "Apple Vision Pro"
   - "spatial"
   - "immersive"
-  - "mixed reality"
 related:
+  - windows
   - spatial-layout
   - immersive-experiences
-  - ornaments
+  - digital-crown
+  - accessibility
+  - shareplay
+  - gestures
   - eyes
 ---
 # Designing for visionOS

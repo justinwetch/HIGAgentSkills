@@ -2,7 +2,7 @@
 
 [![Watch the demo](https://img.youtube.com/vi/UGaSV21ff18/maxresdefault.jpg)](https://www.youtube.com/watch?v=UGaSV21ff18)
 
-An agent skill containing 150 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across all Apple platforms.
+An agent skill containing 156 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across all Apple platforms.
 
 ## What This Is
 
@@ -14,12 +14,12 @@ The result is a corpus that fits within a practical context budget and gives the
 
 | Tier | Role | Count |
 |------|------|-------|
-| 1 | Foundations (always loaded) | 14 files |
+| 1 | Foundations (always loaded) | 16 files |
 | 2 | Platform overviews | 7 files |
-| 3 | Components, patterns, technologies | 100 files |
-| 4 | Niche and platform-specific controls | 29 files |
+| 3 | Components, patterns, technologies | 103 files |
+| 4 | Niche and platform-specific controls | 30 files |
 
-**Total:** 150 files, 751 trigger keywords, ~130k tokens in the full corpus.
+**Total:** 156 files, 1,057 trigger keywords, ~140k rough tokens in the full corpus.
 
 Platforms covered: iOS, iPadOS, macOS, tvOS, visionOS, watchOS.
 
@@ -28,21 +28,21 @@ Platforms covered: iOS, iPadOS, macOS, tvOS, visionOS, watchOS.
 `SKILL.md` defines a 7-step loading protocol:
 
 1. Parse the request for platform(s), component names, and framework references
-2. Load all 14 tier-1 foundation files (always, every invocation)
+2. Load all 16 tier-1 foundation files (always, every invocation)
 3. Load the matching `designing-for-[platform]` file based on detected platform
 4. Keyword-scan the request against `routing-index.md` and load all tier-3 matches
 5. Expand one hop through each loaded file's `related:` frontmatter
 6. Load tier-4 files only on direct keyword match
 7. Answer citing exact values from loaded files
 
-The `routing-index.md` file maps 751 trigger keywords to their corresponding reference files across all four tiers.
+The `routing-index.md` file maps 1,057 trigger keywords to their corresponding reference files across all four tiers.
 
 ## File Structure
 
 ```
 SKILL.md               Agent entry point and loading protocol
 routing-index.md       Keyword-to-file routing map (auto-generated)
-distilled/             150 reference files, one per HIG topic
+distilled/             156 reference files, one per HIG topic
   *.md
 ```
 
@@ -50,7 +50,7 @@ Each `distilled/*.md` file includes YAML frontmatter with `topic`, `tier`, `plat
 
 ## Token Budget
 
-The floor cost per invocation is approximately 21,400 tokens (tier-1 files plus the routing index). Typical queries load 20 to 30 files and land between 22,000 and 37,000 tokens, well within a 40,000-token practical budget on a 200k context window.
+The floor cost per invocation is approximately 33,600 rough tokens (tier-1 files plus the routing index). Typical queries load 20 to 30 files and land between roughly 34,000 and 55,000 tokens, within a practical budget on a 200k context window.
 
 ## Distillation Method
 

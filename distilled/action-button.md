@@ -1,16 +1,19 @@
 ---
 topic: action-button
 tier: 3
-platforms: [ios, macos, tvos]
+platforms: [ios, watchos]
 category: components/controls
 triggers:
   - "Action button"
   - "hardware button"
   - "quick action button"
   - "iPhone Action Button"
+  - "Apple Watch Ultra"
 related:
   - app-shortcuts
-  - gestures
+  - workouts
+  - digital-crown
+  - live-activities
 ---
 # Action Button
 
@@ -42,6 +45,6 @@ The Action button supports:
 
 **Secondary action design rules:**
 - Flows logically from the first press — people often act without looking at the screen.
-- Keep it simple and memorable; **avoid more than one secondary action** (increases cognitive load).
+- Keep it simple and memorable; **consider carefully before offering more than one secondary action** because it increases cognitive load.
 - **Prefer advancing a function** over stopping it — offer stop/end within the app UI, not via the button.
 - **Action button + side button together = pause** current activity — always honor this, except diving (pausing dive = dangerous; loss of depth/time tracking). Don't implement pause via button combo if pausing would cause a harmful outcome.

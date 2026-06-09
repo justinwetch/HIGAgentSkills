@@ -6,7 +6,24 @@
 !SKILL.md
 !routing-index.md
 !README.md
+!process.md
 !.gitignore
+
+# Allow maintenance scripts
+!scripts/
+!scripts/**
+scripts/**/__pycache__/
+scripts/**/*.pyc
+
+# Allow lightweight source audit artifacts, but keep raw/rendered Apple source captures ignored
+!sources/
+!sources/*/
+!sources/*/inventory.json
+!sources/*/failures.json
+!sources/*/dispositions.md
+!sources/*/disposition-overrides.json
+!sources/*/verification/
+!sources/*/verification/**
 
 # Allow the distilled reference files
 !distilled/

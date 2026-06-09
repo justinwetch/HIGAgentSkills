@@ -7,6 +7,9 @@ triggers:
   - "video"
   - "AVPlayer"
   - "AVPlayerViewController"
+  - "VideoPlayer"
+  - "RealityKit"
+  - "HLS Trick Play"
   - "playback"
   - "video controls"
   - "PiP"
@@ -20,6 +23,8 @@ related:
 > People expect rich, familiar video experiences across all platforms. Use the system-provided video player whenever possible.
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
+
+Developer names to preserve: `resizeAspectFill`, `resizeAspect`, `externalMetadata`, `silenceSecondaryAudioHintNotification`, `AVPlayerViewController`, `RealityKit`, `VideoPlayer`, HLS Trick Play.
 
 ## Playback Modes (System Video Player)
 
@@ -35,7 +40,7 @@ tvOS and visionOS also show **transport controls** (subtitles, audio language, f
 - **Use the system video player** — provides familiar interactions people already know. A slightly divergent custom player causes confusion (people don't know which habitual interactions still apply).
 - **Always display at the original aspect ratio** — embedded letterbox/pillarbox padding prevents correct scaling and breaks PiP mode on iPad.
 - **Provide additional info when useful** — image, title, description; don't let it obscure playback.
-- **Support Space bar to play/pause** on keyboards across all platforms.
+- **Support Space bar to play/pause** on keyboards on Apple Vision Pro, Mac, iPhone, iPad, and Apple TV.
 - **Prevent audio mixing when switching modes** (especially full-screen ↔ PiP) — ensure background content handles secondary audio correctly.
 
 ## Integrating with the TV App

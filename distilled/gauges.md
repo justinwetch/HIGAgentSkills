@@ -1,18 +1,16 @@
 ---
 topic: gauges
 tier: 3
-platforms: [ios, ipados, macos, visionos]
+platforms: [ios, ipados, macos, visionos, watchos]
 category: components/controls
 triggers:
   - "gauge"
-  - "Gauge"
   - "circular gauge"
   - "linear gauge"
   - "level indicator"
 related:
-  - progress-indicators
-  - sliders
-  - activity-rings
+  - ratings-and-reviews
+  - rating-indicators
 ---
 # Gauges
 
@@ -43,6 +41,6 @@ macOS additionally supports **level indicators** — three configurable styles:
   - Note: for large ranges, the continuous style is better (discrete segments would be too small).
 - **Change fill color at meaningful thresholds** — default fill is green. You can change color at specified levels (very low, very high, etc.) or use tiered state to show multiple colors in one indicator.
 
-**Rating** — uses stars (or custom symbols) for ranking. See rating-indicators.
+**Rating** — helps people rank something. See rating-indicators.
 
 **Relevance** (rarely used) — shaded horizontal bar communicating relevancy level. Useful in search result lists for sorting/comparing multiple items.

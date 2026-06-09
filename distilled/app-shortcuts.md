@@ -1,7 +1,7 @@
 ---
 topic: app-shortcuts
 tier: 3
-platforms: [ios, ipados, visionos]
+platforms: [ios, ipados, visionos, watchos]
 category: technologies
 triggers:
   - "App Shortcut"
@@ -10,10 +10,12 @@ triggers:
   - "AppIntents"
   - "action shortcut"
   - "Spotlight"
+  - "App schema domains"
 related:
   - siri
   - action-button
-  - widgets
+  - snippets
+  - live-activities
 ---
 # App Shortcuts
 
@@ -25,6 +27,7 @@ Available immediately after app install — no first launch required. Up to **10
 
 ## Best Practices
 
+- Use **App schema domains** for common domains so Apple Intelligence and Siri can surface actions and content contextually. Use App Shortcuts for unique app features or custom content not covered by schemas. See `Apple Intelligence and Siri AI` and `Making actions and content discoverable by Apple Intelligence`.
 - **Only your app's most common and important tasks** — quick-completion tasks that don't need the full app UI. Opening the app is OK for complex multi-step tasks.
 - **Single optional parameter for flexibility** — e.g., "Start [morning/daily/sleep] meditation." Use predictable, familiar values people won't need to look up.
 - **Ask for clarification when optional info is missing** — suggest most recent or time-appropriate option; present a short list of alternatives.
@@ -51,7 +54,6 @@ When a shortcut runs, your app can respond via:
 - App Shortcuts appear in Spotlight (Top Hit area or Shortcuts section under your app).
 - Each shortcut requires an **SF Symbols** icon (or a preview image for link-type shortcuts).
 - **Order shortcuts by importance** — first determines initial display order in Spotlight and Shortcuts app. System re-prioritizes based on usage.
-- **Offer a Live Activity shortcut** — e.g., for a timer that people can start via the Action button.
 
 ### macOS
 

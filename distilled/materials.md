@@ -13,6 +13,7 @@ triggers:
   - "Liquid Glass"
 related:
   - color
+  - accessibility
   - dark-mode
 ---
 # Materials
@@ -30,10 +31,11 @@ Liquid Glass forms the functional layer for controls and navigation (tab bars, s
 - **Don't use Liquid Glass in the content layer.** It's for interactive elements only. Exception: transient interactive controls (sliders, toggles) briefly adopt Liquid Glass when activated.
 - **Use sparingly on custom controls.** System components adopt it automatically. Overusing on custom controls distracts from content. Limit to most important functional elements.
 - **Only use clear Liquid Glass over visually rich backgrounds** (photos, video). For text-heavy components (alerts, sidebars, popovers) use regular variant.
+- Liquid Glass appearance can change with preferred Liquid Glass look, Reduce Transparency, and Increase Contrast.
 
 **Two Liquid Glass variants:**
-- **Regular** — blurs and adjusts luminosity of background; used by most system components. Use when background may cause legibility issues or component has significant text.
-- **Clear** — highly translucent; prioritizes background content visibility. Use over media backgrounds for an immersive feel.
+- **Regular** (`Glass.regular`) — blurs and adjusts luminosity of background; used by most system components. Scroll edge effects further preserve legibility by blurring and reducing opacity of background content. Use when background may cause legibility issues or component has significant text.
+- **Clear** (`Glass.clear`) — highly translucent; prioritizes background content visibility. Use over media backgrounds for an immersive feel.
 
 **Dimming layer behind clear Liquid Glass:**
 - Bright underlying content: add dark dimming layer at 35% opacity.
@@ -41,7 +43,7 @@ Liquid Glass forms the functional layer for controls and navigation (tab bars, s
 
 ## Standard Materials
 
-Use standard materials within the content layer for visual structure and separation.
+Use standard materials within the content layer for visual structure and separation. APIs: `UIBlurEffect`, `UIVibrancyEffect`, `NSVisualEffectView.BlendingMode`, `SwiftUI.Material`, `NSVisualEffectView.Material`.
 
 - Choose based on semantic meaning and purpose, not the color the material imparts (system settings alter appearance).
 - Use vibrant (system-defined) colors on top of materials for automatic adaptation to accessibility and appearance contexts.
@@ -54,12 +56,12 @@ Use standard materials within the content layer for visual structure and separat
 Four standard materials available for the content layer: `ultraThin`, `thin`, `regular` (default), `thick`.
 
 Vibrancy values for **labels** (use on any material; avoid quaternary on thin/ultraThin):
-- `label`, `secondaryLabel`, `tertiaryLabel`, `quaternaryLabel`
+- `UIVibrancyEffectStyle.label`, `.secondaryLabel`, `.tertiaryLabel`, `.quaternaryLabel`
 
 Vibrancy values for **fills** (all materials):
-- `fill`, `secondaryFill`, `tertiaryFill`
+- `UIVibrancyEffectStyle.fill`, `.secondaryFill`, `.tertiaryFill`
 
-One default vibrancy value for **separators** (works on all materials).
+One default vibrancy value for **separators** (`UIVibrancyEffectStyle.separator`, works on all materials).
 
 ### macOS
 

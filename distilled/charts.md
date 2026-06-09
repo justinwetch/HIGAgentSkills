@@ -61,8 +61,8 @@ related:
 - **Accessibility is required** — support VoiceOver + Audio Graphs. Swift Charts auto-generates accessibility elements per mark + Audio Graphs default. Customize with chart title and summary.
 - **Don't require interaction to reveal critical info** — interaction (e.g., scrubbing a timeline) is an enhancement, not the only way to get data.
 - **Expand hit targets** — small marks are hard to tap; expand the hit region to the full plot area for scrubbing interactions.
-- **Keyboard/Switch Control navigation** — use accessibility APIs to define a logical path (e.g., along X axis), or let people move among value subsets rather than visiting every mark.
-- **Animate chart changes** — helps people notice axis/mark changes; also communicate changes through accessibility labels for those who disable animations.
+- **Keyboard/Switch Control navigation** — use accessibility APIs like `accessibilityRespondsToUserInteraction(_:)` to define a logical path (e.g., along X axis), or let people move among value subsets rather than visiting every mark.
+- **Animate chart changes** — helps people notice axis/mark changes; also announce important updates through `UIAccessibility.Notification` or `NSAccessibility.Notification` for VoiceOver users and people who disable animations.
 - **Align charts with surrounding UI** — align leading edge with other views. Place vertical grid labels on their trailing side; consider moving Y axis to the trailing side.
 
 ## Color

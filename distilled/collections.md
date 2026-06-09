@@ -1,7 +1,7 @@
 ---
 topic: collections
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: components/content
 triggers:
   - "collection view"
@@ -11,7 +11,8 @@ triggers:
   - "flow layout"
 related:
   - lists-and-tables
-  - scroll-views
+  - image-views
+  - layout
 ---
 # Collections
 

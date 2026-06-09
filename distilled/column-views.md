@@ -1,7 +1,7 @@
 ---
 topic: column-views
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: components/content
 triggers:
   - "column view"
@@ -9,8 +9,9 @@ triggers:
   - "Miller columns"
   - "hierarchical browser"
 related:
-  - sidebars
+  - lists-and-tables
   - outline-views
+  - split-views
 ---
 # Column Views
 
@@ -22,7 +23,7 @@ Each column shows a level of the hierarchy. Parent items with children are marke
 
 ## Best Practices
 
-- **Best for deep hierarchies with frequent back-and-forth navigation** (vs. sorting/filtering tasks where lists/tables work better). Classic example: Finder's column view for directory structures.
+- **Best for deep hierarchies with frequent back-and-forth navigation** (vs. tasks where sorting in lists/tables is more important). Classic example: Finder's column view for directory structures.
 - **Root of the data hierarchy in the first column** — people can always scroll left to start over.
 - **Show info about the selected item when no children remain** — e.g., Finder shows a preview and metadata (created, modified, type, size).
 - **Let people resize columns** — especially important when item names exceed the default column width.

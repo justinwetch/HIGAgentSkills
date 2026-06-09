@@ -1,13 +1,17 @@
 ---
 topic: status-bars
 tier: 4
-platforms: [ios, tvos, visionos]
+platforms: [ios, ipados]
 category: components/system
 triggers:
   - "status bar"
   - "status bar color"
   - "status bar style"
   - "UIStatusBar"
+  - "UIStatusBarStyle"
+  - "preferredStatusBarStyle"
+  - "ScrollEdgeEffectStyle"
+  - "UIScrollEdgeEffect"
 related:
   - layout
   - designing-for-ios

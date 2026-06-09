@@ -1,13 +1,25 @@
 ---
 topic: virtual-keyboards
 tier: 3
-platforms: [ios, ipados, tvos, visionos]
+platforms: [ios, ipados, tvos, visionos, watchos]
 category: components/controls
 triggers:
   - "virtual keyboard"
   - "on-screen keyboard"
   - "software keyboard"
   - "keyboard extension"
+  - "UIKeyboardType"
+  - "UITextContentType"
+  - "keyboardType(_:)"
+  - "textContentType(_:)"
+  - "UIKeyboardLayoutGuide"
+  - "inputAccessoryView"
+  - "inputViewController"
+  - "custom input view"
+  - "submitLabel"
+  - "submitLabel(_:)"
+  - "UIReturnKeyType"
+  - "playInputClick()"
 related:
   - keyboards
   - text-fields
@@ -49,7 +61,7 @@ Available in iOS, iPadOS, tvOS. Replaces the system keyboard in any app, except 
 
 ### tvOS
 - Siri Remote: linear virtual keyboard in text fields.
-- Other devices (e.g., game controllers): grid keyboard layout.
+- Other devices: grid keyboard layout.
 - Digit entry view → digit-specific keyboard. See digit-entry-views.
 
 ### visionOS

@@ -1,10 +1,11 @@
 ---
 topic: web-views
 tier: 4
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/content
 triggers:
   - "web view"
+  - "WebKit"
   - "WKWebView"
   - "embedded HTML"
   - "in-app browser"

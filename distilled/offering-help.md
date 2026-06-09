@@ -12,7 +12,8 @@ triggers:
   - "help documentation"
 related:
   - onboarding
-  - settings
+  - feedback
+  - writing
   - the-menu-bar
 ---
 # Offering Help
@@ -35,7 +36,7 @@ Tips are small, transient views that teach features or faster paths.
 - **Use the right tip type:** popover tip (preserves content flow) or inline tip (keeps surrounding info visible; annotation-style for pointing at UI, hint-style when not tied to a specific element).
 - **Only for simple features** — if a feature requires more than ~3 actions, it's too complex for a tip.
 - **Short, actionable, action-oriented** — 1–2 sentences max. Start with what it does, then how to use it. No promotional content, no unrelated flows.
-- **Use eligibility rules** — parameter-based or event-based. Don't show a tip for a feature the person has already used. Space tips at reasonable cadence (e.g., once every 24 hours maximum).
+- **Use eligibility rules** — parameter-based or event-based. Don't show a tip for a feature the person has already used. Space tips at a reasonable cadence (for example, once every 24 hours).
 - **Include a related image or symbol if one exists** — prefer the filled variant (e.g., a star for favorites). Don't repeat an image that's already visible in the adjacent UI.
 - **Add buttons for actions** — link to settings the tip refers to, or to additional learning resources.
 

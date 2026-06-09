@@ -1,7 +1,7 @@
 ---
 topic: boxes
 tier: 4
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/layout
 triggers:
   - "box"

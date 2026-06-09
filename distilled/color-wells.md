@@ -1,11 +1,13 @@
 ---
 topic: color-wells
 tier: 4
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/controls
 triggers:
   - "color well"
   - "NSColorWell"
+  - "UIColorWell"
+  - "UIColorPickerViewController"
   - "color picker control"
 related:
   - color

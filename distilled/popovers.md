@@ -1,13 +1,17 @@
 ---
 topic: popovers
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/presentation
 triggers:
   - "popover"
   - "UIPopoverPresentationController"
+  - "popover(isPresented:attachmentAnchor:arrowEdge:content:)"
+  - "NSPopover"
   - "floating panel"
 related:
+  - action-sheets
+  - alerts
   - sheets
   - menus
   - modality

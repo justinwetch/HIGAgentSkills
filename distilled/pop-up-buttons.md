@@ -1,14 +1,17 @@
 ---
 topic: pop-up-buttons
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/controls
 triggers:
   - "pop-up button"
   - "drop-down selection"
   - "NSPopUpButton"
+  - "MenuPickerStyle"
+  - "changesSelectionAsPrimaryAction"
   - "menu selection button"
 related:
+  - buttons
   - pickers
   - menus
   - pull-down-buttons

@@ -12,8 +12,7 @@ triggers:
   - "linear TV"
 related:
   - playing-video
-  - top-shelf
-  - tab-bars
+  - remotes
 ---
 # Live-Viewing Apps
 
@@ -23,8 +22,10 @@ related:
 
 ## Core Principles
 
-- **Live content first** — put it in the first tab (one tap to start watching).
-- **One tap to start playback** — Watch Now button disappears immediately and playback begins full-screen.
+- Playback should be one tap away, or no tap when appropriate. Provide instant visual feedback when people change channels.
+- Include supported actions such as Download when available.
+- **Live content first** — use examples like the first tab or similarly prominent placement so live viewing is one tap away.
+- **One tap to start playback** — a Watch Now-style button can disappear immediately as playback begins.
 - **Visually distinguish live from VOD** — badge, symbol, sash, or "Live" label. Consider a progress bar showing where the live stream currently is.
 - **Consistent action order throughout the app** — e.g., always: Watch → Start Over → Record → Favorite.
 - **Match audio to context** — audio follows live content unless the person navigates away from the live tab.
@@ -39,6 +40,7 @@ An optional channel-browsing strip overlaid during playback:
 
 ## EPG (Electronic Program Guide)
 
+- Show future air times so people can schedule viewing.
 - **Current program, channel, and time prominent on first open** — easy to spot and return to.
 - **Easy navigation**: paging, scrolling, jump controls. Offer My Channels / Favorites group.
 - **Group by familiar categories**: Movies, TV Shows, Kids, Sports, Popular.

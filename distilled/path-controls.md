@@ -1,7 +1,7 @@
 ---
 topic: path-controls
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: components/controls
 triggers:
   - "path control"

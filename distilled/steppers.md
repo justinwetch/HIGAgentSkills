@@ -1,7 +1,7 @@
 ---
 topic: steppers
 tier: 4
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: components/controls
 triggers:
   - "stepper"
@@ -9,7 +9,7 @@ triggers:
   - "UIStepper"
   - "increment decrement control"
 related:
-  - sliders
+  - text-fields
   - pickers
 ---
 # Steppers
@@ -29,4 +29,4 @@ Steppers don't display the current value — they sit next to a field that shows
 
 ### macOS
 
-- **Support Shift-click for large jumps** — Shift-click can increase/decrease value by a larger increment (e.g., 10× the default), useful when the value range is large.
+- **Consider Shift-click for large jumps** — Shift-click can increase/decrease value by a larger increment (e.g., 10× the default), useful when the value range is large.

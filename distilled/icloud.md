@@ -22,8 +22,8 @@ related:
 
 ## Best Practices
 
-- **Opt-in, not opt-out.** Show a simple iCloud on/off choice at first launch if you think people may want to choose — don't prompt again after.
-- **Don't ask which documents to keep in iCloud.** Default to syncing everything; automate file management.
+- **Respect the system iCloud setting.** People turn on iCloud in Settings and expect apps to work automatically.
+- **If you need a first-open choice, keep it simple.** Offer an all-data-or-none decision only when people may reasonably want control; don't ask which individual documents to keep in iCloud.
 - **Keep content up to date.** Always provide the most recent version. For very large documents, indicate when a newer version is available in iCloud and provide subtle download progress feedback after a few seconds.
 - **Respect iCloud storage.** Use it only for user-created content — not app resources or regenerable data. Avoid bloating the Documents folder (iCloud backs it up).
 - **Handle iCloud unavailability gracefully.** No alert when someone manually disables it or uses Airplane Mode. Unobtrusively note that changes won't appear on other devices until iCloud is restored.

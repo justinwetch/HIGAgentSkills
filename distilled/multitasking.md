@@ -1,18 +1,15 @@
 ---
 topic: multitasking
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: patterns/system
 triggers:
   - "multitasking"
-  - "stage manager"
-  - "Slide Over"
-  - "Split View"
   - "Picture in Picture"
 related:
-  - split-views
+  - layout
   - windows
-  - designing-for-ipados
+  - playing-video
 ---
 # Multitasking
 
@@ -56,6 +53,7 @@ Picture in Picture: people can browse or play content while a movie or TV show p
 
 ### visionOS
 
+- Closing the Now Playing app window pauses audio; people can resume from Control Center.
 - Multiple apps visible simultaneously in the Shared Space.
 - One window is **active** at a time — gaze determines active window. The unfocused window becomes more translucent and recedes along the z-axis.
 - Closing an app window transitions it to the background without quitting.
