@@ -2,6 +2,12 @@
 
 [![Watch the demo](https://img.youtube.com/vi/UGaSV21ff18/maxresdefault.jpg)](https://www.youtube.com/watch?v=UGaSV21ff18)
 
+## Copy-Paste Install Prompt
+
+```text
+Install the apple-hig skill for me from https://github.com/justinwetch/HIGAgentSkills.git
+```
+
 An agent skill containing 156 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across Apple platforms.
 
 ## What This Is
