@@ -7,7 +7,8 @@ triggers:
   - "live TV"
   - "live streaming"
   - "EPG"
-  - "guide"
+  - "program guide"
+  - "channel guide"
   - "cloud DVR"
   - "linear TV"
 related:

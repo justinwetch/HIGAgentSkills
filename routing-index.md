@@ -67,7 +67,7 @@ label, uilabel, text, nstextfield, caption, body text, description text → labe
 launch, launch screen, splash screen, app startup, cold start, state restoration → launching
 list, table, uitableview, row, grouped list → lists-and-tables
 live activity, dynamic island, activitykit, realtime update, activityfamily.small, activitysystemactionforegroundcolor(_:), containerrelativeshape → live-activities
-live tv, live streaming, epg, guide, cloud dvr, linear tv → live-viewing-apps
+live tv, live streaming, epg, program guide, channel guide, cloud dvr, linear tv → live-viewing-apps
 loading, skeleton, placeholder, shimmer, content loading state → loading
 mac catalyst, catalyst, ipad app on mac, scaled idiom, mac idiom → mac-catalyst
 machine learning, ml, core ml, model, prediction, classifier, apple intelligence and machine learning, create ml → machine-learning
@@ -90,7 +90,7 @@ pop-up button, drop-down selection, nspopupbutton, menupickerstyle, changesselec
 popover, uipopoverpresentationcontroller, popover(ispresented:attachmentanchor:arrowedge:content:), nspopover, floating panel → popovers
 progress bar, spinner, activity indicator, progressview, uiprogressview, uiactivityindicatorview, uirefreshcontrol, nsprogressindicator, determinate → progress-indicators
 pull-down button, dropdown button, uibutton menu, button menu, menupickerstyle, showsmenuasprimaryaction, pullsdown → pull-down-buttons
-rating, review, star rating, app review, requestreviewaction, rate prompt → ratings-and-reviews
+rating, star rating, app review, requestreviewaction, rate prompt → ratings-and-reviews
 siri remote, apple tv remote, remote control, swipe remote, clickpad, providing channel navigation → remotes
 scroll view, scrollview, paging, scroll indicator, look to scroll, scrollinputkind, pagingscrolltargetbehavior, scrolledgeeffectstyle, uiscrolledgeeffect.style, nsscrolledgeeffectstyle → scroll-views
 search field, nssearchfield, searchbar, searchable(text:placement:prompt:), uisearchbar, uisearchtextfield, search token, search suggestion → search-fields

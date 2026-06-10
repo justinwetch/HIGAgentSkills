@@ -1,14 +1,27 @@
-# apple-hig-skill
+# apple-hig
 
 [![Watch the demo](https://img.youtube.com/vi/UGaSV21ff18/maxresdefault.jpg)](https://www.youtube.com/watch?v=UGaSV21ff18)
 
-An agent skill containing 156 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across all Apple platforms.
+An agent skill containing 156 distilled Apple Human Interface Guidelines reference files, structured for accurate, context-efficient design guidance across Apple platforms.
 
 ## What This Is
 
-The Apple HIG is authoritative and comprehensive, but its full text is too large and too prose-heavy to load directly into an agent's context. This skill addresses that by distilling each HIG topic into a compact, information-dense reference file that preserves every specific rule, measurement, API name, and platform distinction while stripping pedagogical scaffolding and redundant prose.
+The Apple HIG is authoritative and comprehensive, but its full text is too large and too prose-heavy to load directly into an agent's context. This skill distills each HIG topic into a compact, information-dense reference file that preserves specific rules, measurements, API names, and platform distinctions while removing redundant explanatory prose.
 
 The result is a corpus that fits within a practical context budget and gives the agent precise, citable answers rather than paraphrased recollections.
+
+## 2026-06-09 Refresh
+
+This branch updates the skill against the Apple Human Interface Guidelines corpus captured on 2026-06-09.
+
+Highlights:
+
+- 156 distilled HIG topic files
+- 16 tier-1 foundation files loaded on every invocation
+- Restored Design Principles coverage as a tier-1, easy-triggered reference
+- Updated routing index with 1,057 trigger keywords
+- Current-source review completed for every inventoried source page
+- Full-corpus audit and continuity sampling recorded under `sources/apple-hig-2026-06-09/verification/`
 
 ## Coverage
 
@@ -41,12 +54,38 @@ The `routing-index.md` file maps 1,057 trigger keywords to their corresponding r
 
 ```
 SKILL.md               Agent entry point and loading protocol
+README.md              Skill overview and release/install notes
 routing-index.md       Keyword-to-file routing map (auto-generated)
-distilled/             156 reference files, one per HIG topic
+distilled/             156 runtime reference files, one per HIG topic
   *.md
 ```
 
 Each `distilled/*.md` file includes YAML frontmatter with `topic`, `tier`, `platforms`, `category`, `triggers`, and `related` fields. The agent reads these fields to navigate the corpus without loading every file.
+
+## Runtime Zip
+
+Production testing should use the script-generated runtime zip, not the full repository.
+
+Build the Claude-safe package with:
+
+```powershell
+python scripts\package_runtime_zip.py
+```
+
+This writes `release/apple-hig.zip`. The archive contains exactly one top-level folder named `apple-hig/` with:
+
+```
+apple-hig/
+  SKILL.md
+  README.md
+  routing-index.md
+  distilled/
+    *.md
+```
+
+The packaging script writes forward-slash paths only, omits directory metadata, validates archive paths, and excludes hidden files, macOS resource forks, `sources/`, `scripts/`, `process.md`, `.gitignore`, raw Apple captures, rendered pages, caches, and git metadata. Those files are useful for repo review and future maintenance, but they are not required for an installed skill and should not be loaded by production agents.
+
+To test locally, unzip or install the `apple-hig/` folder into your agent skills directory, then ask Apple platform design questions that should trigger tier-1 foundations, platform files, and component-specific files.
 
 ## Token Budget
 
@@ -67,7 +106,9 @@ Each compression pass was followed by an evaluation step to confirm that no subs
 
 ## Installation
 
-Drop this directory into your agent skills path. The skill triggers when a request involves Apple platform design, HIG components, specific measurements, or Apple framework integration.
+Use the runtime zip for production testing. After extraction, the installed skill directory must be named `apple-hig` so the folder name matches the `name: apple-hig` metadata in `SKILL.md`.
+
+The skill triggers when a request involves Apple platform design, HIG components, specific measurements, Apple framework integration, or general interface design work that should use Apple's Design Principles as grounding.
 
 ## Attribution
 

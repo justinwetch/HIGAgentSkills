@@ -2,6 +2,16 @@
 
 *
 
+# Keep local release/package outputs out of git
+release/
+*.zip
+*.tmp
+*.temp
+tmp/
+temp/
+staging/
+package/
+
 # Allow the skill itself
 !SKILL.md
 !routing-index.md
@@ -24,6 +34,13 @@ scripts/**/*.pyc
 !sources/*/disposition-overrides.json
 !sources/*/verification/
 !sources/*/verification/**
+sources/*/raw/
+sources/*/rendered/
+sources/*/cache/
+sources/*/caches/
+sources/*/normalized/
+sources/*/tmp/
+sources/*/temp/
 
 # Allow the distilled reference files
 !distilled/

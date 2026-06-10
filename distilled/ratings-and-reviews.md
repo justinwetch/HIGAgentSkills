@@ -5,7 +5,6 @@ platforms: [ios, ipados, macos, tvos, visionos, watchos]
 category: patterns/ux
 triggers:
   - "rating"
-  - "review"
   - "star rating"
   - "app review"
   - "RequestReviewAction"

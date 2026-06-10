@@ -35,7 +35,9 @@ related:
 - **Add related passes as a group** - e.g., multi-leg boarding passes or a set of event tickets.
 - **Display Add to Apple Wallet / View in Wallet** wherever pass info appears.
 - **Supply relevance context** (time/location) so passes surface on the Lock Screen; event tickets can also start a Live Activity.
+- **Set expiration date, relevant date, and voided correctly** so Wallet can hide expired/invalid passes and surface relevant ones.
 - **Keep passes up to date** for time-critical info like gate, delay, venue, or balance changes.
+- **Use change messages only for time-critical updates** people need immediately. Never use them for marketing or noncritical changes.
 - **Always get permission before deleting a pass** from Wallet.
 
 ## Designing Passes
@@ -44,6 +46,7 @@ Use **Pass Designer** to design and preview passes from Apple templates or a bla
 
 - **Use semantic tags where required** - poster event and semantic boarding passes require semantic tags for automatic layout; include pass fields too for older iOS versions.
 - **Keep the front uncluttered** - put essential, glanceable information in header/primary areas; move rarely used details to the additional information sheet.
+- **Preserve field roles** - logo/logo text identify brand; header stays visible when collapsed; primary is the most important usage info; secondary/auxiliary are useful but less critical; footer/back hold supplemental details.
 - **Reserve images for visual content** - don't embed text or barcodes in images; text belongs in fields/semantic tags, barcodes in pass APIs.
 - **Design for every device** - essential information must survive watchOS cropping and omitted image areas.
 - **Use brand color and readable contrast**; avoid custom fonts that reduce legibility.
