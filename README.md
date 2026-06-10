@@ -4,6 +4,8 @@
 
 ## Copy-Paste Install Prompt
 
+Copy and paste this message to your agent to have this skill automatically installed for you.
+
 ```text
 Install the apple-hig skill for me from https://github.com/justinwetch/HIGAgentSkills.git
 ```
