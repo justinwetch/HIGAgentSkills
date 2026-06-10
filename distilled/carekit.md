@@ -1,7 +1,7 @@
 ---
 topic: carekit
 tier: 4
-platforms: [ios, tvos, visionos]
+platforms: [ios, ipados]
 category: technologies
 triggers:
   - "CareKit"
@@ -81,5 +81,5 @@ Two styles: **simple** and **detailed**. Support phone, message, email, and map.
 ## Symbols and Branding
 
 - CareKit provides built-in symbols (phone, message, envelope, clock). Use them — most styles work best without customization.
-- **Grid-style task views** support custom symbols. Prefer SF Symbols; create custom ones for unique content.
+- **Grid-style task views** support custom symbols. Prefer SF Symbols; create custom ones for unique content. Custom care symbols must be relevant to the app, health, or wellness task; don't use decorative symbols or corporate logos.
 - **Subtle branding only** — convey brand through color and communication style, not prominent logos. Never show advertising.

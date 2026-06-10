@@ -7,14 +7,12 @@ triggers:
   - "list"
   - "table"
   - "UITableView"
-  - "List"
   - "row"
-  - "swipe actions"
   - "grouped list"
 related:
-  - scroll-views
   - outline-views
   - collections
+  - layout
 ---
 # Lists and Tables
 

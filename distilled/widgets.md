@@ -1,7 +1,7 @@
 ---
 topic: widgets
 tier: 3
-platforms: [ios, ipados, macos, watchos]
+platforms: [ios, ipados, macos, watchos, visionos]
 category: components/system
 triggers:
   - "widget"
@@ -9,10 +9,17 @@ triggers:
   - "home screen widget"
   - "lock screen widget"
   - "Smart Stack"
+  - "CarPlay widget"
+  - "StandBy"
+  - "rendering mode"
+  - "accented"
+  - "vibrant"
+  - "WidgetTexture"
+  - "RelevanceKit"
 related:
   - live-activities
   - complications
-  - app-clips
+  - layout
 ---
 # Widgets
 
@@ -57,6 +64,8 @@ related:
 
 ## Best Practices
 
+- **Choose automatic vs. configurable content intentionally** - use configuration when people need to choose what the widget shows; otherwise prefer recent/relevant content that works without setup.
+
 - **Timely, changing content** — static content that never changes loses its Home Screen spot.
 - **Quick access to relevant content** — deep link directly; don't replicate just an app icon.
 - **Multiple sizes only when each adds genuine value** — expand content thoughtfully, not just to fill space.
@@ -80,11 +89,16 @@ related:
 - **Corner radius**: use SwiftUI container to match widget corner radius.
 - **Text**: use system font + text styles + SF Symbols. Custom fonts: used sparingly; system font for small text.
 
+- **Avoid rasterizing text** - use text elements/styles so text scales and VoiceOver can speak it.
+- **Dynamic Type**: on iOS, iPadOS, and visionOS, widgets support Large through AX5 when using SwiftUI system/custom font APIs.
+
 ### Color
 
 - **Color enhances but doesn't compete** with content.
 - **Convey meaning via text + iconography, not color alone** — tinted/clear appearances desaturate.
 - **Full-color images**: consider carefully in tinted/clear appearances; may feel out of place. Reserve for media content (album art etc.); use smaller than the full widget size.
+
+- **Support light and dark appearances** for full-color rendering; prefer semantic colors and asset variants that adapt.
 
 ## Rendering Mode Implementation
 
@@ -150,12 +164,42 @@ Widgets are 3D objects placed on real-world surfaces. Persist across sessions in
 | Screen (portrait, pt) | Small | Medium | Large | Circular | Rectangular | Inline |
 |---|---|---|---|---|---|---|
 | 430×932 | 170×170 | 364×170 | 364×382 | 76×76 | 172×76 | 257×26 |
+| 428x926 | 170x170 | 364x170 | 364x382 | 76x76 | 172x76 | 257x26 |
+| 414x896 | 169x169 | 360x169 | 360x379 | 76x76 | 160x72 | 248x26 |
+| 414x736 | 159x159 | 348x157 | 348x357 | 76x76 | 170x76 | 248x26 |
 | 393×852 | 158×158 | 338×158 | 338×354 | 72×72 | 160×72 | 234×26 |
 | 390×844 | 158×158 | 338×158 | 338×354 | 72×72 | 160×72 | 234×26 |
 | 375×812 | 155×155 | 329×155 | 329×345 | 72×72 | 157×72 | 225×26 |
 | 375×667 | 148×148 | 321×148 | 321×324 | 68×68 | 153×68 | 225×26 |
+| 360x780 | 155x155 | 329x155 | 329x345 | 72x72 | 157x72 | 225x26 |
+| 320x568 | 141x141 | 292x141 | 292x311 | N/A | N/A | N/A |
 
-*(See full table in HIG for all screen sizes down to 320×568.)*
+### iPadOS Widget Sizes (pt)
+
+| Screen (portrait, pt) | Target | Small | Medium | Large | Extra large |
+|---|---|---|---|---|---|
+| 768x1024 | Canvas | 141x141 | 305.5x141 | 305.5x305.5 | 634.5x305.5 |
+| 768x1024 | Device | 120x120 | 260x120 | 260x260 | 540x260 |
+| 744x1133 | Canvas | 141x141 | 305.5x141 | 305.5x305.5 | 634.5x305.5 |
+| 744x1133 | Device | 120x120 | 260x120 | 260x260 | 540x260 |
+| 810x1080 | Canvas | 146x146 | 320.5x146 | 320.5x320.5 | 669x320.5 |
+| 810x1080 | Device | 124x124 | 272x124 | 272x272 | 568x272 |
+| 820x1180 | Canvas | 155x155 | 342x155 | 342x342 | 715.5x342 |
+| 820x1180 | Device | 136x136 | 300x136 | 300x300 | 628x300 |
+| 834x1112 | Canvas | 150x150 | 327.5x150 | 327.5x327.5 | 682x327.5 |
+| 834x1112 | Device | 132x132 | 288x132 | 288x288 | 600x288 |
+| 834x1194 | Canvas | 155x155 | 342x155 | 342x342 | 715.5x342 |
+| 834x1194 | Device | 136x136 | 300x136 | 300x300 | 628x300 |
+| 954x1373* | Canvas | 162x162 | 350x162 | 350x350 | 726x350 |
+| 954x1373* | Device | 162x162 | 350x162 | 350x350 | 726x350 |
+| 970x1389* | Canvas | 162x162 | 350x162 | 350x350 | 726x350 |
+| 970x1389* | Device | 162x162 | 350x162 | 350x350 | 726x350 |
+| 1024x1366 | Canvas | 170x170 | 378.5x170 | 378.5x378.5 | 795x378.5 |
+| 1024x1366 | Device | 160x160 | 356x160 | 356x356 | 748x356 |
+| 1192x1590* | Canvas | 188x188 | 412x188 | 412x412 | 860x412 |
+| 1192x1590* | Device | 188x188 | 412x188 | 412x412 | 860x412 |
+
+*Display Zoom set to More Space.
 
 ### visionOS Widget Sizes
 

@@ -1,7 +1,7 @@
 ---
 topic: healthkit
 tier: 3
-platforms: [ios, ipados, tvos]
+platforms: [ios, ipados, watchos]
 category: technologies
 triggers:
   - "HealthKit"
@@ -9,11 +9,11 @@ triggers:
   - "activity ring"
   - "workout data"
   - "HKHealthStore"
+  - "requestAuthorization(toShare:read:completion:)"
+  - "HKActivityRingView"
 related:
   - activity-rings
   - workouts
-  - carekit
-  - researchkit
 ---
 # HealthKit
 
@@ -47,6 +47,7 @@ The Activity ring element shows Move, Exercise, and Stand progress. Colors and r
 
 ## Apple Health Icon
 
+- Don't display Health app images or screenshots.
 - Use only Apple-provided artwork — no custom icons.
 - **Display "Apple Health" text near the icon** for clarity.
 - Match size with other health-related app icons in the same view.

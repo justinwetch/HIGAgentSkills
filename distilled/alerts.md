@@ -12,8 +12,8 @@ triggers:
   - "UIAlertController"
 related:
   - action-sheets
+  - sheets
   - modality
-  - writing
 ---
 # Alerts
 

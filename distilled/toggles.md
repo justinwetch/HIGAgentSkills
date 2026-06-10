@@ -6,12 +6,20 @@ category: components/controls
 triggers:
   - "toggle"
   - "switch"
+  - "checkbox"
+  - "radio button"
   - "UISwitch"
+  - "NSSwitch"
+  - "NSButton.ButtonType.toggle"
+  - "ToggleStyle"
+  - "allowsMixedState"
   - "on/off control"
   - "boolean control"
 related:
   - buttons
   - segmented-controls
+  - pop-up-buttons
+  - layout
 ---
 # Toggles
 

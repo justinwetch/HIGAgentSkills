@@ -12,8 +12,8 @@ triggers:
   - "system feedback"
 related:
   - playing-haptics
+  - playing-audio
   - motion
-  - loading
 ---
 # Feedback
 
@@ -25,7 +25,7 @@ Match delivery method to significance: passive status info shown inline when nee
 
 ## Best Practices
 
-- **Make all feedback multimodal** — combine color, text, sound, and haptics so it reaches people regardless of whether they mute their device, look away, or use VoiceOver.
+- **Make feedback accessible** — when appropriate, combine color, text, sound, and haptics so feedback can reach people who mute their device, look away, or use VoiceOver.
 - **Integrate status feedback into the interface** — show it near the items it describes, without requiring action or context switches (e.g., Mail shows last-update time and unread count in the mailbox toolbar).
 - **Use alerts only for critical, actionable information** — alerts disrupt flow; overuse or low-priority use dilutes their impact.
 - **Warn before unexpected, irreversible data loss** — don't warn for expected data loss (e.g., Finder doesn't warn when trashing a file because deletion is the intent).

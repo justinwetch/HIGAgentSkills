@@ -14,6 +14,7 @@ related:
   - alerts
   - action-sheets
   - popovers
+  - activity-views
 ---
 # Modality
 
@@ -28,6 +29,8 @@ Use modality to:
 - Enable an immersive or complex task experience
 
 **Components:** alerts (all platforms), activity views, sheets, action sheets, confirmation dialogs; iPadOS/macOS/visionOS can also use separate windows for distinct tasks.
+
+Use sheets or popovers for scoped, distinct tasks that should stay close to the current context without becoming a full navigation destination.
 
 ## Best Practices
 

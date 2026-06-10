@@ -10,6 +10,8 @@ triggers:
   - "model"
   - "prediction"
   - "classifier"
+  - "Apple Intelligence and machine learning"
+  - "Create ML"
 related:
   - generative-ai
 ---
@@ -28,10 +30,12 @@ Evaluating your ML feature across these dimensions guides your design decisions:
 | **Critical vs. Complementary** | Critical: Face ID fails without ML. Complementary: QuickType still works without suggestions. |
 | **Private vs. Public data** | Health misreads → anxiety/lost trust; music misreads → inconsequential. Higher sensitivity = must prioritize accuracy. |
 | **Proactive vs. Reactive** | Proactive: Siri Suggestions based on routine. Reactive: QuickType responds to current input. Proactive requires higher accuracy — users didn't ask for it. |
-| **Visible vs. Invisible** | Visible: word completion list. Invisible: keyboard tap-area optimization. Visibility affects how people perceive reliability. |
+| **Visible vs. Invisible** | Visible: Image Playground. Invisible: News suggestions. Visibility affects how people perceive reliability. |
 | **Dynamic vs. Static** | Dynamic: Face ID adapts to changing faces. Static: Photos improves object recognition per iOS release. |
 
 ## Explicit Feedback
+
+Make clear when and where feedback changes future results.
 
 Explicit feedback = information people provide in response to a specific app request.
 *(Favoriting and social feedback are implicit, not explicit — people use them for their own goals.)*
@@ -58,6 +62,8 @@ Implicit feedback = behavioral data gathered from how people use your app.
 - **Beware confirmation bias** — implicit feedback reflects what's already visible; doesn't reveal new interests.
 
 ## Calibration
+
+Always secure people's information. Avoid questions people must look up or actions that are difficult to complete.
 
 Calibration = initial data collection before a feature can work.
 

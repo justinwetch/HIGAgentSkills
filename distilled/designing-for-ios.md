@@ -1,7 +1,7 @@
 ---
 topic: designing-for-ios
 tier: 2
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [ios]
 category: platforms
 triggers:
   - "iOS"
@@ -25,10 +25,10 @@ related:
 |---|---|
 | **Display** | Medium-size, high-resolution |
 | **Ergonomics** | One or both hands; portrait or landscape; viewing distance ≤1–2 ft |
-| **Inputs** | Multi-Touch gestures, virtual keyboard, Siri; gyro/accelerometer; spatial interactions |
+| **Inputs** | Multi-Touch gestures, virtual keyboard, voice control; gyro/accelerometer; spatial interactions |
 | **Usage pattern** | Ranges from quick 1–2 min checks to 1+ hr sessions; multiple apps open simultaneously, frequent switching |
 
-**Key system integrations:** widgets, home screen quick actions, Spotlight search, Siri shortcuts/suggestions, activity views.
+**Key system integrations:** widgets, home screen quick actions, Spotlight search, Shortcuts, activity views.
 
 ## Best Practices
 

@@ -1,36 +1,38 @@
 ---
 topic: tab-views
 tier: 4
-platforms: [macos, ipados, tvos]
+platforms: [macos, watchos]
 category: components/macos
 triggers:
   - "tab view"
+  - "TabView"
   - "NSTabView"
   - "macOS tab view"
   - "tabbed pane"
+  - "watchOS page control"
 related:
   - tab-bars
-  - sidebars
+  - segmented-controls
 ---
 # Tab Views
 
-> A tab view presents multiple mutually exclusive panes of content in the same area, switchable via a tabbed control.
+> A tab view presents multiple mutually exclusive panes of closely related content in the same area.
 
 **Platforms:** macOS, watchOS *(not iOS, iPadOS, tvOS, or visionOS)*
 
-- iOS/iPadOS alternative: segmented controls.
-- watchOS: tab views are rendered as page-controls.
+- iOS/iPadOS alternative: segmented controls for similar local mutually exclusive panes.
+- watchOS: `TabView` renders as page-by-page content with a page indicator.
 
 ## Best Practices
 
-- **Closely related content** — visual enclosure implies content similarity between panes.
-- **Controls within a pane affect only that pane** — panes are fully self-contained.
-- **Descriptive label for each tab** — nouns or short noun phrases. Title-style capitalization. Helps people predict pane content before clicking.
-- **Don't use a pop-up button to switch between tabs** — requires two interactions vs. one; also hides choices. (A pop-up button can be a fallback when too many panes make tabs impractical.)
-- **Max 6 tabs** — more is overwhelming and creates layout issues. For 6+ panes, consider a pop-up button menu or another layout.
+- **Closely related content** - visual enclosure implies content similarity between panes.
+- **Controls within a pane affect only that pane** - panes are fully self-contained.
+- **Descriptive label for each tab** - nouns or short noun phrases. Title-style capitalization.
+- **Don't use a pop-up button to switch between tabs** - it takes more interactions and hides choices.
+- **Max 6 tabs** - for more panes, consider a pop-up menu or another layout.
 
 ## Anatomy
 
-- Tabbed control at top edge of content area. Can be hidden (for programmatic switching).
-- When hidden, content area can be: borderless (solid or transparent) or bezeled/bordered with a line.
-- **Inset by a margin of window-body area on all sides** (standard layout). Extending to window edges is possible but unusual.
+- Tabbed control at top edge of content area. Can be hidden for programmatic switching.
+- When hidden, content area can be borderless or bezeled/bordered.
+- Standard macOS layout insets the tab view from the window-body area on all sides.

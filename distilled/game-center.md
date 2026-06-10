@@ -20,6 +20,10 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
+Initialize and sign in to Game Center at launch so players can access achievements, leaderboards, challenges, friends, and multiplayer without extra setup.
+
+Discovery surfaces include **Top Played**, social recommendations, the Apple Games app, App Store, and notifications.
+
 ## Access Point
 
 The **access point** lets players view their Game Center profile without leaving your game. On iOS/iPadOS/macOS it opens the **Game Overlay**; on visionOS/tvOS it opens the **in-game dashboard** (full-screen).
@@ -44,6 +48,13 @@ The **access point** lets players view their Game Center profile without leaving
 
 ## Achievements
 
+**Achievement image specs:** PNG/TIF/JPG, sRGB or P3, 72 DPI minimum. Keep primary content centered because the system applies a circular mask.
+
+| Platform | Image | Mask |
+|---|---|---|
+| iOS, iPadOS, macOS, visionOS | 512x512 pt (1024x1024 px @2x) | 512 pt (1024 px @2x) circle |
+| tvOS | 320x320 pt (640x640 px @2x) | 200 pt (400 px @2x) circle |
+
 - **Map to Game Center states**: locked, in-progress, hidden, completed. System groups by completion (Completed vs. Locked).
 - **Order before upload** — upload order = display order.
 - **Title**: ≤2 lines, title-style caps. **Description**: ≤2 lines, sentence-style caps.
@@ -51,6 +62,13 @@ The **access point** lets players view their Game Center profile without leaving
 - **Achievement image**: applied circular mask — keep content centered. High quality, unique per achievement.
 
 ## Leaderboards
+
+**Leaderboard image specs:** sRGB or P3, 72 DPI minimum.
+
+| Platform | Format | Source | Display/crop |
+|---|---|---|---|
+| iOS, iPadOS, macOS | JPEG/JPG/PNG | 512x512 pt (1024x1024 px @2x) | 512x312 pt (1024x624 px @2x) crop |
+| tvOS | PNG/TIF/JPG | 659x371 pt (1318x742 px @2x) | 618x348 pt focused; 548x309 pt unfocused |
 
 **Types:**
 - **Classic** — tracks best all-time score, always active.
@@ -80,11 +98,15 @@ The **access point** lets players view their Game Center profile without leaving
 
 ## Multiplayer
 
-- **Party codes**: 8-character alphanumeric (e.g., "2MP4-9CMF"). Let players join late, leave early, return later. Show code in-game; let players enter codes manually.
+- Default invite sources: nearby players, recent players, Game Center friends, and contacts.
+- **Party codes**: typically 8-character alphanumeric (e.g., "2MP4-9CMF"). Let players join late, leave early, return later. Show code in-game; let players enter codes manually.
 - **Multiplayer activity artwork** (same spec as challenge artwork):
 
 | Attribute | Value |
 |---|---|
+| Format | JPEG, JPG, or PNG |
+| Color space | sRGB or P3 |
+| Resolution | 72 DPI minimum |
 | Image size | 1920×1080 pt (3840×2160 px @2x) |
 | Cropped area | 1465×767 pt (2930×1534 px @2x) |
 

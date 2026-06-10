@@ -1,13 +1,13 @@
 ---
 topic: designing-for-tvos
 tier: 2
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [tvos]
 category: platforms
 triggers:
   - "tvOS"
   - "Apple TV"
   - "Siri Remote"
-  - "10-foot"
+  - "8 feet or more"
   - "lean-back"
 related:
   - focus-and-selection
@@ -34,6 +34,6 @@ related:
 ## Best Practices
 
 - Support fluid, familiar Siri Remote gestures — the remote is the primary interaction model.
-- Embrace the focus system — it gently highlights and expands focused items, orienting people at all times. Never fight it.
+- Embrace the focus system — it gently highlights and expands focused items, orienting people at all times.
 - Deliver edge-to-edge artwork, subtle fluid animations, and engaging audio — cinematic, legible, captivating from across the room.
 - Enhance multi-user support: make sign-in easy and infrequent, support shared sign-in, and auto-switch profiles when the current viewer changes.

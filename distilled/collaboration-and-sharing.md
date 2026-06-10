@@ -1,7 +1,7 @@
 ---
 topic: collaboration-and-sharing
 tier: 3
-platforms: [ios, ipados, macos, visionos]
+platforms: [ios, ipados, macos, visionos, watchos]
 category: patterns/ux
 triggers:
   - "share"

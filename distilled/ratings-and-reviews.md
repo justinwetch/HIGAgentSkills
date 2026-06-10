@@ -5,14 +5,11 @@ platforms: [ios, ipados, macos, tvos, visionos, watchos]
 category: patterns/ux
 triggers:
   - "rating"
-  - "review"
   - "star rating"
   - "app review"
-  - "SKStoreReviewController"
+  - "RequestReviewAction"
   - "rate prompt"
-related:
-  - in-app-purchase
-  - notifications
+related: []
 ---
 # Ratings and Reviews
 
@@ -21,6 +18,8 @@ related:
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
 ## Best Practices
+
+Use the system-provided prompt on iOS, iPadOS, and macOS.
 
 - **Ask only after demonstrated engagement** — not on first launch, not during onboarding. Good prompting moments: completion of a game level, task, or meaningful milestone.
 - **Don't interrupt tasks** — find natural breaks or stopping points.

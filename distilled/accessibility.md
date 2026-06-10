@@ -11,8 +11,8 @@ triggers:
   - "touch target"
 related:
   - voiceover
-  - focus-and-selection
   - inclusion
+  - typography
 ---
 # Accessibility
 
@@ -21,6 +21,8 @@ related:
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
 An accessible interface is **intuitive** (familiar, consistent interactions), **perceivable** (no single-modality dependency), and **adaptable** (responds to system accessibility features).
+
+Audit with Accessibility Inspector and review Accessibility Nutrition Labels when evaluating accessibility coverage.
 
 ## Vision
 
@@ -55,9 +57,12 @@ An accessible interface is **intuitive** (familiar, consistent interactions), **
 
 - Provide captions for video/audio-only content (synchronized text).
 - Provide subtitles for multilingual dialogue.
+- Let people customize caption/subtitle presentation when possible.
 - Provide audio descriptions for visual-only info in video.
 - Provide transcripts for longer-form audio (podcasts, audiobooks).
 - Pair audio cues with haptics (success, error, game feedback).
+- iOS/iPadOS: support Music Haptics where relevant.
+- Data visualizations: support Audio Graphs.
 - Add visual cues alongside audio cues — critical for off-screen game events.
 
 ## Mobility
@@ -72,7 +77,7 @@ An accessible interface is **intuitive** (familiar, consistent interactions), **
 | visionOS | 60×60pt | 28×28pt |
 | watchOS | 44×44pt | 28×28pt |
 
-- Add ~12pt padding around bezeled elements, ~24pt around unbezel elements.
+- Add ~12pt padding around bezeled elements, ~24pt around unbezeled elements.
 - Use simplest gestures for frequent interactions. Avoid custom multi-finger/multi-hand gestures.
 - Always provide an onscreen alternative to every gesture (e.g., button alongside swipe-to-dismiss).
 - Label elements correctly for Voice Control and VoiceOver.
@@ -80,6 +85,7 @@ An accessible interface is **intuitive** (familiar, consistent interactions), **
 
 ## Speech
 
+- Support voice-only task execution through Siri and Shortcuts. Expose frequent actions through Siri, the Action button on iPhone/Apple Watch, Home Screen, and Control Center where appropriate.
 - Support Full Keyboard Access — app must be fully navigable by keyboard alone.
 - Don't override system keyboard shortcuts.
 - Support Switch Control (hardware, game controllers, or sound inputs).
@@ -89,8 +95,8 @@ An accessible interface is **intuitive** (familiar, consistent interactions), **
 - Use simple, consistent, memorable interactions. Prefer system-native gestures.
 - Avoid time-boxed auto-dismissing UI — prefer explicit dismissal actions.
 - Let players customize game difficulty (reaction time, success criteria, control assistance).
-- Provide controls to start/stop all auto-playing audio and video. Support Dim Flashing Lights for video.
-- When Reduce Motion is on, reduce: repetitive/automatic animations, zoom/scale transitions, z-axis depth changes. Replace motion transitions with fades. Tighten animation springs.
+- Provide controls to start/stop all auto-playing audio and video. Check `isVideoAutoplayEnabled` for autoplay behavior. Support Dim Flashing Lights for video.
+- When Reduce Motion is on, reduce repetitive/automatic animations, zoom/scale transitions, z-axis depth changes, and blur animations. Let animations track directly with people's gestures when motion is part of manipulation. Replace motion transitions with fades where appropriate. Tighten animation springs.
 
 **Assistive Access (iOS/iPadOS — cognitive disability mode):**
 - Identify core functionality; remove noncritical workflows and UI elements.
@@ -101,6 +107,6 @@ An accessible interface is **intuitive** (familiar, consistent interactions), **
 
 ### visionOS
 
-- Provide alternatives to gaze interactions; support Pointer Control.
+- Provide alternatives to gaze interactions; support hand/head Pointer Control and Zoom.
 - Comfort guidelines: keep UI within field of view, prefer horizontal layouts, reduce peripheral animation speed, avoid head-anchored content, minimize large/repetitive gestures.
 - Be cautious with camera motion — avoid involuntary world-movement sensations.

@@ -10,10 +10,10 @@ triggers:
   - "NSTextField"
   - "form field"
 related:
-  - keyboards
+  - text-views
+  - combo-boxes
   - virtual-keyboards
   - entering-data
-  - search-fields
 ---
 # Text Fields
 

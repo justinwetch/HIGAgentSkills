@@ -12,6 +12,7 @@ triggers:
 related:
   - progress-indicators
   - feedback
+  - launching
 ---
 # Loading
 
@@ -35,4 +36,4 @@ related:
 
 ### watchOS
 
-Avoid loading indicators as much as possible — people expect immediate interactions. For the rare cases where content takes a second or two, show a brief loading indicator rather than a blank screen (blank is worse than a spinner here, even though spinners are otherwise discouraged).
+Avoid loading indicators as much as possible — people expect immediate interactions. For the rare cases where content takes a second or two, show a brief loading indicator rather than a blank screen.

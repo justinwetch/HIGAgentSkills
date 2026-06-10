@@ -1,18 +1,17 @@
 ---
 topic: sliders
 tier: 3
-platforms: [ios, ipados, macos, visionos]
+platforms: [ios, ipados, macos, visionos, watchos]
 category: components/controls
 triggers:
   - "slider"
   - "UISlider"
+  - "NSSlider"
   - "continuous value"
   - "range control"
-  - "scrubber"
 related:
+  - pickers
   - steppers
-  - gauges
-  - digital-crown
 ---
 # Sliders
 
@@ -25,14 +24,14 @@ Filled track between minimum and thumb shows current value. Optional left/right 
 ## Best Practices
 
 - **Customize appearance when it adds value** — track color, thumb image/tint, left/right icons. Example: image-size slider with small→large image icons.
-- **Consistent direction** — min on leading, max on trailing (horizontal); min at bottom, max at top (vertical). Always 0% (min) on the leading side.
+- **Consistent direction** — min on leading, max on trailing (horizontal); min at bottom, max at top (vertical).
 - **Consider pairing with a text field and stepper** for wide value ranges — lets people both drag and type an exact value.
 
 ## Platform Considerations
 
 ### iOS, iPadOS
 
-- **Don't use a slider for audio volume** — use `MPVolumeView` (volume view), which includes an output-device selector.
+- **Don't use a slider for audio volume** — use a volume view, which includes an output-device selector.
 
 ### macOS
 

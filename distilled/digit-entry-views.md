@@ -1,16 +1,16 @@
 ---
 topic: digit-entry-views
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [tvos]
 category: components/controls
 triggers:
   - "digit entry"
   - "PIN entry"
   - "passcode entry"
-  - "WKInterfaceDigitalCrownSequencer"
+  - "TVDigitEntryViewController"
+  - "isSecureDigitEntry"
 related:
-  - text-fields
-  - digital-crown
+  - virtual-keyboards
 ---
 # Digit Entry Views
 
@@ -22,5 +22,5 @@ Optional title and prompt appear above the digit line.
 
 ## Best Practices
 
-- **Always use secure digit fields** — shows asterisks instead of entered digits. Required for sensitive data.
+- **Use secure digit fields for sensitive data** — shows asterisks instead of entered digits.
 - **Explain the purpose clearly** — title and prompt must communicate why digits are needed.

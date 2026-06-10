@@ -1,7 +1,7 @@
 ---
 topic: focus-and-selection
 tier: 3
-platforms: [ipados, macos, tvos]
+platforms: [ipados, macos, tvos, visionos]
 category: patterns/interaction
 triggers:
   - "focus"
@@ -9,6 +9,9 @@ triggers:
   - "selection"
   - "keyboard navigation"
   - "directional focus"
+  - "UIFocusHaloEffect"
+  - "focusGroupIdentifier"
+  - "UIFocusGroupPriority"
 related:
   - remotes
   - keyboards

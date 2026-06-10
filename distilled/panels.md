@@ -1,17 +1,18 @@
 ---
 topic: panels
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: components/macos
 triggers:
   - "panel"
   - "NSPanel"
+  - "hudWindow"
   - "floating window"
   - "inspector panel"
   - "heads-up display"
 related:
   - windows
-  - popovers
+  - modality
 ---
 # Panels
 
@@ -29,7 +30,7 @@ Less visually prominent than main windows. Can use a dark, translucent HUD style
 - **Brief, noun-phrase title** — title-style capitalization. People need to identify and reposition the panel. Classic examples: "Fonts", "Colors", "Inspector."
 - **Show/hide appropriately** — show all open panels when the app becomes active (regardless of which window was active when the panel opened). Hide all panels when the app is inactive.
 - **Don't list panels in the Window menu's documents list** — show/hide commands in the Window menu are fine; panels aren't documents.
-- **No minimize button** — panels aren't normally minimized; they appear only when needed and disappear with the app.
+- **In general, avoid making panels minimizable** — panels normally appear only when needed and disappear with the app.
 - **Refer to panels by title** in UI and docs — "Show Fonts" / "Show Colors" / "Show Inspector" (no word "panel"). In help docs, use the title alone ("Inspector") or append "window" for clarity ("Fonts window", "Colors window").
 
 ## HUD-Style Panels

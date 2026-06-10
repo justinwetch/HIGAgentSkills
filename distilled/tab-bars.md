@@ -1,7 +1,7 @@
 ---
 topic: tab-bars
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: components/navigation
 triggers:
   - "tab bar"
@@ -9,9 +9,19 @@ triggers:
   - "bottom navigation"
   - "tab item"
   - "tab icon"
+  - "Liquid Glass tab bar"
+  - "TabBarMinimizeBehavior"
+  - "UITabBarController.MinimizeBehavior"
+  - "tabBarOnly"
+  - "sidebarAdaptable"
+  - "TabViewCustomization"
+  - "UITab.Placement"
+  - "TabViewBottomAccessoryPlacement"
 related:
   - sidebars
+  - tab-views
   - toolbars
+  - materials
   - focus-and-selection
 ---
 # Tab Bars

@@ -12,6 +12,9 @@ triggers:
 related:
   - sf-symbols
   - app-icons
+  - inclusion
+  - right-to-left
+  - voiceover
 ---
 # Icons
 

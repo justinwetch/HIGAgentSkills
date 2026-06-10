@@ -12,7 +12,11 @@ triggers:
   - "duration"
 related:
   - feedback
-  - gestures
+  - accessibility
+  - spatial-layout
+  - immersive-experiences
+  - playing-haptics
+  - playing-audio
 ---
 # Motion
 

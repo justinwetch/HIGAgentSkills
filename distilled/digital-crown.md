@@ -1,16 +1,20 @@
 ---
 topic: digital-crown
 tier: 3
-platforms: [visionos, ipados, macos]
+platforms: [visionos, watchos]
 category: components/watchos
 triggers:
   - "Digital Crown"
   - "crown"
   - "haptic detent"
   - "crown input"
+  - "WKCrownDelegate"
 related:
   - designing-for-watchos
   - gestures
+  - feedback
+  - action-button
+  - immersive-experiences
 ---
 # Digital Crown
 

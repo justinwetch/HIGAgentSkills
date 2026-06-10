@@ -1,7 +1,7 @@
 ---
 topic: undo-and-redo
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: patterns/interaction
 triggers:
   - "undo"
@@ -9,11 +9,16 @@ triggers:
   - "UndoManager"
   - "shake to undo"
   - "Cmd-Z"
+  - "three-finger swipe"
   - "edit history"
 related:
   - edit-menus
   - gestures
   - file-management
+  - feedback
+  - pointing-devices
+  - keyboards
+  - the-menu-bar
 ---
 # Undo and Redo
 
@@ -27,9 +32,9 @@ People expect to undo repeatedly. They may not remember exactly which action an 
 
 - **Predict the result** — describe what will be undone before it happens. On iPhone shake-to-undo, show the result in the alert text. In menu items, use descriptive labels: "Undo Typing", "Redo Bold".
 - **Show the result after undo/redo** — if the affected content is no longer on screen, scroll to reveal the restored content. Invisible results cause people to assume the action had no effect and repeat it.
-- **Allow unlimited undo** — don't artificially cap undo depth. People expect to undo back to when they opened or last saved a document.
+- **Avoid unnecessary undo limits** — people expect to undo back to when they opened or last saved a document when feasible.
 - **Offer batch undo when useful** — let people undo groups of related discrete changes (e.g., incremental slider adjustments) at once. Consider "Revert to Last Save" as a convenience option.
-- **Only add dedicated undo/redo buttons when necessary** — people expect system-standard methods (Edit menu, keyboard shortcuts, iPhone shake, three-finger swipe). If you do add buttons, use standard SF Symbols and place them in a toolbar.
+- **Only add dedicated undo/redo buttons when necessary** — people expect system-standard methods (Edit menu, keyboard shortcuts, iPhone shake, three-finger swipe). If you do add buttons, use standard system-provided symbols and place them in a toolbar.
 
 ## Platform Considerations
 
@@ -41,4 +46,4 @@ People expect to undo repeatedly. They may not remember exactly which action an 
 ### macOS
 
 - **Place undo/redo in the Edit menu at the top** — this is where Mac users always look for them.
-- **Support Command–Z (undo) and Shift–Command–Z (redo)** — mandatory keyboard shortcuts on macOS.
+- **Support expected shortcuts** — Command-Z for undo and Shift-Command-Z for redo on macOS.

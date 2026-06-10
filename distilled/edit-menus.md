@@ -1,7 +1,7 @@
 ---
 topic: edit-menus
 tier: 3
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: patterns/interaction
 triggers:
   - "edit menu"
@@ -9,6 +9,8 @@ triggers:
   - "selection menu"
   - "text selection"
   - "callout bar"
+  - "UIEditMenuInteraction"
+  - "UIResponderStandardEditActions"
 related:
   - context-menus
   - menus

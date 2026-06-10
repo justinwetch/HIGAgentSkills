@@ -1,15 +1,15 @@
 ---
 topic: photo-editing
 tier: 4
-platforms: [ios, ipados, visionos]
+platforms: [ios, ipados, macos]
 category: technologies
 triggers:
   - "photo editing"
-  - "PHEditingExtension"
+  - "App extensions"
+  - "PhotoKit"
   - "filter extension"
   - "photo extension"
-related:
-  - images
+related: []
 ---
 # Photo Editing
 

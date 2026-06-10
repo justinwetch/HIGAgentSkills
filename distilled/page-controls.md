@@ -1,7 +1,7 @@
 ---
 topic: page-controls
 tier: 3
-platforms: [ios, ipados, tvos, visionos]
+platforms: [ios, ipados, tvos, visionos, watchos]
 category: components/controls
 triggers:
   - "page control"
@@ -9,17 +9,22 @@ triggers:
   - "carousel"
   - "page indicator"
   - "dot indicator"
+  - "UIPageControl.InteractionState"
+  - "backgroundStyle"
+  - "preferredIndicatorImage"
+  - "setIndicatorImage(_:forPage:)"
+  - "PageTabViewStyle"
 related:
   - scroll-views
   - collections
 ---
 # Page Controls
 
-> A page control displays a row of indicator dots, each representing a page in a flat ordered list.
+> A page control displays a row of indicator images, often dots, each representing a page in a flat ordered list.
 
 **Platforms:** iOS, iPadOS, tvOS, visionOS, watchOS *(not macOS)*
 
-Default: small equidistant dots. Solid dot = current page. Clipped if too many to fit.
+Default: small equidistant dots. Solid dot = current page. Clipped if too many to fit; overflow indicators can shrink at both sides.
 
 ## Best Practices
 
@@ -39,7 +44,9 @@ Default: small equidistant dots. Solid dot = current page. Clipped if too many t
 
 ### iOS, iPadOS
 
-Three interaction modes: **tap** (leading/trailing side of current indicator → next/previous page) and **scrub** (touch + drag left/right to move through pages in sequence).
+Interaction modes: **discrete interaction** (tap leading/trailing side of current indicator to move next/previous) and **continuous interaction** (touch + drag left/right to scrub through pages). With a pointer on iPadOS, people can target a specific indicator.
+
+Two interaction modes: **tap** (leading/trailing side of current indicator → next/previous page) and **scrub** (touch + drag left/right to move through pages in sequence).
 
 Background styles:
 | Style | When | Use |

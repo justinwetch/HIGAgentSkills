@@ -1,16 +1,16 @@
 ---
 topic: dock-menus
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: components/macos
 triggers:
   - "Dock menu"
   - "right-click Dock"
   - "Dock context menu"
-  - "NSApplicationDockTile"
+  - "applicationDockMenu(_:)"
 related:
   - menus
-  - app-icons
+  - home-screen-quick-actions
 ---
 # Dock Menus
 
@@ -25,5 +25,5 @@ iOS/iPadOS equivalent: home-screen-quick-actions (long press on Home Screen or D
 ## Best Practices
 
 - **Follow general menu labeling and organization rules** (see menus).
-- **Make all Dock menu items available elsewhere** — not everyone uses the Dock menu. Mirror the same commands in the menu bar or main UI.
+- **Make custom Dock menu items available elsewhere** — not everyone uses the Dock menu. Mirror the same commands in the menu bar or main UI.
 - **Prefer high-value, context-independent items** — useful when the app is backgrounded or has no open windows. Good candidates: open windows list, "New Message", "Get Mail." Dock menus can conveniently list all open windows for fast switching.

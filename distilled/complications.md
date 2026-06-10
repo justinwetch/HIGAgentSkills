@@ -1,13 +1,18 @@
 ---
 topic: complications
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [watchos]
 category: components/watchos
 triggers:
   - "complication"
   - "ClockKit"
   - "WidgetKit complication"
   - "watch face data"
+  - "accessories"
+  - "WidgetRenderingMode"
+  - "WidgetFamily.accessoryRectangular"
+  - "TimelineProvider.placeholder(in:)"
+  - "CLKComplicationDataSource"
 related:
   - watch-faces
   - widgets
@@ -85,7 +90,7 @@ Default text: Rounded, Medium, 16.5/17.5/18/19.5 pt per watch size. Note: large-
 
 Smart Stack: supply background color/content, use AppIntents for relevancy, or create a custom Smart Stack layout. See widgets for additional guidance.
 
-### Inline (Utilitarian) — Legacy
+### Inline and Utilitarian Layouts
 
 - **Small** (corner area): image, icon, or ring. Flat content: 9–21×9 pt (38mm) → 12–26×12 pt (45/49mm).
 - **Large** (full-width bottom): text + optional leading icon. Same image sizes as small.

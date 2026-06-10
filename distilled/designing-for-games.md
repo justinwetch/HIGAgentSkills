@@ -13,6 +13,12 @@ related:
   - game-center
   - game-controls
   - focus-and-selection
+  - loading
+  - privacy
+  - ratings-and-reviews
+  - typography
+  - buttons
+  - accessibility
 ---
 # Designing for Games
 
@@ -25,7 +31,7 @@ related:
 - **Minimize install-before-play time** — include maximum playable content in initial install, keep download ≤30 min, download remaining content in background.
 - **Provide great default settings** — use device info to auto-configure resolution, detect paired controllers/accessories, and respect accessibility settings. No configuration required to start playing.
 - **Teach through play** — integrate tutorials into playable gameplay; offer written tutorials as an optional reference, not a prerequisite.
-- **Defer all permission requests** until the moment they're needed in context (e.g., ask hand-tracking permission between a cutscene and the first hand-controlled moment). Don't front-load requests before gameplay starts.
+- **Defer permission requests until the right time** in context (e.g., ask hand-tracking permission between a cutscene and the first hand-controlled moment). Don't front-load requests before gameplay starts.
 - Ask for ratings/reviews only after people have spent quality time with the game.
 
 ## Visual Quality
@@ -65,11 +71,12 @@ Default and supported interaction methods per platform:
 | iPadOS | Touch | Game controller, keyboard, mouse, trackpad, Apple Pencil |
 | macOS | Keyboard + mouse/trackpad | Game controller |
 | tvOS | Remote | Game controller, keyboard, mouse, trackpad |
-| visionOS | Eyes + indirect gestures | Game controller, keyboard, mouse, trackpad, spatial game controller |
+| visionOS | Touch | Game controller, keyboard, mouse, trackpad, spatial game controller |
 | watchOS | Touch | — |
 
 - Support physical game controllers on all platforms except watchOS — but always provide alternatives for players who can't use one.
 - Offer touch-based game controls on iPhone/iPad: direct interaction with game elements and virtual on-screen controls.
+- In visionOS, expect eyes and hands for indirect and direct gestures even though the game interaction table lists Touch as the default.
 
 ## Inclusivity
 

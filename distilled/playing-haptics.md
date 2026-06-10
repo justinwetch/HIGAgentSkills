@@ -8,6 +8,8 @@ triggers:
   - "haptic feedback"
   - "CoreHaptics"
   - "UIFeedbackGenerator"
+  - "NSHapticFeedbackPerformer"
+  - "WKHapticType"
   - "taptic engine"
 related:
   - feedback
@@ -64,3 +66,5 @@ Also: standard controls (toggles, sliders, pickers) play system haptics automati
 Apple Watch Series 4+: Digital Crown haptic detents (linear taps as you rotate). Table views use row-based detents by default.
 
 watchOS provides a defined set of haptic patterns conveying specific meanings (system-defined; use per their documented purpose).
+
+Pattern names: `Notification`, `Up`, `Down`, `Success`, `Failure`, `Retry`, `Start`, `Stop`, `Click`.

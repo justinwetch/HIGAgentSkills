@@ -1,7 +1,7 @@
 ---
 topic: spatial-layout
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [visionos]
 category: patterns/visionos
 triggers:
   - "spatial layout"
@@ -10,10 +10,17 @@ triggers:
   - "scale"
   - "z-axis"
   - "3D layout"
+  - "RealityKit"
+  - "volume"
+  - "volumes"
+  - "dynamic scale"
+  - "fixed scale"
+  - "Digital Crown recenter"
 related:
   - designing-for-visionos
   - immersive-experiences
   - layout
+  - eyes
 ---
 # Spatial Layout
 
@@ -52,7 +59,7 @@ visionOS defines a point as an **angle** (not pixels) to support dynamic scaling
 - **Avoid displaying too many windows** — overwhelms and obscures surroundings; makes relocating content cumbersome.
 - **Prioritize indirect gestures** — indirect = no need to move hand into field of view; works at any distance. Direct gestures (touching the virtual object) are tiring, especially for objects at or above eye level. Reserve direct gestures for nearby objects inviting close manipulation.
 - **Let the Digital Crown recenter** — people press it to recenter windows. Your app doesn't need to handle this.
-- **Minimum 60 pt between centers of interactive buttons** — leaving ≥16 pt between them. Ensures hover effect (shown on look) doesn't crowd adjacent elements.
+- **For multiple regular-size visionOS buttons/components, keep centers at least 60 pt apart** — leaving 16 pt or more between them so hover effects don't crowd adjacent elements.
 - **Don't let controls overlap other interactive elements** — makes selecting individual items difficult.
 - **Let people use your app with minimal physical movement.** If movement isn't essential, don't require it.
 - **Use a flat horizontal plane for large immersive experiences** aligned to the floor, so virtual content blends naturally with the physical space.

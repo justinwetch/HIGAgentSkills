@@ -1,15 +1,16 @@
 ---
 topic: nearby-interactions
 tier: 4
-platforms: [ios, ipados, tvos]
+platforms: [ios, ipados, watchos]
 category: technologies
 triggers:
   - "Nearby Interactions"
+  - "Nearby Interaction"
   - "UWB"
   - "ultra-wideband"
   - "spatial awareness between devices"
 related:
-  []
+  - feedback
 ---
 # Nearby Interactions
 
@@ -34,5 +35,5 @@ Requires user permission to interact. Uses randomly generated device identifiers
 ## Device Guidance
 
 - **Encourage portrait orientation** — landscape decreases distance/direction accuracy. Prefer implicit visual cues over explicit instructions to hold device upright.
-- **Field of view**: hardware sensor FOV similar to Ulster Wide camera; outside it, direction info may be unavailable.
+- **Field of view**: hardware sensor FOV similar to Ultra Wide camera; outside it, direction info may be unavailable.
 - **Warn about intervening objects** — people, animals, large objects between devices reduce accuracy. Mention this in onboarding.

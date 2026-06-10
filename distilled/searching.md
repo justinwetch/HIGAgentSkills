@@ -9,6 +9,10 @@ triggers:
   - "UISearchController"
   - "search results"
   - "filter"
+  - "searchSuggestions(_:)"
+  - "CSImportExtension"
+  - "Core Spotlight"
+  - "Quick Look"
 related:
   - search-fields
   - tab-bars
@@ -20,18 +24,18 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
-Use a search field for in-app search. Personalize results with recent searches, suggestions, completions, and corrections. Allow scope filtering and attribute-based filtering where appropriate (see search-fields for scope controls).
+Use a search field for in-app search. Personalize results with recent searches, suggestions, completions, and corrections.
 
 iOS, iPadOS, and macOS: support Find-in-window/page for locating content in open documents.
 
 ## Best Practices
 
-- **Make search a primary action if it's important** — give it a dedicated tab bar entry (TV, Photos, Phone apps) or a persistent toolbar search field (Notes). Don't bury it.
+- **Make search a primary action if it's important** — give it a dedicated tab bar entry (Photos, Apple TV) or a persistent toolbar search field (Notes). Don't bury it.
 - **One search location** — provide a single clearly identified place to find anything in the app. For distinct sections, a local search within a section is acceptable.
 - **Use meaningful placeholder text** — indicate what's being searched (e.g., "Shows, Movies, and More").
-- **Clearly communicate search scope** — use descriptive placeholder text, scope controls, or a title (e.g., Mail always shows which mailbox is being searched).
+- **Clearly communicate search scope** — use descriptive placeholder text or a title (e.g., Mail always shows which mailbox is being searched).
 - **Provide search suggestions** — show recent searches and suggestions before and during typing to reduce typing effort.
-- **Handle privacy for search history** — consider whether others might see it; provide a way to clear it, or offer scope controls instead.
+- **Handle privacy for search history** — consider whether others might see it; provide a way to clear it.
 
 ## Systemwide Search (iOS, iPadOS, macOS — Spotlight)
 

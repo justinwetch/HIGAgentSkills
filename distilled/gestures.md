@@ -13,6 +13,9 @@ triggers:
   - "pan"
   - "rotate"
   - "multi-touch"
+  - "persistentSystemOverlays(_:)"
+  - "handGestureShortcut(_:isEnabled:)"
+  - "HandGestureShortcut.primaryAction"
 related:
   - drag-and-drop
   - motion
@@ -38,6 +41,7 @@ related:
 
 ## Best Practices
 
+- Support standard gestures everywhere they apply.
 - **Multiple input methods** — don't assume people can perform a specific gesture. Support voice, keyboard, Switch Control alternatives.
 - **Consistent with expectations** — tap activates/selects, swipe scrolls. Don't repurpose familiar gestures for unique app actions, and don't require unique gestures for standard actions.
 - **Responsive** — provide immediate feedback. As people gesture, show what will happen.
@@ -88,6 +92,8 @@ Two gesture categories:
 
 **Direct gesture reference:**
 
+Offer both indirect and direct interactions when possible, and avoid requiring specific body movements or positions.
+
 | Direct gesture | Common use |
 |---|---|
 | Touch | Select or activate |
@@ -103,12 +109,13 @@ Custom visionOS gestures:
 - **Prioritize comfort** — avoid sustained raised arms; repetitive similar movements cause muscle fatigue.
 - **Avoid hand-specific gestures** — don't require a specific hand; adds cognitive load and excludes users with limb differences.
 - Careful with complex multi-finger/two-hand gestures — offer an alternative for single-hand users.
-- **Reserve palm area for system overlays** — don't anchor content to hands/wrists. In Full Space, you may defer the Home indicator (require a tap instead).
-- **Avoid rolling-hand motions** — reserved for system overlays (Home and Control Center in visionOS 2+).
+- **Reserve palm area for system overlays** — don't anchor content to hands/wrists. In Full Space, you may defer the Home indicator so the first tap reveals the indicator instead of exiting.
+- **Avoid rolling-hand motions** — reserved for system overlays. In visionOS 2+, rolling the palm accesses Home and Control Center; in visionOS 1, an upward palm motion invokes the accessibility options menu. Legacy Full Space apps defer system gestures by default.
 
 ### watchOS — Double Tap (watchOS 11+)
 
 Scrolls lists/scroll views; advances vertical tab views; activates a designated primary action in a view/widget/Live Activity.
 
+- In notifications, Double Tap performs the first nondestructive notification action.
 - **Don't set a primary action in views with lists, scroll views, or vertical tabs** — conflicts with default double-tap navigation.
 - **Choose the most commonly used button as the primary action** — e.g., play/pause in a media controls view.
