@@ -8,6 +8,10 @@ triggers:
   - "spinner"
   - "activity indicator"
   - "ProgressView"
+  - "UIProgressView"
+  - "UIActivityIndicatorView"
+  - "UIRefreshControl"
+  - "NSProgressIndicator"
   - "determinate"
 related:
   - loading
@@ -20,6 +24,8 @@ related:
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
 Transient — appear during operations, disappear on completion.
+
+Developer APIs: `ProgressView`, `UIProgressView`, `UIActivityIndicatorView`, `UIRefreshControl`, `NSProgressIndicator`.
 
 **Two types:**
 - **Determinate** — task has a known duration; fills a linear (progress bar) or circular track as the task completes.

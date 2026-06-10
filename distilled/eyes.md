@@ -1,18 +1,19 @@
 ---
 topic: eyes
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [visionos]
 category: patterns/visionos
 triggers:
-  - "eye tracking"
+  - "visionOS eyes"
   - "look"
   - "gaze"
   - "hover effect"
   - "look to interact"
   - "eye input"
 related:
-  - designing-for-visionos
   - gestures
+  - immersive-experiences
+  - spatial-layout
   - focus-and-selection
 ---
 # Eyes
@@ -22,6 +23,8 @@ related:
 **Platforms:** visionOS only
 
 When people look at an interactive element, visionOS highlights it (hover effect), signaling that an indirect gesture (e.g., tap) can activate it. Some components auto-expand on gaze (e.g., tab bar reveals text labels; buttons reveal tooltips).
+
+Focus effects are separate from hover effects; don't conflate keyboard/controller focus with gaze hover feedback.
 
 **Privacy**: visionOS does NOT provide apps with where people are looking before they tap. You're notified when someone taps a component — not that they looked at it.
 

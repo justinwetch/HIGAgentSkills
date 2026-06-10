@@ -9,9 +9,13 @@ triggers:
   - "NSToolbar"
   - "toolbar item"
   - "toolbar button"
+  - "navigation bar"
 related:
+  - sidebars
   - tab-bars
-  - the-menu-bar
+  - layout
+  - buttons
+  - search-fields
   - icons
 ---
 # Toolbars

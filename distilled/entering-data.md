@@ -10,6 +10,7 @@ triggers:
   - "fill in"
   - "autocomplete"
   - "autofill"
+  - "SecureField"
 related:
   - text-fields
   - keyboards
@@ -36,4 +37,4 @@ related:
 
 ### macOS
 
-Use **expansion tooltips** to show the full value of clipped/truncated text in fields that are too narrow to display the complete content. Works on iOS/iPadOS apps running on Mac via Mac Catalyst too.
+Use **expansion tooltips** to show the full value of clipped/truncated text in fields that are too narrow to display the complete content. Works in apps running in macOS, including iOS and iPadOS apps running on a Mac.

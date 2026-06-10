@@ -1,7 +1,7 @@
 ---
 topic: context-menus
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: components/presentation
 triggers:
   - "context menu"
@@ -9,10 +9,13 @@ triggers:
   - "right-click"
   - "secondary click"
   - "UIContextMenuInteraction"
+  - "UIMenuElement.Attributes.destructive"
+  - "UIContextMenuInteractionDelegate"
 related:
   - menus
   - edit-menus
-  - gestures
+  - pop-up-buttons
+  - pull-down-buttons
 ---
 # Context Menus
 

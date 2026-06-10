@@ -1,7 +1,7 @@
 ---
 topic: designing-for-watchos
 tier: 2
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [watchos]
 category: platforms
 triggers:
   - "watchOS"
@@ -14,6 +14,12 @@ related:
   - complications
   - watch-faces
   - always-on
+  - action-button
+  - app-shortcuts
+  - siri
+  - notifications
+  - color
+  - materials
 ---
 # Designing for watchOS
 
@@ -40,4 +46,4 @@ related:
 - Use **complications** for relevant, potentially dynamic data directly on the watch face — tappable to deep-link into the app.
 - Use **notifications** for timely, high-value information with actions people can take without opening the app.
 - Use background color and materials to convey supporting info and establish hierarchy/sense of place.
-- Design the app to function **independently**, extending (not duplicating) functionality from complications and notifications.
+- Design the app to function **independently**, complementing functionality from complications and notifications.

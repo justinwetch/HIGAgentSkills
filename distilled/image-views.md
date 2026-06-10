@@ -10,7 +10,9 @@ triggers:
   - "image display"
 related:
   - images
-  - scroll-views
+  - image-wells
+  - buttons
+  - sf-symbols
 ---
 # Image Views
 

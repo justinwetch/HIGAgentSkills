@@ -74,12 +74,14 @@ tvOS uses **layered images** to create the parallax depth effect when elements c
 - Images can be scaled across a wide range; system dynamically scales resolution to match display size/distance.
 - Prefer **vector-based art** for 2D images — bitmap may not scale cleanly.
 - If using raster: @2x is fine at common distances, but use higher resolution for close viewing. Above @6x, file size and runtime performance suffer — apply high-quality image filtering.
+- Use high-quality filtering for high-resolution raster images (`CALayer.filters` where applicable).
 - Create a **layered app icon** (2–3 layers) for depth effect on focus.
 
 **Spatial photos and scenes:**
-- Use stereo HEIC with spatial metadata for spatial photos.
-- Display spatial photos and scenes in **standalone views** (sheet, window) — not inline with content.
-- Use feathered glass background effect when placing text over spatial photos.
+- Use stereo HEIC with spatial metadata for spatial photos. Spatial metadata lets visionOS recognize spatial photos and apply comfort treatments.
+- Display spatial photos and scenes in **standalone views** (sheet, window) where possible. Avoid inline display; if stereoscopic images must appear inline, provide generous spacing so eyes can adjust to depth changes.
+- Use `ImagePresentationComponent` for spatial photos/scenes.
+- Use feathered glass background effect (`GlassBackgroundEffect`) when placing text over spatial photos.
 - Avoid adjusting disparity metadata carelessly — can cause visual discomfort.
 - Spatial scenes take up to several seconds to generate; use scroll views, pagination, or explicit actions to limit simultaneous scenes.
 - In immersive display, prefer minimal UI (single content + small caption + back button).

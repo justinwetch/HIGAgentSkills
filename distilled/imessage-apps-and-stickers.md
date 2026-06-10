@@ -1,13 +1,14 @@
 ---
 topic: imessage-apps-and-stickers
 tier: 3
-platforms: [ios, tvos, visionos]
+platforms: [ios, ipados]
 category: technologies
 triggers:
   - "iMessage app"
   - "sticker"
   - "Messages extension"
   - "message bubble"
+  - "MSStickerSize"
 related:
   - collaboration-and-sharing
 ---

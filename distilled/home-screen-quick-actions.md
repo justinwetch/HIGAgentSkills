@@ -1,12 +1,11 @@
 ---
 topic: home-screen-quick-actions
 tier: 3
-platforms: [ios, tvos, visionos]
+platforms: [ios, ipados]
 category: patterns/system
 triggers:
   - "quick action"
   - "3D Touch"
-  - "haptic touch"
   - "long press icon"
   - "UIApplicationShortcutItem"
 related:
@@ -26,5 +25,5 @@ Each quick action includes a **title**, **interface icon** (left or right depend
 - **High-value, compelling tasks only** — e.g., Maps' "Directions Home." People expect at least one useful action from every app.
 - **Dynamic actions are great; keep changes predictable.** Update based on location, recent activity, time of day, or settings changes — but don't surprise people.
 - **Succinct title** — instantly communicates the result (e.g., "Directions Home," "New Message"). No app name, no extraneous info. Keep text short (localization aware, avoid truncation). Use subtitle for extra context only when needed.
-- **SF Symbols for icons** — prefer standard SF Symbols. If you design a custom icon, use the Quick Action Icon Template from Xcode iOS app resources.
+- **SF Symbols for icons** — prefer standard SF Symbols. If you design a custom icon, use the Quick Action Icon Template in Apple Design Resources for iOS and iPadOS.
 - **No emoji** — quick action icons are monochromatic and adapt to Dark Mode; emoji don't.

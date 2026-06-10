@@ -10,8 +10,7 @@ triggers:
   - "in-app settings"
   - "Settings app"
 related:
-  - offering-help
-  - launching
+  - onboarding
 ---
 # Settings
 

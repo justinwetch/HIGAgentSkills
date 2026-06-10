@@ -12,7 +12,7 @@ triggers:
 related:
   - text-fields
   - labels
-  - entering-data
+  - combo-boxes
 ---
 # Text Views
 

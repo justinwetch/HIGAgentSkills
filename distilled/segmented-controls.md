@@ -1,17 +1,22 @@
 ---
 topic: segmented-controls
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: components/controls
 triggers:
   - "segmented control"
   - "UISegmentedControl"
+  - "segmented"
+  - "NSSegmentedControl"
+  - "isMomentary"
+  - "NSSegmentedControl.SwitchTracking.momentary"
   - "picker strip"
   - "option group"
 related:
   - toggles
   - pickers
   - buttons
+  - split-views
 ---
 # Segmented Controls
 
@@ -19,7 +24,7 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS *(not watchOS)*
 
-All segments are usually equal width. Segments contain text or images (not both). Can represent:
+All segments are usually equal width. Segments can contain text or images. Can represent:
 - **Single-choice selection** (all platforms)
 - **Multi-choice selection** (macOS only — e.g., Bold + Italic + Underline simultaneously)
 - **Action buttons without selection state** (e.g., Reply / Reply All / Forward in macOS Mail)
@@ -34,7 +39,7 @@ All segments are usually equal width. Segments contain text or images (not both)
 
 ## Content
 
-- **Text or images — not both** within a single control.
+- **Prefer either text or images** within a single control for consistency.
 - **Similar content sizes** across all segments — avoid some segments appearing full and others sparse.
 - **Nouns or noun phrases** for text labels. Title-style capitalization. No introductory text needed.
 

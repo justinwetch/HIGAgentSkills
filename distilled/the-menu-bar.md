@@ -1,7 +1,7 @@
 ---
 topic: the-menu-bar
 tier: 3
-platforms: [ipados, tvos, visionos]
+platforms: [ipados, macos]
 category: components/navigation
 triggers:
   - "menu bar"
@@ -10,10 +10,18 @@ triggers:
   - "View menu"
   - "Window menu"
   - "Help menu"
+  - "CommandMenu"
+  - "MenuBarExtra"
+  - "NSStatusBar"
+  - "dynamic menu items"
+  - "standard keyboard shortcuts"
+  - "iPadOS menu bar"
 related:
   - menus
+  - dock-menus
   - toolbars
   - windows
+  - keyboards
 ---
 # The Menu Bar
 
@@ -69,7 +77,10 @@ Manage files/documents. Rename or remove if app doesn't handle files.
 | Open | Ellipsis if opens picker |
 | Open Recent | Recent files by last-opened order, most recent first; "Clear Menu" at bottom |
 | Close | Option → Close All; tab-based → Close Tab |
+| Close Tab | Current tab in a tab-based window; Option → Close Other Tabs |
+| Close File | Current file and all associated windows |
 | Save | Auto-save periodically; no need for constant manual saves |
+| Save All | Saves all open documents |
 | Duplicate | Prefer over Save As, Export, Copy To — more explicit about file relationship |
 | Rename… | — |
 | Move To… | — |

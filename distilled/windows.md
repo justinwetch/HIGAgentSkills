@@ -1,7 +1,7 @@
 ---
 topic: windows
 tier: 3
-platforms: [ipados, macos, tvos]
+platforms: [ipados, macos, visionos]
 category: components/navigation
 triggers:
   - "window"
@@ -9,6 +9,12 @@ triggers:
   - "UIScene"
   - "NSWindow"
   - "resizable window"
+  - "OpenWindowAction"
+  - "DefaultWindowStyle"
+  - "PlainWindowStyle"
+  - "VolumetricWindowStyle"
+  - "volume"
+  - "volumetric window"
 related:
   - split-views
   - multitasking
@@ -62,6 +68,7 @@ Two presentation modes (user-controlled in Multitasking & Gestures settings):
 
 **Default windows:**
 - Upright plane with unmodifiable *glass* background. Includes close button, window bar, resize controls. Can also include a Share button, tab bar, toolbar, and ornaments.
+- `PlainWindowStyle` is similar to the default style but omits the glass background.
 - Default size: **1280×720 pt** (placed ~2m in front, giving ~3m apparent width).
 - Uses dynamic scale by default (content stays consistently legible regardless of distance).
 - **Retain the glass background** — glass adapts dynamically to lighting, uses specular reflections and shadows for depth cues. Removing it makes UI elements less legible and unrelated-looking; an opaque background obscures surroundings and feels heavy.

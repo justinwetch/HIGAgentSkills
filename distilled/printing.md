@@ -1,13 +1,13 @@
 ---
 topic: printing
 tier: 4
-platforms: [ios, ipados, macos]
+platforms: [ios, ipados, macos, visionos]
 category: patterns/system
 triggers:
   - "print"
   - "UIPrintInteractionController"
+  - "NSDocument"
   - "print panel"
-  - "NSPrintPanel"
   - "page setup"
 related:
   - the-menu-bar

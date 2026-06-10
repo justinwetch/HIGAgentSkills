@@ -1,7 +1,7 @@
 ---
 topic: game-controls
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: patterns/interaction
 triggers:
   - "game controller"
@@ -9,10 +9,13 @@ triggers:
   - "gamepad"
   - "thumbstick"
   - "GCController"
+  - "GCRequiresControllerUserInteraction"
+  - "GCControllerElement"
 related:
   - designing-for-games
-  - focus-and-selection
-  - remotes
+  - gestures
+  - keyboards
+  - playing-haptics
 ---
 # Game Controls
 
@@ -51,6 +54,8 @@ Use the TouchController framework for virtual controls overlaid on game content.
 | Y | — |
 | Left shoulder | Navigate left to a different screen/section |
 | Right shoulder | Navigate right to a different screen/section |
+| Left trigger | -- |
+| Right trigger | -- |
 | Left/right thumbstick | Move selection |
 | Directional pad | Move selection |
 | Home/logo | Reserved for system controls |

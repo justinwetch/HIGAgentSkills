@@ -1,7 +1,7 @@
 ---
 topic: immersive-experiences
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [visionos]
 category: patterns/visionos
 triggers:
   - "immersive"
@@ -9,11 +9,18 @@ triggers:
   - "passthrough"
   - "environment"
   - "mixed immersion"
-  - "portal"
+  - "ImmersionStyle.automatic"
+  - "ImmersionStyle.mixed"
+  - "ImmersionStyle.progressive"
+  - "ImmersionStyle.full"
+  - "SurroundingsEffect"
+  - "SceneReconstructionProvider"
+  - "CoordinateSpaceProtocol"
 related:
-  - designing-for-visionos
   - spatial-layout
-  - augmented-reality
+  - motion
+  - accessibility
+  - playing-audio
 ---
 # Immersive Experiences
 
@@ -29,6 +36,8 @@ related:
 
 ## Immersion Styles
 
+Progressive immersion supports portrait and landscape orientations.
+
 | Style | API | Where | Passthrough | Boundary |
 |---|---|---|---|---|
 | Dimmed/tinted passthrough | — | Shared Space or Full Space | Dimmed/tinted but visible | None |
@@ -41,6 +50,9 @@ related:
 
 ## Best Practices
 
+Digital Crown: press and hold to recenter; double-click to briefly hide all content and show passthrough.
+
+- **Offer multiple ways to use the experience** — support accessibility features and interaction alternatives; immersion must not require a single movement or input style.
 - **Prefer launching in Shared Space or `.mixed`** — gives people more control; they choose when to deepen immersion.
 - **Reserve immersion for meaningful moments** — not every task needs full immersion. Let people immerse in specific content, not the entire app.
 - **Use subtle cues** (dimming, tinting, motion, scale, Spatial Audio) to draw attention, whether in a window or fully immersive.

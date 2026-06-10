@@ -1,71 +1,73 @@
 ---
 topic: tap-to-pay-on-iphone
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [ios]
 category: technologies
 triggers:
   - "Tap to Pay"
+  - "Tap to Pay on iPhone"
   - "contactless payment"
   - "merchant payment"
   - "NFC payment"
   - "point of sale"
+  - "ProximityReader"
+  - "ProximityReaderDiscovery"
+  - "PaymentCardReader.prepare(using:)"
+  - "PaymentCardReader.Event.updateProgress(_:)"
+  - "returnReadResultImmediately"
+  - "readyForTap"
+  - "PaymentCardReaderSession.ReadError"
 related:
   - apple-pay
   - nfc
 ---
 # Tap to Pay on iPhone
 
-> Tap to Pay on iPhone lets merchants accept contactless payments — credit/debit cards, Apple Pay, NFC passes — using just an iPhone app, no external hardware.
+> Tap to Pay on iPhone lets merchants accept contactless payments using an iPhone app, without external payment hardware.
 
 **Platforms:** iOS only
 
-## Enabling & Onboarding
+Requires a supported payment service provider, entitlement, ProximityReader APIs, and the provider SDK where applicable.
 
-- **Terms and conditions must be accepted before initial device configuration.** Present the acceptance flow before customer-facing activity starts — not mid-checkout.
-- **Only show terms to administrative users.** Non-admins get an error message; admins can accept via a web interface or separate app if needed.
-- **Ensure device is on the required iOS version** before presenting terms.
+## Enabling And Onboarding
 
-### Educating Merchants
+- **Accept terms before initial device configuration** - present terms before customer-facing checkout, not mid-payment.
+- **Only admins see terms** - non-admins get an error; admins can accept elsewhere if needed.
+- **Check iOS support before setup.**
+- **Use `ProximityReaderDiscovery` when appropriate** for prebuilt localized merchant education.
 
-Provide a tutorial showing:
-- Launching a checkout flow for each payment type.
-- Helping customers position their card/wallet for payment.
-- Handling PIN entry (including accessibility mode).
+## Merchant Education
 
-Offer the tutorial via: a Learn More option, automatically after terms acceptance, automatically for new users, or in the help/settings area.
+- Launch checkout for each payment type.
+- Help customers position card/device for tap.
+- Handle PIN entry, including accessibility mode.
+- Recover from tap failures and switch payment methods.
 
-Can use ProximityReaderDiscovery API for a pre-built, localized merchant education experience instead of building your own.
+Offer education through Learn More, after terms acceptance, for new users, or in help/settings.
 
 ## Checkout Flow
 
-- **Always show Tap to Pay on iPhone as a checkout option**, whether or not the feature is enabled. If it's not enabled, tapping the button presents terms then proceeds.
-- **Minimize wait times.** Prepare (configure) the feature as soon as the app starts and after every return to foreground.
-- **Make the Tap to Pay option available even during background configuration.** Show a progress indicator (indeterminate usually; determinate if ProximityReader API indicates ongoing config).
-- **Easy to find** — don't make merchants scroll. If it's the only payment method, open it automatically when checkout begins.
-- **Let merchants switch between Tap to Pay and hardware accessories** without visiting settings.
-- **Determine final amount before opening the Tap to Pay screen.** Collect tipping and other adjustments beforehand.
-- **Pre-payment selections** (payment type, etc.) are shown in your checkout screen between the tap of the Tap to Pay button and the opening of the Tap to Pay screen.
+- **Always show Tap to Pay on iPhone as a checkout option** - if not enabled, tapping can start setup then continue.
+- **Prepare early and often** - call prepare when the app starts and returns to foreground; keep the option available during background configuration.
+- **Show setup progress** - usually indeterminate; use determinate progress if ProximityReader reports it.
+- **Make it easy to find** - don't require scrolling; if it is the only method, open it automatically.
+- **Let merchants switch payment methods** without visiting settings.
+- **Finalize amount before opening Tap to Pay** - collect tip, adjustments, and payment type first.
+- **Start result processing as soon as possible** - request the read result before/while the checkmark animation completes when the API supports it.
 
-### Button Labels
+## Labels
 
-- **Payment button**: "Tap to Pay on iPhone" (full) or "Tap to Pay" (constrained space).
-- **If it's your only method**, you may reuse existing "Charge" or "Checkout" buttons.
-- **Icon for multiple-method contexts**: use `wave.3.right.circle` or `wave.3.right.circle.fill` SF Symbols.
-- **Never include the Apple logo** in Tap to Pay on iPhone buttons.
-- **Non-payment actions** (look up, refund, store card): use generic labels — "Look Up," "Store Card," "Verify," "Refund." **Never** use "Tap to Pay on iPhone" or "Tap to Pay" for non-payment actions.
-- **Loyalty card transactions**: use a separate, clearly labeled button. Avoid payment-related terms.
+- Payment button: **Tap to Pay on iPhone** or **Tap to Pay** in constrained space.
+- If it is the only payment method, existing **Charge** or **Checkout** labels can work.
+- Multiple-method contexts: use `wave.3.right.circle` or `wave.3.right.circle.fill`.
+- Never include the Apple logo in Tap to Pay buttons.
+- Non-payment actions (look up, refund, store card, verify): use generic labels, never "Tap to Pay."
+- Loyalty/discount cards need separate, clearly labeled actions.
 
-## Displaying Results
+## Results And Errors
 
-- **Start processing immediately** — use the API to request the result before the checkmark animation finishes.
-- **Display a progress indicator during authorization** — begins after the Tap to Pay checkmark animation finishes.
-- **Clearly display the result** — success or decline (with reason). Offer digital receipt options (QR, text).
-- **Handle failed taps gracefully** — offer alternate payment (cash, hardware, payment link) or relaunch Tap to Pay for another card.
-- Be aware of regional requirements: SCA may require PIN entry after initial tap; Offline PIN markets may require PIN fallback.
-
-## Additional Interactions
-
-When reading a payment card with no transaction amount (look up, refund, store card):
-- Use generic button labels only — never "Tap to Pay on iPhone" / "Tap to Pay."
-
-For loyalty/discount/points cards in Wallet: Tap to Pay can read them alongside or independently of payment.
+- **Display authorization progress after tap completion.**
+- **Show clear success/decline results** and offer receipts.
+- **Handle failed taps gracefully** - offer another card, alternate tender, payment link, or relaunch Tap to Pay.
+- **Surface merchant-actionable errors** - use alerts/support paths for setup, entitlement, PSP, region, account, or reader-session failures.
+- Be aware of regional requirements like SCA PIN entry or Offline PIN fallback.

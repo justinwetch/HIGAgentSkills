@@ -1,7 +1,7 @@
 ---
 topic: app-clips
 tier: 3
-platforms: [ios]
+platforms: [ios, ipados]
 category: technologies
 triggers:
   - "App Clip"
@@ -26,7 +26,7 @@ Discovered via: App Clip Code, NFC tag, QR code, Siri Suggestions, Maps, Smart A
 
 - **Complete the task — don't require the full app** — people shouldn't need to install anything to finish a task or demo.
 - **Essential features only** — no tab bars, complex navigation, or settings. Minimum screens and forms. Remove all extraneous UI.
-- **No web views** — use native components. If only web is available, link to the website instead.
+- **Avoid web views** — use native components. If only web components are available, link to the website instead.
 - **No ads or marketing content** — App Clips must provide real value.
 - **Launch immediately to context** — no splash screens, no waiting. Skip unnecessary steps. All assets must be bundled; don't download additional data on launch.
 - **Keep it small** — the smaller, the faster the launch, especially on limited bandwidth.
@@ -42,6 +42,7 @@ Discovered via: App Clip Code, NFC tag, QR code, Siri Suggestions, Maps, Smart A
 
 ### Showcasing Your App
 
+- When the full app is installed, it replaces App Clip invocations. Keep the experience familiar and focused, preserve continuity, and don't require people to log in again.
 - Don't compromise the App Clip experience by aggressively asking people to install the full app.
 - Show `SKOverlay` to recommend the full app at a **natural pause** or after task completion.
 - Recommend politely — not repeatedly, not during a task, not via push notifications.
@@ -75,7 +76,7 @@ App Clip Codes use Apple-provided designs only. Two variants:
 |---|---|
 | Printed | ≥3/4 inch (1.9 cm) diameter |
 | Digital | ≥256×256 px (PNG or SVG) |
-| NFC-integrated | NFC tag ≥35 mm diameter |
+| NFC-integrated | NFC tag ≥35 mm diameter; for a 35 mm tag, printed App Clip Code at least 1.37 in / 3.48 cm |
 
 - **Scanning distance ratio**: ≤20:1 distance:diameter. Prefer 10:1 (e.g., 40" away → at least 4" diameter).
 - **Clear space**: at least equal to the gap between the center glyph and the circular code.
@@ -84,6 +85,7 @@ App Clip Codes use Apple-provided designs only. Two variants:
 - **Color**: use the App Clip Code Generator or App Store Connect to choose colors. Three colors auto-generated (foreground, background, system-generated third). Both tools warn and reject combinations that would impair scanning.
 
 **Printing:**
+- Production color: convert to CMYK with relative colorimetric intent; use `Generic CMYK ICC profile` or `Gracol 2013 ICC profile`. Target `CIELab Delta E 2.5`, calibrate with printer sheets, and batch-verify scans.
 - Use matte finish. No gloss, reflect, or holographic overlays.
 - Outdoor: UV-resistant materials or coatings.
 - Resolution: rasterize SVG at ≥600 ppi; print at ≥300 dpi.

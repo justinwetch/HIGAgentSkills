@@ -7,6 +7,7 @@ triggers:
   - "label"
   - "UILabel"
   - "Text"
+  - "NSTextField"
   - "caption"
   - "body text"
   - "description text"
@@ -35,9 +36,13 @@ Appears in buttons (action name), list rows (item description), and views (conte
 | Tertiary label | Unavailable item/behavior descriptions | `tertiaryLabel` | `tertiaryLabelColor` |
 | Quaternary label | Watermark text | `quaternaryLabel` | `quaternaryLabelColor` |
 
-- **Make useful label text selectable** — error messages, locations, IP addresses, serial numbers.
+- **Make useful label text selectable where available** — error messages, locations, or IP addresses.
 
 ## Platform Considerations
+
+### macOS
+
+- For uneditable label text, use `NSTextField.isEditable`.
 
 ### watchOS
 

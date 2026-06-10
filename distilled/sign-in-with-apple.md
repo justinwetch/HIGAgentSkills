@@ -27,6 +27,7 @@ related:
 - **Commerce apps: wait until after purchase to ask about account creation.** For Apple Pay flows, offer account setup on the order confirmation page — pre-fill from payment sheet data.
 - **Welcome people immediately** after Sign in with Apple completes.
 - **Indicate sign-in status** (e.g., "Using Sign in with Apple") in settings or account interfaces.
+- **Display the Sign in with Apple button prominently** - make it no smaller than other sign-in buttons and don't require scrolling to see it.
 
 ## Collecting Data
 
@@ -34,6 +35,7 @@ related:
 - **Clearly indicate if additional data is required vs. optional.**
 - **Don't ask for a password** — it defeats the purpose.
 - **Don't ask for personal email if someone provides a private relay address.** Direct people to Settings > Apple Account > Password & Security > Apps using Apple Account to retrieve their relay address.
+- **Support private relay identification** - let people view their relay address in your app/site, or use other purchase-provided identifiers like order number or phone number.
 - **Give people time to engage before requesting optional data.** Don't block app access if optional data is withheld.
 - **Be transparent** — display the name or email you received to show how you use it.
 

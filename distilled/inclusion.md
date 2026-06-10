@@ -20,14 +20,17 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
+Inclusive design is iterative: examine assumptions, test with diverse people, and refine. Avoid treating "inoffensive" as equivalent to inclusive.
+
 ## Welcoming Language
 
 - Use *you/your* to address people directly. Avoid *the user* or *the player* (feels distant).
 - Reserve *we/our* for your software or company.
 - Define all specialized or technical terms before using them.
 - Replace colloquial expressions with plain language — many have exclusionary origins or are culture-specific (e.g., "peanut gallery," "grandfathered in").
-- Avoid humor — subjective, hard to localize, risks alienating or insulting.
+- Consider carefully before including humor — it is subjective, hard to localize, and can alienate or insult.
 - Use clear, direct, respectful tone without unintended signals (e.g., academic tone implies education gatekeeping).
+- When writing about a specific person or community, use the terms they use to self-identify; don't force people-first language when a community prefers another phrasing.
 
 ## Gender Identity
 
@@ -54,6 +57,11 @@ related:
 - Visual disabilities are a spectrum (low vision → blindness; includes color blindness, light sensitivity, peripheral loss).
 - Everyone experiences temporary or situational disabilities (e.g., hearing loss from infection, noisy environment).
 - Avoid imagery/copy that uses disability as a negative quality. Use people-first language.
+
+## Approachability
+
+- Provide a clear, straightforward interface that helps people understand what they can do.
+- Use onboarding to support step-by-step learning, but let people skip it.
 
 ## Languages and Localization
 

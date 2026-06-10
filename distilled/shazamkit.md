@@ -7,7 +7,6 @@ triggers:
   - "ShazamKit"
   - "audio recognition"
   - "Shazam"
-  - "frequency matching"
 related:
   []
 ---
@@ -17,7 +16,7 @@ related:
 
 **Platforms:** iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
-**Use cases:** Sync graphics to music genre; provide captions/sign language synced to audio; synchronize in-app experiences with broadcast content.
+**Use cases:** Recognize audio samples; sync graphics to music genre; provide captions or sign language synced to audio; synchronize in-app experiences with virtual content in online learning or retail.
 
 **Requires microphone permission** if sampling live audio — always explain why you need access.
 

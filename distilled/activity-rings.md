@@ -1,7 +1,7 @@
 ---
 topic: activity-rings
 tier: 3
-platforms: [ios, ipados, tvos]
+platforms: [ios, ipados, watchos]
 category: components/watchos
 triggers:
   - "activity ring"
@@ -39,9 +39,9 @@ Show Activity rings in health/fitness apps when relevant — e.g., on a live wor
 - **Minimum outer margin**: no less than the distance between rings. Never crop, obstruct, or encroach on rings.
 - **Separate from other ring-like elements** with padding, lines, labels, color, or scale.
 - **Matching label colors**: when labeling ring values, use ring-specific colors:
-  - Move = red
-  - Exercise = green
-  - Stand = blue
+  - Move = red (`R-250, G-17, B-79`)
+  - Exercise = green (`R-166, G-255, B-0`)
+  - Stand = blue (`R-0, G-255, B-246`)
 - **Not decorative** — never use in backgrounds or labels.
 - **Not for branding** — never use in app icon or marketing materials.
 - **Don't send redundant notifications** — system already delivers Move/Exercise/Stand updates. Don't include Activity ring visuals in notifications.

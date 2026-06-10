@@ -1,7 +1,7 @@
 ---
 topic: always-on
 tier: 3
-platforms: [macos, tvos]
+platforms: [ios, watchos]
 category: patterns/system
 triggers:
   - "Always On"
@@ -17,7 +17,7 @@ related:
 
 > On Always On displays, the system dims the screen and reduces motion when the device is set aside (iPhone) or the wrist is lowered (Apple Watch), while continuing to show glanceable info.
 
-**Platforms:** iOS (iPhone 14 Pro and later), watchOS *(not iPadOS, macOS, tvOS, visionOS)*
+**Platforms:** iOS (iPhone 14 Pro and iPhone 14 Pro Max), watchOS *(not iPadOS, macOS, tvOS, visionOS)*
 
 **iPhone**: Displays Lock Screen items (widgets, Live Activities) when set face-up without interaction.
 **Apple Watch**: Dims and continues showing the frontmost app or a background session app.

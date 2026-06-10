@@ -1,7 +1,8 @@
 ---
 name: apple-hig
 description: >
-  Apple Human Interface Guidelines reference. Provides authoritative
+  Apple Human Interface Guidelines reference (Updated for OS 27 releases).
+  Provides authoritative
   platform-specific design rules, component specifications, exact
   measurements, and interaction patterns for iOS, iPadOS, macOS, tvOS,
   visionOS, and watchOS. Use when designing, reviewing, or auditing any
@@ -14,7 +15,7 @@ description: >
 
 # Apple HIG Skill
 
-Reference 150 distilled HIG files in `distilled/` via the routing index at `routing-index.md`.
+Reference 156 distilled HIG files in `distilled/` via the routing index at `routing-index.md`.
 
 ## Loading Protocol
 
@@ -28,11 +29,11 @@ From the user's request, identify:
 
 ### Step 2 — Load Tier 1 (always, every invocation)
 
-Read all 14 files listed in `routing-index.md` under `## tier-1`:
+Read all 16 files listed in `routing-index.md` under `## tier-1`:
 
-`accessibility`, `branding`, `color`, `dark-mode`, `icons`, `images`,
-`inclusion`, `layout`, `materials`, `motion`, `right-to-left`,
-`sf-symbols`, `typography`, `writing`
+`accessibility`, `branding`, `color`, `dark-mode`, `design-principles`,
+`icons`, `images`, `inclusion`, `layout`, `materials`, `motion`,
+`privacy`, `right-to-left`, `sf-symbols`, `typography`, `writing`
 
 These apply universally. Load them before answering.
 
@@ -45,8 +46,11 @@ If "game" or "gaming" is mentioned, also load `designing-for-games`.
 ### Step 4 — Keyword Scan (Tier 3)
 
 Read `routing-index.md` → `## tier-3 trigger-map`.
-Normalize the user request to lowercase. Match any trigger string.
-Load every matching file. Load each file at most once.
+Normalize the user request to lowercase. Match trigger strings as
+standalone words, phrases, or API symbols; never match a trigger merely
+because it appears inside an unrelated word. For example, `AR` doesn't
+match "tab bar," and `AI` doesn't match "explain." Load every matching
+file. Load each file at most once.
 
 ### Step 5 — Related Expansion
 
@@ -56,8 +60,9 @@ Load any listed files not yet loaded — one hop only.
 ### Step 6 — Tier 4 On-Demand
 
 Read `routing-index.md` → `## tier-4 trigger-map (on-demand)`.
-Load a tier-4 file only on direct keyword match, or if named in a
-loaded file's `related:` list. These are niche — avoid loading broadly.
+Use the same standalone word/phrase/API-symbol matching rule. Load a
+tier-4 file only on direct keyword match, or if named in a loaded file's
+`related:` list. These are niche — avoid loading broadly.
 
 ### Step 7 — Answer
 

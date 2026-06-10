@@ -1,16 +1,14 @@
 ---
 topic: carplay
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [ios]
 category: platforms
 triggers:
   - "CarPlay"
   - "car"
   - "driving"
   - "in-vehicle"
-  - "CPTemplate"
-related:
-  - designing-for-ios
+related: []
 ---
 # CarPlay
 

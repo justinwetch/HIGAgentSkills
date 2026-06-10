@@ -1,12 +1,15 @@
 ---
 topic: watch-faces
 tier: 3
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [watchos]
 category: components/watchos
 triggers:
   - "watch face"
   - "shareable watch face"
   - "face configuration"
+  - "ClockKit"
+  - "Sharing an Apple Watch face"
+  - "watchOS 7"
 related:
   - complications
   - designing-for-watchos

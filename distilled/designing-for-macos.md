@@ -1,7 +1,7 @@
 ---
 topic: designing-for-macos
 tier: 2
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [macos]
 category: platforms
 triggers:
   - "macOS"
@@ -24,7 +24,7 @@ related:
 
 | | |
 |---|---|
-| **Display** | Large, high-resolution; can extend with additional displays including iPad via Sidecar |
+| **Display** | Large, high-resolution; can extend with additional displays, including iPad |
 | **Ergonomics** | Stationary, desk/table use; viewing distance ~1–3 ft |
 | **Inputs** | Physical keyboard, pointing device (mouse/trackpad), game controllers, Siri |
 | **Usage pattern** | Quick tasks to hours of deep focus; multiple apps open simultaneously; smooth active/inactive state transitions |

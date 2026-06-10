@@ -8,6 +8,9 @@ triggers:
   - "Dynamic Island"
   - "ActivityKit"
   - "realtime update"
+  - "ActivityFamily.small"
+  - "activitySystemActionForegroundColor(_:)"
+  - "ContainerRelativeShape"
 related:
   - notifications
   - widgets
@@ -16,7 +19,7 @@ related:
 
 > Live Activities let people track an in-progress activity, event, or task at a glance across multiple system locations.
 
-**Platforms:** iOS, iPadOS, macOS, watchOS
+**Platforms:** iOS, iPadOS, macOS, watchOS. Not supported in tvOS or visionOS.
 
 | Location | Appears on |
 |---|---|
@@ -25,7 +28,7 @@ related:
 | Apple Watch | Smart Stack |
 | CarPlay | CarPlay Dashboard |
 
-## Presentations (all required)
+## Presentations
 
 | Presentation | When used | Notes |
 |---|---|---|
@@ -36,6 +39,8 @@ related:
 | **StandBy** | Minimal presentation in StandBy; tap → Lock Screen 2×; if custom bg, system extends full-screen | Real-world scale |
 
 ## Best Practices
+
+Required support: Compact, Minimal, Expanded, and Lock Screen. StandBy derives/scales from these presentations.
 
 - **Defined beginning and end** — best for tasks ≤8 hours.
 - **Only task-related information** — no ads or promotions.
@@ -105,6 +110,8 @@ related:
 
 ## CarPlay and watchOS Notes
 
+- **macOS**: clicking a menu bar Live Activity launches the source app through iPhone Mirroring.
+
 - **CarPlay**: system auto-combines compact leading + trailing. Interactive elements are deactivated. If beneficial, declare a `supplementalActivityFamily` for a custom layout with larger text.
 - **watchOS**: compact leading + trailing are combined to form the Smart Stack view by default. Consider a custom watchOS layout for more info and interactivity. Custom layout also applies to CarPlay — so don't include buttons/toggles if people might use the Live Activity while driving.
 
@@ -118,6 +125,16 @@ related:
 | 393×852 | 52.33×36.67 | 52.33×36.67 | 36.67–45 | 371 × 84–160 | 371 × 84–160 |
 
 Dynamic Island corner radius: **44 pt**.
+
+### iPadOS Lock Screen Dimensions (pt)
+
+| Screen dimensions (portrait) | Lock Screen height range |
+|---|---|
+| 1366x1024 | 500x84-160 |
+| 1194x834 | 425x84-160 |
+| 1012x834 | 425x84-160 |
+| 1080x810 | 425x84-160 |
+| 1024x768 | 425x84-160 |
 
 ### Dynamic Island Width (compact/minimal)
 
@@ -134,6 +151,8 @@ Dynamic Island corner radius: **44 pt**.
 | iPhone 17 Pro / 17 / 16 Pro / 16 / 15 Pro / 15 / 14 Pro | 371 |
 
 ### CarPlay Dimensions (pt)
+
+Smart Display Zoom configurations: Widescreen 1920x720, Portrait 900x1200, Standard 800x480.
 
 | Live Activity size |
 |---|

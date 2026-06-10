@@ -1,16 +1,20 @@
 ---
 topic: id-verifier
 tier: 4
-platforms: [ios, ipados, macos, tvos, visionos, watchos]
+platforms: [ios]
 category: technologies
 triggers:
   - "ID verification"
   - "identity document"
   - "driver license"
   - "mobile ID"
-  - "MRZ"
+  - "MobileDriversLicenseDisplayRequest"
+  - "MobileDriversLicenseDataRequest"
+  - "MobileDriversLicenseRawDataRequest"
+  - "ageAtLeast(_:)"
+  - "ProximityReader"
 related:
-  []
+  - wallet
 ---
 # ID Verifier
 
@@ -30,7 +34,7 @@ Use Data Transfer only if you have a legal verification requirement to store or 
 ## Best Practices
 
 - **Ask only for the data you need.** For age verification, use a age-threshold request — not birth date or current age.
-- **Register with Apple Business Register** to display your official organization name and logo to customers during the verification UI.
+- **Register with Apple Business Register if your app qualifies** to display your official organization name and logo to customers during the verification UI.
 - **Provide a clearly labeled button** to initiate the verification process. Use "Verify Age" or "Verify Identity." Don't include NFC/QR symbols. Never include the Apple logo.
 
 ### Button Labels
@@ -40,4 +44,4 @@ Use Data Transfer only if you have a legal verification requirement to store or 
 | Verify Age | Checking minimum age for an event or venue |
 | Verify Identity | Verifying specific identity info (e.g., name + birth date for car rental pickup) |
 
-- **Display Only**: provide Matches / Doesn't Match buttons so your app can record the reviewer's visual confirmation result.
+- **Display Only**: provide `Matches Person` / `Doesn't Match Person` buttons so your app can record the reviewer's visual confirmation result.

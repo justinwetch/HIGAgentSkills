@@ -2,11 +2,45 @@
 
 *
 
+# Keep local release/package outputs out of git
+release/
+*.zip
+*.tmp
+*.temp
+tmp/
+temp/
+staging/
+package/
+
 # Allow the skill itself
 !SKILL.md
 !routing-index.md
 !README.md
+!process.md
 !.gitignore
+
+# Allow maintenance scripts
+!scripts/
+!scripts/**
+scripts/**/__pycache__/
+scripts/**/*.pyc
+
+# Allow lightweight source audit artifacts, but keep raw/rendered Apple source captures ignored
+!sources/
+!sources/*/
+!sources/*/inventory.json
+!sources/*/failures.json
+!sources/*/dispositions.md
+!sources/*/disposition-overrides.json
+!sources/*/verification/
+!sources/*/verification/**
+sources/*/raw/
+sources/*/rendered/
+sources/*/cache/
+sources/*/caches/
+sources/*/normalized/
+sources/*/tmp/
+sources/*/temp/
 
 # Allow the distilled reference files
 !distilled/

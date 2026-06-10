@@ -1,0 +1,843 @@
+{
+    "accessibility":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/accessibility.md",
+                          "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+                      },
+    "action-button":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/action-button.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                      },
+    "action-sheets":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/action-sheets.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-a.md, then trigger-remediated in verification/final-audit-remediation.md."
+                      },
+    "activity-rings":  {
+                           "disposition":  "verified-current-source-review",
+                           "distilled_file":  "distilled/activity-rings.md",
+                           "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                       },
+    "activity-views":  {
+                           "disposition":  "verified-current-source-review",
+                           "distilled_file":  "distilled/activity-views.md",
+                           "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                       },
+    "airplay":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/airplay.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                },
+    "alerts":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/alerts.md",
+                   "notes":  "Current-source review accepted in verification/components-batch-a.md, then related-routing remediated in verification/final-audit-remediation.md."
+               },
+    "always-on":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/always-on.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                  },
+    "app-clips":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/app-clips.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                  },
+    "app-icons":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/app-icons.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                  },
+    "app-shortcuts":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/app-shortcuts.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                      },
+    "apple-pay":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/apple-pay.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                  },
+    "apple-pencil-and-scribble":  {
+                                      "disposition":  "verified-current-source-review",
+                                      "distilled_file":  "distilled/apple-pencil-and-scribble.md",
+                                      "notes":  "Current-source review revised and resolved in verification/components-batch-a.md."
+                                  },
+    "augmented-reality":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/augmented-reality.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                          },
+    "boxes":  {
+                  "disposition":  "verified-current-source-review",
+                  "distilled_file":  "distilled/boxes.md",
+                  "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+              },
+    "branding":  {
+                     "disposition":  "existing-no-change",
+                     "distilled_file":  "distilled/branding.md",
+                     "notes":  "Current-source review accepted in tier-1 verification and second-pass full fidelity audit; see verification/full-audit-results.md."
+                 },
+    "color":  {
+                  "disposition":  "verified-current-source-review",
+                  "distilled_file":  "distilled/color.md",
+                  "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+              },
+    "buttons":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/buttons.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                },
+    "camera-control":  {
+                           "disposition":  "verified-current-source-review",
+                           "distilled_file":  "distilled/camera-control.md",
+                           "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                       },
+    "carekit":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/carekit.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                },
+    "carplay":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/carplay.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                },
+    "charting-data":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/charting-data.md",
+                          "notes":  "Current-source review accepted in verification/components-batch-b.md, then revised after final random audit in verification/final-audit-remediation.md."
+                      },
+    "charts":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/charts.md",
+                   "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+               },
+    "collaboration-and-sharing":  {
+                                      "disposition":  "verified-current-source-review",
+                                      "distilled_file":  "distilled/collaboration-and-sharing.md",
+                                      "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                                  },
+    "collections":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/collections.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                    },
+    "color-wells":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/color-wells.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                    },
+    "column-views":  {
+                         "disposition":  "verified-current-source-review",
+                         "distilled_file":  "distilled/column-views.md",
+                         "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                     },
+    "combo-boxes":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/combo-boxes.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                    },
+    "complications":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/complications.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                      },
+    "context-menus":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/context-menus.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-b.md."
+                      },
+    "dark-mode":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/dark-mode.md",
+                      "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+                  },
+    "digit-entry-views":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/digit-entry-views.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                          },
+    "digital-crown":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/digital-crown.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                      },
+    "disclosure-controls":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/disclosure-controls.md",
+                                "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                            },
+    "dock-menus":  {
+                       "disposition":  "verified-current-source-review",
+                       "distilled_file":  "distilled/dock-menus.md",
+                       "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                   },
+    "drag-and-drop":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/drag-and-drop.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                      },
+    "edit-menus":  {
+                       "disposition":  "verified-current-source-review",
+                       "distilled_file":  "distilled/edit-menus.md",
+                       "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                   },
+    "entering-data":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/entering-data.md",
+                          "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                      },
+    "eyes":  {
+                 "disposition":  "verified-current-source-review",
+                 "distilled_file":  "distilled/eyes.md",
+                 "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+             },
+    "feedback":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/feedback.md",
+                     "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                 },
+    "file-management":  {
+                            "disposition":  "verified-current-source-review",
+                            "distilled_file":  "distilled/file-management.md",
+                            "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                        },
+    "focus-and-selection":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/focus-and-selection.md",
+                                "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                            },
+    "game-center":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/game-center.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                    },
+    "game-controls":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/game-controls.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                      },
+    "gauges":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/gauges.md",
+                   "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+               },
+    "generative-ai":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/generative-ai.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-c.md."
+                      },
+    "gestures":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/gestures.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                 },
+    "going-full-screen":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/going-full-screen.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                          },
+    "gyro-and-accelerometer":  {
+                                   "disposition":  "verified-current-source-review",
+                                   "distilled_file":  "distilled/gyro-and-accelerometer.md",
+                                   "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                               },
+    "healthkit":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/healthkit.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                  },
+    "home-screen-quick-actions":  {
+                                      "disposition":  "verified-current-source-review",
+                                      "distilled_file":  "distilled/home-screen-quick-actions.md",
+                                      "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                                  },
+    "homekit":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/homekit.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                },
+    "icloud":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/icloud.md",
+                   "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+               },
+    "id-verifier":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/id-verifier.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                    },
+    "image-views":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/image-views.md",
+                        "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                    },
+    "image-wells":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/image-wells.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                    },
+    "imessage-apps-and-stickers":  {
+                                       "disposition":  "verified-current-source-review",
+                                       "distilled_file":  "distilled/imessage-apps-and-stickers.md",
+                                       "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                                   },
+    "immersive-experiences":  {
+                                  "disposition":  "verified-current-source-review",
+                                  "distilled_file":  "distilled/immersive-experiences.md",
+                                  "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                              },
+    "in-app-purchase":  {
+                            "disposition":  "verified-current-source-review",
+                            "distilled_file":  "distilled/in-app-purchase.md",
+                            "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                        },
+    "keyboards":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/keyboards.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+                  },
+    "labels":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/labels.md",
+                   "notes":  "Current-source review revised and resolved in verification/components-batch-d.md."
+               },
+    "launching":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/launching.md",
+                      "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                  },
+    "lists-and-tables":  {
+                             "disposition":  "verified-current-source-review",
+                             "distilled_file":  "distilled/lists-and-tables.md",
+                             "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                         },
+    "live-activities":  {
+                            "disposition":  "verified-current-source-review",
+                            "distilled_file":  "distilled/live-activities.md",
+                            "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                        },
+    "live-photos":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/live-photos.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                    },
+    "live-viewing-apps":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/live-viewing-apps.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                          },
+    "loading":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/loading.md",
+                    "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                },
+    "lockups":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/lockups.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                },
+    "mac-catalyst":  {
+                         "disposition":  "verified-current-source-review",
+                         "distilled_file":  "distilled/mac-catalyst.md",
+                         "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                     },
+    "machine-learning":  {
+                             "disposition":  "verified-current-source-review",
+                             "distilled_file":  "distilled/machine-learning.md",
+                             "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                         },
+    "maps":  {
+                 "disposition":  "verified-current-source-review",
+                 "distilled_file":  "distilled/maps.md",
+                 "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+             },
+    "menus":  {
+                  "disposition":  "verified-current-source-review",
+                  "distilled_file":  "distilled/menus.md",
+                  "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+              },
+    "modality":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/modality.md",
+                     "notes":  "Current-source review accepted in verification/components-batch-e.md, then revised after adjacent-category audit in verification/final-audit-remediation.md."
+                 },
+    "multitasking":  {
+                         "disposition":  "verified-current-source-review",
+                         "distilled_file":  "distilled/multitasking.md",
+                         "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                     },
+    "nearby-interactions":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/nearby-interactions.md",
+                                "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+                            },
+    "nfc":  {
+                "disposition":  "verified-current-source-review",
+                "distilled_file":  "distilled/nfc.md",
+                "notes":  "Current-source review revised and resolved in verification/components-batch-e.md."
+            },
+    "notifications":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/notifications.md",
+                          "notes":  "Current-source review revised and resolved alongside managing-notifications in verification/new-files-batch-1.md."
+                      },
+    "offering-help":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/offering-help.md",
+                          "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                      },
+    "onboarding":  {
+                       "disposition":  "verified-current-source-review",
+                       "distilled_file":  "distilled/onboarding.md",
+                       "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                   },
+    "ornaments":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/ornaments.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                  },
+    "outline-views":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/outline-views.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-f.md, then related-routing remediated in verification/final-audit-remediation.md."
+                      },
+    "page-controls":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/page-controls.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                      },
+    "panels":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/panels.md",
+                   "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+               },
+    "path-controls":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/path-controls.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                      },
+    "photo-editing":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/photo-editing.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                      },
+    "pickers":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/pickers.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                },
+    "playing-audio":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/playing-audio.md",
+                          "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                      },
+    "playing-haptics":  {
+                            "disposition":  "verified-current-source-review",
+                            "distilled_file":  "distilled/playing-haptics.md",
+                            "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                        },
+    "playing-video":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/playing-video.md",
+                          "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                      },
+    "pointing-devices":  {
+                             "disposition":  "verified-current-source-review",
+                             "distilled_file":  "distilled/pointing-devices.md",
+                             "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                         },
+    "pop-up-buttons":  {
+                           "disposition":  "verified-current-source-review",
+                           "distilled_file":  "distilled/pop-up-buttons.md",
+                           "notes":  "Current-source review revised and resolved in verification/components-batch-f.md."
+                       },
+    "popovers":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/popovers.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                 },
+    "printing":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/printing.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                 },
+    "progress-indicators":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/progress-indicators.md",
+                                "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                            },
+    "pull-down-buttons":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/pull-down-buttons.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                          },
+    "rating-indicators":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/rating-indicators.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                          },
+    "ratings-and-reviews":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/ratings-and-reviews.md",
+                                "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                            },
+    "remotes":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/remotes.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                },
+    "researchkit":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/researchkit.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                    },
+    "scroll-views":  {
+                         "disposition":  "verified-current-source-review",
+                         "distilled_file":  "distilled/scroll-views.md",
+                         "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                     },
+    "search-fields":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/search-fields.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                      },
+    "searching":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/searching.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                  },
+    "segmented-controls":  {
+                               "disposition":  "verified-current-source-review",
+                               "distilled_file":  "distilled/segmented-controls.md",
+                               "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                           },
+    "settings":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/settings.md",
+                     "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                 },
+    "shareplay":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/shareplay.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-g.md."
+                  },
+    "shazamkit":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/shazamkit.md",
+                      "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                  },
+    "sheets":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/sheets.md",
+                   "notes":  "Current-source review revised and resolved in verification/components-batch-g.md, then final-audit remediated in verification/final-audit-remediation.md."
+               },
+    "sidebars":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/sidebars.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-g.md, then scoped after follow-up audit in verification/final-audit-remediation.md."
+                 },
+    "sign-in-with-apple":  {
+                               "disposition":  "verified-current-source-review",
+                               "distilled_file":  "distilled/sign-in-with-apple.md",
+                               "notes":  "Current-source review accepted in verification/components-batch-h.md, then revised after final random audit in verification/final-audit-remediation.md."
+                           },
+    "siri":  {
+                 "disposition":  "verified-current-source-review",
+                 "distilled_file":  "distilled/siri.md",
+                 "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+             },
+    "sliders":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/sliders.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                },
+    "spatial-layout":  {
+                           "disposition":  "verified-current-source-review",
+                           "distilled_file":  "distilled/spatial-layout.md",
+                           "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                       },
+    "split-views":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/split-views.md",
+                        "notes":  "Current-source review accepted in verification/components-batch-h.md, then related-routing remediated in verification/final-audit-remediation.md."
+                    },
+    "status-bars":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/status-bars.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                    },
+    "steppers":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/steppers.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                 },
+    "tab-bars":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/tab-bars.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                 },
+    "tab-views":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/tab-views.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                  },
+    "tap-to-pay-on-iphone":  {
+                                 "disposition":  "verified-current-source-review",
+                                 "distilled_file":  "distilled/tap-to-pay-on-iphone.md",
+                                 "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                             },
+    "text-fields":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/text-fields.md",
+                        "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                    },
+    "text-views":  {
+                       "disposition":  "verified-current-source-review",
+                       "distilled_file":  "distilled/text-views.md",
+                       "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                   },
+    "the-menu-bar":  {
+                         "disposition":  "verified-current-source-review",
+                         "distilled_file":  "distilled/the-menu-bar.md",
+                         "notes":  "Current-source review revised and resolved in verification/components-batch-h.md."
+                     },
+    "toggles":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/toggles.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                },
+    "toolbars":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/toolbars.md",
+                     "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                 },
+    "top-shelf":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/top-shelf.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                  },
+    "undo-and-redo":  {
+                          "disposition":  "verified-current-source-review",
+                          "distilled_file":  "distilled/undo-and-redo.md",
+                          "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                      },
+    "virtual-keyboards":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/virtual-keyboards.md",
+                              "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                          },
+    "voiceover":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/voiceover.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                  },
+    "wallet":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/wallet.md",
+                   "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+               },
+    "watch-faces":  {
+                        "disposition":  "verified-current-source-review",
+                        "distilled_file":  "distilled/watch-faces.md",
+                        "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                    },
+    "web-views":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/web-views.md",
+                      "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                  },
+    "widgets":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/widgets.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                },
+    "windows":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/windows.md",
+                    "notes":  "Current-source review revised and resolved in verification/components-batch-i.md, then expanded after follow-up audit in verification/final-audit-remediation.md."
+                },
+    "workouts":  {
+                     "disposition":  "verified-current-source-review",
+                     "distilled_file":  "distilled/workouts.md",
+                     "notes":  "Current-source review revised and resolved in verification/components-batch-i.md."
+                 },
+    "icons":  {
+                  "disposition":  "verified-current-source-review",
+                  "distilled_file":  "distilled/icons.md",
+                  "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+              },
+    "images":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/images.md",
+                   "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+               },
+    "inclusion":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/inclusion.md",
+                      "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+                  },
+    "layout":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/layout.md",
+                   "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+               },
+    "materials":  {
+                      "disposition":  "verified-current-source-review",
+                      "distilled_file":  "distilled/materials.md",
+                      "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+                  },
+    "motion":  {
+                   "disposition":  "verified-current-source-review",
+                   "distilled_file":  "distilled/motion.md",
+                   "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+               },
+    "right-to-left":  {
+                          "disposition":  "existing-no-change",
+                          "distilled_file":  "distilled/right-to-left.md",
+                          "notes":  "Current-source review accepted in tier-1 verification and second-pass full fidelity audit; see verification/full-audit-results.md."
+                      },
+    "sf-symbols":  {
+                       "disposition":  "verified-current-source-review",
+                       "distilled_file":  "distilled/sf-symbols.md",
+                       "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+                   },
+    "typography":  {
+                       "disposition":  "verified-current-source-review",
+                       "distilled_file":  "distilled/typography.md",
+                       "notes":  "Tier 1 current-source review revised and resolved in verification/tier-1-batch-1.md."
+                   },
+    "writing":  {
+                    "disposition":  "verified-current-source-review",
+                    "distilled_file":  "distilled/writing.md",
+                    "notes":  "Second-pass full fidelity audit revised and resolved in verification/full-audit-results.md."
+                },
+    "components":  {
+                       "disposition":  "collection-only",
+                       "notes":  "Classification pass: short intro plus links to component subcategories; no independent rules."
+                   },
+    "content":  {
+                    "disposition":  "collection-only",
+                    "notes":  "Classification pass: lists child content topics only."
+                },
+    "controls":  {
+                     "disposition":  "verified-new-distill",
+                     "distilled_file":  "distilled/controls.md",
+                     "notes":  "Distilled and independently verified in verification/new-files-batch-1.md."
+                 },
+    "design-principles":  {
+                              "disposition":  "verified-new-distill",
+                              "distilled_file":  "distilled/design-principles.md",
+                              "notes":  "Distilled as tier 1 and independently verified in verification/new-files-batch-1.md."
+                          },
+    "designing-for-games":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/designing-for-games.md",
+                                "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                            },
+    "designing-for-ios":  {
+                              "disposition":  "verified-current-source-review",
+                              "distilled_file":  "distilled/designing-for-ios.md",
+                              "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                          },
+    "designing-for-ipados":  {
+                                 "disposition":  "verified-current-source-review",
+                                 "distilled_file":  "distilled/designing-for-ipados.md",
+                                 "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                             },
+    "designing-for-macos":  {
+                                "disposition":  "verified-current-source-review",
+                                "distilled_file":  "distilled/designing-for-macos.md",
+                                "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                            },
+    "designing-for-tvos":  {
+                               "disposition":  "verified-current-source-review",
+                               "distilled_file":  "distilled/designing-for-tvos.md",
+                               "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                           },
+    "designing-for-visionos":  {
+                                   "disposition":  "verified-current-source-review",
+                                   "distilled_file":  "distilled/designing-for-visionos.md",
+                                   "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                               },
+    "designing-for-watchos":  {
+                                  "disposition":  "verified-current-source-review",
+                                  "distilled_file":  "distilled/designing-for-watchos.md",
+                                  "notes":  "Tier 2 current-source review revised and resolved in verification/tier-2-platforms.md."
+                              },
+    "foundations":  {
+                        "disposition":  "collection-only",
+                        "notes":  "Classification pass: intro plus links to foundation topics."
+                    },
+    "getting-started":  {
+                            "disposition":  "collection-only",
+                            "notes":  "Classification pass: collection group linking design principles and platform/game pages."
+                        },
+    "inputs":  {
+                   "disposition":  "collection-only",
+                   "notes":  "Classification pass: routes to input-method child topics only."
+               },
+    "layout-and-organization":  {
+                                    "disposition":  "collection-only",
+                                    "notes":  "Classification pass: lists layout/organization child components."
+                                },
+    "managing-accounts":  {
+                              "disposition":  "verified-new-distill",
+                              "distilled_file":  "distilled/managing-accounts.md",
+                              "notes":  "Distilled and independently verified after revision in verification/new-files-batch-1.md."
+                          },
+    "managing-notifications":  {
+                                   "disposition":  "verified-merge",
+                                   "distilled_file":  "distilled/notifications.md",
+                                   "notes":  "Merged into notifications.md and independently verified after revision in verification/new-files-batch-1.md."
+                               },
+    "menus-and-actions":  {
+                              "disposition":  "collection-only",
+                              "notes":  "Classification pass: lists menu/action child components only."
+                          },
+    "navigation-and-search":  {
+                                  "disposition":  "collection-only",
+                                  "notes":  "Classification pass: lists path controls, search fields, sidebars, tab bars, token fields."
+                              },
+    "patterns":  {
+                     "disposition":  "collection-only",
+                     "notes":  "Classification pass: intro plus links to pattern child topics."
+                 },
+    "presentation":  {
+                         "disposition":  "collection-only",
+                         "notes":  "Classification pass: lists presentation components only."
+                     },
+    "privacy":  {
+                    "disposition":  "verified-new-distill",
+                    "distilled_file":  "distilled/privacy.md",
+                    "notes":  "Distilled as tier 1 and independently verified in verification/new-files-batch-1.md."
+                },
+    "selection-and-input":  {
+                                "disposition":  "collection-only",
+                                "notes":  "Classification pass: lists selection/input controls only."
+                            },
+    "snippets":  {
+                     "disposition":  "verified-new-distill",
+                     "distilled_file":  "distilled/snippets.md",
+                     "notes":  "Distilled and independently verified in verification/new-files-batch-1.md."
+                 },
+    "status":  {
+                   "disposition":  "collection-only",
+                   "notes":  "Classification pass: lists status components only."
+               },
+    "system-experiences":  {
+                               "disposition":  "collection-only",
+                               "notes":  "Classification pass: lists system-experience child topics only."
+                           },
+    "technologies":  {
+                         "disposition":  "collection-only",
+                         "notes":  "Classification pass: intro plus links to technology child topics."
+                     },
+    "token-fields":  {
+                         "disposition":  "verified-new-distill",
+                         "distilled_file":  "distilled/token-fields.md",
+                         "notes":  "Distilled as tier 4 and independently verified in verification/new-files-batch-1.md."
+                     }
+}

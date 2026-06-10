@@ -1,11 +1,14 @@
 ---
 topic: shareplay
 tier: 3
-platforms: [ios, ipados, macos, tvos]
+platforms: [ios, ipados, macos, tvos, visionos]
 category: technologies
 triggers:
   - "SharePlay"
   - "Group Activities"
+  - "GroupActivities"
+  - "SystemCoordinator"
+  - "SpatialTemplatePreference"
   - "shared experience"
   - "FaceTime activity"
 related:
@@ -25,6 +28,8 @@ related:
 - **Use "SharePlay" correctly**: noun ("Join SharePlay") or verb ("SharePlay Movie"). Never adjective (*spatial SharePlay*). Never modified (*SharePlayed*, *SharePlaying*).
 
 ## Activities
+
+- If the app isn't installed, use the SharePlay alert/App Store path and support `Universal Purchase` where appropriate.
 
 - An *activity* = an app-defined shareable experience type.
 - **Brief activity descriptions** — shown in the invitation; short enough to avoid truncation.

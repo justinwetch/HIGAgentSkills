@@ -5,13 +5,17 @@ platforms: [ios, ipados, macos, tvos, visionos, watchos]
 category: components/controls
 triggers:
   - "picker"
+  - "DatePicker"
   - "date picker"
   - "UIDatePicker"
   - "UIPickerView"
+  - "NSDatePicker"
   - "wheel picker"
+  - "navigationLink"
 related:
-  - segmented-controls
   - pop-up-buttons
+  - pull-down-buttons
+  - lists-and-tables
 ---
 # Pickers
 

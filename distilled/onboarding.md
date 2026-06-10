@@ -11,7 +11,8 @@ triggers:
   - "permissions request"
 related:
   - launching
-  - sign-in-with-apple
+  - feedback
+  - offering-help
 ---
 # Onboarding
 
