@@ -2,6 +2,18 @@
 
 [![Watch the demo](https://img.youtube.com/vi/UGaSV21ff18/maxresdefault.jpg)](https://www.youtube.com/watch?v=UGaSV21ff18)
 
+## Install
+
+One command, on any Agent Skills host. The cross-agent [`skills` CLI](https://skills.sh) resolves this repository, reads the `name: apple-hig` frontmatter, and installs the skill into a directory named `apple-hig` for you, so the [naming requirement](#installation) is satisfied without a manual rename:
+
+```bash
+npx skills add justinwetch/HIGAgentSkills
+```
+
+Pull later refreshes with `npx skills update apple-hig`.
+
+This installs the whole repository, so the maintenance files (`scripts/`, `sources/`, `process.md`) ride along as roughly 430 KB of inert extra bytes. Nothing in `SKILL.md`, `routing-index.md`, or any `distilled/` file routes to them, so no agent loads them. Use the [runtime zip](#runtime-zip) when you want the minimal footprint instead.
+
 ## Copy-Paste Install Prompt
 
 Copy and paste this message to your agent to have this skill automatically installed for you.
@@ -113,6 +125,8 @@ Removed: introductory framing, change history, repetitive examples, and prose th
 Each compression pass was followed by an evaluation step to confirm that no substantive rules or specifications were lost, only extraneous prose. Files were only accepted when the distilled version could answer the same design questions as the source.
 
 ## Installation
+
+`npx skills add justinwetch/HIGAgentSkills` names the installed directory `apple-hig` from the `SKILL.md` frontmatter, and works on any Agent Skills host. It carries the maintenance files with it, so reach for the runtime zip when the footprint matters.
 
 Use the runtime zip for production testing. After extraction, the installed skill directory must be named `apple-hig` so the folder name matches the `name: apple-hig` metadata in `SKILL.md`.
 
