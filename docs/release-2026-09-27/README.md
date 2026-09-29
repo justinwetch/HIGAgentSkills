@@ -62,7 +62,7 @@ The trials show the agent following the workflow. They are not a compiled build 
 
 ## Package
 
-The candidate contains **167 files**: the previous 166, plus `references/duo.md`, `references/duo-checklist.md` and `commands/duo.md`, minus the two README images. The packaged README links its header image and the /duo still from GitHub instead, which cuts the ZIP from about 3.2 MB to 386 KB.
+The candidate contains **167 files**: the previous 166, plus `references/duo.md`, `references/duo-checklist.md` and `commands/duo.md`, minus the two README images. The packaged README links its header image and the /duo images from GitHub instead, which cuts the ZIP from about 3.2 MB to 386 KB.
 - Two builds are byte-identical.
 - A clean extraction passes exact membership, hashes, routing/frontmatter and 13 local links.
 - **35 helper tests pass.**
@@ -70,8 +70,8 @@ The candidate contains **167 files**: the previous 166, plus `references/duo.md`
 
 `.gitattributes` now keeps text files LF in every checkout, so manifest hashes are the same on any platform.
 
-The full shipped text totals **187,991 o200k_base / 187,405 cl100k_base tokens** (tiktoken 0.14.0). Normal requests load only a relevant subset.
-- `SKILL.md` plus `README.md` total 4,158 / 4,152.
+The full shipped text totals **188,059 o200k_base / 187,471 cl100k_base tokens** (tiktoken 0.14.0). Normal requests load only a relevant subset.
+- `SKILL.md` plus `README.md` total 4,226 / 4,218.
 - Duo mode's three files total 5,658 / 5,651, loaded only in Duo mode.
 
 ## Remaining limits

@@ -21,6 +21,8 @@ or custom prompt directory, then confirm /duo works.
 
 ## 2026-09-27 release: iPhone Duo and OS 27
 
+![/duo redesigns your app for iPhone Duo: an open iPhone Duo on a table showing a record library in four columns](https://raw.githubusercontent.com/justinwetch/HIGAgentSkills/main/docs/readme-graphics/2026-09-27/02-duo-release.jpg)
+
 Apple's September guideline update added a whole new page for the folding iPhone Duo and brought the rest of the HIG up to OS 27. This release brings the skill up to that snapshot (captured September 12) and adds help for the job most iOS teams will actually have this fall: taking an app they already ship and making it work on a phone that opens.
 
 - **Duo mode.** `/duo` takes an existing iOS app through assessing its screens, matching them to Apple's Duo guidance, recommending changes for you to approve, and building them in SwiftUI or UIKit. It works in your app's own code and never draws web mockups (see "Redesign for iPhone Duo" below).
@@ -62,7 +64,7 @@ Answers quote the operative source clause before applying it, preserving conditi
 
 ## Redesign for iPhone Duo
 
-![/duo redesigns your app for iPhone Duo: an open iPhone Duo on a table showing a record library in four columns](https://raw.githubusercontent.com/justinwetch/HIGAgentSkills/main/docs/readme-graphics/2026-09-27/01-duo-open.png)
+![An iPhone Duo half folded on a table, Now Playing split across the fold: the turntable on the raised half, the controls on the flat half](https://raw.githubusercontent.com/justinwetch/HIGAgentSkills/main/docs/readme-graphics/2026-09-27/03-duo-split.jpg)
 
 ```text
 /duo the library and reading flow
