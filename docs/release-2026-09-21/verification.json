@@ -1,0 +1,139 @@
+{
+ "status": "ready to ship as reference skill with opt-in enforce (revised 2026-09-23)",
+ "package": {
+  "entries": 166,
+  "distilled_count": 157,
+  "sha256": "0bc866c513cbd951aa0ab2582f2e2304624ef08de895af1a32920ba1a384ed09",
+  "membership_and_hashes": "pass",
+  "path": "release/apple-hig-2026-09-21.zip"
+ },
+ "reproducible": true,
+ "manifest_sha256": "fe25bf0303001d825e73071b5d0d037c2c28a799b4aa530277b30f5d9c70a14c",
+ "unchanged_accepted_topics": 157,
+ "clean_extraction": {
+  "status": "pass",
+  "expected_files": 166,
+  "actual_files": 166,
+  "topics": 157,
+  "errors": [],
+  "scope": "Membership, hashes, routing structure and local links only; no source fidelity or observed agent behavior claim."
+ },
+ "validated_local_links": 7,
+ "helper_tests": {
+  "returncode": 0,
+  "output_sha256": "6a83147290bee4c192ed61e90dd3fbbbe55c23a5c966d35643e8b3b4567dc323"
+ },
+ "static_tokens": {
+  "tokenizer_version": "0.14.0",
+  "shipped_text": {
+   "o200k_base": 217610,
+   "cl100k_base": 216162
+  },
+  "setup_help_entry_and_readme": {
+   "o200k_base": 2996,
+   "cl100k_base": 3006
+  }
+ },
+ "limitations": [
+  "No new automatic host discovery or Mac installation test.",
+  "No native-device certification.",
+  "Historical enforce observations are retained evidence, not newly executed app interactions."
+ ],
+ "independent_review": {
+  "reviewer": "/root/non_duo_release_review",
+  "decision": "ship",
+  "manifest_sha256": "fe25bf0303001d825e73071b5d0d037c2c28a799b4aa530277b30f5d9c70a14c",
+  "historical_evidence_replay": [
+   {
+    "score": 68.75,
+    "status": "needs changes"
+   },
+   {
+    "score": 100,
+    "status": "pass"
+   },
+   {
+    "score": 93.75,
+    "status": "needs changes",
+    "regression": "b-action-names"
+   },
+   {
+    "score": 100,
+    "status": "pass"
+   }
+  ],
+  "replay_limit": "Saved observations evaluated against candidate scorer with artifact paths rebound to saved snapshots; not new UI observation."
+ },
+ "fresh_help_trial": {
+  "agent": "/root/shipping_help_trial",
+  "result": "pass",
+  "files_read": [
+   "SKILL.md",
+   "README.md"
+  ],
+  "limit": "Explicit extracted skill path supplied; does not test host automatic discovery."
+ },
+ "launch_prompt_sha256": "a8eb485a8f30f92777ebff6a941ca8c43efd6600521221b453b482dc8239c52b",
+ "revision_2026_09_23": {
+  "reason": "Fresh pre-release review; see README Revision 2026-09-23.",
+  "package": {
+   "path": "release/apple-hig-2026-09-21.zip",
+   "entries": 166,
+   "distilled_count": 157,
+   "sha256": "dade6466c7e3843bf6ce019248168b08c4b531b1dd832b7096a8bb4278c413cf",
+   "membership_and_hashes": "pass",
+   "reproducible": true
+  },
+  "manifest_sha256": "238c067eefb0124dd74ec0d031ff139a212097378e74b38bb15871068fb6f61c",
+  "changed_runtime_files": [
+   "SKILL.md",
+   "README.md",
+   "routing-index.md",
+   "references/hig/designing-for-iphone-duo.md",
+   "scripts/hig_route.py",
+   "scripts/hig_enforce.py"
+  ],
+  "unchanged_accepted_topics": 156,
+  "revised_topics": {
+   "designing-for-iphone-duo": {
+    "sha256": "9474a898efd251b83d79315f93ef85bb9ff568c4e213bf94bee9a8ee1993d79e",
+    "output_words": 917,
+    "independent_rereview": "pass; low findings applied",
+    "source_native_sha256": "929d7f9eec7e7ec3c570a91cd561e71648298c777ee089edef406082bd3336ee"
+   }
+  },
+  "clean_extraction": "pass (166 files, 157 topics, no errors)",
+  "helper_tests": {
+   "count": 35,
+   "result": "pass"
+  },
+  "corpus_words": {
+   "source": 261621,
+   "output": 108246,
+   "reduction_percent": 58.625
+  },
+  "static_tokens": {
+   "method": "tiktoken 0.14.0 over package text members (.md/.py)",
+   "shipped_text": {
+    "o200k_base": 218490,
+    "cl100k_base": 216953
+   },
+   "pre_revision_package_same_method": {
+    "o200k_base": 217784,
+    "cl100k_base": 216260
+   },
+   "setup_help_entry_and_readme": {
+    "o200k_base": 3136,
+    "cl100k_base": 3142
+   },
+   "corpus_full_files": {
+    "o200k_base": 200088,
+    "cl100k_base": 198647
+   }
+  },
+  "not_rerun": [
+   "Historical enforce evidence replay (scoring logic unchanged; only input/error handling changed).",
+   "Fresh setup/help agent trial against the revised SKILL.md."
+  ]
+ }
+}

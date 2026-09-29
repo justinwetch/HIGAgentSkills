@@ -1,0 +1,24 @@
+{
+  "status": "accepted bounded operational clarification of existing source fidelity",
+  "created_at": "2026-09-13T08:42:06.490565+00:00",
+  "path": "work\\release-2026-09-12\\API-READING-NOTE.md",
+  "sha256": "11089f7a9ceea1921bb54e5afca31e0ea76eb737184724cab64f8d186490c14e",
+  "basis": "DRAFTER already requires distinct linked API metadata meaning; source-reading only renders primary block text and does not append reference abstracts. Resource guidance=False describes source denominator classification, not exclusion of usable API meaning from fidelity.",
+  "source_example": [
+    "work/release-2026-09-12/source-reading/search-fields.md",
+    "work/release-2026-09-12/source-blocks/search-fields.json",
+    "sources/apple-hig-2026-09-12/raw/search-fields.json"
+  ],
+  "first_supplemental_dispatch": "corpus-07-correction1 via message during running correction",
+  "criteria_or_measurement_changed": false,
+  "review_required": "Independent corpus07 re-review should verify this clarification against actual reading aid/original metadata. Every exposed prior topic already receives full API metadata QA; do not waive remaining findings.",
+  "independent_review": {
+    "reviewer": "/root/corpus_07_review",
+    "model": "review-tier",
+    "reasoning": "high",
+    "path": "work/release-2026-09-12/reviews/corpus-07/round2/api-reading-note.review.json",
+    "sha256": "226a756c8146512edd035578ba2a0c0090b51245cb06ede5d224c30328dd300b",
+    "scope": "Reviewed this note against the four assigned topics and existing protocols, not a claim about every corpus renderer or a new content/acceptance requirement."
+  },
+  "accepted_at": "2026-09-13T09:01:11.475508+00:00"
+}

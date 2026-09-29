@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "components/layout-and-organization/tab-views",
+    "kind": "markdown",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components/layout-and-organization/tab-views.md",
+    "retrieved_at": "2026-09-12T21:10:44.220883+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "components/layout-and-organization/tab-views",
+    "kind": "json",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components/layout-and-organization/tab-views.json",
+    "retrieved_at": "2026-09-12T21:10:47.854644+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "components/presentation/page-controls",
+    "kind": "markdown",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components/presentation/page-controls.md",
+    "retrieved_at": "2026-09-12T21:10:44.264912+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "components/presentation/page-controls",
+    "kind": "json",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components/presentation/page-controls.json",
+    "retrieved_at": "2026-09-12T21:10:47.952681+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "components/system-experiences/complications",
+    "kind": "markdown",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components/system-experiences/complications.md",
+    "retrieved_at": "2026-09-12T21:10:44.266916+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "components/system-experiences/complications",
+    "kind": "json",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components/system-experiences/complications.json",
+    "retrieved_at": "2026-09-12T21:10:48.010194+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "spatial-interactions",
+    "kind": "markdown",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-interactions.md",
+    "retrieved_at": "2026-09-12T21:10:58.588469+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  },
+  {
+    "slug": "spatial-interactions",
+    "kind": "json",
+    "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-interactions.json",
+    "retrieved_at": "2026-09-12T21:11:02.263987+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "attempts": 3,
+    "status": 404
+  }
+]

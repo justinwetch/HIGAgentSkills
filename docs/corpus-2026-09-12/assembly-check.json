@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "scope": "Independent final reference-corpus assembly QA only",
+  "checked_utc": "2026-09-14T04:38:03.859983+00:00",
+  "checks": {
+    "identity_hashes_reviews": {
+      "topics": 157,
+      "initial_final_pairs": 45,
+      "accepted_repair_overrides": 24,
+      "source_pages": 158,
+      "unique_guidance_blocks": 6360
+    },
+    "measurements": {
+      "entire_final_report_equal": true,
+      "entire_june_report_equal": true,
+      "source_words": 261621,
+      "output_words": 108104,
+      "word_reduction_percent": 58.679,
+      "distribution": {
+        "minimum": 20.0,
+        "median": 55.913,
+        "maximum": 83.049,
+        "quartiles": [
+          45.5935,
+          55.913,
+          62.272999999999996
+        ],
+        "below_60": 109,
+        "60_to_85": 48,
+        "above_85": 0
+      },
+      "foundations": 16,
+      "unchanged_june_files": 156
+    },
+    "review_narrative_regressions": "The four c01 b4 context_regressions narratives explicitly state None found; all topic closure evidence inspected.",
+    "summary_and_manifests": "verified actual identities, hashes, routing, all word/token sums and ratios, distributions, largest topics, foundation context, 141 remainder and June per-topic comparisons",
+    "evidence_integrity": {
+      "verified_files": 121,
+      "all_verified_path_hash_pairs_sha256": "e6ce4ff45855dfa666a66fe5311ba47f09b0806d3e3e2c0a4ef29924b48b399b"
+    }
+  },
+  "evidence_sha256": {
+    "work\\remaining-2026-09-13\\combined\\manifest.json": "b3446c352f001440136fb0df191bf0cc1ccf1d10f1972e9b731b1b6f449bd7c6",
+    "work\\remaining-2026-09-13\\combined\\measurements.json": "3ac7d5c53c03e4d15c15b5d70f1acd69e7ad93fc65a45ae54c9f50eb847004e2",
+    "work\\remaining-2026-09-13\\combined\\summary-data.json": "ebff5e297237a7a1e6738d434e009998072990beab991b9d1c075c5c6ae024cd",
+    "work\\remaining-2026-09-13\\combined\\june-sanity.json": "cf15e99884433bcbe1949d2c2cbac3fc01364a02f0a666a5284d8e238d1b2f14",
+    "work\\remaining-2026-09-13\\repairs\\accepted.json": "a2fd6e802ef1a5321d7d3ae00a08fb1dc2c39e1da0e7c874a647fa62b99cd9cf",
+    "work\\remaining-2026-09-13\\repairs\\queue.json": "4470592b1c444211d2073b3d3c8425db8115d33b74316356ed2a8732cc04d93f",
+    "work\\release-2026-09-12\\disposition-review.json": "11fe505bb1addbd2fc3bbee2045b9e05a25d8915b491923f473dd2e38297b367",
+    "work\\remaining-2026-09-13\\assembly-audit\\remeasured.json": "3ac7d5c53c03e4d15c15b5d70f1acd69e7ad93fc65a45ae54c9f50eb847004e2",
+    "work\\remaining-2026-09-13\\june-baseline-measurements.json": "5a8f5fc06e526a2267b63a4953001cd4749e52f778d3d019b519c01b2d1aeaf3",
+    "work\\remaining-2026-09-13\\assembly-audit\\june-remeasured.json": "5a8f5fc06e526a2267b63a4953001cd4749e52f778d3d019b519c01b2d1aeaf3",
+    "work\\remaining-2026-09-13\\combined\\remaining-manifest.json": "2129e3ce02fc890894708386ec1aa65851da95cbab31da5298fb743a6189952a"
+  },
+  "errors": [],
+  "limitations": [
+    "Reviews checked for exact-topic coverage, substantive evidence and accepted-byte linkage; this assembly check does not repeat whole-source fidelity QA.",
+    "Targeted repair reviews retain prior full-source evidence for unchanged material; captured captions/alt/API metadata do not establish pixel/video/runtime behavior.",
+    "Runtime integration, enforce logic, README and ZIP excluded."
+  ]
+}

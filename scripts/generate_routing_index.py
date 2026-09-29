@@ -94,7 +94,7 @@ def generate(distilled_dir: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--distilled-dir", default="distilled")
+    parser.add_argument("--distilled-dir", default="references/hig")
     parser.add_argument("--output", default="routing-index.md")
     parser.add_argument("--check", action="store_true", help="Exit nonzero if output is stale")
     args = parser.parse_args()

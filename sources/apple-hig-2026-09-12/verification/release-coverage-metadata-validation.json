@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-13T08:09:53.897579+00:00",
+  "status": "adopted mechanical duplicate-member rejection; all exposed current maps rechecked",
+  "problem": "Two correction maps contained duplicate started_at members. Other recorded source facts and candidate content were unaffected.",
+  "repairs": "Administrative maps corrected and frozen; stale Gauges destination and historical timestamp wording also repaired. Original frozen files/reviews remain available.",
+  "independent_acceptance": {
+    "path": "work/release-2026-09-12/reviews/corpus-05/metadata-final/acceptance.json",
+    "sha256": "21e822e4747821201c17802f6d78ccdf8ae19db22df91cf27fa0750e5f3cfdb0"
+  },
+  "independent_tests": {
+    "path": "work/release-2026-09-12/reviews/corpus-05/metadata-final/bounded-tests.json",
+    "sha256": "71302353883220bf2cc56ec114ecc7c0546b720433b9ffa3d01e241fc61a9992"
+  },
+  "final_pair_manifest": {
+    "path": "work/release-2026-09-12/frozen/corpus-05-metadata-final/manifest.json",
+    "sha256": "527aaf6b6a647b540282d20aa12424559844c277f6fe56331b03eb05614d1bcc"
+  },
+  "checker": {
+    "path": "scripts/check_hig_candidate.py",
+    "sha256": "f8e6e0100357e731382883341a9cfcfc4ea5bb2f3accd4678ddfd18b1168aade"
+  },
+  "exposure_scan": {
+    "path": "work/release-2026-09-12/tool-proposals/coverage-duplicate-audit-before.json",
+    "sha256": "e503396e93f58c310119bc3744c80728f504c0f599aae715e0e798f047f1f429"
+  },
+  "scope": "26 current coverage maps scanned; all current maps duplicate-free after repair. Four final pairs pass; exact historical duplicates and a nested duplicate reject, repeated keys in separate sibling objects remain valid. Mechanical JSON validation is not source fidelity.",
+  "semantic_correction_attempts_unchanged": true
+}

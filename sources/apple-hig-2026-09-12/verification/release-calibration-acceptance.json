@@ -1,0 +1,1233 @@
+{
+  "reviewer": {
+    "identity": "/root/calibration_method_review",
+    "model": "review-tier",
+    "reasoning": "high",
+    "independence": "Did not draft or correct candidates, author new gold, answer blind cases or issue topic source acceptance. Continues independent method/gate audit."
+  },
+  "actual_review_start_utc": "2026-09-13T02:22:12.5476588Z",
+  "actual_review_end_utc": "2026-09-13T02:27:13.084532+00:00",
+  "report_generated_at_utc": "2026-09-13T02:27:13.084532+00:00",
+  "verdict": "pass",
+  "chunk2_pass": true,
+  "scope": "Chunk2 calibration of SharePlay, Privacy and Keyboards on the round6 frozen candidate/coverage pairs and explicitly identified final behavioral evidence. Permits the bounded remaining corpus queue to begin under the accepted protocol. Not corpus/release, enforced-mode, packaged-skill or extracted-runtime acceptance.",
+  "criteria": {
+    "C1": {
+      "verdict": "pass",
+      "scope": "177 source dispositions and complete three-topic calibration coverage",
+      "evidence": "Existing independent disposition/accounting approvals carry. Complete atomic maps bind405 prose facts,16 API facts,379 data cells and11 headers across181 source blocks. Current and source-first map hashes, original sources, complete prose/API membership, exact candidate clauses/cells and delta continuity were independently checked. Full corpus topic retention is still a scaling obligation."
+    },
+    "C2": {
+      "verdict": "pass",
+      "scope": "Independent source fidelity and resolved calibration behavior",
+      "evidence": "Distinct review-tier (xhigh) correction and acceptance, whole-source atomic mapping, reverse support, raw table reconstruction, captions/API meanings and affected-fact rematches retain unchanged final hashes. SharePlay21/85 and Keyboards12/47 valid elicited fact items pass full fresh round6. Privacy20/84 latest cumulative evidence passes after round7 repairs its sole responder condition error. No unresolved substantive candidate or elicited answer defect remains."
+    },
+    "C3": {
+      "verdict": "pass",
+      "scope": "Calibration measurement/exception review",
+      "evidence": "8062 source words to5007 output words is37.894% ratio-of-totals reduction. Published metrics match independent reproduction and final candidate hashes. Three low-compression topics have substantive fidelity/outlier reviews;75% is still a corpus heuristic, never a per-file quota. Denominator policy and source dispositions are unchanged. Named-encoding file tokens remain separate from actual runtime usage."
+    },
+    "C6": {
+      "verdict": "pass",
+      "scope": "Required calibration roles, isolation, concurrency and honest execution evidence",
+      "evidence": "Actual model contexts and parent fresh-spawn records verify drafting-tier (high) answerers, review-tier (high) examiners/graders, separate review-tier (xhigh) correction and source acceptance. All38 latest trace file/raw-prefix/parent bindings pass. Pre-gate ledger has only completed/failed records and observed peakthree children pluslead. Failed attempts remain preserved. Central dispatch/completion observations are timing authority; incomplete self-reported starts/read lists and unknown billing are disclosed rather than repaired by inference."
+    }
+  },
+  "final_pairs": [
+    {
+      "topic": "shareplay",
+      "counts": {
+        "prose_facts": 161,
+        "API_facts": 6,
+        "data_cells": 0,
+        "header_cells": 0,
+        "findings_closed": 4,
+        "affected_fact_ids_closed": 9,
+        "source_blocks_bound": 61
+      },
+      "reviewer": {
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "role": "independent acceptance reviewer; continuing own frozen source-first and round5 atomic review"
+      },
+      "candidate_sha256": "046f5ffd3dda06edb0b3082b16e25cc1e737a620acd98174a810d05e7274e697",
+      "coverage_sha256": "9b301276615c36dedbe6f5597b878b4d567fc2c53f492a2129a178c329278dea"
+    },
+    {
+      "topic": "privacy",
+      "counts": {
+        "prose_facts": 170,
+        "API_facts": 4,
+        "data_cells": 9,
+        "header_cells": 3,
+        "findings_closed": 2,
+        "affected_fact_ids_closed": 3,
+        "source_blocks_bound": 75
+      },
+      "reviewer": {
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "role": "independent acceptance reviewer; continuing own frozen source-first and round5 atomic review"
+      },
+      "candidate_sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+      "coverage_sha256": "bcd095b7cd7396a5b03b3de35b0079fb92e17a829eccadfedc5fe2035792b13d"
+    },
+    {
+      "topic": "keyboards",
+      "counts": {
+        "prose_facts": 74,
+        "API_facts": 6,
+        "data_cells": 370,
+        "header_cells": 8,
+        "findings_closed": 1,
+        "affected_fact_ids_closed": 1,
+        "source_blocks_bound": 45
+      },
+      "reviewer": {
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "role": "independent acceptance reviewer; continuing own frozen source-first and round5 atomic review"
+      },
+      "candidate_sha256": "a9a296d664e9a59c9760b078e1af4aacda33c9eaa9624d8e0b61bdbbb824cc59",
+      "coverage_sha256": "daa55323c69ff1ccdd798ba4089f052f9fa61b84de731b81c5e57ba36ff19556"
+    }
+  ],
+  "behavioral_evidence": {
+    "shareplay": {
+      "status": "pass",
+      "cases": 21,
+      "facts": 85,
+      "administration": "Complete fresh round6;20 regressions/81facts and one first-use source-only reserve/fourfacts. No carried grades.",
+      "answer_sha256": "76c0be16b0e19e47d725fd4a475d434c71bbc6bc60f5bd987394e04703c1f482"
+    },
+    "keyboards": {
+      "status": "pass for valid elicited meanings",
+      "cases": 12,
+      "fact_items": 47,
+      "administration": "Complete fresh round6;11 regressions/43facts and one first-use source-only reserve/fourfacts. No carried grades.",
+      "qualifications": "keyboards-07.F1 scores the asked universal-modifier-rule rebuttal through the single-key game exception, not unasked ordinary-shortcut background. F2 preserves can make the app seem difficult to learn. Final publication additionally discloses denominator treatment, actual runtime/read/timing evidence and supplementary source metadata. Current semantics, totals and all input hashes rechecked; no item silently removed.",
+      "answer_sha256": "fb99c56bbb201e3a4a57e356cc874efdd906d6ca3d587c4a94d5c4e7e238e7ae",
+      "final_grade_sha256": "4a3ef4d0284e5e3329dacc13e3b4805dbb7fad1b3be24bcadf6e3c0f1a4d7af3"
+    },
+    "privacy": {
+      "status": "pass cumulative latest evidence",
+      "cases": 20,
+      "facts": 84,
+      "administration": "18 passing round6 cases/77facts carried on unchanged reference; round7 passes the three-fact conjunction regression and four-fact first-use source-only case. Not a single clean full-suite rerun.",
+      "round7_answer_sha256": "16dcd32dc8b9a4e64dd33c5de186df982f08614da1bf392995a09e19f403378a",
+      "round7_grade_sha256": "c274e5d5d09de24531a1e8daf19c82eff1e7783938b1d60294619bf05e4c6928",
+      "reference_sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+      "identity_arithmetic": "18 distinct carried cases plus two current cases;77+3+4=84 facts. Original round6 partial remains unchanged."
+    },
+    "aggregate_scope": "53 distinct case identities and216 latest valid elicited fact items across three topics. This is a mixed full-run/cumulative summary, not one fresh53-case administration, a corpus-fidelity score or a count of all source facts."
+  },
+  "privacy7_independent_semantic_check": [
+    {
+      "fact": "regression F1/F2/F3",
+      "source": "raw privacy content21; native pre-alert guidance; final reference73",
+      "judgment": "Answer identifies meaning and visual weight jointly, then this similarity can make unintended Allow more likely. It no longer asserts either dimension alone is sufficient and preserves possibility rather than certainty. All three requested facts pass."
+    },
+    {
+      "fact": "extra7 f1",
+      "source": "raw content43; native Protecting data opening",
+      "judgment": "Question explicitly asks local storage and operation authorization. Answer includes both and directs system security technologies. Networking is supported but not required recall."
+    },
+    {
+      "fact": "extra7 f2/f3",
+      "source": "raw content46; native168",
+      "judgment": "Answer stores sensitive recovery notes in a keychain and explicitly retains secure and predictable handling. Both storage and requested rationale pass."
+    },
+    {
+      "fact": "extra7 f4",
+      "source": "raw content47; native170",
+      "judgment": "Answer rejects no-password and restrictive-permission exceptions, preserves other secure content, plain-text prohibition and encrypted-keychain protection comparison. No risk-elimination or App Store rejection invention."
+    },
+    {
+      "fact": "additional authentication explanation",
+      "source": "raw content45/48 and final Protecting data section",
+      "judgment": "Passkeys remain where possible, password-based2FA remains conditional, persistent-sign-in biometrics remain conditional, and the answer declines to invent one exact offline password-free mechanism. These additions are source-supported."
+    }
+  ],
+  "exam_and_isolation": {
+    "extra7_validity": "All four source-backed expected facts have exact administered question clauses; no unasked rationale, unsupported certainty or exclusive-example requirement. Frozen questions/gold hashes and original source hashes pass. The case was written from permitted sources and the prior questions-only catalog before candidate/answer access, frozen02:14:06, then fresh answerer dispatched2026-09-13T02:14:55.467Z per parent tool evidence. It is first-use source-only; regression remains labeled regression.",
+    "actual_answer_reads": "Privacy7 read the mandated decision-making SKILL.md at02:15:03 before its four-file packet at02:15:12. Its self-reported actual_reads lists only the packet, so that list is incomplete as a total-access ledger. The extra method-skill read is required by standing AGENTS instructions and contains no HIG gold/source/candidate evidence; it is not literal packet-only access. Actual trace supplies the missing provenance. No prohibited source, gold, prior answer or candidate-review read was found.",
+    "method_result": "New conjunction/disjunction paragraph was actually supplied and read in round7, and the answer preserves its condition. Short operative quotation is followed by actual scenario application. This is observed answer correctness, not proof of internal composition order or that the prompt alone caused the improvement.",
+    "fresh_dispatches": [
+      {
+        "timestamp": "2026-09-13T02:12:04.841Z",
+        "task_name": "calibration_privacy_extra7_exam",
+        "model": "review-tier",
+        "reasoning_effort": "high",
+        "fork_turns": "none"
+      },
+      {
+        "timestamp": "2026-09-13T02:14:55.467Z",
+        "task_name": "calibration_answer_privacy7",
+        "model": "drafting-tier",
+        "reasoning_effort": "high",
+        "fork_turns": "none"
+      }
+    ]
+  },
+  "metrics": {
+    "totals": {
+      "source_guidance_words": 8062,
+      "output_guidance_words": 5007,
+      "word_reduction_percent": 37.894,
+      "tokens": {
+        "o200k_base": {
+          "source_guidance": 10636,
+          "output_guidance": 7442,
+          "candidate_full_file": 8964
+        },
+        "cl100k_base": {
+          "source_guidance": 10630,
+          "output_guidance": 7446,
+          "candidate_full_file": 8928
+        }
+      }
+    },
+    "topics": [
+      {
+        "topic": "keyboards",
+        "candidate_sha256": "a9a296d664e9a59c9760b078e1af4aacda33c9eaa9624d8e0b61bdbbb824cc59",
+        "source_hashes": [
+          {
+            "slug": "keyboards",
+            "json_sha256": "ef81add8bc05d6f5d641814e936076fd44400b45334160841e83c16e12eb8dee",
+            "native_sha256": "96850470425944fde6951dd9cc7b843bc60604f509252902c6ebb0326a46b6c1"
+          }
+        ],
+        "source_blocks": [
+          "keyboards#/metadata/title",
+          "keyboards#/abstract",
+          "keyboards#/primaryContentSections/0/content/0",
+          "keyboards#/primaryContentSections/0/content/1",
+          "keyboards#/primaryContentSections/0/content/2",
+          "keyboards#/primaryContentSections/0/content/3",
+          "keyboards#/primaryContentSections/0/content/4",
+          "keyboards#/primaryContentSections/0/content/5",
+          "keyboards#/primaryContentSections/0/content/6",
+          "keyboards#/primaryContentSections/0/content/7",
+          "keyboards#/primaryContentSections/0/content/8",
+          "keyboards#/primaryContentSections/0/content/9",
+          "keyboards#/primaryContentSections/0/content/10",
+          "keyboards#/primaryContentSections/0/content/11",
+          "keyboards#/primaryContentSections/0/content/12",
+          "keyboards#/primaryContentSections/0/content/13",
+          "keyboards#/primaryContentSections/0/content/14",
+          "keyboards#/primaryContentSections/0/content/15",
+          "keyboards#/primaryContentSections/0/content/16",
+          "keyboards#/primaryContentSections/0/content/17",
+          "keyboards#/primaryContentSections/0/content/18",
+          "keyboards#/primaryContentSections/0/content/19",
+          "keyboards#/primaryContentSections/0/content/20",
+          "keyboards#/primaryContentSections/0/content/21",
+          "keyboards#/primaryContentSections/0/content/22",
+          "keyboards#/primaryContentSections/0/content/23",
+          "keyboards#/primaryContentSections/0/content/24",
+          "keyboards#/primaryContentSections/0/content/25",
+          "keyboards#/primaryContentSections/0/content/26",
+          "keyboards#/primaryContentSections/0/content/27",
+          "keyboards#/primaryContentSections/0/content/28",
+          "keyboards#/primaryContentSections/0/content/29",
+          "keyboards#/primaryContentSections/0/content/30"
+        ],
+        "source_guidance_words": 2485,
+        "output_guidance_words": 1808,
+        "word_reduction_percent": 27.243,
+        "compression_review_flag": true,
+        "routing_metadata_audit_required": "Reviewer must confirm excluded frontmatter fields contain only routing metadata, never hidden design guidance.",
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 3768,
+            "output_guidance": 3130,
+            "candidate_full_file": 3592
+          },
+          "cl100k_base": {
+            "source_guidance": 3772,
+            "output_guidance": 3136,
+            "candidate_full_file": 3592
+          }
+        }
+      },
+      {
+        "topic": "privacy",
+        "candidate_sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+        "source_hashes": [
+          {
+            "slug": "privacy",
+            "json_sha256": "df3a543792a763a141ccc6eae59e94615fb96d6e8eb6a65f2f1a92b4ec80ad2d",
+            "native_sha256": "00cba7ad97d7fb763623a3cbd99aed11536fb530d60e3b6eeb1b8b9dac3394c7"
+          }
+        ],
+        "source_blocks": [
+          "privacy#/metadata/title",
+          "privacy#/abstract",
+          "privacy#/primaryContentSections/0/content/0",
+          "privacy#/primaryContentSections/0/content/1",
+          "privacy#/primaryContentSections/0/content/2",
+          "privacy#/primaryContentSections/0/content/3",
+          "privacy#/primaryContentSections/0/content/4",
+          "privacy#/primaryContentSections/0/content/5",
+          "privacy#/primaryContentSections/0/content/6",
+          "privacy#/primaryContentSections/0/content/7",
+          "privacy#/primaryContentSections/0/content/8",
+          "privacy#/primaryContentSections/0/content/9",
+          "privacy#/primaryContentSections/0/content/10",
+          "privacy#/primaryContentSections/0/content/11",
+          "privacy#/primaryContentSections/0/content/12",
+          "privacy#/primaryContentSections/0/content/13",
+          "privacy#/primaryContentSections/0/content/14",
+          "privacy#/primaryContentSections/0/content/15",
+          "privacy#/primaryContentSections/0/content/16",
+          "privacy#/primaryContentSections/0/content/17",
+          "privacy#/primaryContentSections/0/content/18",
+          "privacy#/primaryContentSections/0/content/19",
+          "privacy#/primaryContentSections/0/content/20",
+          "privacy#/primaryContentSections/0/content/21",
+          "privacy#/primaryContentSections/0/content/22",
+          "privacy#/primaryContentSections/0/content/23",
+          "privacy#/primaryContentSections/0/content/24",
+          "privacy#/primaryContentSections/0/content/25",
+          "privacy#/primaryContentSections/0/content/26",
+          "privacy#/primaryContentSections/0/content/27",
+          "privacy#/primaryContentSections/0/content/28",
+          "privacy#/primaryContentSections/0/content/29",
+          "privacy#/primaryContentSections/0/content/30",
+          "privacy#/primaryContentSections/0/content/31",
+          "privacy#/primaryContentSections/0/content/32",
+          "privacy#/primaryContentSections/0/content/33",
+          "privacy#/primaryContentSections/0/content/34",
+          "privacy#/primaryContentSections/0/content/35",
+          "privacy#/primaryContentSections/0/content/36",
+          "privacy#/primaryContentSections/0/content/37",
+          "privacy#/primaryContentSections/0/content/38",
+          "privacy#/primaryContentSections/0/content/39",
+          "privacy#/primaryContentSections/0/content/40",
+          "privacy#/primaryContentSections/0/content/41",
+          "privacy#/primaryContentSections/0/content/42",
+          "privacy#/primaryContentSections/0/content/43",
+          "privacy#/primaryContentSections/0/content/44",
+          "privacy#/primaryContentSections/0/content/45",
+          "privacy#/primaryContentSections/0/content/46",
+          "privacy#/primaryContentSections/0/content/47",
+          "privacy#/primaryContentSections/0/content/48",
+          "privacy#/primaryContentSections/0/content/49",
+          "privacy#/primaryContentSections/0/content/50",
+          "privacy#/primaryContentSections/0/content/51",
+          "privacy#/primaryContentSections/0/content/52",
+          "privacy#/primaryContentSections/0/content/53",
+          "privacy#/primaryContentSections/0/content/54",
+          "privacy#/primaryContentSections/0/content/55",
+          "privacy#/primaryContentSections/0/content/56",
+          "privacy#/primaryContentSections/0/content/57",
+          "privacy#/primaryContentSections/0/content/58",
+          "privacy#/primaryContentSections/0/content/59"
+        ],
+        "source_guidance_words": 3089,
+        "output_guidance_words": 1578,
+        "word_reduction_percent": 48.916,
+        "compression_review_flag": true,
+        "routing_metadata_audit_required": "Reviewer must confirm excluded frontmatter fields contain only routing metadata, never hidden design guidance.",
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 3799,
+            "output_guidance": 2163,
+            "candidate_full_file": 2811
+          },
+          "cl100k_base": {
+            "source_guidance": 3790,
+            "output_guidance": 2155,
+            "candidate_full_file": 2786
+          }
+        }
+      },
+      {
+        "topic": "shareplay",
+        "candidate_sha256": "046f5ffd3dda06edb0b3082b16e25cc1e737a620acd98174a810d05e7274e697",
+        "source_hashes": [
+          {
+            "slug": "shareplay",
+            "json_sha256": "b8801258811a282267cc8b8a68bc683fc6b3ed62e5b44da037afda29eda073c0",
+            "native_sha256": "34c8d4dcc9b6f4cba9245ad24e7c28aafc38116dcb555938b900d62dd7468e55"
+          }
+        ],
+        "source_blocks": [
+          "shareplay#/metadata/title",
+          "shareplay#/abstract",
+          "shareplay#/primaryContentSections/0/content/0",
+          "shareplay#/primaryContentSections/0/content/1",
+          "shareplay#/primaryContentSections/0/content/2",
+          "shareplay#/primaryContentSections/0/content/3",
+          "shareplay#/primaryContentSections/0/content/4",
+          "shareplay#/primaryContentSections/0/content/5",
+          "shareplay#/primaryContentSections/0/content/6",
+          "shareplay#/primaryContentSections/0/content/7",
+          "shareplay#/primaryContentSections/0/content/8",
+          "shareplay#/primaryContentSections/0/content/9",
+          "shareplay#/primaryContentSections/0/content/10",
+          "shareplay#/primaryContentSections/0/content/11",
+          "shareplay#/primaryContentSections/0/content/12",
+          "shareplay#/primaryContentSections/0/content/13",
+          "shareplay#/primaryContentSections/0/content/14",
+          "shareplay#/primaryContentSections/0/content/15",
+          "shareplay#/primaryContentSections/0/content/16",
+          "shareplay#/primaryContentSections/0/content/17",
+          "shareplay#/primaryContentSections/0/content/18",
+          "shareplay#/primaryContentSections/0/content/19",
+          "shareplay#/primaryContentSections/0/content/20",
+          "shareplay#/primaryContentSections/0/content/21",
+          "shareplay#/primaryContentSections/0/content/22",
+          "shareplay#/primaryContentSections/0/content/23",
+          "shareplay#/primaryContentSections/0/content/24",
+          "shareplay#/primaryContentSections/0/content/25",
+          "shareplay#/primaryContentSections/0/content/26",
+          "shareplay#/primaryContentSections/0/content/27",
+          "shareplay#/primaryContentSections/0/content/28",
+          "shareplay#/primaryContentSections/0/content/29",
+          "shareplay#/primaryContentSections/0/content/30",
+          "shareplay#/primaryContentSections/0/content/31",
+          "shareplay#/primaryContentSections/0/content/32",
+          "shareplay#/primaryContentSections/0/content/33",
+          "shareplay#/primaryContentSections/0/content/34",
+          "shareplay#/primaryContentSections/0/content/35",
+          "shareplay#/primaryContentSections/0/content/36",
+          "shareplay#/primaryContentSections/0/content/37",
+          "shareplay#/primaryContentSections/0/content/38",
+          "shareplay#/primaryContentSections/0/content/39",
+          "shareplay#/primaryContentSections/0/content/40",
+          "shareplay#/primaryContentSections/0/content/41",
+          "shareplay#/primaryContentSections/0/content/42",
+          "shareplay#/primaryContentSections/0/content/43",
+          "shareplay#/primaryContentSections/0/content/44",
+          "shareplay#/primaryContentSections/0/content/45",
+          "shareplay#/primaryContentSections/0/content/46",
+          "shareplay#/primaryContentSections/0/content/47",
+          "shareplay#/primaryContentSections/0/content/48",
+          "shareplay#/primaryContentSections/0/content/49",
+          "shareplay#/primaryContentSections/0/content/50",
+          "shareplay#/primaryContentSections/0/content/51"
+        ],
+        "source_guidance_words": 2488,
+        "output_guidance_words": 1621,
+        "word_reduction_percent": 34.847,
+        "compression_review_flag": true,
+        "routing_metadata_audit_required": "Reviewer must confirm excluded frontmatter fields contain only routing metadata, never hidden design guidance.",
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 3069,
+            "output_guidance": 2149,
+            "candidate_full_file": 2561
+          },
+          "cl100k_base": {
+            "source_guidance": 3068,
+            "output_guidance": 2155,
+            "candidate_full_file": 2550
+          }
+        }
+      }
+    ]
+  },
+  "cost_and_timing": {
+    "billing_usage": null,
+    "billing_conclusion": "Unknown. No dollar inference from file counts, runtime usage, cache counts or elapsed time.",
+    "runtime_usage_scope": "Actual runtime totals are captured per agent session, including retries/continuations. Cached input is part of input, reasoning output is part of output; neither is an additional independent charge. Prior round6 answerer aggregate remains1,408,287 input/43,544 output; Privacy7 separately reports306,266 input including282,624 cached and4,923 output. These are not whole-project invoice totals.",
+    "timing": "Central observed dispatch/completion and trace timestamps govern elapsed work. Privacy7 reported start02:15:40 describes a later reread/hash check after first packet read02:15:12; reported completion precedes its metadata patch. Source-table milliseconds are actual final file reread observations, not semantic review duration. Missing starts remain null and historical invalid metadata is not trusted.",
+    "ledger_snapshot": "work/release-2026-09-12/reviews/chunk2-gate/final-inputs/execution-ledger.json",
+    "ledger_peak_children": 3,
+    "all_pregate_records_terminal": true,
+    "trace_snapshot": "work/release-2026-09-12/agent-traces/20260913T022111067190Z/index.json",
+    "trace_count": 38
+  },
+  "closed_findings": {
+    "prior_preflight": "SharePlay exit/rationale/quick-return gap closed by corrected final bytes plus distinct atomic source acceptance and successful complete fresh round6 answers. Current metrics and all source hashes match.",
+    "current_gate_R7": "Privacy7 seven actual facts independently accepted, unchanged reference and fair source-only new case verified.",
+    "current_gate_EVIDENCE": "Final complete traces include examiner, answerer and graders; hashes, runtime models, role boundaries and central terminal observations verified.",
+    "current_gate_LEDGER": "Immutable accepted-topic snapshot equals tracked records; all three fidelity and behavior statuses pass with correct scopes and verified report/answer hashes.",
+    "current_gate_GATE": "This independent final gate pass closes Chunk2 only."
+  },
+  "checks": {
+    "prior_count": 974,
+    "carry_forward": "Unchanged source/candidate/coverage/maps/metrics and stable grade authorities verified by their exact prior hashes. Only mutable execution/acceptance records and final Keyboards grade changed; all re-inspected under final bindings. Prior974 checks are retained, not blindly relabeled as newly executed.",
+    "final_checks": 233,
+    "final_failures": [],
+    "artifact": "work/release-2026-09-12/reviews/chunk2-gate/final-gate-checks.json",
+    "sha256": "22997d1029ba16b82872ff37c37a8c7a57c93e7b453aa53c6234d43a49503fe6",
+    "reproducer": "work/release-2026-09-12/reviews/chunk2-gate/check_final_gate.py"
+  },
+  "remaining_chunk2_requirements": [],
+  "later_gates": {
+    "C1_C2_C3": "Scale accepted method to remaining154 mapped topics with full per-topic source/behavior acceptance and corpus measurements.",
+    "C4": "Actual extracted/installed-skill use and enforce-v3 correction/reviewer fixtures remain later chunk4/6 obligations. Calibration answer tests do not certify that runtime behavior.",
+    "C5": "Routing integration, README/assets, package allowlist, reproducible ZIP, clean extraction and links remain later release obligations.",
+    "scope_control": "No installation, push, publishing or full-corpus acceptance is granted."
+  },
+  "inspected_files": {
+    "work/release-2026-09-12/reviews/chunk2-gate/round6-checks.json": {
+      "sha256": "a4ec46fae31485ec4023c1830b06966f6521ca1a4e62638cc17fd71d3c3107b1",
+      "bytes": 233369
+    },
+    "work/release-2026-09-12/CONTRACT.md": {
+      "sha256": "aa9e21cd8ecfad367bef4aaa50f5c9b7961e2abf652b5b0c804914dcf4e1318e",
+      "bytes": 5232
+    },
+    "work/release-2026-09-12/DRAFTER.md": {
+      "sha256": "81fcdd9ff2502b50999efb926f69c8901a6530325c375a4956f3ba169efd1ae4",
+      "bytes": 5338
+    },
+    "work/release-2026-09-12/REVIEWER.md": {
+      "sha256": "17f786ece1c270325e9fe16b6b73c078042cf9538911c1787b7e4039f46a1320",
+      "bytes": 4258
+    },
+    "work/release-2026-09-12/EXAMINER.md": {
+      "sha256": "fd72b0cedc77baa66411dd276b18b3e64e9bbe76f8033d1c2e2bd9c274e9de06",
+      "bytes": 2474
+    },
+    "work/release-2026-09-12/BLIND-ANSWERER.md": {
+      "sha256": "c727ff19c807ee4d1c6626eb99b0bf1557cfa22e67d47b993635bc3f3d1a6041",
+      "bytes": 3157
+    },
+    "work/release-2026-09-12/CORPUS-PIPELINE.md": {
+      "sha256": "fce5ef148a09a8a5f265d408e32eba5046a85fe17e49294f8b83afdd1a849919",
+      "bytes": 3923
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/manifest.json": {
+      "sha256": "e9808f7f9a4790219fa94b0f912f8c6ad0b0b808ae3ece1e2e74ee075f549ca9",
+      "bytes": 988
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/candidates/shareplay.md": {
+      "sha256": "046f5ffd3dda06edb0b3082b16e25cc1e737a620acd98174a810d05e7274e697",
+      "bytes": 12694
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/coverage/shareplay.json": {
+      "sha256": "9b301276615c36dedbe6f5597b878b4d567fc2c53f492a2129a178c329278dea",
+      "bytes": 34723
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/candidates/privacy.md": {
+      "sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+      "bytes": 13737
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/coverage/privacy.json": {
+      "sha256": "bcd095b7cd7396a5b03b3de35b0079fb92e17a829eccadfedc5fe2035792b13d",
+      "bytes": 29618
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/candidates/keyboards.md": {
+      "sha256": "a9a296d664e9a59c9760b078e1af4aacda33c9eaa9624d8e0b61bdbbb824cc59",
+      "bytes": 15623
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round6/coverage/keyboards.json": {
+      "sha256": "daa55323c69ff1ccdd798ba4089f052f9fa61b84de731b81c5e57ba36ff19556",
+      "bytes": 18248
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/delivery-manifest.json": {
+      "sha256": "953f02acd927edc48fb1ee45daa4d3c5e51e95e35e09486f70b75ffefd05e4e6",
+      "bytes": 2686
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/acceptance-summary.json": {
+      "sha256": "9b7f0438d542c5ee359ed9b0b1c236ae84c6ee42478a0fc9e345530467885db2",
+      "bytes": 2792
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/acceptance-summary.md": {
+      "sha256": "d02c5068b4f7e32bc3ec5754c20490e1d4c1eae96b3d870fc7fd0ef6fa346bdc",
+      "bytes": 1486
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/keyboards.review.json": {
+      "sha256": "e9b8adc0f1ed82573332a6ecac5bc5097a1b8506d101fd188dfbfe75b333ee2b",
+      "bytes": 334982
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/keyboards.review.md": {
+      "sha256": "828feb3011da3c321fcbda8d27ef8faaa32dc77453ad09a9db898dbb6b8a2026",
+      "bytes": 1732
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/measurement-reproduction.json": {
+      "sha256": "c61630e15b83690ad2db3c60e5c2da6e1cc25d47155e0409b9c53296072a31e6",
+      "bytes": 2710
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/privacy.review.json": {
+      "sha256": "68c346fa8e674bdcb19d61a4c61c4fe522a04793ff70357054b09c2e4dc0d891",
+      "bytes": 199751
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/privacy.review.md": {
+      "sha256": "2fd94a84e41ab7dbf9b91ffb962169e5c663436cd702ce054602d2008f6eda4a",
+      "bytes": 2204
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/retest.py": {
+      "sha256": "849fda61cfc810fca6e46819bdde8f70aa3c797df57007d66d7988692b8cf472",
+      "bytes": 30673
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/shareplay.review.json": {
+      "sha256": "c44f423b1a28aa2fb4e4bcc026fced84d27acad27085f7faca918382268211d8",
+      "bytes": 196836
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/round6/shareplay.review.md": {
+      "sha256": "5b7576bc0dfa326bf16dd28914edfdb7ae98bb626d17a0eb059912e9dce8bd7e",
+      "bytes": 3140
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/delivery-manifest.json": {
+      "sha256": "e1afe19314bb969a866539f2e54d286a3acf74f37b0e48d15aa437463a0e49ff",
+      "bytes": 3095
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/shareplay.review.json": {
+      "sha256": "ccc80552d12b7a63dd36b825b48dab0c143861da4443e74ecddcad27303a7226",
+      "bytes": 238669
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/shareplay.review.md": {
+      "sha256": "940e2be90cd7ea09389d00cd141e4ac34ce93ca54ea0f3f84de646226ad27b80",
+      "bytes": 3766
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/privacy.review.json": {
+      "sha256": "655db10e7dfd5349e3bd5eb3e443dbaf9828b1abaee58333e566cc2f1dfeafce",
+      "bytes": 274774
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/privacy.review.md": {
+      "sha256": "6c39d4859da362376b25e83355ecc0ec4f21c13f2c7b1ea015b201d9729fcd53",
+      "bytes": 2702
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/keyboards.review.json": {
+      "sha256": "9a0cf7adc74920aace6db35ed814c707fc5c079d1587f9f1a3b79e206dc7fe35",
+      "bytes": 371776
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/keyboards.review.md": {
+      "sha256": "b5d6a4aff96610571696ce64d973f2b2f91cf5c556e9f1516374477f70a19155",
+      "bytes": 2089
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/acceptance-summary.json": {
+      "sha256": "46d97bc22888ad548cad817cd1551f7442542eda807168fd2b7e52e98a9c2abf",
+      "bytes": 6455
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/acceptance-summary.md": {
+      "sha256": "e252da24bad918ac55057c18df036ee95080cb7a99df7f9e8e33d304b4c0f0d7",
+      "bytes": 1328
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/measurement-reproduction.json": {
+      "sha256": "9a12566613f9884ebf9ba5152b68244ee783c247f45f8d2f3f0a79a0b1855cbd",
+      "bytes": 2648
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/regression-questions.json": {
+      "sha256": "0fd805caa5d801e6f37628edff23e22bcbc3618fed5e3f2761cd511de63f917c",
+      "bytes": 2723
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/regression-gold.json": {
+      "sha256": "d77df7da87177841c2423d1f28e0b5e9ee972516eacb76894b606dae9abb6266",
+      "bytes": 17587
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/regression-freeze-manifest.json": {
+      "sha256": "bb83d3b662149a059b0fec65f75f66b8ee2ee13eedd501bd65c4cf7f3fe30a18",
+      "bytes": 640
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/source-first-freeze-manifest.json": {
+      "sha256": "b14eefefb92daa03db1b6e9a08fd8425e039380f9906c4e14ade117088f5818a",
+      "bytes": 1445
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/shareplay.source-first.json": {
+      "sha256": "8cb50e43fbee1ddf73cc61f28f81bd279e3a1a54ebc87159b6782c8e22c2145d",
+      "bytes": 139821
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round5/candidates/shareplay.md": {
+      "sha256": "73c04dca253b5eca82020fbb7eb13e3884b758ee18345570a3969a47d912b535",
+      "bytes": 12123
+    },
+    "sources/apple-hig-2026-09-12/raw/shareplay.json": {
+      "sha256": "b8801258811a282267cc8b8a68bc683fc6b3ed62e5b44da037afda29eda073c0",
+      "bytes": 45228
+    },
+    "sources/apple-hig-2026-09-12/native/shareplay.md": {
+      "sha256": "34c8d4dcc9b6f4cba9245ad24e7c28aafc38116dcb555938b900d62dd7468e55",
+      "bytes": 18493
+    },
+    "work/release-2026-09-12/source-blocks/shareplay.json": {
+      "sha256": "f69f6c10ae4996931ebe966f3ea546b35f45d51979fde86584ec6f8ebcf3ccf7",
+      "bytes": 115536
+    },
+    "work/release-2026-09-12/source-reading/shareplay.md": {
+      "sha256": "c4caf24cedf8a079d4927a0de3e228748f4d372dd10c350613959277eed8c388",
+      "bytes": 21760
+    },
+    "distilled/shareplay.md": {
+      "sha256": "d63eb4d64ee8ddcebba3df783d87c1af57a51f461586257d9bcba7da0a20eb37",
+      "bytes": 3587
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round5/coverage/shareplay.json": {
+      "sha256": "fa3a5d21c3f86790cd964f77e3297d078daab102e98cc95e4282d89b26754f6c",
+      "bytes": 21162
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/privacy.source-first.json": {
+      "sha256": "6853e9d5e1ef2cae058597cc4e052d4af504b7a4151876d1e229603d63a4f370",
+      "bytes": 186257
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round5/candidates/privacy.md": {
+      "sha256": "732f717bb0f69556ce33e5f9e67d1f13f93a99383c6045374ed6d8daee7560b6",
+      "bytes": 13431
+    },
+    "sources/apple-hig-2026-09-12/raw/privacy.json": {
+      "sha256": "df3a543792a763a141ccc6eae59e94615fb96d6e8eb6a65f2f1a92b4ec80ad2d",
+      "bytes": 66669
+    },
+    "sources/apple-hig-2026-09-12/native/privacy.md": {
+      "sha256": "00cba7ad97d7fb763623a3cbd99aed11536fb530d60e3b6eeb1b8b9dac3394c7",
+      "bytes": 23717
+    },
+    "work/release-2026-09-12/source-blocks/privacy.json": {
+      "sha256": "129176b4970c6d8bed7388774b984c85af293d0089394cbcfaf042247e704c14",
+      "bytes": 170432
+    },
+    "work/release-2026-09-12/source-reading/privacy.md": {
+      "sha256": "701f61366d74eeb781a683243f449a95fd2ffffc81473942f4e753f2c9c19c84",
+      "bytes": 28801
+    },
+    "distilled/privacy.md": {
+      "sha256": "229f63c69ed69e5f5247a7f27c3522162dcf495f1ec8fa15239cf8701d8be9d3",
+      "bytes": 7998
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round5/coverage/privacy.json": {
+      "sha256": "eacfba70219e4ea8febc884789def545e5cec406117d5957be9d21fb1d2299ae",
+      "bytes": 22107
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/keyboards.source-first.json": {
+      "sha256": "d46d77b4357921107b839e422a7c66aae64264099ccd65ec3cba204c8898e33c",
+      "bytes": 341494
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round5/candidates/keyboards.md": {
+      "sha256": "3f68aa04e616e86cb84e475e1be5b5019ad7e2a719c510c834ba0ffabbfb189a",
+      "bytes": 15614
+    },
+    "sources/apple-hig-2026-09-12/raw/keyboards.json": {
+      "sha256": "ef81add8bc05d6f5d641814e936076fd44400b45334160841e83c16e12eb8dee",
+      "bytes": 66400
+    },
+    "sources/apple-hig-2026-09-12/native/keyboards.md": {
+      "sha256": "96850470425944fde6951dd9cc7b843bc60604f509252902c6ebb0326a46b6c1",
+      "bytes": 39830
+    },
+    "work/release-2026-09-12/source-blocks/keyboards.json": {
+      "sha256": "9ae6654d6ad10a617ffc486bbe934bfff9a2e93d9815fad9a22c265861c9c3aa",
+      "bytes": 194432
+    },
+    "work/release-2026-09-12/source-reading/keyboards.md": {
+      "sha256": "d27379f9706a3908a04b1f96f2ce1cfd7ea1291c4a2a498e36ceb211468058fa",
+      "bytes": 21660
+    },
+    "distilled/keyboards.md": {
+      "sha256": "b463ea9d4052c502004b738cdc88bc42471b7587bb69af8e6bc99cf79e71b4a1",
+      "bytes": 15246
+    },
+    "work/release-2026-09-12/frozen/calibration-final-round5/coverage/keyboards.json": {
+      "sha256": "30becb44f52778d438ff641b402ae04d2c320f7466dc2cddc44da11de89f390b",
+      "bytes": 9412
+    },
+    "work/release-2026-09-12/calibration-round6-metrics.json": {
+      "sha256": "22e8f737d4c4b50c556f6a396c959971334602201c2d93a28719a8f17020bc46",
+      "bytes": 16530
+    },
+    "work/release-2026-09-12/exams/calibration-shareplay-round6-grades.json": {
+      "sha256": "3fb45ed262de5582f131caa44617a8556fe42e2c29a6bd2f5a98416d596043c1",
+      "bytes": 83377
+    },
+    "work/release-2026-09-12/blind/calibration-round6-shareplay/manifest.json": {
+      "sha256": "9960e86c30d2bfb5831bbf7e008e37ab66ed4f9521b28f8ec6711ed59303f079",
+      "bytes": 271
+    },
+    "work/release-2026-09-12/blind/calibration-round6-shareplay/instructions.md": {
+      "sha256": "3825be4a9a214fa63922a102623bb57fb369ed317466460fb805d6d88a003774",
+      "bytes": 2750
+    },
+    "work/release-2026-09-12/blind/calibration-round6-shareplay/questions.json": {
+      "sha256": "3d156275bacf1bfa7a4fcb4c472963f842d4c3ecbafad81221924d0e589b62e4",
+      "bytes": 10754
+    },
+    "work/release-2026-09-12/blind/calibration-round6-shareplay/shareplay.md": {
+      "sha256": "046f5ffd3dda06edb0b3082b16e25cc1e737a620acd98174a810d05e7274e697",
+      "bytes": 12694
+    },
+    "work/release-2026-09-12/blind/calibration-round6-shareplay/answers.json": {
+      "sha256": "76c0be16b0e19e47d725fd4a475d434c71bbc6bc60f5bd987394e04703c1f482",
+      "bytes": 27743
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-round6-grades.json": {
+      "sha256": "f30adb1e57470048b7c9e43ce0da69915377f754021f8de56654e7b6f0677012",
+      "bytes": 165016
+    },
+    "work/release-2026-09-12/exams/calibration-round6-grader-index.json": {
+      "sha256": "8269ad3f4944478d2ce015a71c548924a878a178440b74f6050af509278b119e",
+      "bytes": 19396
+    },
+    "work/release-2026-09-12/blind/calibration-round6-privacy/answers.json": {
+      "sha256": "18b9ae6aac28e3de022ab95b70446d486d14fe7191fc3f8bc9b78e7f20f6c945",
+      "bytes": 41316
+    },
+    "work/release-2026-09-12/blind/calibration-round6-privacy/questions.json": {
+      "sha256": "af00545986c585144b68ef796282062767d0316fa741ebf70556d5b11e317d1a",
+      "bytes": 9616
+    },
+    "work/release-2026-09-12/blind/calibration-round6-privacy/privacy.md": {
+      "sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+      "bytes": 13737
+    },
+    "work/release-2026-09-12/blind/calibration-round6-privacy/instructions.md": {
+      "sha256": "3825be4a9a214fa63922a102623bb57fb369ed317466460fb805d6d88a003774",
+      "bytes": 2750
+    },
+    "work/release-2026-09-12/blind/calibration-round6-privacy/manifest.json": {
+      "sha256": "8c1bb6ea131d3fa684c34e2c5f688c8f3976286dbf7185deb9197d11981dabac",
+      "bytes": 269
+    },
+    "work/release-2026-09-12/exams/calibration-elicitation-map-v2.json": {
+      "sha256": "4c53b33a6697f9ab25520a0a258a9a32344e3e5639b34dee975a8ff588a1b872",
+      "bytes": 125002
+    },
+    "work/release-2026-09-12/exams/calibration-gold-v2.json": {
+      "sha256": "1ac96404e515a204b9488e771c8433a1183d1ea684ad5e6efc6f14bcccf53855",
+      "bytes": 107279
+    },
+    "work/release-2026-09-12/exams/calibration-reserve-gold.json": {
+      "sha256": "b92b4eb16ab78c0e2f694b5586372feb04bf229b25d9cd38ca095ac7ab20b2e4",
+      "bytes": 34464
+    },
+    "work/release-2026-09-12/exams/calibration-extra-gold.json": {
+      "sha256": "e331ccb10bc673959cc040a23a9b7304edbcbd80140d57dcdf40cd23dfb12bf3",
+      "bytes": 29374
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-extra4-gold.json": {
+      "sha256": "e7ce146eba69872e9bb43cdfa4a8eee945ff1b34ea29a0ee38a1911e90a20e79",
+      "bytes": 14118
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-extra5-gold.json": {
+      "sha256": "11ee19238a26f2cf0d72ac3aacafe633ad7a6da94cf6113120de1a72697816e0",
+      "bytes": 15130
+    },
+    "work/release-2026-09-12/reviews/atomic-calibration/reserve-gold.json": {
+      "sha256": "efbb163043959b31546e77978d2c6e0bfd21e1c25c9a31b742ef76b3b40606a8",
+      "bytes": 12085
+    },
+    "work/release-2026-09-12/exams/calibration-keyboards-round6-grades.json": {
+      "sha256": "4a3ef4d0284e5e3329dacc13e3b4805dbb7fad1b3be24bcadf6e3c0f1a4d7af3",
+      "bytes": 184727
+    },
+    "work/release-2026-09-12/blind/calibration-round6-keyboards/answers.json": {
+      "sha256": "fb99c56bbb201e3a4a57e356cc874efdd906d6ca3d587c4a94d5c4e7e238e7ae",
+      "bytes": 19912
+    },
+    "work/release-2026-09-12/blind/calibration-round6-keyboards/questions.json": {
+      "sha256": "5956db333271b2e3f939cf88e4b39e34f96785e6d8a6c8c2da0bb3a96cbadc51",
+      "bytes": 4967
+    },
+    "work/release-2026-09-12/blind/calibration-round6-keyboards/instructions.md": {
+      "sha256": "3825be4a9a214fa63922a102623bb57fb369ed317466460fb805d6d88a003774",
+      "bytes": 2750
+    },
+    "work/release-2026-09-12/blind/calibration-round6-keyboards/manifest.json": {
+      "sha256": "32fe71939f5ad253db4fd411b00401b943bde8aabce857ece5e81a8ce660c71b",
+      "bytes": 271
+    },
+    "work/release-2026-09-12/blind/calibration-round6-keyboards/keyboards.md": {
+      "sha256": "a9a296d664e9a59c9760b078e1af4aacda33c9eaa9624d8e0b61bdbbb824cc59",
+      "bytes": 15623
+    },
+    "sources/apple-hig-2026-09-12/verification/release-topic-acceptance.json": {
+      "sha256": "f2536fe678c7043bd0113bee48868c9e4fa739c1872aaaceac5c41c6a369b09a",
+      "bytes": 17061
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/index.json": {
+      "sha256": "fefaec520cf900dcc5a81818e6928b077f1e52366b8586f4245299ad871457a1",
+      "bytes": 26916
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09795-9293-73b3-8bfd-3d02378cf46c.json": {
+      "sha256": "29a7d7ede1663cf39557c79f0355bdf36c668d1a18154cb1cce7ab02fc34ce10",
+      "bytes": 478049
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09799-58ab-7723-be1f-bccd6898543d.json": {
+      "sha256": "b8dcaba324fccfcd34d702ae063498446d45f501577da084d7804592506c127b",
+      "bytes": 937972
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0979b-acbf-7bd1-8dc3-a4582a88c888.json": {
+      "sha256": "754fb8ff83625215ce7b7656aa2948c6f7bbcb40179e56e297be8c97a8b074d9",
+      "bytes": 185351
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0979d-1094-7981-90db-fd5fd341ba96.json": {
+      "sha256": "700ce65eb36c4a5c1abd7b099dca589d0dfd7f6bf2c694863ca2614a80456cb3",
+      "bytes": 456597
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097d2-d6c2-73a3-8ee8-3781a5944ad4.json": {
+      "sha256": "9b1015f2c29a15af5c881278a211454b06c8e7b58a71b9967484668c07fe8bf4",
+      "bytes": 78332
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097f0-4ebe-7811-bd28-fb810e1ccdd2.json": {
+      "sha256": "c9817eb8dd8020a018f221434654eabc3faa25a17339c6fc422ebc4040f67aa0",
+      "bytes": 548181
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097f0-84e1-70b0-8447-51612a9f65cd.json": {
+      "sha256": "642d6c5d7c8183c83a18ea6348ff69d5a823a5fd34775ea54cc3a4601d2daf2d",
+      "bytes": 1629125
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097f4-9123-7751-a90b-e7ca2f237cd2.json": {
+      "sha256": "de8887e5b25d612d936c1f53c072348a7d5a085788ba1a8ff5f4f6845de68154",
+      "bytes": 228774
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097fa-7e05-77a0-8eff-e5430b3adb2d.json": {
+      "sha256": "2f9fc4e304ce77961a3f37f993b6a980502831229f2ea2b603b0bbf6c3c57020",
+      "bytes": 628589
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097fa-aa78-7a23-b08d-dc0516e0fb26.json": {
+      "sha256": "15450da4c0c59687327b6c47368018aaf1b0dadf0021464b45b23d991a368135",
+      "bytes": 481155
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a097fb-e6f9-7610-be5a-2aea1bebaac9.json": {
+      "sha256": "b0cd38782af4fbf0adf36b5b5a6d9f349a34af843b2b3893407740810b14033b",
+      "bytes": 950940
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09805-359d-73b1-a774-934a0fc55707.json": {
+      "sha256": "d0b1cdb582328c9ee0e30ff2a9878bc0471fef19ccb638e9f1bcfdb47491d73d",
+      "bytes": 120963
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0980f-9474-73c1-8de2-b7e826324f71.json": {
+      "sha256": "3b8b2e27e5243373285a840a509068262ffd1fb5e491ac7f4eb1e9fa6db4e9dc",
+      "bytes": 1161536
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09810-92f6-79a0-a25d-e5b881034837.json": {
+      "sha256": "58fe5bf84a36ba4d7bff01080c70ed21383eab3abe3be62f3777ee8c03073cf9",
+      "bytes": 521576
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09816-f58a-73b0-ace2-96832f2f2cde.json": {
+      "sha256": "1f8b97931d6f8918803c13dba4e34229af1cdabbda413d2d28e1a7fb85a09148",
+      "bytes": 964194
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09823-c2a8-7112-a03f-07ce1b9d4c62.json": {
+      "sha256": "013ed1428d9c4d4040ed577c3e3d44510c4e482e09cc4c258835efaad3b2bdad",
+      "bytes": 146031
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0982a-a237-7373-9e1c-451f30c996ae.json": {
+      "sha256": "f5b37d762f08dae81c10bd8f70feacd85a2d30c286d190934ec437735f9bdfae",
+      "bytes": 834656
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09833-8504-7902-a98e-f95a8a54099f.json": {
+      "sha256": "a0c3f96153f6aa1a44735e824e51cb817d23ddfec821544c559f83bd0306a395",
+      "bytes": 76467
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09833-d62a-7fb2-8275-4f18eec0a875.json": {
+      "sha256": "3755279cf451d89b3382f09a00f011acaea6242ca5af37bbbb8f781fe12d2325",
+      "bytes": 87371
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09834-4117-7f62-8d35-4dcb4615d670.json": {
+      "sha256": "750e9f7e26bfb1566c20765b8f6f59affb9637e1d12a350f567f8d41d97b88c6",
+      "bytes": 115370
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09839-3624-7032-b13d-7d809b0f86c7.json": {
+      "sha256": "326a7d350bdd9ffa463a03c8575a05b91c9faf478574adfc18d1a592ad7fb5b3",
+      "bytes": 167761
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0983e-50a2-7e60-880d-83d96a153334.json": {
+      "sha256": "cef8c1d8f9db456bdd1bff612da3713d9bf17c4cbcc0d9046df942b4e7e9ab94",
+      "bytes": 79230
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09841-e77a-7252-86a7-f92d5324e57e.json": {
+      "sha256": "369747cbb71f8f78f5bfd9376794490df0c03e9798a0c1cd60c11647f973b6fa",
+      "bytes": 159950
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09845-a4e8-7a81-a3cd-b352dad9d29d.json": {
+      "sha256": "14becfbe20d4f49609558f39e45ee578fef5203d6687ce44d32ad1a481ed53de",
+      "bytes": 75988
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0984a-828a-7700-9a62-0f8853b4e861.json": {
+      "sha256": "af026de4bf0f98fc832cfcd7371187865200b39713d8b33c735a86f26fdef686",
+      "bytes": 172868
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0984e-8d09-7603-9921-22430bc1fff4.json": {
+      "sha256": "23cf0da9a51e6dc7005221c9bbce060110861a8b81aaee6e8fee8d9f29f41f4c",
+      "bytes": 55712
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09851-b2ed-75f2-ade9-d305ec8cdf40.json": {
+      "sha256": "2fbc52cc1152acdba3dc6dbcdc6e299c87a69b3e6a78d5c53513224c73cd9d28",
+      "bytes": 152485
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09855-8d2c-7821-8e16-b4fae34b3587.json": {
+      "sha256": "865612e2e64b9a8a807a5e4cf3de6c82e01fe8d8948c974c4fd4e411254d106f",
+      "bytes": 1291204
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09856-b383-73a0-9e2c-97a5e24ec852.json": {
+      "sha256": "a2afbac0a364587af294a42116423c59d141240204c1fce2c713a9cba313dacb",
+      "bytes": 49579
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0985c-c907-7080-9215-4b1bd8f9608a.json": {
+      "sha256": "6a19cb1fab2470b84a018599240020a316a2d0b6573792e6c6356214f464d53e",
+      "bytes": 157112
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0986a-9d5c-7713-ab6e-5e62ab57dba9.json": {
+      "sha256": "15d378aef77e5c84ae10c528373e88aa4f4d7de7493b8d737a7b5845bb5227ae",
+      "bytes": 89206
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0986c-95c2-7672-a551-f269600f3780.json": {
+      "sha256": "1ee2b1a6309e56601ea6bd1ed47ec91b65b862fc051320726356b6851ecb8d89",
+      "bytes": 482558
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0987c-c9ac-7251-a8e2-df0b9de53537.json": {
+      "sha256": "5d2203192887f77725542fae4404193a9989a07d1e46d0611853c4d883771d53",
+      "bytes": 134639
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a0987c-f651-7be3-8309-8e88a12584f4.json": {
+      "sha256": "dcec6f51150e3d183ccc549f8aac6a7cd4ce672b7e4bbe00bb87a78f8eca6ff6",
+      "bytes": 107197
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09882-0f37-7ec3-bd24-44eb73bc285d.json": {
+      "sha256": "7e7f13e919181bb42d13e92e7d9d64be396d1843c45644813658fd1ddaa535b9",
+      "bytes": 69966
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09887-d4ad-7c82-bfd9-ffaac74a868f.json": {
+      "sha256": "43af90c307c09197a9797b592f9f0d939c83b096dc27d2faaeffb600f73def27",
+      "bytes": 206542
+    },
+    "work/release-2026-09-12/agent-traces/20260913T021226845643Z/01a09889-3876-7ea0-b088-e52e9498ca81.json": {
+      "sha256": "9aa74096c0e1f0a9dbea3893d1707cea05d64b4007c5f4454aa51b64efb426f3",
+      "bytes": 64042
+    },
+    "work/release-2026-09-12/execution-ledger.json": {
+      "sha256": "75803a186600cb5a07c6179c38b9889305180f26152f20e296bc2edb9d5120ee",
+      "bytes": 127985
+    },
+    "work/release-2026-09-12/reviews/chunk2-gate/preflight.json": {
+      "sha256": "0e43cdf679b9f600488f294614399179c34da28ec9e415dc6edf8a793f6a51a1",
+      "bytes": 31590
+    },
+    "work/release-2026-09-12/reviews/chunk2-gate/current-gate-review.json": {
+      "sha256": "f99e22bd8eb7ab7856f67aca3e60590de4bf02e357405a880e6e66cd9de6965b",
+      "bytes": 55047
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-round7-grades.json": {
+      "sha256": "c274e5d5d09de24531a1e8daf19c82eff1e7783938b1d60294619bf05e4c6928",
+      "bytes": 22016
+    },
+    "work/release-2026-09-12/blind/calibration-round7-privacy/answers.json": {
+      "sha256": "16dcd32dc8b9a4e64dd33c5de186df982f08614da1bf392995a09e19f403378a",
+      "bytes": 5733
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-extra7-gold.json": {
+      "sha256": "0712273f44adcbbabdcb648fff989a959af697b465167179c6415de44f1e6b48",
+      "bytes": 7548
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-extra7-questions.json": {
+      "sha256": "be0c3206c133a23084f2245f832b17a71d303d751a8feb68c8c0d7104cd94db3",
+      "bytes": 957
+    },
+    "work/release-2026-09-12/exams/calibration-privacy-extra7-freeze.json": {
+      "sha256": "4b8e027ac7225397080cf8e7df1d8a090f32170f824b9c27601bc7b2d8a4c6c9",
+      "bytes": 929
+    },
+    "work/release-2026-09-12/blind/calibration-round7-privacy/questions.json": {
+      "sha256": "f7616243476522f0fc014f107b12c0f07451c1503047ee7539579aefc2d84512",
+      "bytes": 1328
+    },
+    "work/release-2026-09-12/blind/calibration-round7-privacy/manifest.json": {
+      "sha256": "69391f79f6426d1dd2c2c5ca243271651373a81a073fea9b16d0a7acea28fe09",
+      "bytes": 269
+    },
+    "work/release-2026-09-12/blind/calibration-round7-privacy/instructions.md": {
+      "sha256": "c727ff19c807ee4d1c6626eb99b0bf1557cfa22e67d47b993635bc3f3d1a6041",
+      "bytes": 3157
+    },
+    "work/release-2026-09-12/blind/calibration-round7-privacy/privacy.md": {
+      "sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+      "bytes": 13737
+    },
+    "<agent-home>/sessions/2026/09/12/rollout-2026-09-12T18-04-15-01a09882-0f37-7ec3-bd24-44eb73bc285d.jsonl": {
+      "sha256": "ebd1a41cb286f3ae98dd5fcd50dbac25886468a13db6b9046a56c1804cfb16ac",
+      "bytes": 331588
+    },
+    "work/release-2026-09-12/reviews/chunk2-gate/final-inputs/release-topic-acceptance.json": {
+      "sha256": "f2536fe678c7043bd0113bee48868c9e4fa739c1872aaaceac5c41c6a369b09a",
+      "bytes": 17061
+    },
+    "work/release-2026-09-12/reviews/chunk2-gate/final-inputs/execution-ledger.json": {
+      "sha256": "b4d0ecb575f0fc97319f093bc971fabb25e369f97fb20144e84e99c86e216016",
+      "bytes": 124143
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/index.json": {
+      "sha256": "fca14481377ea4d563e76c6e6cbd296f6df7c4cc5781f3e5409df3cb0613f55a",
+      "bytes": 27654
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09795-9293-73b3-8bfd-3d02378cf46c.json": {
+      "sha256": "29a7d7ede1663cf39557c79f0355bdf36c668d1a18154cb1cce7ab02fc34ce10",
+      "bytes": 478049
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09799-58ab-7723-be1f-bccd6898543d.json": {
+      "sha256": "b8dcaba324fccfcd34d702ae063498446d45f501577da084d7804592506c127b",
+      "bytes": 937972
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0979b-acbf-7bd1-8dc3-a4582a88c888.json": {
+      "sha256": "754fb8ff83625215ce7b7656aa2948c6f7bbcb40179e56e297be8c97a8b074d9",
+      "bytes": 185351
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0979d-1094-7981-90db-fd5fd341ba96.json": {
+      "sha256": "700ce65eb36c4a5c1abd7b099dca589d0dfd7f6bf2c694863ca2614a80456cb3",
+      "bytes": 456597
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097d2-d6c2-73a3-8ee8-3781a5944ad4.json": {
+      "sha256": "9b1015f2c29a15af5c881278a211454b06c8e7b58a71b9967484668c07fe8bf4",
+      "bytes": 78332
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097f0-4ebe-7811-bd28-fb810e1ccdd2.json": {
+      "sha256": "c9817eb8dd8020a018f221434654eabc3faa25a17339c6fc422ebc4040f67aa0",
+      "bytes": 548181
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097f0-84e1-70b0-8447-51612a9f65cd.json": {
+      "sha256": "9f4f9417b37c583487cf3d21e88e9928e71410cbfbf84dcc04eca83f43db85b3",
+      "bytes": 1704231
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097f4-9123-7751-a90b-e7ca2f237cd2.json": {
+      "sha256": "de8887e5b25d612d936c1f53c072348a7d5a085788ba1a8ff5f4f6845de68154",
+      "bytes": 228774
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097fa-7e05-77a0-8eff-e5430b3adb2d.json": {
+      "sha256": "2f9fc4e304ce77961a3f37f993b6a980502831229f2ea2b603b0bbf6c3c57020",
+      "bytes": 628589
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097fa-aa78-7a23-b08d-dc0516e0fb26.json": {
+      "sha256": "15450da4c0c59687327b6c47368018aaf1b0dadf0021464b45b23d991a368135",
+      "bytes": 481155
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a097fb-e6f9-7610-be5a-2aea1bebaac9.json": {
+      "sha256": "b0cd38782af4fbf0adf36b5b5a6d9f349a34af843b2b3893407740810b14033b",
+      "bytes": 950940
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09805-359d-73b1-a774-934a0fc55707.json": {
+      "sha256": "d0b1cdb582328c9ee0e30ff2a9878bc0471fef19ccb638e9f1bcfdb47491d73d",
+      "bytes": 120963
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0980f-9474-73c1-8de2-b7e826324f71.json": {
+      "sha256": "63269eec85a42f36057747f4b9d7fe58ce6cde469ae18971ff86af941bd4855f",
+      "bytes": 1404558
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09810-92f6-79a0-a25d-e5b881034837.json": {
+      "sha256": "58fe5bf84a36ba4d7bff01080c70ed21383eab3abe3be62f3777ee8c03073cf9",
+      "bytes": 521576
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09816-f58a-73b0-ace2-96832f2f2cde.json": {
+      "sha256": "1f8b97931d6f8918803c13dba4e34229af1cdabbda413d2d28e1a7fb85a09148",
+      "bytes": 964194
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09823-c2a8-7112-a03f-07ce1b9d4c62.json": {
+      "sha256": "013ed1428d9c4d4040ed577c3e3d44510c4e482e09cc4c258835efaad3b2bdad",
+      "bytes": 146031
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0982a-a237-7373-9e1c-451f30c996ae.json": {
+      "sha256": "c0d6bc86dfca8700979eab0ba4ee5d4a4738405f69f92402a98ce8925dc831d7",
+      "bytes": 839903
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09833-8504-7902-a98e-f95a8a54099f.json": {
+      "sha256": "a0c3f96153f6aa1a44735e824e51cb817d23ddfec821544c559f83bd0306a395",
+      "bytes": 76467
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09833-d62a-7fb2-8275-4f18eec0a875.json": {
+      "sha256": "3755279cf451d89b3382f09a00f011acaea6242ca5af37bbbb8f781fe12d2325",
+      "bytes": 87371
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09834-4117-7f62-8d35-4dcb4615d670.json": {
+      "sha256": "750e9f7e26bfb1566c20765b8f6f59affb9637e1d12a350f567f8d41d97b88c6",
+      "bytes": 115370
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09839-3624-7032-b13d-7d809b0f86c7.json": {
+      "sha256": "326a7d350bdd9ffa463a03c8575a05b91c9faf478574adfc18d1a592ad7fb5b3",
+      "bytes": 167761
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0983e-50a2-7e60-880d-83d96a153334.json": {
+      "sha256": "cef8c1d8f9db456bdd1bff612da3713d9bf17c4cbcc0d9046df942b4e7e9ab94",
+      "bytes": 79230
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09841-e77a-7252-86a7-f92d5324e57e.json": {
+      "sha256": "369747cbb71f8f78f5bfd9376794490df0c03e9798a0c1cd60c11647f973b6fa",
+      "bytes": 159950
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09845-a4e8-7a81-a3cd-b352dad9d29d.json": {
+      "sha256": "14becfbe20d4f49609558f39e45ee578fef5203d6687ce44d32ad1a481ed53de",
+      "bytes": 75988
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0984a-828a-7700-9a62-0f8853b4e861.json": {
+      "sha256": "af026de4bf0f98fc832cfcd7371187865200b39713d8b33c735a86f26fdef686",
+      "bytes": 172868
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0984e-8d09-7603-9921-22430bc1fff4.json": {
+      "sha256": "23cf0da9a51e6dc7005221c9bbce060110861a8b81aaee6e8fee8d9f29f41f4c",
+      "bytes": 55712
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09851-b2ed-75f2-ade9-d305ec8cdf40.json": {
+      "sha256": "2fbc52cc1152acdba3dc6dbcdc6e299c87a69b3e6a78d5c53513224c73cd9d28",
+      "bytes": 152485
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09855-8d2c-7821-8e16-b4fae34b3587.json": {
+      "sha256": "865612e2e64b9a8a807a5e4cf3de6c82e01fe8d8948c974c4fd4e411254d106f",
+      "bytes": 1291204
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09856-b383-73a0-9e2c-97a5e24ec852.json": {
+      "sha256": "a2afbac0a364587af294a42116423c59d141240204c1fce2c713a9cba313dacb",
+      "bytes": 49579
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0985c-c907-7080-9215-4b1bd8f9608a.json": {
+      "sha256": "6a19cb1fab2470b84a018599240020a316a2d0b6573792e6c6356214f464d53e",
+      "bytes": 157112
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0986a-9d5c-7713-ab6e-5e62ab57dba9.json": {
+      "sha256": "15d378aef77e5c84ae10c528373e88aa4f4d7de7493b8d737a7b5845bb5227ae",
+      "bytes": 89206
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0986c-95c2-7672-a551-f269600f3780.json": {
+      "sha256": "1ee2b1a6309e56601ea6bd1ed47ec91b65b862fc051320726356b6851ecb8d89",
+      "bytes": 482558
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0987c-c9ac-7251-a8e2-df0b9de53537.json": {
+      "sha256": "5d2203192887f77725542fae4404193a9989a07d1e46d0611853c4d883771d53",
+      "bytes": 134639
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0987c-f651-7be3-8309-8e88a12584f4.json": {
+      "sha256": "dcec6f51150e3d183ccc549f8aac6a7cd4ce672b7e4bbe00bb87a78f8eca6ff6",
+      "bytes": 107197
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09882-0f37-7ec3-bd24-44eb73bc285d.json": {
+      "sha256": "7e7f13e919181bb42d13e92e7d9d64be396d1843c45644813658fd1ddaa535b9",
+      "bytes": 69966
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09887-d4ad-7c82-bfd9-ffaac74a868f.json": {
+      "sha256": "f9f0f9eeb07a4b0297f315842d67c5263597edd4507cda98613b586297f77d9c",
+      "bytes": 308327
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a09889-3876-7ea0-b088-e52e9498ca81.json": {
+      "sha256": "c07d207c93e348c182c0a89e6e2fa61bbe1ccac64999e138a7ba0057def7acf4",
+      "bytes": 134017
+    },
+    "work/release-2026-09-12/agent-traces/20260913T022111067190Z/01a0988b-d2fa-7182-9e80-2b8146269bec.json": {
+      "sha256": "2d3de20dac2b20578f478aa7fa259919b8be7a894b455438ccb392ab55d678fc",
+      "bytes": 53124
+    },
+    "<agent-home>/skills/decision-making/SKILL.md": {
+      "sha256": "2192374114c0449ab48878020e47e925cf25946c110b07d85b4f82d626325ba2",
+      "bytes": 2773
+    }
+  },
+  "changed_prior_dependencies": [
+    {
+      "path": "work/release-2026-09-12/exams/calibration-keyboards-round6-grades.json",
+      "before": "9fbf789ead606a7876752b01cf163a946cfc8178bd8c7836f3799cd6802000b2",
+      "current": "4a3ef4d0284e5e3329dacc13e3b4805dbb7fad1b3be24bcadf6e3c0f1a4d7af3"
+    },
+    {
+      "path": "sources/apple-hig-2026-09-12/verification/release-topic-acceptance.json",
+      "before": "0f5ed1f441f9c2cc8098e1266d5e1366b157846de2af4b2bddb65aaf9e9c8d6c",
+      "current": "f2536fe678c7043bd0113bee48868c9e4fa739c1872aaaceac5c41c6a369b09a"
+    },
+    {
+      "path": "work/release-2026-09-12/execution-ledger.json",
+      "before": "376e80b4013b6999f10f51107980d2509f9a0f84d8c1149de46195c672868a37",
+      "current": "75803a186600cb5a07c6179c38b9889305180f26152f20e296bc2edb9d5120ee"
+    }
+  ],
+  "parent_dispatch_prefix": {
+    "path": "<agent-home>/sessions/2026/09/12/rollout-2026-09-12T13-06-27-01a09771-69b9-70b2-9fec-0eec444572d4.jsonl",
+    "bytes": 48902474,
+    "sha256": "64ca306e4dfd4b97d0ec976885c1b2a8c0beefe884c23c0c41fb4f36441365dc"
+  },
+  "prior_history_preserved": [
+    "preflight.json",
+    "preflight.md",
+    "current-gate-review.json",
+    "current-gate-review.md",
+    "round6-checks.json"
+  ]
+}

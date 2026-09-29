@@ -1,0 +1,84 @@
+{
+ "status": "ready to ship: reference skill, opt-in enforce, guided native Duo mode",
+ "release": "2026-09-27",
+ "source_snapshot": "2026-09-12",
+ "package": {
+  "entries": 167,
+  "distilled_count": 157,
+  "sha256": "1460edd73e355bfa553deebb5d13c85496d34dcb19b7811088f5bac20db8296d",
+  "membership_and_hashes": "pass",
+  "reproducible": true,
+  "path": "release/apple-hig-2026-09-27.zip",
+  "bytes": 386235
+ },
+ "manifest": "sources/apple-hig-2026-09-12/verification/shipping-manifest-2026-09-27.json",
+ "manifest_sha256": "9d69a74a24c9c7f6a360a06eccc812a51e1a854effa178159c322005f46d48b0",
+ "clean_extraction": {
+  "status": "pass",
+  "expected_files": 167,
+  "actual_files": 167,
+  "topics": 157,
+  "errors": [],
+  "scope": "Membership, hashes, routing structure and local links only; no source fidelity or observed agent behavior claim."
+ },
+ "validated_local_links": 13,
+ "helper_tests": {
+  "returncode": 0,
+  "tests": 35,
+  "output_sha256": "3787b0395bf082f0ef80a080fe456e689049fb0e0bcb8eecf2820fa2aeda8bf4"
+ },
+ "corpus": {
+  "source_guidance_words": 261621,
+  "output_guidance_words": 90027,
+  "word_reduction_percent": 65.589,
+  "changed_topics": 106,
+  "full_file_tokens": {
+   "o200k_base": 163033,
+   "cl100k_base": 162491
+  },
+  "foundation_tokens": {
+   "o200k_base": 27096,
+   "cl100k_base": 26936
+  }
+ },
+ "static_tokens": {
+  "tokenizer_version": "0.14.0",
+  "shipped_text": {
+   "o200k_base": 187987,
+   "cl100k_base": 187401
+  },
+  "setup_help_entry_and_readme": {
+   "o200k_base": 4154,
+   "cl100k_base": 4148
+  },
+  "duo_mode_files": {
+   "o200k_base": 5658,
+   "cl100k_base": 5651
+  }
+ },
+ "duo_checklist_review": {
+  "verdict_before_fixes": "FIX",
+  "findings": {
+   "high": 0,
+   "medium": 8,
+   "low": 9
+  },
+  "all_applied": true
+ },
+ "duo_trials": [
+  {
+   "request": "/duo the library and reading flow",
+   "result": "stopped at decision stage with sourced table; notes file written; no HTML/SVG/CSS"
+  },
+  {
+   "request": "/duo continue, go with your recommendations, skip the previews",
+   "result": "resumed from notes; native edits to 5 app files; unconfirmed iOS 27.1 signatures left as TODOs; build/simulator checks reported not run"
+  }
+ ],
+ "limitations": [
+  "No automatic host-discovery test.",
+  "Duo trial output not compiled or run on a simulator or device.",
+  "No native-device certification."
+ ],
+ "agent_neutrality": "Runtime package, README and maintainer records name no specific agent host or model; maintainer records use drafting and review tiers."
+}

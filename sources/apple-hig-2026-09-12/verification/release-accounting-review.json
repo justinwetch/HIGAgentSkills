@@ -1,0 +1,2642 @@
+{
+  "reviewer": {
+    "role": "independent review-tier source-accounting reviewer",
+    "model": "review tier (parent-assigned)",
+    "independent_of_generator": true,
+    "source_only": true,
+    "billing_usage": "unavailable",
+    "scope": "Chunk 1 source-accounting method only; no candidate semantic or full-corpus fidelity acceptance"
+  },
+  "timestamp_utc": "2026-09-12T23:35:29.030731+00:00",
+  "decision": "pass",
+  "criteria": {
+    "C1_source_block_preservation": "pass: primary-block bijection and raw identity; collection/path dispositions separately reviewed",
+    "C3_accounting_method": "pass for defined canonical-source measurement method, subject to explicit downstream semantic routing-metadata audit and full-release scope check",
+    "C6_independent_review": "pass for this independent method review only"
+  },
+  "tests": {
+    "verified_source_files": 346,
+    "source_hash_failures": [],
+    "json_pages": 173,
+    "primary_nodes_compared_both_directions": 7642,
+    "missing_extra_duplicate_primary_pointers": 0,
+    "raw_node_mismatches": 0,
+    "primary_text_leaf_missing_from_rendered_block": 0,
+    "primary_text_leaves": 16583,
+    "missing_linked_reference_entries": 0,
+    "video_occurrences": 61,
+    "empty_video_renderings": 0,
+    "primary_ast_kinds": 17,
+    "table_count": 294,
+    "table_header_row_count": 294,
+    "span_tables": 9,
+    "nested_unordered_list_blocks": 1,
+    "variant_override_ops": 719,
+    "variant_override_scope": "reference titles/fragments/navigatorTitle only; no primary guidance alternatives found",
+    "resources_cutoff": "only expected Resources/Related/Developer documentation/Videos/Change log headings; no post-cutoff paragraph with >8-word source text leaf; manual sample resource sections checked"
+  },
+  "findings": [
+    {
+      "id": "AR-1",
+      "severity": "revise",
+      "summary": "Table renderer drops merged-cell relationships",
+      "pointers": [
+        "apple-pay#/primaryContentSections/0/content/118",
+        "homekit#/primaryContentSections/0/content/48",
+        "icons#/primaryContentSections/0/content/26",
+        "icons#/primaryContentSections/0/content/28",
+        "icons#/primaryContentSections/0/content/32",
+        "icons#/primaryContentSections/0/content/34",
+        "icons#/primaryContentSections/0/content/36",
+        "widgets#/primaryContentSections/0/content/142",
+        "workouts#/primaryContentSections/0/content/10"
+      ],
+      "evidence": "extendedData retained in raw but omitted in rendered text. Apple Pay native table uses ^ to inherit 140pt minimum width, 30pt height, 1/10 height margin across Book/Buy/Check Out/Donate/Set Up/Subscribe. Reading register leaves later cells empty.",
+      "remedy": "Preserve structural spans or emit explicit excluded-from-count review annotation pointing to raw extendedData/native table. Count original text once; do not inflate denominator by expanding merged cells.",
+      "status": "resolved for method gate",
+      "resolution": "All 9 affected table blocks now preserve exact table_layouts pointers and extendedData; each source-reading table has explicit caution and JSON spans before table. Warnings are outside counted block.text. No expansion duplicates source values."
+    },
+    {
+      "id": "AR-2",
+      "severity": "revise",
+      "summary": "Nested list parent relationship flattens",
+      "pointers": [
+        "game-center#/primaryContentSections/0/content/39"
+      ],
+      "evidence": "Classic leaderboard and recurring leaderboard each own nested example bullets; current renderer places all bullets at column zero.",
+      "remedy": "Indent continuation/nested content without changing text counts.",
+      "status": "resolved for method gate",
+      "resolution": "Actual Game Center block inspected after regeneration: nested bullets indented under classic/recurring parent items."
+    },
+    {
+      "id": "AR-3",
+      "severity": "minor",
+      "summary": "Duplicate tab label text counted twice",
+      "pointers": [
+        "typography#/primaryContentSections/0/content/67",
+        "typography#/primaryContentSections/0/content/69",
+        "typography#/primaryContentSections/0/content/77",
+        "typography#/primaryContentSections/0/content/79",
+        "typography#/primaryContentSections/0/content/82",
+        "typography#/primaryContentSections/0/content/90"
+      ],
+      "evidence": "23 tab titles exactly equal their first child heading, adding 31 repeated words. Both authored AST fields survive, but the second serves navigation.",
+      "remedy": "Skip the redundant tab label when the first child heading equals it, retaining raw metadata. Different labels remain useful context.",
+      "status": "resolved for method gate",
+      "resolution": "Exact tab-title/first-heading duplicates removed from rendering only; raw remains exact. Actual Typography xSmall heading appears once."
+    },
+    {
+      "id": "AR-4",
+      "severity": "measurement-guardrail",
+      "summary": "Allowed frontmatter values can contain uncounted guidance",
+      "pointers": [
+        "scripts/measure_hig_release.py:body",
+        "scripts/validate_corpus.py:REQUIRED_FIELDS"
+      ],
+      "evidence": "Whole body comments and Resources sections count, but entire frontmatter is excluded after checking only allowed key names. Routing fields such as triggers can still carry substantive guidance.",
+      "remedy": "Explicitly constrain and audit excluded metadata values as routing-only; otherwise count them. Guidance in any output file/field must count in claimed release reduction. A subset measurement must not be presented as complete corpus; omitted_candidates already exposes the distinction.",
+      "status": "resolved for method gate",
+      "resolution": "Each topic metric now explicitly requires reviewer confirmation that excluded frontmatter contains only routing metadata. This is an acceptance obligation, not automatic proof that candidate values comply. Final complete release must also account for guidance in sidecars and require no omitted candidates."
+    }
+  ],
+  "positive_adversarial_samples": [
+    {
+      "pointer": "privacy#/primaryContentSections/0/content/24",
+      "result": "Both cancel and close captions preserved from metadata.abstract although native Markdown omits these caption strings; image descriptions and incorrect markers retained."
+    },
+    {
+      "pointer": "typography#/primaryContentSections/0/content/72",
+      "result": "Small footnote point-size resolution preserved; native text search finds no Point size based or Not all apps express strings, reinforcing complementary source requirement."
+    },
+    {
+      "pointer": "typography#/primaryContentSections/0/content/82",
+      "result": "Tracking tables and footnote clauses retain source text/numbers; no numerical correctness acceptance beyond literal source identity."
+    },
+    {
+      "pointer": "layout#/primaryContentSections/0/content/64",
+      "result": "isAutorotating deprecated flag retained in linked reference and surfaced as annotation."
+    },
+    {
+      "pointer": "playing-haptics#/primaryContentSections/0/content/31",
+      "result": "Selection caption and video alt description both retained; raw reference includes poster/variants."
+    }
+  ],
+  "limits": [
+    "Native Markdown alone is insufficient: captions, footnotes, deprecation flags and merged cells require JSON.",
+    "No image/video pixels, audio, or external URLs were opened in this review; text descriptions and reference metadata are source-only evidence and cannot certify every visual relationship.",
+    "Linked reference raw metadata is preserved; unlinked references are not automatically primary guidance and must not be indiscriminately added to denominator.",
+    "Decorative/illustrative alt text and repeated source occurrences are included in current source word definition. Report this definition plainly; the 75% figure remains a heuristic, not semantic retention or a per-file quota.",
+    "Source register intentionally excludes resource navigation and change history; this does not authorize omitting guidance merely because a future candidate puts it in Resources, comments, tables, sidecars, metadata, or another file.",
+    "Full C1 dispositions, C2 topic fidelity, C4 held-out exams and final C6 workflow are not decided here.",
+    "Final rereview hashes bind repaired generator, measurement script, all registers, targeted reading aids and pilot measurement report. Further material changes require affected-check rereview."
+  ],
+  "script_hashes": {
+    "scripts/hig_source_blocks.py": "e36ecf107f82e9378b8f81e292b468dd85436c720cf665345d755acfaba501b4",
+    "scripts/measure_hig_release.py": "1aaac0b76251917d6f30c34f1fe198d460c264f44200eb85589e736acd7c297a"
+  },
+  "source_files": [
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/__root__.json",
+      "sha256": "c82636fa1c601d35764014adb69c99d75867e85bfc80d55199d77a55ee9ba6dc",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/__root__.md",
+      "sha256": "c3eb473ac7deb62b5e766bbc111c0fb3f4a20134349bf10d323a7e80be6352cf",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/accessibility.json",
+      "sha256": "be49ec0b34397f356a1e3fd8c7ad323713198515523947097913cb9c57da699b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/accessibility.md",
+      "sha256": "0da3652d786377a23e71af62895690b91e3b05f80cbffdd9759e7914ed5055f2",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/action-button.json",
+      "sha256": "0b5b8f0e68140d183a8dd670fd13e9ad97c89894b4525015445173ec76288299",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/action-button.md",
+      "sha256": "d185aeb1eaa43675ea084b26620b0dcdc84abdc30a1a23fbec65ac1107e8c573",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/action-sheets.json",
+      "sha256": "d6dd08cc6fcd7b4a285f8c43b4bb47ecdac5274debce3b9abc54ea386c498494",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/action-sheets.md",
+      "sha256": "ccff443fd853ab08397cd0a2892c76055261a7c95a216a4875f43fc77cbe804d",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/activity-rings.json",
+      "sha256": "9a9f1c2141665892a1d57121c4e339c423f09a10382fb6f4579655c8517e7c62",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/activity-rings.md",
+      "sha256": "2447bced58a853ae2edfec9c67d5a5c18ac01534b9effaec5bbc525ac6df8865",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/activity-views.json",
+      "sha256": "ce1b7686d53deb6a1f3cf31eca2993053075503e6d10a6e0ae5e3f42cb6692a6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/activity-views.md",
+      "sha256": "24f28605452c823b339f2359ac489c823f9ff4ca37031f38796c4df85a13a529",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/airplay.json",
+      "sha256": "72bf4d29dd6fd5c9ee53e4c284d055bbd126c408fb061b840b94b6589ba95e91",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/airplay.md",
+      "sha256": "c877c45d1889dfa530e5b3ffc55e4df68f23aa0deace9365df32e57e09d0b8a9",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/alerts.json",
+      "sha256": "ca60f14c249290f1dcebe8bbaedde16183e3759f5a53238085915795e2e4dbdc",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/alerts.md",
+      "sha256": "2541c7638a29dd0e68c1985bc44b807a519408a77d47b8a9c7d323991afdb243",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/always-on.json",
+      "sha256": "c2dc9fe1fbfd54a7a1eca1b763adb053e7895d3a486166c48c6d97b017b8fe9e",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/always-on.md",
+      "sha256": "395355d1f6d091bd5aaf1f3807e68952fcb0c565f202708ea08dfa50b2c0e74b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/app-clips.json",
+      "sha256": "a8db2130bcb9e3ad5f8d25e59ae02ff4d5ebc0c1e50613470a01011f2f877613",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/app-clips.md",
+      "sha256": "39a389f184121ada91c5b3b2afebb7cef9ebb6a0a12c0aadd15f85159acd4ae3",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/app-icons.json",
+      "sha256": "5f67bb7b1e2405ee03526ab83c3f75b63b28473ce39ebf10848655908e2712f7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/app-icons.md",
+      "sha256": "b490eb94a5ae21aabb9a09b8e3aa731e5a69b1da24846cb5b82094fda24133a4",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/app-shortcuts.json",
+      "sha256": "26ffd9677b5c4e62efcb480d40e5748180ebf18755fdf9ee26295b7981ecf3df",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/app-shortcuts.md",
+      "sha256": "223391273a8b9d20a4be9388c9703f785cc38bc8373d7d86e96888efada0a897",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/apple-pay.json",
+      "sha256": "0a45bc68d67bc6e187f0100f3cfdbacc7a63e38b9529cf0d199352a1194b66b6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/apple-pay.md",
+      "sha256": "fec5d60dedbd58668981ce679a9961025b187c3511ed36cf1f55dbcc1acd3d0a",
+      "read_scope": "targeted native reading"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/apple-pencil-and-scribble.json",
+      "sha256": "3839a275eb10efc4545a306d3b4fb180cb4265abf4f1fb847a79e5ea37da407d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/apple-pencil-and-scribble.md",
+      "sha256": "77cb772537776a21df81939593fb4b5d80efea4adabb7838306f608f5c8e457c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/augmented-reality.json",
+      "sha256": "173c1b6d97063d29ff5eae0bfa58e76678f2972415ac70e7558a3b7885b2a12f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/augmented-reality.md",
+      "sha256": "cdd12ae3fb28cc6e2e7034b2d6932ee5d8b62b57d5a3796c31079c5f493023f1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/boxes.json",
+      "sha256": "4fec245e6b9169673e1fef706d4261fb6cd3cf24a56de26718c88f141e514e1b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/boxes.md",
+      "sha256": "c5052796f1e255abc2c3092955f3f67f29968b9bccb11681635d2b383c20ca79",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/branding.json",
+      "sha256": "2251b5c75eeaae25282ba10257cf26a3f5c92b01fb253f39010e610bcc8fce60",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/branding.md",
+      "sha256": "b1f39793530098d9142a4da56041c0f5044a4964804518b44902f1c1995d62ee",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/buttons.json",
+      "sha256": "fb450f96dd7a201a0203852782252942ee6d72978e0baaec1cb4c400568fed91",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/buttons.md",
+      "sha256": "a7b9261fdb21bc6b18038d95ed8df547a718903fdb9dcf6817e774c14435b654",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/camera-control.json",
+      "sha256": "7d0d4c3e1eebfb0304f46cc8c1e2ea7299eba168cd8fbe2b0d705d9118cd4f3b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/camera-control.md",
+      "sha256": "a8f3a228c08ad4c25952e2046993036c917d6633521ebeda64cbe0f5119d9b7f",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/carekit.json",
+      "sha256": "6d696909b32eb2260572081c496d751fa2157e19c65fe2b25094583ed4ccf2ed",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/carekit.md",
+      "sha256": "994fecab6b3706111ed47aed661da379f0aba80aa541f040f6982e7b75eb632e",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/carplay.json",
+      "sha256": "ad82dc60d7179fdb902569e4b703482985f7f9f41299dbd62fc3ab18401ffb10",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/carplay.md",
+      "sha256": "4fe90124bf9e0ebe4eed3670c2f5277d54d08cbab5638b1167a0f17d3fa3d32b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/charting-data.json",
+      "sha256": "0b4a17ab5624a01728de636fb84da734c0f058a5db43e53e6a67f550c1bc305d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/charting-data.md",
+      "sha256": "f1b86ebcc8ff1fd5bc089ee7a20e28b17c19f65334c04827579b33b84410f3fe",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/charts.json",
+      "sha256": "206a83349e8a0bfcdd9ba647b995988ca7d464f8554c7fe93b7044dd8ced2ec5",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/charts.md",
+      "sha256": "978a9f2771b32d09528d83f8727ee5e00cb6057cb327363ef49b2cfa68a749b2",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/collaboration-and-sharing.json",
+      "sha256": "f306a01b01ea6692383c2bc9a8f800a7ea7b28820c72b088a048e3ebe9f65a29",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/collaboration-and-sharing.md",
+      "sha256": "dc81aac53998e24c7b6e6c09db3144eaa37a7c2c4c0d256ced0d547c0e72b900",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/collections.json",
+      "sha256": "71304b9a6dfdf936b89fe4f5870ede9efe23b5ccb458871641e19b0651346830",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/collections.md",
+      "sha256": "262841e01ad1fa20281c9b3cb856e792b906b1c4ca5976885ef8ca068b4dafe3",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/color.json",
+      "sha256": "262ce33cb88d41ac0238bf1e3f59b7957e8ddb030379c41b35a6cbdb9ab11a39",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/color.md",
+      "sha256": "33df27ced563110058628f0ebab7399190cf6e195c8aa71d88b7cd06ea2d9896",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/color-wells.json",
+      "sha256": "5aadd45a4e38e27cf09ada9d6420969e9cc403920fb6b209f29873c1e4f6de3b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/color-wells.md",
+      "sha256": "3cf2aa67c9ebbd7eb74f9c0e12582e2743402e9c1970329caacf347ba39a139f",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/column-views.json",
+      "sha256": "8da488e1652ea4b1c37dd6aebc11f1698407666f7ab8fa4f7310e037a3c78506",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/column-views.md",
+      "sha256": "1d2c9fafad9e8fc5740e251f066ae252a5fe1252ef5438ed8840f80d65797cab",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/combo-boxes.json",
+      "sha256": "b869cd6b69cc6bcc602267f9d2f3a3bdc93572697539604d4f71d1f684d6e4a1",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/combo-boxes.md",
+      "sha256": "1e48669ba5e7e0c751a4324a29a7702cb0d53561827cd9327dbf7d1c86acb863",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/complications.json",
+      "sha256": "2d95765f9ffc5e568559ae20cc5a043facba35cef12c964f4fb5fa99456d528e",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/complications.md",
+      "sha256": "9843e065a77b9544fd75b962c92dc1afdd27040ee854a92526697b13d4d41125",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/components.json",
+      "sha256": "994ee018c35965cc680a71223a7c7da4a180882163a81c7b40487153f7d9f241",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/components.md",
+      "sha256": "a5fbc0aaad1bdba53f6f4d6e12479a2bb2cdd69f786f460b3038df064f2c5004",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/content.json",
+      "sha256": "6c6a46c4345dc8cc12b55be1e11cdb8355cc94d631bcd2678678407b43221416",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/content.md",
+      "sha256": "8845c1fddf2408b07e15093f6d40bd080e8eb75a5619a7241cd8af6d890c6729",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/context-menus.json",
+      "sha256": "5f69e8ed0837ea976f5bd1e6b30f96b6b77587229c5fbee50d3967aa80c9c1a3",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/context-menus.md",
+      "sha256": "5935c35eee74d272a440123a9465605ed8b2780c365e128f7973db0b94597d7e",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/controls.json",
+      "sha256": "9a73e3f7abd7da7a8e6965933a3c32e009aa2c134d4376abd9fc2831bf5f80b7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/controls.md",
+      "sha256": "c94a099e4b78721d5ca5ced80f0e5b4f2cabac88a83b8f8ff6dd452909e15b6c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/dark-mode.json",
+      "sha256": "cf352a73655e616568441efefb295802ade3e7f34980f33c35f0ee778cf4f3e7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/dark-mode.md",
+      "sha256": "8ea0eaf7931a210516f661797c5496e0cda9109c763f087ad82e44e257f60e72",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/design-principles.json",
+      "sha256": "69ea6425412bcb6410f8b6355e4d113c773731056e31b9ef730f07515045fa36",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/design-principles.md",
+      "sha256": "1d58f4ac8c033025225560a953feeb8b51c25d9369a92aa0c210b0550453e3e2",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-games.json",
+      "sha256": "8981bac8a81c555611d5083e70b9e05f426406c7fdc386f31dcaefb92d6853ff",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-games.md",
+      "sha256": "34f03b3b2adbf7a1d74c3d0e54fd8ed6563c200cd1f76c74b33b112b9dec0d0b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-ios.json",
+      "sha256": "e347649ffc2cdcdb755c0222454046d389eb539ee8c8c6e395b6c79ccf327d4f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-ios.md",
+      "sha256": "de601c559c11e469a1fed11697bc3e935b37918b38d56cab94d0bb3a43a00ef7",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-ipados.json",
+      "sha256": "da31fa0184109666e95208f23519452d3c7a6c8b3ddca8e444e1b2427e6151b1",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-ipados.md",
+      "sha256": "00594e638da7198ed6faead92ff2fe8a988c7fabdc3a70ef218300fb3e3ad15b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-iphone-duo.json",
+      "sha256": "ff3be7c268db835b2b2513d1717433cf2b92ebc60576348d025d83b77fad2aea",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-iphone-duo.md",
+      "sha256": "929d7f9eec7e7ec3c570a91cd561e71648298c777ee089edef406082bd3336ee",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-macos.json",
+      "sha256": "0df69cf12d79dd46a6ecb28c01207dbd9137958decec405870cf0008730bb88e",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-macos.md",
+      "sha256": "145ddd6d0d511952c359dd4b7418ded41f59b1f54a75089fc7cdc5585001df46",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-tvos.json",
+      "sha256": "a5748cab2fbcd05e708c6958a7b18b8c5412c53a543ba165ae49ff374a18ba19",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-tvos.md",
+      "sha256": "20eccd14882001d445a61cb3fabed5740d79098846e18c61d5a03b4bf2a4c4fe",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-visionos.json",
+      "sha256": "1ac10b83d440922aa4033610dba9a9a0f18f14b80e49251ca1e8174491cde8cb",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-visionos.md",
+      "sha256": "70698dfdbaf2f75a08f6105be00de8fe83431e68812f998c4c3e95fef26d250d",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/designing-for-watchos.json",
+      "sha256": "7f7a256f1c9fe359b43191fbaacf3418acf0473e7dcc64d6e6fff619a97d0212",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/designing-for-watchos.md",
+      "sha256": "c0b57e4ecc264f4cb77cd9a592e10a232d0df222e4ca262dba772c822a86ba31",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/digit-entry-views.json",
+      "sha256": "a1bb6229cc9858b765d0607768e03dee10b48fdb3de8a7e102c09c80433e8b84",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/digit-entry-views.md",
+      "sha256": "5be649cd69e97e096c690b2de3fd25b89f5097c7e2da7ee2670c4c7dbe2c20cd",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/digital-crown.json",
+      "sha256": "5b3ff81825ad3719bab9ab734285d5c7e2dedb7ed22fca9e7b73584ff960c905",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/digital-crown.md",
+      "sha256": "06bd700592467e6c72d1b3728610fabf5fd00ad19318faf20f0785269aa48938",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/disclosure-controls.json",
+      "sha256": "824dbbf3779123a083d884dde1969853af381fa2b22f0d8bd9cbe626229a8bc3",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/disclosure-controls.md",
+      "sha256": "2f9c3e4367497ee9452e268080b6dae178e7c12c835b8fd2a68f3bcd584d2bfe",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/dock-menus.json",
+      "sha256": "8c4951c93c797782c2bbbfa2ded3501ff188fcc70b046967ed29cde9ec264cec",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/dock-menus.md",
+      "sha256": "81e40125a7581455407be1b8013d7c0b440db440f9aee40c0d7e46b88905ff37",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/drag-and-drop.json",
+      "sha256": "58e6bc8e7043ec76fa0264046712c5bb385cd1ff6b67222a7c3ad68b2671cf6c",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/drag-and-drop.md",
+      "sha256": "b4a651e11be9ddedab79090cac4f790817fe5f1fc2171e743242b6a6a5eecaa9",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/edit-menus.json",
+      "sha256": "c90a3365aa4a2c6f955b414c2d81745db925d90a477e34a7323f264cc6d0d634",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/edit-menus.md",
+      "sha256": "3903d73c830068fc5bc0da28c07d88b490a087931e790a9176820ac7fb64778c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/entering-data.json",
+      "sha256": "0c430bb7e33382add2b6c602261f719b7b39b1406dfcedb653755ebcb1116a09",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/entering-data.md",
+      "sha256": "96748d9ca68474da5000afaa35cd23bed744d4d8df8799a343b8e22e4f138cb9",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/eyes.json",
+      "sha256": "a964261953d92b187671f0b56f990e82c589e701ba83dddd90055253428803a6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/eyes.md",
+      "sha256": "05426eae54e943eafaa9043a00a636b286b0e84ab6350f0b237b265d2cd0507b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/feedback.json",
+      "sha256": "242973c86c0d632467b46aeee1ad59825b70e3e8893d190f16351d14097c872a",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/feedback.md",
+      "sha256": "e7f88e172045a18218b38cfeadb8d2289ae65744bd279e0551517a56a3d9bafe",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/file-management.json",
+      "sha256": "de6f7fed0392cbddba5161d1c062252be577bf228a72565ba2e8e9e2b1aae8fb",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/file-management.md",
+      "sha256": "667855ee0c2e057f32860cf89c18158618e5c4886db78283090928f22eac5e24",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/focus-and-selection.json",
+      "sha256": "376c122b5361748c0e51899ef0f75e46d143ebfd3a84308decd6bc09bb3b8872",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/focus-and-selection.md",
+      "sha256": "6acb4b41a1544c06c626372b025726844c53563d47729f2d1b49b0fe18df88d5",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/foundations.json",
+      "sha256": "e6d79a5fcd10ed55ab0a737cfd2131ce769bf5a582ce4143c491c756b2726568",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/foundations.md",
+      "sha256": "d736677848de2d070004748500ec0d8baac5c3037d8830c59d3ef8ba1a3e4873",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/game-center.json",
+      "sha256": "f7e838952dd8621384d94cbe25c5d421a19cea0de73da183edb0858f41d9fb84",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/game-center.md",
+      "sha256": "b32d75482b53fb98998b7d7cbb5ab1426fe9d4ac82bab96bc56997a40730e5ce",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/game-controls.json",
+      "sha256": "6af93d91a10ff5c521aab4cfde1f0da7aa6b3944d27b6d14d081bd652a17e19f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/game-controls.md",
+      "sha256": "d0e44536be38c0243bd8c4c03ab1debad90a2a07aa875f8391e30d5f1de6fddc",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/gauges.json",
+      "sha256": "b65e750890487f7e7ba727dd7cd9bdbfd3a4f9794f8fc8709d71d1fc47316766",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/gauges.md",
+      "sha256": "d12194093e569f99b23a5c7bb6c865b79f0a246fd0814d739f2a76644171141b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/generative-ai.json",
+      "sha256": "f003d1fa454cc20a848315cb9155fccc6b234bd32467f2bb3ed0a5a5911159a9",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/generative-ai.md",
+      "sha256": "fa73c1454867fc20405fb0118bc3f8716ca75ccfb9d5b6b4087caba7dba0e76c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/gestures.json",
+      "sha256": "b00a8249b271de1259554903322347ffbb10c75402c5a47c7b1ab1bf8598b8dc",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/gestures.md",
+      "sha256": "cd8d0da76c87c8b3d6741b620972742850d98df19f261f1a7a784555452b8031",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/getting-started.json",
+      "sha256": "e6371c440aaee6457bc78cb85fe35fb38e42640f5b1bedd67e778faa14c29136",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/getting-started.md",
+      "sha256": "c55dbb8d81e63165a152eaf40612e230bc77ab1a02d2316f4532c4c803fd6413",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/going-full-screen.json",
+      "sha256": "776354918036d18e3c407f83971fe27a7c99e4558754a72b1bfeb14249fe615c",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/going-full-screen.md",
+      "sha256": "87de7a17d3819bc8754671d8245fd638e588c3f25da0c2c808f3892678b264d0",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/gyro-and-accelerometer.json",
+      "sha256": "b634a43cde1a4e7ba93f76f549a1e8bf29008a5ebcc8b4509bd2ef844035ee94",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/gyro-and-accelerometer.md",
+      "sha256": "344d34d423f80ace25435e012b48f479f6c49c6d64576d0933622d3fab4859b5",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/healthkit.json",
+      "sha256": "72032c015fb0f48a0462c3805407305d49c5d53d055d17630018aa7e0c8f305f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/healthkit.md",
+      "sha256": "6ee0a729add5e0ec858a70d1ec6a4ac01dafe0a975b56dc6d8fc240f776247e9",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/home-screen-quick-actions.json",
+      "sha256": "d423ac97ceebe7661853c69fa1fd20da9a84a53838f47bb1bddd8cdb6b7b0864",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/home-screen-quick-actions.md",
+      "sha256": "cd9db63317a88b3ed63123c0ca7072041871d6a08aa847d0a6030cc838878b9a",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/homekit.json",
+      "sha256": "1195c8a155c236e36072fb4daafde1d1c815f482ad434fa89eebd60665a9f05c",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/homekit.md",
+      "sha256": "9016092380e5b028499992b4cfa6a4a0aaa98312305f62aa2d33bf3b5fe26a41",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/icloud.json",
+      "sha256": "83608ee962bafe40a9fa6a92e2feffc2a9a11fae3bc4691c3e6de49778cfb94d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/icloud.md",
+      "sha256": "96788e8a4727fd66b8dc4944c45d7bba2d01204b62703d9f656962c933c2eb9e",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/icons.json",
+      "sha256": "d78ccab0375c72e7dc30d29e47f346fb3c2daef233dd7aee938ea66cc5220de5",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/icons.md",
+      "sha256": "a099ab31596e3b2cf155db0f658384193cd3cc341d6076d82d91b087355c01e7",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/id-verifier.json",
+      "sha256": "414e1dc5fd1275dd28b8be88c8da0aaa014f4eaae6729b709faa119d4c87890c",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/id-verifier.md",
+      "sha256": "d6e9220deec7feb4ea9bdc31a04b25dfa373c6b481a654e876a45e066ce78ac5",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/image-views.json",
+      "sha256": "aeb9a17799e50b8ed0781daba4c042e398e8766e26c6e51c8c52e3a96b949b49",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/image-views.md",
+      "sha256": "813cfdb754a7ad9b881251fe0d8d1586b751e21de5a24902224ab3560ad2fa5b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/image-wells.json",
+      "sha256": "a3122d0dc9224c0893a638ec1c6d16e0dcc7e024808d737cbafe4efa5a662c71",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/image-wells.md",
+      "sha256": "4825cdff77ca601af22fea08fe0a004fbe7d3af626b98a7b9b104b4e395cea2a",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/images.json",
+      "sha256": "5c53562f2d8dec11133ae7a3fbe9aa78dc2899fc0069c3059d0c94bb3dcc45f6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/images.md",
+      "sha256": "39756da298d36b1bf86badaca27e70e9cdd6e8a9bcac588dd75c0843c14d7f27",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/imessage-apps-and-stickers.json",
+      "sha256": "b5d06fc9f1a597556afc08a876b007030edcb162b7ee338fcb6d66a466700b1f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/imessage-apps-and-stickers.md",
+      "sha256": "502d7e31a3dce0a3966b20ea2c8ff32979645e13decedccefeb15eaee549f2e1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/immersive-experiences.json",
+      "sha256": "7d1f2b7baf9ebb65e82121c0e7d41160a3445d33cbcd7540ba1332e86531d2cb",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/immersive-experiences.md",
+      "sha256": "a8c0e70a73e3b0cc3c3494cece852fa3008e8f9cce31de955fa37266ce631747",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/in-app-purchase.json",
+      "sha256": "374082bc3f3354d61ee604424c0ad1e93f84a3df3fabda8a71020e7fd48b1829",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/in-app-purchase.md",
+      "sha256": "0a7b29883814f6ea312719f5a0a75aa5407238b30d2133f79bf8df6c9db48fb1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/inclusion.json",
+      "sha256": "ab94a3172d397f21973a34ef3bd80319dcf408e4aef13e509b2a99ad733aceb7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/inclusion.md",
+      "sha256": "266cf042591719418f73be015611f9ab8d0ddae9d44e7c04c01bf7b15a10383c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/inputs.json",
+      "sha256": "2c848cdc008dc7084cfa60bfeef5992dcb9d48c543b8fb5efcd98a632ee25be6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/inputs.md",
+      "sha256": "5700d850b4eac176380c1e93291463ac6c8b91801d17370ae6fad033b9418cdd",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/keyboards.json",
+      "sha256": "ef81add8bc05d6f5d641814e936076fd44400b45334160841e83c16e12eb8dee",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/keyboards.md",
+      "sha256": "96850470425944fde6951dd9cc7b843bc60604f509252902c6ebb0326a46b6c1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/labels.json",
+      "sha256": "808feaa4c07688eba4f91f8711695ef5869694ffc8b15e9dc2167a76be041738",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/labels.md",
+      "sha256": "1afda93914583e8d23038eb6c7f42b2feb81b9aa023c275106c435ae84df8a79",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/launching.json",
+      "sha256": "38291e5bc0ab9b623cdc831f1b495abdc8e39b4c3501a97a499099738901e2cf",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/launching.md",
+      "sha256": "351b27cf25561c7ae19161cfe8b0fbb3678c782c86160256ad2ede101cd803c3",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/layout.json",
+      "sha256": "d41f32ddf76c597f0edd54eac361fa294a8736cfc4ccc627d1709fe092ed7267",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/layout.md",
+      "sha256": "3af3927b94f39ac2f4aa168c4d4accb2a7a07cf4c3584c778698f0d5915c641f",
+      "read_scope": "targeted native reading"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/layout-and-organization.json",
+      "sha256": "ffc45638bba4c929e490c81942a218b86e14fb824a55ca88eb28d5c5f5164a5b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/layout-and-organization.md",
+      "sha256": "4934e3f1a16fa75d10e7fa1ccb2ee2d45a30339af838db7a00c98aa641a329b2",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/lists-and-tables.json",
+      "sha256": "7abfc703aad0db86267b53942594c48f9ffde84a8d76646220524193a47e19db",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/lists-and-tables.md",
+      "sha256": "3df2c389bd760e68fbe0be90121f5c8a330814828ca99a911419c6816d1e4323",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/live-activities.json",
+      "sha256": "f9b894e9a5044d01fe2ffd100700eae14d4b6b672927e3af3b58ea47ca69a279",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/live-activities.md",
+      "sha256": "7e2ad25f9a6f1e1387d7ff0aa437cdd01f7c438570523a29323acbefad0aea94",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/live-photos.json",
+      "sha256": "03e25b2971e1a6fbedd5e00841d087af0fc6da164b8b03a24090415f4e6f5a5d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/live-photos.md",
+      "sha256": "d9228d596c2a38aaeb1ccadb1b6c81a12912cf06d479e43b717710219bc61de0",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/live-viewing-apps.json",
+      "sha256": "5b68d9d2f35dce32c497a59653b380fdd55b3213bae00017824aeaecd1c93fa6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/live-viewing-apps.md",
+      "sha256": "c4dd91150d8462d6d540e86a383d2a9c9e04a6ab84fa28ee369fc9884da8994b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/loading.json",
+      "sha256": "83c69df80cfafd72b1a317d82521f14dfdb415530cdf37c290462eb28673b901",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/loading.md",
+      "sha256": "ccef3bea902fc7bd999e758e3700a7f0b6501a6b3e313dafde9e30e2bf78fc02",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/lockups.json",
+      "sha256": "b92d764c15ae6d7449bc18039f8411e2eb99a8955c1bdfe19418ded071b9d35c",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/lockups.md",
+      "sha256": "528789783d122ebbf7d97703472cb749b43a55fe89114ca282e814f68a580a08",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/mac-catalyst.json",
+      "sha256": "f047d3ba169717d807ea53f458e74d0e1ba878589eaa08f38cbe5a120dab753b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/mac-catalyst.md",
+      "sha256": "9a23fca563cab527f4fa2e43f4272759893587f8506a09712988edaf9b12caf2",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/machine-learning.json",
+      "sha256": "a179227bcd89dda454c5d932b7e40c55b1c4a488595a1cacc883d1732a0ac1d7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/machine-learning.md",
+      "sha256": "cc2464408f16f899703507e2a5749bd63165c811a20460c078d586eb9d4669dd",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/managing-accounts.json",
+      "sha256": "61dd8f84a85f37a3a0e0d2f013834116059616c5d61d6be6b3c8c712a85cb923",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/managing-accounts.md",
+      "sha256": "a443e90247784790461ece89bcb1cfd1b443cdea842af9e6a40d50b8cdc36b73",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/managing-notifications.json",
+      "sha256": "fa6df9790a888d432270ad26524507ed9336035b30187c3449298ade05fed9dd",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/managing-notifications.md",
+      "sha256": "0412850e71f129afa900ddc84096fb72523cf0bfe9d9e5a33d9c9d58be59cb17",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/maps.json",
+      "sha256": "6dfe6a420882e08ca3e4ceba718fce1f2f7ef77c3c90c5cc81930e2fde7fa153",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/maps.md",
+      "sha256": "e5ca5a61c2edc4dfaedbf5a3cfc27594232bd1f9caf1521be9507f664eb72e00",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/materials.json",
+      "sha256": "597da170985715de4bd8446df12e3604595e634a790b5da0ce6673d2b2327ed5",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/materials.md",
+      "sha256": "690602d75260fb12fb736a3ac5373a46a0c21290e5ca2119fefa03fdf3bff742",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/menus.json",
+      "sha256": "dff423968b85e717c175a1999897224e6157cd7ce2f5907d64bf93088532dcf1",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/menus.md",
+      "sha256": "6ba55ff22065262b7bc0aa0a9f8df934e072fe3d335474f46073dfddf6b090d0",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/menus-and-actions.json",
+      "sha256": "b7134e861402d04357275a8f33160040d177ea90540d62522d38a3034c2ca2e2",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/menus-and-actions.md",
+      "sha256": "18f26f5a35a2629670dbc1b38473c2054c689d779f155ab0a8abed016dc158eb",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/modality.json",
+      "sha256": "79f76255705524952443c7ef0aaffaf6285142d0fdcd0a0ad9be4b1c3181e5be",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/modality.md",
+      "sha256": "d8d5df6a38b4d63325f7bec2dd3552ebc464bec0b1188a32d0199481b31df7da",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/motion.json",
+      "sha256": "957268c323af4617dabb6c0449d0920248c995159d54f76c691aa180ceb72a61",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/motion.md",
+      "sha256": "52843d680c67f4170114591e5fa1af30baf4db5b025d602527869ecd04fe5bac",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/multitasking.json",
+      "sha256": "915a42ff8b68aa48f7a489a6abd16b160408672c628ec731cbd14932405de7bc",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/multitasking.md",
+      "sha256": "930cdd6f90a58473f5f751d15403376399825949cc39e8ccacd02fc05f3f2281",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/navigation-and-search.json",
+      "sha256": "21bcaf85d9490a383fb97d02fb2f42b1665382c1f0b7de2e489ef753a184a6ed",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/navigation-and-search.md",
+      "sha256": "597bb2519c478a7734eb4405c355e728e90580f0d415a65eaaa5706ff48bc2c6",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/nearby-interactions.json",
+      "sha256": "fde16c0fea2cecff22eb1d04be9b8deef2a9568f9164f91783ffd1b549e1ef88",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/nearby-interactions.md",
+      "sha256": "ddb79e291daf38d0d9439c61b570b4e58bde5d462c2ad3f589718605b0005eab",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/nfc.json",
+      "sha256": "6d7528d790b0b66e8eaf568e53f6a1eba3786eab8a091566b47f7294f700ab4e",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/nfc.md",
+      "sha256": "23bd2753f668d5be2855bd0663f3361feaaea78e4bb0a7bd0b9763a2c883f782",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/notifications.json",
+      "sha256": "f08e0b107376688cec5d150cf66890bc519bf5b312facbbf4ff40fd450e389d1",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/notifications.md",
+      "sha256": "55664d944eace2ee919b09efc167047d5b834786704c8386865406564bb6775b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/offering-help.json",
+      "sha256": "b919e851612580cb77c29e8e43214d28b7d3bd3bf3f643115e2ce200a3032b38",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/offering-help.md",
+      "sha256": "60bfe09cf04399132ea43d7c7acced73986a1eab86c74c58b274ddcf862b8678",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/onboarding.json",
+      "sha256": "9a85ebb1e3dd275d5f5dbfa1729a2e18429960fc26f5273921a68dc5b323dcda",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/onboarding.md",
+      "sha256": "f9f50c0e49023defb35ca941ba962ee20edf7ca8fdaaa3c1e8c150072ade7896",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/ornaments.json",
+      "sha256": "572dba66383e71140c2a99cc5c2e3404c0e2e2baf21f3e298e97edb4bcceb871",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/ornaments.md",
+      "sha256": "36d5e9b1b9a93b4bc125b3d4e83d086de7824f91be106768c5b1466fe3d2b0db",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/outline-views.json",
+      "sha256": "bc250fe2b268d1e4835539e19b484f39c4643ccb1646c847fc367032da1abce0",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/outline-views.md",
+      "sha256": "d1963dc2eb81cd4ac591f3ac55e3ea8ddcc313558de99cd7424264e30619f798",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/page-controls.json",
+      "sha256": "55f462ba56c3684c03d3a50cbeb97c97455ab77c27080c15f3aa89905933478f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/page-controls.md",
+      "sha256": "4fc17b1e077ef6242cb4311d0c3ad72dd8f01905b050dd28c4a04241fb82df76",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/panels.json",
+      "sha256": "550616a3035d4072d138434de7b44e5cbff04d11ff3de82fad51fe37b1edc072",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/panels.md",
+      "sha256": "3316372d42fc78835d43c88f7a81c85aed81a7a1b96c9c6eda7791a32f2763af",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/path-controls.json",
+      "sha256": "2048f8d82d124f2c78d4d8442fc82574a1410e39a585d60e5af663ead74aeb23",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/path-controls.md",
+      "sha256": "069b0b9d28f92fae4425733c6f09c1c9dc305fcea2a7841f71840ca44cf97859",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/patterns.json",
+      "sha256": "e0cca40c8b02d292b2e084d73a270fa85a28d36267c6862b468dc8edba3b9cf5",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/patterns.md",
+      "sha256": "f135ddca3f23978b725340c86fffd58cbe05acc70e9325613c5372a73212e2fb",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/photo-editing.json",
+      "sha256": "182e352ce445d1e0ada02d3f00449fc73155d290893b0347c8c6dbdc6cc3d149",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/photo-editing.md",
+      "sha256": "3684374f02b5a816c4fed977b115a41d4829f013921b4a6b2f9b90b814a96054",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/pickers.json",
+      "sha256": "73d7d22d7a21124a52832ff09c887f54d191e3bf2152e20f314ca3558288c5f2",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/pickers.md",
+      "sha256": "811bcd650f858784c9d96239f149b38786c30fdb23d18f1e87d7432e098291e2",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/playing-audio.json",
+      "sha256": "9c63454e50a9ddc656891e9dccef1e889bfa8b8124dd3f27d00f4b2e6610dd76",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/playing-audio.md",
+      "sha256": "3ec31f1233a1881792d6a11c37146574af63c5b29313cae8c192c6a680173601",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/playing-haptics.json",
+      "sha256": "68bab380a07eff7aa471d589565891bd904d4615bea3629766d4b7a11ab5c5ba",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/playing-haptics.md",
+      "sha256": "4ab90aa70514906f50fa77f6455adaf7189e9ae030ea8f4de41dfcf5f610b3e6",
+      "read_scope": "targeted native reading"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/playing-video.json",
+      "sha256": "663f56b27a4a5fbc7487a2679e322b2eca113d2d5fadd01d948415768f1f443e",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/playing-video.md",
+      "sha256": "0fc81c89da9f210c53c66a982074e07b9f6ffe741acd5cf1eba1d479ac19be70",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/pointing-devices.json",
+      "sha256": "06001b6feb8b9ab4544eca1cd4e98adaf125ba9d79475b6039887efa7e934f40",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/pointing-devices.md",
+      "sha256": "d65678a4857ecf30a2350510743dfd5da2f3d2bf9a1200d2892d5a130cc56a2c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/pop-up-buttons.json",
+      "sha256": "64ef3e8079e3a1dd2742d377fbf98f7d141cca8798d2dd1985f71b5c24043a4d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/pop-up-buttons.md",
+      "sha256": "939750654d489e88d673bf15db6cdde2cd03ee030aa66d164fca3c9781107437",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/popovers.json",
+      "sha256": "83999a347d3632cdb33ce4414ab97357ae2ad83af041e0f42fa2a7d861482eaa",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/popovers.md",
+      "sha256": "df36e9db954a447302e966631a407b0dd42544e5c7ecba310cd766c6d737559a",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/presentation.json",
+      "sha256": "b0766887b028fec9e8776628e2c33dc45e71763814da4c9ac29c3c871cfd174b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/presentation.md",
+      "sha256": "b7132c340458cf705f362cfda53a37288553d3d1ee993e9c481da4cf47bddfd0",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/printing.json",
+      "sha256": "8cb877a88d268a02b93117e9fdcf19d4f36f2cab00dbf35b3945ff2760184b1f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/printing.md",
+      "sha256": "d603bcfb2fcb7ae6c1d97332f9cd47cdb2f0c00f2c57e43073535871c8085f89",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/privacy.json",
+      "sha256": "df3a543792a763a141ccc6eae59e94615fb96d6e8eb6a65f2f1a92b4ec80ad2d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/privacy.md",
+      "sha256": "00cba7ad97d7fb763623a3cbd99aed11536fb530d60e3b6eeb1b8b9dac3394c7",
+      "read_scope": "targeted native reading"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/progress-indicators.json",
+      "sha256": "76a299d47f154a13b38568a52054f96d5f784739a6aecfe1a82d6ff3a042aa7c",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/progress-indicators.md",
+      "sha256": "80de5d0db3ebce0b0e9b36c3a227363c4c9073f669b65af1133e874d35e5c62e",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/pull-down-buttons.json",
+      "sha256": "9fc61775c9f36daaff05f16caa8a6063237d0379ca079a2d0a45a7a4534a37e1",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/pull-down-buttons.md",
+      "sha256": "035af9fad5b6c15aaff9e86ff973221e5599d0a41ef1cdfd0eda284c5bc58fb9",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/rating-indicators.json",
+      "sha256": "57b373bd44c03e1e294c4c5d0d701a32a9a6c22eca2022baf65ac7f33d789bae",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/rating-indicators.md",
+      "sha256": "2f1ed8c2df12f1d8798fdcc8603d04cf4774c4fd319b8420f4373e25f394ae2f",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/ratings-and-reviews.json",
+      "sha256": "4a8893daf794573380288976e6f6349228d571cce7b1b197be179dade1c527b8",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/ratings-and-reviews.md",
+      "sha256": "37c3066f3ebcc55026dca6143e6e8a306e230ea6a17ef5ca7eb9438ae92c331b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/remotes.json",
+      "sha256": "1e906ba4702ca94af3a6a08dcbf453dbdcbc93059b72a0aabd16ff3f725c84bc",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/remotes.md",
+      "sha256": "1f0538c68342bd049e36a701906ac1ae78bb0631fec8296868d6af899f232fab",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/researchkit.json",
+      "sha256": "2a71e66fc5c79e62fdf55141eecc855de44f2408c363fe9f2f5c97060c3508bd",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/researchkit.md",
+      "sha256": "e4aab24a956c75dcf77a5649102a6ad20449dc69cdebbec0599c473d3f919a90",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/right-to-left.json",
+      "sha256": "a4abb92a2a5c07d96a2f66d61b75decf5bfa11c40b7de84f4bbf765dbb13c505",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/right-to-left.md",
+      "sha256": "0d31e882f0161703797e3fed5360bfce37288110aa8a4d1f7a9a3d540c54cb66",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/scroll-views.json",
+      "sha256": "fa99110bf671741536de552c96154c6b6fb447bdce754b9b55c3536b4deae8e8",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/scroll-views.md",
+      "sha256": "fb83a3e15287e82e4404c98a19184d07d600dcc3813e37e4a98d62e1b14da335",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/search-fields.json",
+      "sha256": "57ad53c788667b8676c585a5c6ef7f6bdaa297dd0a206f9e6606351265045bbb",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/search-fields.md",
+      "sha256": "c65c69f8128a11f32e766ff9516dbc051847669bd2ebbf60a71b59f90058e68f",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/searching.json",
+      "sha256": "e88879b435c2746f33924395f9992adc052177adac4bf037dd923034b1b996bd",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/searching.md",
+      "sha256": "0ea19600d3c8edc0e27eac2702839ed9590e02f326821a314f30cae9882ac178",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/segmented-controls.json",
+      "sha256": "58316edb97f3e1b141e4c86d4671ebc994f5feb68576379f94f5f4be29537d88",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/segmented-controls.md",
+      "sha256": "7d44775227dd4e8979bfab710752cec627fae1168d48a9161e83294843b2c66e",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/selection-and-input.json",
+      "sha256": "1efb49280cd8cf4a8f784c6bc7e12ff241343b3125a7bd7831d842a0a64e01c4",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/selection-and-input.md",
+      "sha256": "636997f0c26a4810d9c9c297fc1e35c7fcbc70d5fd32cce2c7ec2068e89ff922",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/settings.json",
+      "sha256": "c17e9a542a806d828ef5bef1df044cee2c2c135f96e8d0c591d873c2507449cc",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/settings.md",
+      "sha256": "9e768add8c53ee0bc4fe4250207b612e69c9b1ac5989f8b4ee0b43e7f65a756a",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/sf-symbols.json",
+      "sha256": "d3ff4da7e459220e802db3aa6450c5b0163634975b01d6073f44e77e715a4ffe",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/sf-symbols.md",
+      "sha256": "5a8e66c3e347f5e176a14b797df16781404652f0e8aade9b3c600deab1dbe2fd",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/shareplay.json",
+      "sha256": "b8801258811a282267cc8b8a68bc683fc6b3ed62e5b44da037afda29eda073c0",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/shareplay.md",
+      "sha256": "34c8d4dcc9b6f4cba9245ad24e7c28aafc38116dcb555938b900d62dd7468e55",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/shazamkit.json",
+      "sha256": "5338d913a6adc4faf1be9f023ee3941b1d6c8faba2b900f78e280ec4b56f2b78",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/shazamkit.md",
+      "sha256": "50db5dfa3acf865bb66f1fff1d275eb7f1bb382d017acd4fc375c485047e8920",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/sheets.json",
+      "sha256": "3e1a1accb148d23db5a74907b56438de35cdafdb1aafcc12722c7097d7829459",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/sheets.md",
+      "sha256": "3453d993f90f06f8ec3bec9daebe3ceef1f0669c1ddb88bbc26cf31f1e049be0",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/sidebars.json",
+      "sha256": "5aff188db0d343d4286e15a8ed6a7baadef4cfa60565ce374be0c51aae64859d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/sidebars.md",
+      "sha256": "f7714f095842e32b9d37e8c010ff5045a37204612af878f4821da0ea8bb8dc49",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/sign-in-with-apple.json",
+      "sha256": "c07d0c3f32211522d3e084567c086fe29e65f8fd964dd2440bdcbcb0d2d5bbe7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/sign-in-with-apple.md",
+      "sha256": "b9138812bb2d49b410afe1d9645589994b93d606c4138c703639b1b3ee0b7e84",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/siri.json",
+      "sha256": "fe14c4b871727adb2d3014ddf9222b88057db7eb9bb8b688c23de3dee634f3b2",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/siri.md",
+      "sha256": "b3c747cbb38098eb3c95ad5a35b4896b8c15506ec625b90821864d116662a16f",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/sliders.json",
+      "sha256": "d557c0acf0362a586460bed995d1fdc6a605117d5051d6d4dcbe42eeb27e273f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/sliders.md",
+      "sha256": "b6312e1c078f6d9593df8bfcd5e2304393169da782825d209a403fa7b5b4ed8e",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/snippets.json",
+      "sha256": "32af5833181b26681cfa8c4edd5559f94e995c1e6e870b264c97bbfe7a3eae5d",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/snippets.md",
+      "sha256": "b8b0c91b161d99e755910019b572feb2b7ed2af854377ceb03ddb51fd03d5a21",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/spatial-layout.json",
+      "sha256": "146f0f556fbba1218a77339dd28894af38639d384503c42720e800d90846ec30",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/spatial-layout.md",
+      "sha256": "8188b66f8c734043312e329fc2551183c596e5614fe71c75d315ce1a587d5bae",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/split-views.json",
+      "sha256": "2be47ad6548b556f28d735dda7b38afa34efec57ea2037b32ce80523ffa7eea7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/split-views.md",
+      "sha256": "7e52ece9f6d0b51a099abaec8c64907ff6ad737f33aa3e60be151dafa16f8902",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/status.json",
+      "sha256": "b75881bf9f8a39bc42aa93d21be213a1c058c693ca0363ad7e7cf77e53135ad2",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/status.md",
+      "sha256": "e687acba7a05bc05cf694e1c54a8ce6955cdceb2f010b56add909c8c5c6993a9",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/status-bars.json",
+      "sha256": "bd387b95bf3ebe254e9f113ed5f75ddad579b180b3b40e5f1767782f50d48792",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/status-bars.md",
+      "sha256": "ef2768097a21d8cd85d7c42b19082e1794b405a4b593d847cac46444e1f2b77f",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/steppers.json",
+      "sha256": "4eb9f69ba9f3b269a0024f4037f2835c50eac59d34acd3ba6e9a41921fe69d68",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/steppers.md",
+      "sha256": "eefae2c6b6b5e5fad2f648e818f97354df70c41e4a4954a71bc02e61e239f381",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/system-experiences.json",
+      "sha256": "73559c32f2baf8a758e37b14699692dad3277a75435687215b6926da2dad4f8b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/system-experiences.md",
+      "sha256": "72cd9d3a1644400928e3ed3f4f4569dc2b265d3b49aeb3c262ebcd96244efc94",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/tab-bars.json",
+      "sha256": "ee8a00113ffaaa45603cf4ab42d175a2a399732858b45cab890157e457c88088",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/tab-bars.md",
+      "sha256": "81cf9746f3c7136ddae00399ae405db665a9fe87b0cbea0992dddba7d10c8364",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/tab-views.json",
+      "sha256": "9f63190111716fc0b57437c11d820921551cd6843d982d6c2fb8b485879b26ee",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/tab-views.md",
+      "sha256": "9d7083e04e32abf24177e5a5b109f568473f6cc4bbe1b875db135051bb0ac5bf",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/tap-to-pay-on-iphone.json",
+      "sha256": "1e5ab813ebedbe97fd909f3e468eaac469f6a0d3a1543b840d279aca9b2b7877",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/tap-to-pay-on-iphone.md",
+      "sha256": "1485b5f4a1a3d87a6677639756250d2ac44a2b4f75ed46bc951174cf38f13abe",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/technologies.json",
+      "sha256": "137c34ba5faa709e45cfd3d1a738f2f004c00bed901ddef542483ee8554a827b",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/technologies.md",
+      "sha256": "8515f466e06c5e6df11517da6df26c6b6628fd3f5047f1d4797ae2ff25a94300",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/text-fields.json",
+      "sha256": "18324cc7181a498b9324a1980231260785ee427eb9ae48f775bfa06a96153d40",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/text-fields.md",
+      "sha256": "50f163fe37faf56269dd1cc8688ad3b1f2a5b77e043df954650f6d51ffa033b1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/text-views.json",
+      "sha256": "a0e011df816d22db83719825572cf324b4ea9c737862e804c62484330dcc701f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/text-views.md",
+      "sha256": "aa894de0faa962a028694d04bfe81813b5b4edd8416068b965e76171c25a882a",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/the-menu-bar.json",
+      "sha256": "49021cdabc50e3cd7a0d0daedfc7fe3175a1b3331ce5b836cdf759183d5c7f46",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/the-menu-bar.md",
+      "sha256": "73f115800ea2359a62980d77be426a9775409bcdbdf083eb5be6c867a1f9c5e1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/toggles.json",
+      "sha256": "bed6ecd8ea69e785eed940803ae0cfe12f6b2120ee1072f5b6b34d1b618df753",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/toggles.md",
+      "sha256": "06db03d43309ec8ffe89751bbf55ecc79440ae6b702bb54bb2f2799a34c34227",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/token-fields.json",
+      "sha256": "afe7eae105dbab556f8fa136c1988720a702134b47c16469a2186f3742d34dc2",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/token-fields.md",
+      "sha256": "366d2cfde726abbdba86a29aebd332b9b3311c95d2bdeb48329c030286d74f5c",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/toolbars.json",
+      "sha256": "4f1147642ab0561dcb2d4b074be970a537e2072be41e061314d1e234b4cdc6f7",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/toolbars.md",
+      "sha256": "8bd4be5ec66b61b710b61d6bef69940c0b5ec6d9670e9ea14d15932a1157884b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/top-shelf.json",
+      "sha256": "6fed7d0b7496558c128180753234d214026c0faa5d8d1994d6ef16d397474bea",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/top-shelf.md",
+      "sha256": "2467987641c209425dc3614ac6d3abd8f4537606b62653d7e07991d901a26d0b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/typography.json",
+      "sha256": "85bf7dc78d41a6e5e16d4055f3bdadf7bac4f7d5cb2206514c8b82d5d24631ed",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/typography.md",
+      "sha256": "e38ed6931bef585e25e7668a5325e14a705da8daf9c629e092c342d422abf210",
+      "read_scope": "targeted native reading"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/undo-and-redo.json",
+      "sha256": "f876432967988ac2cf71bd79af61d1240c7b9ea6fe856747382954921f70b4d2",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/undo-and-redo.md",
+      "sha256": "3f59978e26c1ccc76956e9861527a3c17c012fca696795293c9e2d7e43080674",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/virtual-keyboards.json",
+      "sha256": "6f5e2d364bdd50f7ee473b0c6b23402e8ba6ba6bda6666b32f8f9d8018cb6c34",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/virtual-keyboards.md",
+      "sha256": "5f670174bded1eff508dfeff086ab7352abd5e3a8f58ce74f85993d0491a46b1",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/voiceover.json",
+      "sha256": "859dc02ab9ba87dc545952d8f8077cf94936cd9f49f491d2e765c2425a6c76e5",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/voiceover.md",
+      "sha256": "5d33afb052fd209855787e6f84f7b85901ebe55d2187dc1f4c8bf07a5341b735",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/wallet.json",
+      "sha256": "2b546ac000dddf10010f90f10938012f97356cdcb7bff18668b42153ecd3956f",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/wallet.md",
+      "sha256": "75df9cb78425dd9d1c25c6a4634b573f832c0f4be9f26c009d458cda78ebeec5",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/watch-faces.json",
+      "sha256": "f52fe24a93bf7943b190a1a7fe75f9479c081242b3b75848989da6b6690314a6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/watch-faces.md",
+      "sha256": "17d7bd1dff79fd3c8c8304e4cbdad42302e3535d7b351a3295e3e97dc2f12568",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/web-views.json",
+      "sha256": "7219049db6cc53cafe303ae5dc430b0717cb79660b2e9d3763a649f55de82148",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/web-views.md",
+      "sha256": "672bc6924db0cb53df12a052c25fcddb8174ea87467ad67002f109af3e0a9f10",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/widgets.json",
+      "sha256": "31bd8239f7bbd95985d426342b0329ff78b781e152e4200a3e1d9c7c4bd42613",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/widgets.md",
+      "sha256": "4048a9f4c1d00b5746733ccc00cbc0863b4f9bd7435c4f36371dbeb73b77f15b",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/windows.json",
+      "sha256": "1da7914a4b33b20b55cc7558d004f5017300f4121c2d7fdf05ba79517073a220",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/windows.md",
+      "sha256": "ed06caac0b591995c5a02b61710f47e1afd9e188c352437fe313895b2f4abf37",
+      "read_scope": "hash verification only"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/workouts.json",
+      "sha256": "a44637de85333370e6f43da835ee69a7163fde8695c9287b0f7ca14696ff5af6",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/workouts.md",
+      "sha256": "ce7af293dcae767eff99eab1aeee836d442808aa1f1b891d381b6431e98eb14e",
+      "read_scope": "targeted native reading"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/raw/writing.json",
+      "sha256": "3c32e5d0b6dac0a2ccef96d96ea8a3eb62e425ef319fd065aa6e3010f93ea149",
+      "read_scope": "parsed AST and compared register"
+    },
+    {
+      "file": "sources/apple-hig-2026-09-12/native/writing.md",
+      "sha256": "a9222a987c47f00279f04d10caf59c33c3dc62528b3b211f89d3abbc73c4bfd7",
+      "read_scope": "hash verification only"
+    }
+  ],
+  "register_files": [
+    {
+      "file": "work/release-2026-09-12/source-blocks/__root__.json",
+      "sha256": "bc0567bc88947a753781148c3893ac67c4710c18aa0411499efe9d95a5be633e"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/accessibility.json",
+      "sha256": "9d486a4a380eba7b01f120ec2d9715f60f1d9c4342af14218bf8664a78264e62"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/action-button.json",
+      "sha256": "5fea4277a865a6ebc363de6c0baf44561959d058dc5f36ca2ca448c90cfbc7b7"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/action-sheets.json",
+      "sha256": "8325451956f455a9258053ab424dac6051ffa06c2b58b39833ab63fbe640410e"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/activity-rings.json",
+      "sha256": "caf1b73eb784180fd831e32a3d05dedb609d5e39ccdbd08eaddb7674de8aeb2f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/activity-views.json",
+      "sha256": "dcc0df46cb36823b408bef7bfe3f94529defcfcd3c351ecdb9567b5a17f416bc"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/airplay.json",
+      "sha256": "f211bb38f46009f9af2c1f91ec135f2be3709f7d15b0d731054eb436d5b16446"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/alerts.json",
+      "sha256": "0b84a37e8f033bd507dfeef551cc0bcb8f519dd895c55b517d8e47d08833af81"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/always-on.json",
+      "sha256": "0ceb23747029dafd260814bfd97d0e0fd8f26a6e655a9ecdaba7fe6afd8da03b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/app-clips.json",
+      "sha256": "ef44a1d2ef118ee7c4e6d37f8d782a06672eaa8b6bd40af7eff855c6e581db6d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/app-icons.json",
+      "sha256": "0b189d52a01815deaec6f517e9acbb5834c1a8a8cf8324ee21c060108c462572"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/app-shortcuts.json",
+      "sha256": "52a91a1226f000245b950d5f557a95575c316f47ffe1913afd6dcaa3c2e6f07a"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/apple-pay.json",
+      "sha256": "2e07cf97bf48f6bb22b6be17298bdb240cbb374a46e2e090fdae5598ce606b90"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/apple-pencil-and-scribble.json",
+      "sha256": "0a8973e429b2f2cdb99e32f3cf7f32857323e155c242bb5e5068ea82ff2533f5"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/augmented-reality.json",
+      "sha256": "2c0bb09332ce15f9269772362d4090f8b5e603441cb4622ff3d655a353fbf693"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/boxes.json",
+      "sha256": "9607963021e39ff3c125828ed6194f488f57cd3c6362d1294b82f7684213e925"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/branding.json",
+      "sha256": "7fec878a08345237578591594017016cb3ebb28be91d86a5d586ab9e03f35ca3"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/buttons.json",
+      "sha256": "597ecea58f8a93c6ee3cde46da374d52c32e0c8ee3ed6c70cb833a071fbf16a7"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/camera-control.json",
+      "sha256": "895b22716774480f8e91457b31ba82ef7b9acf0ac885b338fd061366679a5c80"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/carekit.json",
+      "sha256": "914aa212bfba4015fa98523523d34122e80f2ef4d5b709535b1536bdb5274139"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/carplay.json",
+      "sha256": "5e65af5f0e0cfeaab3e12c294c607a03663eb4d23719e8b03495f6348ec323e6"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/charting-data.json",
+      "sha256": "834171ed648a43e4724f2341230d1c1bf739164cf6f0e80c60967155dd25c68e"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/charts.json",
+      "sha256": "ec969a4bf40ff5c011ad2b40e20132733dea5448a7332f5d8f825798ce54da63"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/collaboration-and-sharing.json",
+      "sha256": "6956afb4d5e1f5cb38454c028cc8780ad47ddf473b9e77ba402400b32d2cbde1"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/collections.json",
+      "sha256": "20f0fba97fcdd78c5a9302e5673aaef43d6e7273d173ae68e6efa02b4824f654"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/color-wells.json",
+      "sha256": "1beb380c7218865384e233bbe5934c6c978644510618106aae0fe905f5b488dc"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/color.json",
+      "sha256": "9d21a5d5addb71559e777b6b8a8ddba8b2e81e4beff3f3949e4ad9ef8a567b4b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/column-views.json",
+      "sha256": "bafb36e802a189ffa1439c67db0d0e01b0064996c1b774403e8b544086979c37"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/combo-boxes.json",
+      "sha256": "ca464001f11e5ab8f69dc4ea5b2ffbd36b8c17138b17f6f282277b287994d1da"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/complications.json",
+      "sha256": "a29a024521100d5d952647315b22a7d5a27a18b53fcd33dada2d9353edaea90c"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/components.json",
+      "sha256": "443b53c46647a1bbba312f23ad7cb9530f52fb99c6f66aab18ff3ae82c3a8506"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/content.json",
+      "sha256": "8342b40ed202c90c5713877eb51508d725de5715ee671fd3c80bdbf143062c0d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/context-menus.json",
+      "sha256": "88d62f7acdd09afeee9e90e10b6921fb111339a2704bb7dfc0af47752c64b46b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/controls.json",
+      "sha256": "c23ea684eb722e9388d3660074c39631dddf7e5612b02b45fcdfe4c1b08916d2"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/dark-mode.json",
+      "sha256": "eeb33df959ae96213372f4f01fc492a452664b220f7db253cfca0d07939fa0c4"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/design-principles.json",
+      "sha256": "685d93eaf837aac3f02a8545b7a0e61b4d846634c73ff1c2d9b09282d9766b92"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-games.json",
+      "sha256": "9c7919c71dfd1d9a72e139c3eb72a56fa399386c9a8397ff2753555d2b0d4617"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-ios.json",
+      "sha256": "9f5d2a371ee4372578f21b894be2f20b8e87cc816c30add7d6a429b26f33f1b7"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-ipados.json",
+      "sha256": "bf1b733e10f1dce3d1b9550ac8f6974b20ea4bd083729015ddf8289f9c1bb43d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-iphone-duo.json",
+      "sha256": "fa425694fc10d314fa49415947e57679c26dde85effb6816d6ad4774456a24f0"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-macos.json",
+      "sha256": "e766ad67a3e4cd9240ac1d992f0e702818295ae2a17567594a7af741a156727e"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-tvos.json",
+      "sha256": "0c354e5e3e8187ff897bd65c50fd9204e01874ac5ac8368b40443dd7d8f05985"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-visionos.json",
+      "sha256": "0600720cc6e5cfe6b7a3bca36f548882c3d722a77d00b66717a658ea19a6c25f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/designing-for-watchos.json",
+      "sha256": "f85e0ee8a4deb1645d3f19f3a9142f534bc1ce10d738ae0814e4aa7ab9e0efa0"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/digit-entry-views.json",
+      "sha256": "a55c0d8f4febd2cb839fadb1addb1b0b5dc96fea397b1064d64065a2f9910f6c"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/digital-crown.json",
+      "sha256": "f7a96104f3b21fe816fb19bac3ec20d1789b86b23ed5aacfc1021c5f85784c97"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/disclosure-controls.json",
+      "sha256": "5e12f1b902b81c4a12b29acd8878e1b64333a4307c56e27232c66061fa4304bd"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/dock-menus.json",
+      "sha256": "534b43fee548abfd44cc19b2eee72f33d9726b56b72f17d4d2611f17a10441ba"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/drag-and-drop.json",
+      "sha256": "5ddc4cd86acbcd016dcf42b0ff65ca12d6e81c9716622d4a428aa79d48a63a0b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/edit-menus.json",
+      "sha256": "0c4a5b78141ff259eae3de57c53be45a00f5aca57acb6827ea6183551939f989"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/entering-data.json",
+      "sha256": "6f94245f421dab5ad0889235e1ffc13936ce77ed1105cf0789b913f530fcad49"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/eyes.json",
+      "sha256": "18dd5ca757e1d15de6d9591eedfd7292482ae0a8e326a62e984428284a76c2a0"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/feedback.json",
+      "sha256": "3edf7d3ebecc46c59c534f5dc1dd6cfef02a59856ce52e58fd3e4641727e9c12"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/file-management.json",
+      "sha256": "77339932cfb636c8f161e86ea0798ce8ecc59835f8f219f1649d07c6af80cdc9"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/focus-and-selection.json",
+      "sha256": "3835a599c9e373d663218cf9da4d02e114c1878f169b2a0294e6f8f589d94fa4"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/foundations.json",
+      "sha256": "cb16ded6245068bcca1cb820086ec2c09672e28ae7065229a99cce21d25716bb"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/game-center.json",
+      "sha256": "34ac4099597c428b6ef9c69e53f2cd29c796755bb220ff3cf3423d31c6a683ce"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/game-controls.json",
+      "sha256": "a8bf90a3385d801788a828064380517993617de83a1cf2b17a0e839a82ed5999"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/gauges.json",
+      "sha256": "102e307f7aa6d994d8acdab720d7387653068e151db6771c3c47e3d2d59633d7"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/generative-ai.json",
+      "sha256": "b2b0f39cf76fede6e6e3195c7762e3de85ec55dbbb242f5739480c4685eda59c"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/gestures.json",
+      "sha256": "3cc94617b233538fb553cd6880e8f8cf4568ce0e2096563ab1f245b00be1285d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/getting-started.json",
+      "sha256": "6ee516a8bed9dece6cfc9d1275f985992d36eab28de280e5d16d581894b8ca47"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/going-full-screen.json",
+      "sha256": "22d92fdfc999c326800e91ac2d8631f2dd0f72bcbf69dfd94c62b18f40b5e060"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/gyro-and-accelerometer.json",
+      "sha256": "e7196c7a02393cec57e5b77376ac84029a20c01a46e599c9c09139a927b2fc48"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/healthkit.json",
+      "sha256": "414a18134f31c6f068e21f773c5c4175d3ef6fb84627c5309948f28e456e1cde"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/home-screen-quick-actions.json",
+      "sha256": "71535b24f6066d0dcf862fe8f9bc6e21805965cea645e449175a4b2fef656a38"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/homekit.json",
+      "sha256": "eb461847f7d0f122cad520326653f326c9a9c6bb1819eff96e9f0efe18a25337"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/icloud.json",
+      "sha256": "762fe165e564c8c63ccdf958eed3bbfd03742067dda80dbc9c0e62cb6fce857f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/icons.json",
+      "sha256": "3e33461d3a3d009ffabc9c6d562b9a81057d0fba56f95cd2b72c15005be5818d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/id-verifier.json",
+      "sha256": "1af2a16ad003f1ea22d2fd877fbacc393f740924e4faaf1dffbae95568e86331"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/image-views.json",
+      "sha256": "2d5842943ebf4ca15c2b19e9b46c2157c9de7c4f2d141133e2701376ab57e7cf"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/image-wells.json",
+      "sha256": "ccb35e0a16252baf7008499fff6f7616f819aaa35a8030757f5e07687f30f8cd"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/images.json",
+      "sha256": "7957108516423f17ee71c023c7542acaa938f8895471d559a70d1445ec7378a8"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/imessage-apps-and-stickers.json",
+      "sha256": "4bc8efa5ba3e2c6835a15bc5c69804dc7df16c80cc8a678b49a5bda69775a3c4"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/immersive-experiences.json",
+      "sha256": "d5e2be214c223a99076a7882107eecf8b4ef7196bbd387481c4de31c5ea01909"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/in-app-purchase.json",
+      "sha256": "fcca7205d3466c6cdf9a8c56f78953a97b01e54b5de9c98ebe9d1445544c7436"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/inclusion.json",
+      "sha256": "c274ca32db1550b8b167eb19370dfb016944de6d7e87d6dff6cbf183d5ffa019"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/inputs.json",
+      "sha256": "d538e673a1247112381d06e42b75979dfc2a7913b051bcec75805868ccfa4a8d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/keyboards.json",
+      "sha256": "9ae6654d6ad10a617ffc486bbe934bfff9a2e93d9815fad9a22c265861c9c3aa"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/labels.json",
+      "sha256": "aae5baa5eb234810e2b1d6baa6866f7d5cf0c0d09069efeeff80a98fe667d4c7"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/launching.json",
+      "sha256": "8058ccbf648e4d2c488eee55d75598f6d748f20d0d2a29e57888adb9800928c8"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/layout-and-organization.json",
+      "sha256": "f2370c2397f32bdd7dbcada850380e76b2433302d5c19d806acff3452aa49e42"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/layout.json",
+      "sha256": "a6fcc4066641ad99981069a4a02c0f55da7318166a5f954b229dbd3c02f19eb4"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/lists-and-tables.json",
+      "sha256": "3c71812af192de8592fcf9383f37a545ad243aecbac58e35fad675d12a05729d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/live-activities.json",
+      "sha256": "43b5036e319c4f4ae98e70854cf1c2c2e861f5042eb90b10f14e870fccbf466f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/live-photos.json",
+      "sha256": "299f633fb1d5b96a0a9ad64c677f3339c55861b8c518b9f64ebb2a06644cf8a8"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/live-viewing-apps.json",
+      "sha256": "0d1ac4ab0b7488c0074e191cdc9c57f440e6b818909da8f73b03c3ff85430ce3"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/loading.json",
+      "sha256": "9aecf3fed89d724d52cbaec39a222c1364279f87e9671f491712ad27e2205fb6"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/lockups.json",
+      "sha256": "2ce878174a9207e0f4dbd31ed2d137d35f652c44c776caeee6fdf31a73023a4e"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/mac-catalyst.json",
+      "sha256": "3600f1243191b741e28acd1694f4abcd46810c07d9d4e7c89d500eb9e08a9e21"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/machine-learning.json",
+      "sha256": "f1899fde26e690cb483f112b432bc1daac10c61453259325907ff3489c246027"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/managing-accounts.json",
+      "sha256": "d548893c4a840d5ed4752e4b9897501e6a3c309f918674c9cbd4ad4187c63b7d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/managing-notifications.json",
+      "sha256": "48b34d6cf823f11684fe8a45506f22b8ca7e1ca8c2388d2d56a8a032caec4671"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/maps.json",
+      "sha256": "3e3577d17affd5a92d67dc8679f8d4fdcbb9fd2c9a452aaaf11fa1ded71b1589"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/materials.json",
+      "sha256": "ba4214707c92ac0b1889a85c85df9c245820133983acb342428b02021329d467"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/menus-and-actions.json",
+      "sha256": "3e20c6e6c241b236db414ae09e789469ed5ad8aca7c7fbc52f6bdf7b6d613aa2"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/menus.json",
+      "sha256": "44dae7979ea89788b7ebbb3b8458ddc77bc5da539f7c0cca256087e559bb15ee"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/modality.json",
+      "sha256": "f0c798fedd4c8d87c893ebe6fa1e8c6492ed9e0edd4484b29149c944fd70b375"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/motion.json",
+      "sha256": "10a83d220b7a97e00d2ed24641fcba569ec26e9e87688f6ed444be3c1076b12d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/multitasking.json",
+      "sha256": "658fcdfcdb1c9ec0a389d857dac1df06b5f2043ef795ec34273ba99ded3ef2f4"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/navigation-and-search.json",
+      "sha256": "bc1f7662e7c224f7c772e5095c660810e15518e00e621b6754951516c3023cf9"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/nearby-interactions.json",
+      "sha256": "c1c22b026c7c5e36217cf62c7c4d9f9789e75ab116f26a923ff273f7d97f46e4"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/nfc.json",
+      "sha256": "e5c2e963181ba97b15f459badadf514368f1d6ff5255caf984b4879afa4c9b3f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/notifications.json",
+      "sha256": "2310c9200f333e0a1d53c49976d05604dd173e956182af39b4fb9df1785e1ce1"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/offering-help.json",
+      "sha256": "3c8810bc2cb42e9815a3b51cdaca51cd42b777d4fa905b324f800e8217b5a8c8"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/onboarding.json",
+      "sha256": "77a6278a3d79f04f5be9b4519c7f62b6518cf1818a42d7841f5083757f3f2938"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/ornaments.json",
+      "sha256": "3a29c8883233201224349f1ab7f76be88482248f7857651fe924578bf0210659"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/outline-views.json",
+      "sha256": "0e554f1d2a70b04ecc1033189bdfcc77ab227a77e481b625779878409a7392e3"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/page-controls.json",
+      "sha256": "20d30cd178a37124365fe4e18db0eca9f07effe6486257c054f1595b3f8a043f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/panels.json",
+      "sha256": "339ca27abdd0f72e48c1c44f1b719e2603a99ac865a26e952e35cb67d8695e7a"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/path-controls.json",
+      "sha256": "2c9e63f99641ea520b8e5e912e8d4868182c85217c691f979db77c46dc09e3d3"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/patterns.json",
+      "sha256": "9e154bebbdb57e42e517c6a80ffa7bb46a7d168855083742568ab02bfbb371eb"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/photo-editing.json",
+      "sha256": "e307dc57bf7a79a45ed8b979925b63f7119aadd726732f13d318c6b3ec759cb6"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/pickers.json",
+      "sha256": "072616a41407eef4caa883d8cce7a6fdad4b8b9f441f0b90ded84f714f9ceb12"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/playing-audio.json",
+      "sha256": "b2b93d35edb67e6aaf9f7e4fbf5998a10fd47d03bbad74fc06fba15391c80a83"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/playing-haptics.json",
+      "sha256": "89584c97f07ca983d099fe5bd4eada8aeccef0bdc6a50a8ca5b9374ebea554e3"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/playing-video.json",
+      "sha256": "652330bdf32bbf042523e71a3067d6df20be4ea273b56d2c4fe0c79036e2d921"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/pointing-devices.json",
+      "sha256": "d2c7bb6df2897ccd7d174eefbb40921ef41c68524c44ad6fbecc7b6683c23c76"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/pop-up-buttons.json",
+      "sha256": "f45b1e2602ee730c13b3e9c14576b7980f46390b2abf5d168222a42c53cb8684"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/popovers.json",
+      "sha256": "09f0fd6cb5482b197585edbdce1d52cbdfe57647dad613f8969442d3316c4716"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/presentation.json",
+      "sha256": "86deffc64c7b1c4f7c05944a302cb7fb2ce6fdea32ad51e57a98d2c7c560c670"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/printing.json",
+      "sha256": "989a0ab6bb1cfa72365d7d93e4f7afc89a2173f95e21ccd9b417015523dcae36"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/privacy.json",
+      "sha256": "129176b4970c6d8bed7388774b984c85af293d0089394cbcfaf042247e704c14"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/progress-indicators.json",
+      "sha256": "30e070031a1b989f1ac0096323f8fab0e630a4e8e3c19dab0d03d1ae512217da"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/pull-down-buttons.json",
+      "sha256": "b108af67d1052d7aa48194816856ca9660e99cbb2ee840228f4be3419b04cb96"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/rating-indicators.json",
+      "sha256": "cd264829383fa51da0390735a5ec6e57e973df9b147d4af2af35d8599f7ef525"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/ratings-and-reviews.json",
+      "sha256": "45f82000cb23dab9fd515d71d51cb3077b9447b18ad3ada55ff662e68ff40e99"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/remotes.json",
+      "sha256": "4581fd9a4e086fdf2522e4415419fee7679c571a8d47b65cdd71916520c131a1"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/researchkit.json",
+      "sha256": "ed40026b18bacc71e6450e713a6d5417fef2863147dc6b1030e2014590b53787"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/right-to-left.json",
+      "sha256": "af0f93143b701ef2b492c6b6a7aad0f420fd9cbe34c801eb88ff4be8bf0ef42d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/scroll-views.json",
+      "sha256": "880ea086050ce38b66759ee073cc745337ae2449f15a695b87530e0e241d55e9"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/search-fields.json",
+      "sha256": "01d995388d132f018c70553458b5367ee324e5b7326dff2ba9a263b9ab4a1a60"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/searching.json",
+      "sha256": "2f72252974bfea4ec4ebcf78b39c9b3ebcda83a8cc4c52d2a14eec70f5fb424d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/segmented-controls.json",
+      "sha256": "e7c61f9c8f7e95d7a111d2f6510358d9d8e2eb1452930343e32e6ac0fd2e7ff6"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/selection-and-input.json",
+      "sha256": "2897eee6aea3d64848844e4f964638393a9311c6c25ca369c93269d0690a13a8"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/settings.json",
+      "sha256": "8636e6b9b22a74f853c94d217626c0c156a92a4aa440deb4fc2567dd571abf1f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/sf-symbols.json",
+      "sha256": "deb475bf41dfb3d17de31d55701b3e502e36a97de9c6c86437793fe6d547459b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/shareplay.json",
+      "sha256": "f69f6c10ae4996931ebe966f3ea546b35f45d51979fde86584ec6f8ebcf3ccf7"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/shazamkit.json",
+      "sha256": "a11448db4078fe68538f16f12aa70f91d1a350a0b69480fa5a28f4e49c7ed534"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/sheets.json",
+      "sha256": "a9857cfb0f55beefdf9c711ac737f943e51a1d5f20420bee0d5508f5b88fcf27"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/sidebars.json",
+      "sha256": "4233125955aadba3193256b14f48003ba3546c2b619c646e090ef27685cdde86"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/sign-in-with-apple.json",
+      "sha256": "9b9dc32535c41609ee24ba36cc44b59a4d1fd947341fc66ee00555e61d9e48bf"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/siri.json",
+      "sha256": "56e8a98b73e9d92429a062bead30305c2f85ca7c3b9ee72765e580ec1c747676"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/sliders.json",
+      "sha256": "481861ffda299333253cb1a0d134b3a57024ebb1613b530cee838146a4795a23"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/snippets.json",
+      "sha256": "15dc01eaa00c55705518a63ef102155231c7eefa749ab00dcb68a6b764b5d88c"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/spatial-layout.json",
+      "sha256": "ef2bdb42f4ca7823c0dd09f1c4be6e748c48f679cd80ec9676a71b505a830bf3"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/split-views.json",
+      "sha256": "0f8d47f435c85ec1df774ca3589608c2e2615a07fde7db210d6d69f01ac5ecbf"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/status-bars.json",
+      "sha256": "7e9bc4c77cb193e092dbaf41d7163e6ec11276b60d5743e5e2fb5091c651749d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/status.json",
+      "sha256": "86b77a60f007a628aa12548b088611f5fcdcb52c68e6f2c363078bab14380652"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/steppers.json",
+      "sha256": "41ef56176ab8ea00d8d4dc90c201ede6751196f7f2c92c28afb14a8889ee825d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/system-experiences.json",
+      "sha256": "64a2161ec1564df22f8058ac62f239f67772ff5e2c883be26d378f2757ffe60f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/tab-bars.json",
+      "sha256": "cee884899dd33eb4dd67733b17daf8c730721c96f63cd258b112a26a7d69baef"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/tab-views.json",
+      "sha256": "f8e12d453452504931f3af26114c97c641e0663fc70966e16b4d6a2ea3851b3d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/tap-to-pay-on-iphone.json",
+      "sha256": "5e0813890e4d7ecee951b3357092906e1c48b91b09ac5c947c4367e63ee4d29a"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/technologies.json",
+      "sha256": "ea85d5d31028ca842a7ef45a2643847ad16a85aa1c04aa6a7c10039d4b716fe9"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/text-fields.json",
+      "sha256": "920ed4e9423776bbd3003aaa75a83a4b5320c7ba03b7cf9470980ef56dd94014"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/text-views.json",
+      "sha256": "2f2d37a592b7a8edc9f98ad63e6f96941995048d0a66e26246430e59151fbd41"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/the-menu-bar.json",
+      "sha256": "da4e9728b3e14c1a1f9b42f34d1a182396193d32a330518bc37b5a0029f00f23"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/toggles.json",
+      "sha256": "c7262cc45912aa3e8f86634f563b3561ca0e4cc645f349a37d87d6598929027c"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/token-fields.json",
+      "sha256": "158b69beddeb3e9b83aa4fa595f34b4beebd5299927318da5d7a56c3a591b094"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/toolbars.json",
+      "sha256": "97ce867dec1d457fc2c92364c9f725ecac6a3f2abd25868dd2f706cbe8704e8a"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/top-shelf.json",
+      "sha256": "d8580495d24bfec25a70d1e724671dfbd16ac8cc859891b342c57712de559c3b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/typography.json",
+      "sha256": "eb2b2210412ba78f8adaf96f216d4ebc12b5b4f6e7320169720e7200a486abae"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/undo-and-redo.json",
+      "sha256": "f4c4bf9e89f64b92d52ee6dcb98e5aa4e03ad98a737b7b574f74b8b5e138a947"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/virtual-keyboards.json",
+      "sha256": "217135064fa07c4a140065dfd45b2d2332b8ea94edb0a74d9bfd0c3aee8cde18"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/voiceover.json",
+      "sha256": "824477953d1cf6466e2aac142970ed1db1f641f46dd798f53ddcca72459c282b"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/wallet.json",
+      "sha256": "febbfd9c09c55d85ffd202f27b3a234e1eb75eb5e8b6d4224075b264cab58a1d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/watch-faces.json",
+      "sha256": "15c2361f25cf0e8ca7579ea982a409156b9234c1298a41947d817e77ac6aa616"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/web-views.json",
+      "sha256": "f4f65ac86d0b189c999ef7efcfe6b08e98de1f14af867479d2ec54fb3087e21d"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/widgets.json",
+      "sha256": "8ca0667ff28261eac240dcbb5a97c78c065b7748ebe2ba6f7aed50f4b267c63f"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/windows.json",
+      "sha256": "3ef6ddfc44a8c31534fca8c98d5f71bd3d730055f94859b8a03bade227ebebd9"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/workouts.json",
+      "sha256": "406fc2596e6c55bd82487a94a4c565721eb0fe56178eacbeaf320da0acabb6b5"
+    },
+    {
+      "file": "work/release-2026-09-12/source-blocks/writing.json",
+      "sha256": "de2b77269f4ed2fd4e4af892c81b42d16ebeecf5f95c2833a790fca023dd0455"
+    }
+  ],
+  "initial_decision": "revise",
+  "rereview": {
+    "decision": "pass",
+    "primary_raw_nodes_recompared": 7642,
+    "raw_mismatches": 0,
+    "table_span_records_verified": 9,
+    "table_span_mismatches": 0,
+    "warning_count_pollution": 0,
+    "nested_list_render": "indented correctly in inspected Game Center block",
+    "duplicate_tab_render": "removed when first child heading equals tab title",
+    "pilot_metric": {
+      "file": "work/release-2026-09-12/pilot-remeasurement.json",
+      "sha256": "e120c9e372290b27e4f6c29e98bc575d99e25efdc96d990726acbce12b0d4c2a",
+      "candidate_count": 5,
+      "mapped_release_topics": 157,
+      "source_words": 13756,
+      "output_words": 5195,
+      "ratio_of_totals_reduction_percent": 62.235,
+      "encodings": [
+        "o200k_base",
+        "cl100k_base"
+      ],
+      "tiktoken_version": "0.14.0",
+      "failures": [],
+      "limitation": "Inspected actual generated report and sum/ratio, not a full candidate semantic audit or independent tokenization replay. This is a five-topic subset, not completed corpus."
+    }
+  },
+  "source_reading_files": [
+    {
+      "file": "work/release-2026-09-12/source-reading/apple-pay.md",
+      "sha256": "ed32bb0fc93abc8a08f43bc879b06f80ce70c0a12d7d18ce7a9ff8b63d3be8d4",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/homekit.md",
+      "sha256": "41125cb27b72629617a533c19d3ddfae6343a963bb224241743dd23cc7b20b42",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/icons.md",
+      "sha256": "658fbc1120d73ab839cf7a753deb2457e2ed83c69c6fdc0d19ba735a9257e7c9",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/widgets.md",
+      "sha256": "8ca7f5002e10b14bd35d2c3efb75d83a8cee9a01b61ac3c34c840c23ecee79a8",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/workouts.md",
+      "sha256": "6d1eeabc2c4908232908a7edf5c82bd3e88344efe012988680d9a6bc81268bb1",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/game-center.md",
+      "sha256": "27f1522d7e8ca06fe6b89a99b587b76cbb035fff04ce33524aeb6ba8d9e98924",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/typography.md",
+      "sha256": "cbc23a5292ddea53d1519a464b22bf6fda60d8e8c9dea0e0292f8f4dd18319e9",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/privacy.md",
+      "sha256": "701f61366d74eeb781a683243f449a95fd2ffffc81473942f4e753f2c9c19c84",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/layout.md",
+      "sha256": "307140860a8b906b53c7a0f51511f4ec203c4d6e676329482f9a7d577ac1f4e4",
+      "read_scope": "targeted structural rendering inspection"
+    },
+    {
+      "file": "work/release-2026-09-12/source-reading/playing-haptics.md",
+      "sha256": "97375ecd53bf1377093367ec40807ac46f9b3b2794706b93a2399693ac0cbc6a",
+      "read_scope": "targeted structural rendering inspection"
+    }
+  ]
+}

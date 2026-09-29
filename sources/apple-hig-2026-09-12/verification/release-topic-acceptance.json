@@ -1,0 +1,1316 @@
+{
+  "status": "in progress; not a release manifest",
+  "expected_topics": 157,
+  "recorded_topics": 13,
+  "records": [
+    {
+      "topic": "shareplay",
+      "candidate_sha256": "046f5ffd3dda06edb0b3082b16e25cc1e737a620acd98174a810d05e7274e697",
+      "coverage_sha256": "9b301276615c36dedbe6f5597b878b4d567fc2c53f492a2129a178c329278dea",
+      "sources": [
+        {
+          "slug": "shareplay",
+          "native_sha256": "34c8d4dcc9b6f4cba9245ad24e7c28aafc38116dcb555938b900d62dd7468e55",
+          "json_sha256": "b8801258811a282267cc8b8a68bc683fc6b3ed62e5b44da037afda29eda073c0"
+        }
+      ],
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/calibration_atomic_review",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/atomic-calibration/round6/shareplay.review.json",
+        "report_sha256": "c44f423b1a28aa2fb4e4bcc026fced84d27acad27085f7faca918382268211d8",
+        "scope": "Independent final-byte source fidelity, all seven finding groups/13 facts closed, complete prior atomic map explicitly carried by hash/clause equality; not behavioral or release acceptance."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Complete fresh round6:21/21 cases and85/85 facts; no grade carryover. Calibration only, not extracted-release runtime validation.",
+        "report_path": "work/release-2026-09-12/exams/calibration-shareplay-round6-grades.json",
+        "report_sha256": "3fb45ed262de5582f131caa44617a8556fe42e2c29a6bd2f5a98416d596043c1",
+        "answers_path": "work/release-2026-09-12/blind/calibration-round6-shareplay/answers.json",
+        "answers_sha256": "76c0be16b0e19e47d725fd4a475d434c71bbc6bc60f5bd987394e04703c1f482",
+        "candidate_sha256": "046f5ffd3dda06edb0b3082b16e25cc1e737a620acd98174a810d05e7274e697"
+      },
+      "measurement": {
+        "source_guidance_words": 2488,
+        "output_guidance_words": 1621,
+        "word_reduction_percent": 34.847,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 3069,
+            "output_guidance": 2149,
+            "candidate_full_file": 2561
+          },
+          "cl100k_base": {
+            "source_guidance": 3068,
+            "output_guidance": 2155,
+            "candidate_full_file": 2550
+          }
+        }
+      },
+      "additional_fidelity_gate": {
+        "status": "pass",
+        "immutable_manifest": "work/release-2026-09-12/frozen/calibration-final-round6/manifest.json",
+        "summary_path": "work/release-2026-09-12/reviews/atomic-calibration/round6/acceptance-summary.json",
+        "summary_sha256": "9b7f0438d542c5ee359ed9b0b1c236ae84c6ee42478a0fc9e345530467885db2"
+      },
+      "history": [
+        {
+          "topic": "shareplay",
+          "candidate_sha256": "73c04dca253b5eca82020fbb7eb13e3884b758ee18345570a3969a47d912b535",
+          "coverage_sha256": "fa3a5d21c3f86790cd964f77e3297d078daab102e98cc95e4282d89b26754f6c",
+          "fidelity": {
+            "status": "withdrawn; atomic review found substantive defects",
+            "reviewer": "/root/calibration_final_fidelity",
+            "model": "review-tier",
+            "reasoning": "high",
+            "report_path": "work/release-2026-09-12/reviews/final-calibration/shareplay.review.json",
+            "report_sha256": "9f292efc7553bed0e7a4bc0a761dc781ae081dba27bd753464d72acc03872323",
+            "withdrawal_finding": "work/release-2026-09-12/reviews/final-calibration/shareplay-exit-finding.json",
+            "withdrawn_candidate_sha256": "9e5bf94aea26b9308010a8c53319c0f711173ba75be01838ec5bdf27cd3fc35f"
+          },
+          "behavior": {
+            "status": "pass",
+            "scope": "Calibration only: 16 distinct cases/68 facts with passing final per-case evidence; not one clean full-suite rerun and not extracted-release runtime validation.",
+            "cohorts": "Round 4 carries 13 passing cases with unchanged supporting clauses; round 5 passes two regression cases and one first-use case, totaling 12 facts. Earlier non-passes preserved.",
+            "reports": [
+              {
+                "path": "work/release-2026-09-12/exams/calibration-shareplay-round4-grades.json",
+                "sha256": "13b7c33a0ced5532d5514c9ac98b2fe1a3fbb152997e734ec79b02a6127817e0"
+              },
+              {
+                "path": "work/release-2026-09-12/exams/calibration-shareplay-round5-grades.json",
+                "sha256": "47e22dbf3cfc5b2d8c3dfe4b87c110d051bba3d252b42e7237c734d802815e30"
+              }
+            ]
+          },
+          "measurement": {
+            "source_guidance_words": 2488,
+            "output_guidance_words": 1536,
+            "word_reduction_percent": 38.264,
+            "tokens": {
+              "o200k_base": {
+                "source_guidance": 3069,
+                "output_guidance": 2044,
+                "candidate_full_file": 2456
+              },
+              "cl100k_base": {
+                "source_guidance": 3068,
+                "output_guidance": 2049,
+                "candidate_full_file": 2444
+              }
+            }
+          },
+          "additional_fidelity_gate": {
+            "status": "revise",
+            "reviewer": "/root/calibration_atomic_review",
+            "report_path": "work/release-2026-09-12/reviews/atomic-calibration/shareplay.review.json",
+            "note": "Final atomic review: seven substantive correction groups across three topics. Await corrected immutable pairs and renewed review.",
+            "report_sha256": "ccc80552d12b7a63dd36b825b48dab0c143861da4443e74ecddcad27303a7226"
+          }
+        }
+      ]
+    },
+    {
+      "topic": "privacy",
+      "candidate_sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+      "coverage_sha256": "bcd095b7cd7396a5b03b3de35b0079fb92e17a829eccadfedc5fe2035792b13d",
+      "sources": [
+        {
+          "slug": "privacy",
+          "native_sha256": "00cba7ad97d7fb763623a3cbd99aed11536fb530d60e3b6eeb1b8b9dac3394c7",
+          "json_sha256": "df3a543792a763a141ccc6eae59e94615fb96d6e8eb6a65f2f1a92b4ec80ad2d"
+        }
+      ],
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/calibration_atomic_review",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/atomic-calibration/round6/privacy.review.json",
+        "report_sha256": "68c346fa8e674bdcb19d61a4c61c4fe522a04793ff70357054b09c2e4dc0d891",
+        "scope": "Independent final-byte source fidelity, all seven finding groups/13 facts closed, complete prior atomic map explicitly carried by hash/clause equality; not behavioral or release acceptance."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Calibration cumulative final per-case evidence:20 distinct cases/84 facts pass. Not one clean full-suite rerun and not extracted-release runtime validation.",
+        "cohorts": "18 round6 passing cases/77 facts carried on unchanged reference; round7 passes the3-fact conjunction regression and a4-fact first-use source-only case. Earlier non-pass preserved.",
+        "candidate_sha256": "a63b08b465271a968934711e23a60d7879a6a3212004672a952582d8742ca851",
+        "reports": [
+          {
+            "path": "work/release-2026-09-12/exams/calibration-privacy-round6-grades.json",
+            "sha256": "f30adb1e57470048b7c9e43ce0da69915377f754021f8de56654e7b6f0677012"
+          },
+          {
+            "path": "work/release-2026-09-12/exams/calibration-privacy-round7-grades.json",
+            "sha256": "c274e5d5d09de24531a1e8daf19c82eff1e7783938b1d60294619bf05e4c6928"
+          }
+        ],
+        "answers": [
+          {
+            "path": "work/release-2026-09-12/blind/calibration-round6-privacy/answers.json",
+            "sha256": "18b9ae6aac28e3de022ab95b70446d486d14fe7191fc3f8bc9b78e7f20f6c945"
+          },
+          {
+            "path": "work/release-2026-09-12/blind/calibration-round7-privacy/answers.json",
+            "sha256": "16dcd32dc8b9a4e64dd33c5de186df982f08614da1bf392995a09e19f403378a"
+          }
+        ]
+      },
+      "measurement": {
+        "source_guidance_words": 3089,
+        "output_guidance_words": 1578,
+        "word_reduction_percent": 48.916,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 3799,
+            "output_guidance": 2163,
+            "candidate_full_file": 2811
+          },
+          "cl100k_base": {
+            "source_guidance": 3790,
+            "output_guidance": 2155,
+            "candidate_full_file": 2786
+          }
+        }
+      },
+      "additional_fidelity_gate": {
+        "status": "pass",
+        "immutable_manifest": "work/release-2026-09-12/frozen/calibration-final-round6/manifest.json",
+        "summary_path": "work/release-2026-09-12/reviews/atomic-calibration/round6/acceptance-summary.json",
+        "summary_sha256": "9b7f0438d542c5ee359ed9b0b1c236ae84c6ee42478a0fc9e345530467885db2"
+      },
+      "history": [
+        {
+          "topic": "privacy",
+          "candidate_sha256": "732f717bb0f69556ce33e5f9e67d1f13f93a99383c6045374ed6d8daee7560b6",
+          "coverage_sha256": "eacfba70219e4ea8febc884789def545e5cec406117d5957be9d21fb1d2299ae",
+          "fidelity": {
+            "status": "withdrawn; atomic review found substantive defects",
+            "reviewer": "/root/calibration_final_fidelity",
+            "model": "review-tier",
+            "reasoning": "high",
+            "report_path": "work\\release-2026-09-12\\reviews\\final-calibration\\privacy.timing.review.json",
+            "report_sha256": "f01dc7de8cf9cd691c70f17b9f73e05a706a3b3450b4b43280b99092d610a9c5",
+            "prior_acceptance": "withdrawn for timing omission; history preserved in report"
+          },
+          "behavior": {
+            "status": "pass",
+            "scope": "Calibration only:16 distinct cases/71 facts with passing final per-case evidence; not one clean full-suite rerun and not extracted-release runtime validation.",
+            "reports": [
+              {
+                "path": "work\\release-2026-09-12\\exams\\calibration-privacy-round4-grades.json",
+                "sha256": "ceff52f513bc5f65f53297688472e5bb3079793f16c305ad055d5761ae274c74"
+              },
+              {
+                "path": "work\\release-2026-09-12\\exams\\calibration-privacy-round5-grades.json",
+                "sha256": "2a4b7e2cc7fdf14d0295112b2f4896a69aa5a3c216de4cfe4d16ddb80ace542f"
+              }
+            ],
+            "cohorts": "Round4 carries14 passing cases/63facts; round5 passes repaired privacy04 regression4facts plusone first-use4fact scenario. Earlier non-passes preserved."
+          },
+          "measurement": {
+            "source_guidance_words": 3089,
+            "output_guidance_words": 1527,
+            "word_reduction_percent": 50.567,
+            "tokens": {
+              "o200k_base": {
+                "source_guidance": 3799,
+                "output_guidance": 2106,
+                "candidate_full_file": 2754
+              },
+              "cl100k_base": {
+                "source_guidance": 3790,
+                "output_guidance": 2098,
+                "candidate_full_file": 2729
+              }
+            }
+          },
+          "additional_fidelity_gate": {
+            "status": "revise",
+            "reviewer": "/root/calibration_atomic_review",
+            "report_path": "work/release-2026-09-12/reviews/atomic-calibration/privacy.review.json",
+            "note": "Final atomic review: seven substantive correction groups across three topics. Await corrected immutable pairs and renewed review.",
+            "report_sha256": "655db10e7dfd5349e3bd5eb3e443dbaf9828b1abaee58333e566cc2f1dfeafce"
+          }
+        }
+      ]
+    },
+    {
+      "topic": "keyboards",
+      "candidate_sha256": "a9a296d664e9a59c9760b078e1af4aacda33c9eaa9624d8e0b61bdbbb824cc59",
+      "coverage_sha256": "daa55323c69ff1ccdd798ba4089f052f9fa61b84de731b81c5e57ba36ff19556",
+      "sources": [
+        {
+          "slug": "keyboards",
+          "native_sha256": "96850470425944fde6951dd9cc7b843bc60604f509252902c6ebb0326a46b6c1",
+          "json_sha256": "ef81add8bc05d6f5d641814e936076fd44400b45334160841e83c16e12eb8dee"
+        }
+      ],
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/calibration_atomic_review",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/atomic-calibration/round6/keyboards.review.json",
+        "report_sha256": "e9b8adc0f1ed82573332a6ecac5bc5097a1b8506d101fd188dfbfe75b333ee2b",
+        "scope": "Independent final-byte source fidelity, all seven finding groups/13 facts closed, complete prior atomic map explicitly carried by hash/clause equality; not behavioral or release acceptance."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Fresh complete round6:12/12 cases and47/47 valid elicited fact items pass; no carried grades. keyboards-07.F1 scores its elicited single-key game exception, not unasked ordinary-shortcut background; F2 preserves source uncertainty. Calibration only, not extracted runtime.",
+        "report_path": "work/release-2026-09-12/exams/calibration-keyboards-round6-grades.json",
+        "report_sha256": "4a3ef4d0284e5e3329dacc13e3b4805dbb7fad1b3be24bcadf6e3c0f1a4d7af3",
+        "answers_path": "work/release-2026-09-12/blind/calibration-round6-keyboards/answers.json",
+        "answers_sha256": "fb99c56bbb201e3a4a57e356cc874efdd906d6ca3d587c4a94d5c4e7e238e7ae",
+        "candidate_sha256": "a9a296d664e9a59c9760b078e1af4aacda33c9eaa9624d8e0b61bdbbb824cc59"
+      },
+      "measurement": {
+        "source_guidance_words": 2485,
+        "output_guidance_words": 1808,
+        "word_reduction_percent": 27.243,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 3768,
+            "output_guidance": 3130,
+            "candidate_full_file": 3592
+          },
+          "cl100k_base": {
+            "source_guidance": 3772,
+            "output_guidance": 3136,
+            "candidate_full_file": 3592
+          }
+        }
+      },
+      "additional_fidelity_gate": {
+        "status": "pass",
+        "immutable_manifest": "work/release-2026-09-12/frozen/calibration-final-round6/manifest.json",
+        "summary_path": "work/release-2026-09-12/reviews/atomic-calibration/round6/acceptance-summary.json",
+        "summary_sha256": "9b7f0438d542c5ee359ed9b0b1c236ae84c6ee42478a0fc9e345530467885db2"
+      },
+      "history": [
+        {
+          "topic": "keyboards",
+          "candidate_sha256": "3f68aa04e616e86cb84e475e1be5b5019ad7e2a719c510c834ba0ffabbfb189a",
+          "coverage_sha256": "30becb44f52778d438ff641b402ae04d2c320f7466dc2cddc44da11de89f390b",
+          "fidelity": {
+            "status": "withdrawn; atomic review found substantive defects",
+            "reviewer": "/root/calibration_final_fidelity",
+            "model": "review-tier",
+            "reasoning": "high",
+            "report_path": "work/release-2026-09-12/reviews/final-calibration/keyboards.correction2.review.json",
+            "report_sha256": "576bf3872a76ac34fe807cf271c35ee426209c7e7291214e9a1ebc31e4adbaf3"
+          },
+          "behavior": {
+            "status": "pass",
+            "scope": "10 calibration cases, final unchanged candidate hash; does not cover later extracted-runtime suite",
+            "report_path": "work/release-2026-09-12/exams/calibration-round2-grades.json",
+            "report_sha256": "855aef6dc8ee866d5da462916d2319439fa4c5a6c7b7add10f797e9265eb2652"
+          },
+          "measurement": {
+            "source_guidance_words": 2485,
+            "output_guidance_words": 1805,
+            "word_reduction_percent": 27.364,
+            "tokens": {
+              "o200k_base": {
+                "source_guidance": 3768,
+                "output_guidance": 3128,
+                "candidate_full_file": 3590
+              },
+              "cl100k_base": {
+                "source_guidance": 3772,
+                "output_guidance": 3134,
+                "candidate_full_file": 3590
+              }
+            }
+          },
+          "additional_fidelity_gate": {
+            "status": "revise",
+            "reviewer": "/root/calibration_atomic_review",
+            "report_path": "work/release-2026-09-12/reviews/atomic-calibration/keyboards.review.json",
+            "note": "Final atomic review: seven substantive correction groups across three topics. Await corrected immutable pairs and renewed review.",
+            "report_sha256": "9a0cf7adc74920aace6db35ed814c707fc5c079d1587f9f1a3b79e206dc7fe35"
+          }
+        }
+      ]
+    },
+    {
+      "topic": "labels",
+      "candidate_sha256": "8cd016d7c342c6bff4eb09e50e01cd854a018843888638eb859e0ac30e9edf48",
+      "coverage_sha256": "cfc98b857bce0dc4a09a1e9b88464b7650de0c4e6f4e89f326be08b586beca0b",
+      "sources": [
+        {
+          "slug": "labels",
+          "json_sha256": "808feaa4c07688eba4f91f8711695ef5869694ffc8b15e9dc2167a76be041738",
+          "native_sha256": "1afda93914583e8d23038eb6c7f42b2feb81b9aa023c275106c435ae84df8a79"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_02_review",
+        "model": "review-tier",
+        "reasoning": "high",
+        "report_path": "work\\release-2026-09-12\\reviews\\corpus-02\\round2\\labels.review.json",
+        "report_sha256": "bfc0cb3868e53e003d3ee05b13ebe22c64a561bd7b42e8aa5c7f7f58bffaf7ff",
+        "scope": "43 independently reconstructed facts,23 mapped guidance blocks; source-to-reference and reverse support,20-cell table reconstruction,API/figure checks,June continuity and final outlier review. Exact prior clauses carried only with verified matching hashes."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Five first-use source-only cases;29/29 elicited facts pass,0 unsupported additions or modality errors. Actual full input read trace inspected independently. Topic reference-use sample only; not extracted-release runtime acceptance.",
+        "report_path": "work\\release-2026-09-12\\reviews\\corpus-02\\labels-answer1-grades.json",
+        "report_sha256": "b4538fd8e42313b201e0da0f4b0604c11a91990ecce7aeefaa2196b789890e31",
+        "answers_path": "work\\release-2026-09-12\\blind\\corpus-02-labels-round1\\answers.json",
+        "answers_sha256": "528be5deee878f3f75ddde2459b20dee5afef5aa84d30e6837f1edf303ddd436",
+        "candidate_sha256": "8cd016d7c342c6bff4eb09e50e01cd854a018843888638eb859e0ac30e9edf48"
+      },
+      "measurement": {
+        "source_guidance_words": 589,
+        "output_guidance_words": 313,
+        "word_reduction_percent": 46.859,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 787,
+            "output_guidance": 537,
+            "candidate_full_file": 776
+          },
+          "cl100k_base": {
+            "source_guidance": 783,
+            "output_guidance": 530,
+            "candidate_full_file": 762
+          }
+        }
+      },
+      "provenance": {
+        "report_path": "work\\release-2026-09-12\\blind\\corpus-02-labels-round1-provenance.json",
+        "report_sha256": "8666013da5c3dae548d39374fa856442e50aeb68ce2cedb1ac057e8a6eb3d182",
+        "trace": {
+          "path": "work/release-2026-09-12/agent-traces/20260913T040423136849Z/01a098ed-6106-7643-ae9f-34df48c7e90f.json",
+          "sha256": "6e41cc03aa23bfb8d56adeafb891f5fed8e169d8ff4e0c83855742b9cf5f660c"
+        },
+        "errata": "Self-reported manifest hash omitted one f; machine output verifies correct identity. Self times narrower than central elapsed. Preserved original answer and separate correction record accepted independently."
+      },
+      "execution_ledger_ids": [
+        "corpus-02-draft",
+        "corpus-02-source-exam",
+        "corpus-02-review-initial",
+        "corpus-02-labels-cleanup",
+        "corpus-02-review-round1",
+        "corpus-02-review-round2",
+        "corpus-labels-answer1",
+        "corpus-labels-grade1"
+      ],
+      "billing_usage": null,
+      "history": [
+        {
+          "scope": "Initial Labels source pass was withdrawn for implied rather than explicit copy/paste purpose. Final candidate restores purpose; source review and fresh answer verify it.",
+          "record": "work/release-2026-09-12/reviews/corpus-02/round1/method-addendum-review.json"
+        }
+      ],
+      "accepted_at": "2026-09-13T04:18:53.739606+00:00",
+      "runtime_integration": "pending corpus completion",
+      "additional_behavior": {
+        "status": "pass",
+        "report": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-02/answers-round1/labels.grades.json",
+          "sha256": "1294b5c9184be6f661de33a6e6c197456c098726609ebc3d336a4a5c296b1b36"
+        },
+        "answers": {
+          "path": "work/release-2026-09-12/blind/force-labels-first/answers.json",
+          "sha256": "05267cada25bdd0f432e6d9dc2ecfc2f3a3b1c2ec5880763d0dc134eb7efbeee"
+        },
+        "scope": "Substantive actual-answer fidelity; timing metadata separate. Every valid elicited fact must close. No percentage threshold, corpus C4, aggregate target or runtime claim.",
+        "counts": {
+          "cases": 2,
+          "regression_cases": 0,
+          "first_use_source_only_cases": 2,
+          "case_pass": 2,
+          "case_partial": 0,
+          "fact_pass": 9,
+          "fact_partial": 0,
+          "fact_fail": 0,
+          "unelicited_compound_gold_fragments_excluded": 0
+        },
+        "timing_erratum": "Original self start/completion bracket only hashing; actual trace and central ledger provide observed timing. Original fields preserved."
+      },
+      "additional_fidelity": {
+        "status": "pass",
+        "scope": "Independent full original-source operative-force reconstruction supplement; current bytes unchanged.",
+        "report": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-02/labels.force-review.json",
+          "sha256": "3983917e9f9e62fa56c6e530898a667f065d8597156b1116a5dad11afb79261f"
+        }
+      }
+    },
+    {
+      "topic": "lists-and-tables",
+      "candidate_sha256": "a2d94254c01e4d8752545b34555609d58f6dd038184aac1d2faef1c1de59bed7",
+      "coverage_sha256": "a9b1a926354ab6151ddf83d235f1b652540e374e99bfe6e849b06dcd3ea98228",
+      "sources": [
+        {
+          "slug": "lists-and-tables",
+          "json_sha256": "7abfc703aad0db86267b53942594c48f9ffde84a8d76646220524193a47e19db",
+          "native_sha256": "3df2c389bd760e68fbe0be90121f5c8a330814828ca99a911419c6816d1e4323"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_02_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-02/round1/lists-and-tables.acceptance.json",
+        "report_sha256": "584a06bfeea011b5cf543edd263f40e8651acf13594d237edde1b0fbf65be2f9",
+        "scope": "C1/C2/topic-C3 on these exact immutable bytes, combining unchanged complete prior QA with independent literal-source precision and correction acceptance. No runtime, answer, aggregate C3, or final release claim."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Seven actual answers: five regression cases and two first-use source-only withheld cases. All valid elicited facts required; no percentage fidelity threshold. Behavioral sample does not replace independent complete source acceptance.",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-02/answers-round1/lists-and-tables.grades.json",
+        "report_sha256": "dc7ea6b8d4048586d38eb2843fb49704e8a74aae7529cef9048de91dd06a706a",
+        "answers_path": "work/release-2026-09-12/blind/force-lists-and-tables-first/answers.json",
+        "answers_sha256": "7a90802c008ff9a184a55c0bd29246b3df728f833207312946e9ee1d87e52a10",
+        "candidate_sha256": "a2d94254c01e4d8752545b34555609d58f6dd038184aac1d2faef1c1de59bed7",
+        "counts": {
+          "cases": 7,
+          "regression_cases": 5,
+          "first_use_source_only_cases": 2,
+          "scoped_gold_records_pass": 44,
+          "partial": 0,
+          "fail": 0,
+          "unelicited_compound_gold_fragments_excluded": 1
+        }
+      },
+      "measurement": {
+        "source_guidance_words": 1267,
+        "output_guidance_words": 622,
+        "word_reduction_percent": 50.908,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 1550,
+            "output_guidance": 926,
+            "candidate_full_file": 1141
+          },
+          "cl100k_base": {
+            "source_guidance": 1537,
+            "output_guidance": 913,
+            "candidate_full_file": 1121
+          }
+        }
+      },
+      "source_acceptance_manifest": {
+        "path": "work/release-2026-09-12/frozen/force-source-accepted-11/manifest.json",
+        "sha256": "3e0870cc83be262fe7c0ddc66aa896c8e76a9b4ff90fa04865aeef156252bf7f"
+      },
+      "execution_ledger_ids": [
+        "corpus-02-draft",
+        "corpus-02-source-exam",
+        "corpus-02-review-initial",
+        "corpus-02-correction1",
+        "corpus-02-review-round1",
+        "corpus-02-correction2",
+        "corpus-02-review-round2",
+        "corpus-lists-and-tables-answer1",
+        "corpus-02-grade-rest1",
+        "corpus-02-force-audit",
+        "force-correction-b1",
+        "force-accept-b02",
+        "force-lt-answer1",
+        "force-lt-grade1"
+      ],
+      "billing_usage": null,
+      "history": [
+        {
+          "scope": "Original failed answers, withdrawn source acceptance and precision correction are preserved; final pass does not relabel repeated questions fresh.",
+          "report": {
+            "path": "work/release-2026-09-12/reviews/corpus-02/answer1/lists-and-tables.grades.json",
+            "sha256": "c1f38daf341e62a1bf9ccbec20453e6ff56407446d82aef4e10304128d398478"
+          }
+        }
+      ],
+      "accepted_at": "2026-09-13T05:39:15.073021+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "live-photos",
+      "candidate_sha256": "d834e9309b27f42995f3ab7ac12540f0e102209007a1e75992cddcca7b81f76e",
+      "coverage_sha256": "7c01c1fe3141b00521bb4099f08a70407f0a6bf16b0cd2582c51a3c9b3a74c61",
+      "sources": [
+        {
+          "slug": "live-photos",
+          "json_sha256": "03e25b2971e1a6fbedd5e00841d087af0fc6da164b8b03a24090415f4e6f5a5d",
+          "native_sha256": "d9228d596c2a38aaeb1ccadb1b6c81a12912cf06d479e43b717710219bc61de0"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_02_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-02/round1/live-photos.acceptance.json",
+        "report_sha256": "f63c1f8b9b6c2b87653847d3edd3e13a7676d1539aa296641cf5d7a9366077a1",
+        "scope": "C1/C2/topic-C3 on these exact immutable bytes, combining unchanged complete prior QA with independent literal-source precision and correction acceptance. No runtime, answer, aggregate C3, or final release claim."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Substantive actual-answer fidelity; timing metadata separate. Every valid elicited fact must close. No percentage threshold, corpus C4, aggregate target or runtime claim.",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-02/answers-round1/live-photos.grades.json",
+        "report_sha256": "d0aa9a6b1a9992f73baf61d3183ac03c31b78f44a345740fd7b643189c8a0771",
+        "answers_path": "work/release-2026-09-12/blind/force-live-photos-first/answers.json",
+        "answers_sha256": "c723b0495c70fd0baf149b939ba98b9f5d99a4f4f759824cf544447ee4fa626b",
+        "candidate_sha256": "d834e9309b27f42995f3ab7ac12540f0e102209007a1e75992cddcca7b81f76e",
+        "counts": {
+          "cases": 7,
+          "regression_cases": 5,
+          "first_use_source_only_cases": 2,
+          "case_pass": 7,
+          "case_partial": 0,
+          "fact_pass": 35,
+          "fact_partial": 0,
+          "fact_fail": 0,
+          "unelicited_compound_gold_fragments_excluded": 1
+        }
+      },
+      "measurement": {
+        "source_guidance_words": 468,
+        "output_guidance_words": 237,
+        "word_reduction_percent": 49.359,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 571,
+            "output_guidance": 341,
+            "candidate_full_file": 460
+          },
+          "cl100k_base": {
+            "source_guidance": 571,
+            "output_guidance": 340,
+            "candidate_full_file": 457
+          }
+        }
+      },
+      "source_acceptance_manifest": {
+        "path": "work/release-2026-09-12/frozen/force-source-accepted-11/manifest.json",
+        "sha256": "3e0870cc83be262fe7c0ddc66aa896c8e76a9b4ff90fa04865aeef156252bf7f"
+      },
+      "execution_ledger_ids": [
+        "corpus-02-draft",
+        "corpus-02-source-exam",
+        "corpus-02-review-initial",
+        "corpus-02-correction1",
+        "corpus-02-review-round1",
+        "corpus-02-correction2",
+        "corpus-02-review-round2",
+        "corpus-live-photos-answer1",
+        "corpus-02-grade-rest1",
+        "corpus-02-force-audit",
+        "force-correction-b1",
+        "force-accept-b02",
+        "force-lp-answer1",
+        "force-b02-grade-rest1"
+      ],
+      "billing_usage": null,
+      "history": [
+        {
+          "scope": "Two source-force findings repaired despite earlier answer pass. Earlier source review, answers and later correction records preserved.",
+          "report": {
+            "path": "work/release-2026-09-12/reviews/force-precision/corpus-02/live-photos.force-review.json",
+            "sha256": "75a2164a8a0e53eaf72e9fe5a3acaf2bb570d85ebe1c2f9fa327289e56131fa3"
+          }
+        }
+      ],
+      "accepted_at": "2026-09-13T05:54:57.700192+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "text-views",
+      "candidate_sha256": "df66e9f128af59e9de001ee523f1d947eea3f07d6bee4d8d5c143513ab83d08f",
+      "coverage_sha256": "bec7eda56e38af8c29a385943aa8400401ea3df57e43d90571d3d1afff54324c",
+      "sources": [
+        {
+          "slug": "text-views",
+          "json_sha256": "a0e011df816d22db83719825572cf324b4ea9c737862e804c62484330dcc701f",
+          "native_sha256": "aa894de0faa962a028694d04bfe81813b5b4edd8416068b965e76171c25a882a"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_03_review",
+        "model": "review-tier",
+        "reasoning": "high",
+        "report_path": "work/release-2026-09-12/reviews/corpus-03/round3/text-views.review.json",
+        "report_sha256": "f0f46d1d27f7b93326de96ea51137aaa08d89a6b1c3ddd94bd606bc0dde6dd9d",
+        "scope": "Independent immutable reference acceptance; changed API meanings/URLs re-read against raw source, all unchanged facts bound to prior/current hashes and exact clauses. No blind-answer or runtime release acceptance."
+      },
+      "additional_fidelity": {
+        "status": "pass",
+        "scope": "Independent full source operative-force reconstruction and current bounded event/result exposure supplement.",
+        "report": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/text-views-report.json",
+          "sha256": "c236539a4efa42d0bc9fbf639cbf8ba266275b799a2b17504ca00d8e5b4d0665"
+        },
+        "interaction_exposure": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/answers-round1/method-review.json",
+          "sha256": "2ef425b15609235b45db88c8ec38da22de96a491caa3c61a4c2b1d27442fd850"
+        }
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Seven distinct cases in two first-use source-only cohorts (5original+2new), all scoped elicited facts pass. Not one seven-case run; not extracted-release runtime acceptance.",
+        "cohorts": [
+          {
+            "grade": {
+              "path": "work/release-2026-09-12/reviews/corpus-03/answer1/text-views-grades.json",
+              "sha256": "52681cedddce0ba0a525dd9e207b3d287ef4e2c958d2a7105eae5c6330107859"
+            },
+            "answers": {
+              "path": "work/release-2026-09-12/blind/corpus-03-text-views-round2/answers.json",
+              "sha256": "b7bd241d2b975d4b32cd1dcfb3c04de48f6b5355bcefd77ada7456ea106f5f89"
+            },
+            "scope": "Actual first-use answer prose only; source fidelity and release acceptance remain separate.",
+            "case_counts": {
+              "pass": 5,
+              "partial": 0,
+              "fail": 0
+            },
+            "fact_counts": {
+              "pass": 16,
+              "partial": 0,
+              "fail": 0
+            }
+          },
+          {
+            "grade": {
+              "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/answers-round1/text-views-grades.json",
+              "sha256": "e57ab5269c70c60d56ee44cbadbb993128e2bb8b7d65375edc36783ba90ff7df"
+            },
+            "answers": {
+              "path": "work/release-2026-09-12/blind/force-text-views-first/answers.json",
+              "sha256": "f578a60a0d25117d37875b721bbcb8a08eb13c6fb2953743ba90462f3abc595f"
+            },
+            "scope": "Actual fresh answer prose, supporting audit integrity and source/question fidelity; not runtime/release acceptance.",
+            "case_counts": {
+              "pass": 2,
+              "partial": 0,
+              "fail": 0
+            },
+            "fact_counts": {
+              "pass": 9,
+              "partial": 0,
+              "fail": 0
+            }
+          }
+        ],
+        "candidate_sha256": "df66e9f128af59e9de001ee523f1d947eea3f07d6bee4d8d5c143513ab83d08f"
+      },
+      "measurement": {
+        "source_guidance_words": 349,
+        "output_guidance_words": 242,
+        "word_reduction_percent": 30.659,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 441,
+            "output_guidance": 348,
+            "candidate_full_file": 575
+          },
+          "cl100k_base": {
+            "source_guidance": 436,
+            "output_guidance": 342,
+            "candidate_full_file": 564
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-03-source-exam",
+        "corpus-03-draft",
+        "corpus-03-review-initial",
+        "corpus-03-correction1",
+        "corpus-03-review-round1",
+        "corpus-03-correction2",
+        "corpus-03-review-round2",
+        "corpus-03-review-round3",
+        "corpus-text-views-answer1",
+        "corpus-03-force-audit",
+        "corpus-03-grade-first",
+        "force-text-answer1",
+        "force-b03-grade1"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T05:58:55.363259+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "web-views",
+      "candidate_sha256": "6a36aa8b32b2255eb1f91e027acc85c01b833d47a8aeb5159ffd1ac2be186233",
+      "coverage_sha256": "68dc7a2d4178abfaa9642e07ef5af12e90fe02970258de46e7605c563c944c8f",
+      "sources": [
+        {
+          "slug": "web-views",
+          "json_sha256": "7219049db6cc53cafe303ae5dc430b0717cb79660b2e9d3763a649f55de82148",
+          "native_sha256": "672bc6924db0cb53df12a052c25fcddb8174ea87467ad67002f109af3e0a9f10"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_03_review",
+        "model": "review-tier",
+        "reasoning": "high",
+        "report_path": "work/release-2026-09-12/reviews/corpus-03/round3/web-views.review.json",
+        "report_sha256": "eb14b1657a4074b1dde67b238790aa7b31f593de81755b2bfc6b6a51a82168d4",
+        "scope": "Independent immutable reference acceptance; changed API meanings/URLs re-read against raw source, all unchanged facts bound to prior/current hashes and exact clauses. No blind-answer or runtime release acceptance."
+      },
+      "additional_fidelity": {
+        "status": "pass",
+        "scope": "Independent full source operative-force reconstruction and current bounded event/result exposure supplement.",
+        "report": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/web-views-report.json",
+          "sha256": "d96493b7e4cd8734f4b66fcf9378238109706f4c43f8a584d4bafc309e432960"
+        },
+        "interaction_exposure": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/answers-round1/method-review.json",
+          "sha256": "2ef425b15609235b45db88c8ec38da22de96a491caa3c61a4c2b1d27442fd850"
+        }
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Seven distinct cases in two first-use source-only cohorts (5original+2new), all scoped elicited facts pass. Not one seven-case run; not extracted-release runtime acceptance.",
+        "cohorts": [
+          {
+            "grade": {
+              "path": "work/release-2026-09-12/reviews/corpus-03/answer1/web-views-grades.json",
+              "sha256": "d781f3ca87af4fc35bbf1e25a085ccda64df27d8a9111c40e4cd27acf6c8ca8c"
+            },
+            "answers": {
+              "path": "work/release-2026-09-12/blind/corpus-03-web-views-round2/answers.json",
+              "sha256": "cbbaeae47ef7f8238ca2a2f79bc0e68e1bc6c115e703b61d27adf6e9227cd12d"
+            },
+            "scope": "Actual first-use answer prose only; source fidelity and release acceptance remain separate.",
+            "case_counts": {
+              "pass": 5,
+              "partial": 0,
+              "fail": 0
+            },
+            "fact_counts": {
+              "pass": 9,
+              "partial": 0,
+              "fail": 0
+            }
+          },
+          {
+            "grade": {
+              "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/answers-round1/web-views-grades.json",
+              "sha256": "b7d31f82ddc7657eba746d9a6942a0748fc468c8c4ad5a811eebc574db65cabb"
+            },
+            "answers": {
+              "path": "work/release-2026-09-12/blind/force-web-views-first/answers.json",
+              "sha256": "646197201d4ec72f0a0b60253b4e29f04cf5d38e4044cc838e4b6f2c024b3f2c"
+            },
+            "scope": "Actual fresh answer prose, supporting audit integrity and source/question fidelity; not runtime/release acceptance.",
+            "case_counts": {
+              "pass": 2,
+              "partial": 0,
+              "fail": 0
+            },
+            "fact_counts": {
+              "pass": 7,
+              "partial": 0,
+              "fail": 0
+            }
+          }
+        ],
+        "candidate_sha256": "6a36aa8b32b2255eb1f91e027acc85c01b833d47a8aeb5159ffd1ac2be186233"
+      },
+      "measurement": {
+        "source_guidance_words": 177,
+        "output_guidance_words": 136,
+        "word_reduction_percent": 23.164,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 221,
+            "output_guidance": 196,
+            "candidate_full_file": 306
+          },
+          "cl100k_base": {
+            "source_guidance": 219,
+            "output_guidance": 190,
+            "candidate_full_file": 296
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-03-source-exam",
+        "corpus-03-draft",
+        "corpus-03-review-initial",
+        "corpus-03-correction1",
+        "corpus-03-review-round1",
+        "corpus-03-correction2",
+        "corpus-03-review-round2",
+        "corpus-03-review-round3",
+        "corpus-web-views-answer1",
+        "corpus-03-force-audit",
+        "corpus-03-grade-first",
+        "force-web-answer1",
+        "force-b03-grade1"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T05:58:55.365259+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "column-views",
+      "candidate_sha256": "3d48fc15b5d1a39d582ad7d60fe0f83f20198ed01c44ff5d221c505c6770a943",
+      "coverage_sha256": "e22ba15b66a7d403827094333a9f2a501fd9727556eee838be7d906995b8d278",
+      "sources": [
+        {
+          "slug": "column-views",
+          "json_sha256": "8da488e1652ea4b1c37dd6aebc11f1698407666f7ab8fa4f7310e037a3c78506",
+          "native_sha256": "1d2c9fafad9e8fc5740e251f066ae252a5fe1252ef5438ed8840f80d65797cab"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_01_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/round1/column-views.acceptance.json",
+        "report_sha256": "3fd1f4f9517dd995b7647ba27284a05a64a9d3e76a8508c34d15db6facd442fb",
+        "scope": "Final-byte C1/C2 and topic-level C3 acceptance combining prior full-source QA, complete literal-force supplement and independent source-grounded correction acceptance. No behavioral or release acceptance."
+      },
+      "behavior": {
+        "status": "pass",
+        "scope": "Seven first-use source-only cases,19 scoped gold fact rows pass; complete actual four-file reads and final answer write verified. Source QA and extracted runtime acceptance remain separate.",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/answers-round1/column-views-grades.json",
+        "report_sha256": "19836a0cbdaf2a4a3e546cf0d07f14beb6e35fc5af64b4ecd43e177ad996425e",
+        "answers_path": "work/release-2026-09-12/blind/force-column-views-first/answers.json",
+        "answers_sha256": "b6438f75dedd1fb51caab1b6824d09b53d9c5fb679169b914de008c4a979f06a",
+        "candidate_sha256": "3d48fc15b5d1a39d582ad7d60fe0f83f20198ed01c44ff5d221c505c6770a943",
+        "case_counts": {
+          "pass": 7
+        },
+        "fact_counts": {
+          "pass": 19
+        },
+        "metadata_erratum": "Answer self model fields inaccurate; source-log turn_context independently verifies drafting-tier (high), as recorded in grade."
+      },
+      "measurement": {
+        "source_guidance_words": 312,
+        "output_guidance_words": 197,
+        "word_reduction_percent": 36.859,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 381,
+            "output_guidance": 260,
+            "candidate_full_file": 400
+          },
+          "cl100k_base": {
+            "source_guidance": 379,
+            "output_guidance": 257,
+            "candidate_full_file": 394
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-01-source-exam",
+        "corpus-01-draft",
+        "corpus-01-draft-recovery",
+        "corpus-01-review-initial",
+        "corpus-01-correction1",
+        "corpus-01-review-round1",
+        "corpus-01-review-round2",
+        "corpus-01-force-audit",
+        "force-accept-a01",
+        "force-column-answer1",
+        "force-a01-grade1"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T06:24:04.889142+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "scroll-views",
+      "candidate_sha256": "e0f5156ea6394bf989db540b32c2c84d57a603309110f41bbbe044376b61e097",
+      "coverage_sha256": "8b151bd466ccc76d9f29342d0526367dd96809483bde3ec4eb5174c49a480dab",
+      "sources": [
+        {
+          "slug": "scroll-views",
+          "native_sha256": "fb83a3e15287e82e4404c98a19184d07d600dcc3813e37e4a98d62e1b14da335",
+          "json_sha256": "fa99110bf671741536de552c96154c6b6fb447bdce754b9b55c3536b4deae8e8"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_03_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-03/round1/scroll-views-report.json",
+        "report_sha256": "45a3e4754a8eca863cb55bc653972141785743285b1ecfc36c49b16ec3473223",
+        "scope": "Independent final-byte source-fidelity acceptance; C1/C2 and topic C3 only."
+      },
+      "behavior": {
+        "status": "pass",
+        "candidate_sha256": "e0f5156ea6394bf989db540b32c2c84d57a603309110f41bbbe044376b61e097",
+        "scope": "Sixteen distinct case IDs have passing current-or-carried evidence. Only five responses were produced in this run. All prior failed attempts, source-only/candidate-aware lineage and technical-assistance qualifications remain unchanged. This is not a complete fresh sixteen-case test.",
+        "current_run": {
+          "grade": {
+            "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/claim-trial/scroll-views-grades.json",
+            "sha256": "c63ae7c71eda0017811d9eb926df92dfe8e1655b9515d768c728755c6449bdf5"
+          },
+          "answers": {
+            "path": "work/release-2026-09-12/blind/scroll-claim-trial/answers.json",
+            "sha256": "93b6bec6b4340b8c53490367502b58b9c8667407ea2b248f356e641519d56560"
+          },
+          "case_counts": {
+            "pass_count": 5,
+            "partial": 0,
+            "fail": 0
+          },
+          "fact_counts": {
+            "pass_count": 31,
+            "partial": 0,
+            "fail": 0
+          },
+          "lineage": "three regression questions plus two first-use source-only questions, fresh drafting-tier agent; technical self-repairs retained"
+        },
+        "carried": {
+          "report": {
+            "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/claim-trial/carryover.json",
+            "sha256": "6b1d1e43258b4bc6df40b82ebffa377bcace7df131021116c039d98c6c432680"
+          },
+          "cases": 11,
+          "qualification": "Includes one candidate-aware fairness-repaired case and three prior passes from technically assisted trial, explicitly retained; no unassisted/fresh relabeling."
+        },
+        "runtime_acceptance": false
+      },
+      "measurement": {
+        "source_guidance_words": 1974,
+        "output_guidance_words": 1228,
+        "word_reduction_percent": 37.791,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 2383,
+            "output_guidance": 1618,
+            "candidate_full_file": 1969
+          },
+          "cl100k_base": {
+            "source_guidance": 2370,
+            "output_guidance": 1604,
+            "candidate_full_file": 1946
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-03-source-exam",
+        "corpus-03-draft",
+        "corpus-03-review-initial",
+        "corpus-03-correction1",
+        "corpus-03-review-round1",
+        "corpus-03-correction2",
+        "corpus-03-review-round2",
+        "corpus-03-review-correction3",
+        "corpus-03-review-round3",
+        "corpus-scroll-views-answer1",
+        "corpus-03-force-audit",
+        "corpus-03-grade-first",
+        "force-correction-b1",
+        "force-accept-b03",
+        "force-scroll-answer1",
+        "force-b03-grade1",
+        "behavior-retest2-source-exam",
+        "behavior-retest2-scroll-answer",
+        "behavior-retest2-scroll-grade",
+        "scroll-grounding-source-exam",
+        "scroll-grounding-answer",
+        "scroll-grounding-grade",
+        "scroll-claim-source-exam",
+        "scroll-claim-answer",
+        "scroll-claim-grade",
+        "claim-checker-review"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T08:06:42.199109+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "collections",
+      "candidate_sha256": "01b8b2b21edda9297f4b4f0d8bb8450d830e75596cf101a2e388c6f6652ef310",
+      "coverage_sha256": "20ac2e6a427cbc8dec4add013d7d81dc0734090444764669788c1bc812bda851",
+      "sources": [
+        {
+          "slug": "collections",
+          "json_sha256": "71304b9a6dfdf936b89fe4f5870ede9efe23b5ccb458871641e19b0651346830",
+          "native_sha256": "262841e01ad1fa20281c9b3cb856e792b906b1c4ca5976885ef8ca068b4dafe3"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_01_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/round1/collections.acceptance.json",
+        "report_sha256": "33a833b098f2e99a76c784b0f8002a717595e3812414c44733c144e3c6d491c6",
+        "scope": "Final-byte C1/C2 and topic C3 acceptance combines prior full-source QA, literal-force supplement and source-grounded corrections; linked reports preserve full evidence."
+      },
+      "behavior": {
+        "status": "pass",
+        "reviewer": "/root/corpus_01_claim_grade",
+        "model": "review-tier",
+        "reasoning": "high",
+        "scope": "Three fresh-context answers (one regression plus two source-only first-use cases) pass; 9 distinct cumulative cases pass with explicit unchanged-clause/prior-answer/source carryover. Not one fresh whole-suite run; extracted runtime validation remains pending.",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/collections-grades.json",
+        "report_sha256": "fa0472a56b77d96b8ff92a9c61c9e41747cb5e175bea445a17edb96fd5203336",
+        "answers_path": "work/release-2026-09-12/blind/claim-retest-collections/answers.json",
+        "answers_sha256": "d606ea0146281c8620d150cc7e158ffb4eb2d6a9bad106ff66c1b11a430c9af7",
+        "candidate_sha256": "01b8b2b21edda9297f4b4f0d8bb8450d830e75596cf101a2e388c6f6652ef310",
+        "case_counts": {
+          "pass": 3,
+          "revise": 0
+        },
+        "fact_counts": {
+          "pass": 11,
+          "fail": 0,
+          "not_evidenced": 0
+        },
+        "cumulative_case_count": 9,
+        "carryover_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/carryover.json",
+        "carryover_sha256": "b2c94b8c3a35cf5ea58db454bdc3f0899693f13b6b57740985fe2c4983e7c310",
+        "provenance_manifest_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/output-manifest.json",
+        "provenance_manifest_sha256": "fb34594460ed97ca4e39941ebbbca78a727b75a7a0fe1ff56c235d31c0020ada",
+        "identity_note": "Independent turn_context/dispatch evidence establishes fresh drafting-tier (high); self reports unknown. Encrypted prompt-content and private composition timing limits are explicit."
+      },
+      "measurement": {
+        "source_guidance_words": 311,
+        "output_guidance_words": 229,
+        "word_reduction_percent": 26.367,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 387,
+            "output_guidance": 309,
+            "candidate_full_file": 471
+          },
+          "cl100k_base": {
+            "source_guidance": 385,
+            "output_guidance": 304,
+            "candidate_full_file": 463
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-01-source-exam",
+        "corpus-01-draft",
+        "corpus-01-draft-recovery",
+        "corpus-01-review-initial",
+        "corpus-01-correction1",
+        "corpus-01-review-round1",
+        "corpus-01-correction2",
+        "corpus-01-review-round2",
+        "corpus-01-force-audit",
+        "force-correction-a1",
+        "force-accept-a01",
+        "force-collections-answer1",
+        "behavior-retest2-source-exam",
+        "force-a01-grade1",
+        "collections-claim-answer",
+        "corpus-01-claim-grade"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T08:46:14.652702+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "image-views",
+      "candidate_sha256": "14692359078365bfd471efad88c1f972fff61899b938519f69f52edf63f13d31",
+      "coverage_sha256": "3bb6a8c12423576265299ab7895cb44e8c832a1e1c938d4d2683d6fee1e1d08f",
+      "sources": [
+        {
+          "slug": "image-views",
+          "json_sha256": "aeb9a17799e50b8ed0781daba4c042e398e8766e26c6e51c8c52e3a96b949b49",
+          "native_sha256": "813cfdb754a7ad9b881251fe0d8d1586b751e21de5a24902224ab3560ad2fa5b"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_01_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/round1/image-views.acceptance.json",
+        "report_sha256": "48fa44aa1a9c5a41358c9625d4f3de776965d4a96f91dca98fc7238e564dc268",
+        "scope": "Final-byte C1/C2 and topic C3 acceptance combines prior full-source QA, literal-force supplement and source-grounded corrections; linked reports preserve full evidence."
+      },
+      "behavior": {
+        "status": "pass",
+        "reviewer": "/root/corpus_01_claim_grade",
+        "model": "review-tier",
+        "reasoning": "high",
+        "scope": "Three fresh-context answers (one regression plus two source-only first-use cases) pass; 10 distinct cumulative cases pass with explicit unchanged-clause/prior-answer/source carryover. Not one fresh whole-suite run; extracted runtime validation remains pending.",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/image-views-grades.json",
+        "report_sha256": "bb014c55a0d52d674d34ec6042c9b948f3e51e55d90ed010414898ab00b93bac",
+        "answers_path": "work/release-2026-09-12/blind/claim-retest-image-views/answers.json",
+        "answers_sha256": "a645dd5dafcf58b1db2a4fd4c123bb7b4ff32ad5ffa03d3a369b359a58fc0d27",
+        "candidate_sha256": "14692359078365bfd471efad88c1f972fff61899b938519f69f52edf63f13d31",
+        "case_counts": {
+          "pass": 3,
+          "revise": 0
+        },
+        "fact_counts": {
+          "pass": 9,
+          "fail": 0,
+          "not_evidenced": 0
+        },
+        "cumulative_case_count": 10,
+        "carryover_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/carryover.json",
+        "carryover_sha256": "b2c94b8c3a35cf5ea58db454bdc3f0899693f13b6b57740985fe2c4983e7c310",
+        "provenance_manifest_path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/output-manifest.json",
+        "provenance_manifest_sha256": "fb34594460ed97ca4e39941ebbbca78a727b75a7a0fe1ff56c235d31c0020ada",
+        "identity_note": "Independent turn_context/dispatch evidence establishes fresh drafting-tier (high); self reports unknown. Encrypted prompt-content and private composition timing limits are explicit."
+      },
+      "measurement": {
+        "source_guidance_words": 529,
+        "output_guidance_words": 414,
+        "word_reduction_percent": 21.739,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 678,
+            "output_guidance": 580,
+            "candidate_full_file": 844
+          },
+          "cl100k_base": {
+            "source_guidance": 676,
+            "output_guidance": 573,
+            "candidate_full_file": 830
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-01-source-exam",
+        "corpus-01-draft",
+        "corpus-01-draft-recovery",
+        "corpus-01-review-initial",
+        "corpus-01-correction1",
+        "corpus-01-review-round1",
+        "corpus-01-correction2",
+        "corpus-01-review-round2",
+        "corpus-01-force-audit",
+        "force-correction-a1",
+        "force-accept-a01",
+        "force-image-answer1",
+        "force-a01-grade1",
+        "charts-image-retest-source-exam",
+        "image-claim-answer",
+        "corpus-01-claim-grade"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T08:46:14.653702+00:00",
+      "runtime_integration": "pending corpus completion"
+    },
+    {
+      "topic": "outline-views",
+      "candidate_sha256": "2149d25c9941207c08f3bd4a50fb500b420a1b2fe85a9a0c418c72f738be363f",
+      "coverage_sha256": "25e623275c526e7031e4160dbdbf15cc17e0e0fb2d0973b1ba233c6221e31852",
+      "sources": [
+        {
+          "slug": "outline-views",
+          "json_sha256": "bc250fe2b268d1e4835539e19b484f39c4643ccb1646c847fc367032da1abce0",
+          "native_sha256": "d1963dc2eb81cd4ac591f3ac55e3ea8ddcc313558de99cd7424264e30619f798"
+        }
+      ],
+      "status": "accepted for corpus integration; extracted release validation pending",
+      "fidelity": {
+        "status": "pass",
+        "reviewer": "/root/corpus_02_force_audit",
+        "model": "review-tier",
+        "reasoning": "xhigh",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-02/outline-interaction-round2/acceptance.json",
+        "report_sha256": "9409b1b8e57be4a9cc5e9c5047b1018f5c94f2cead299e6a03b1cd9c5fdf4ac4",
+        "scope": "Final source acceptance plus independent unchanged-source/candidate verification in current behavioral grade. Complete prior source QA remains linked."
+      },
+      "behavior": {
+        "status": "pass",
+        "reviewer": "/root/outline_claim_grade",
+        "model": "review-tier",
+        "reasoning": "high",
+        "candidate_sha256": "2149d25c9941207c08f3bd4a50fb500b420a1b2fe85a9a0c418c72f738be363f",
+        "report_path": "work/release-2026-09-12/reviews/force-precision/corpus-02/claim-retest/grades.json",
+        "report_sha256": "7a2c9c6c1005017737c21cf47f58e862bad65a9a1e2a6cb75b9d7c5abddb9b32",
+        "answers_path": "work/release-2026-09-12/blind/claim-retest-outline-views/answers.json",
+        "answers_sha256": "449c568bfe0599e807d04c937b2750f337624a94344ee36a7f8c98c587fb832b",
+        "scope": "Four fresh-context answers (one regression, three first-use source-only cases), 24 facts pass. Eight unchanged prior cases/47 facts independently carried. Twelve distinct cumulative cases, not a single fresh twelve-case run. Grader usage interruption and continuation retained; no extracted-runtime acceptance.",
+        "current_case_counts": {
+          "pass": 4,
+          "partial": 0,
+          "fail": 0
+        },
+        "current_fact_counts": {
+          "pass": 24,
+          "not_evidenced": 0,
+          "fail": 0
+        },
+        "cumulative_case_count": 12,
+        "carryover": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-02/claim-retest/carryover.json",
+          "sha256": "0de5588d5854e96aac77a77ce9c48b27bc4a6b73e15b7376b913a5e0f0d48e2a"
+        },
+        "provenance": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-02/claim-retest/provenance.json",
+          "sha256": "7c0e2b558921f284ec2f86ec78b07eeaaf9043798de55a3bc8d36ff4432205ca"
+        },
+        "provenance_manifest": {
+          "path": "work/release-2026-09-12/reviews/force-precision/corpus-02/claim-retest/output-manifest.json",
+          "sha256": "f24089cebc4a0af28dbed3678671be5b9cd1306eed5d4c01c1baa6cbddbc7267"
+        },
+        "runtime_acceptance": false
+      },
+      "measurement": {
+        "source_guidance_words": 668,
+        "output_guidance_words": 392,
+        "word_reduction_percent": 41.317,
+        "tokens": {
+          "o200k_base": {
+            "source_guidance": 817,
+            "output_guidance": 546,
+            "candidate_full_file": 722
+          },
+          "cl100k_base": {
+            "source_guidance": 817,
+            "output_guidance": 541,
+            "candidate_full_file": 714
+          }
+        }
+      },
+      "execution_ledger_ids": [
+        "corpus-02-draft",
+        "corpus-02-source-exam",
+        "corpus-02-review-initial",
+        "corpus-02-correction1",
+        "corpus-02-review-round1",
+        "corpus-02-correction2",
+        "corpus-02-review-round2",
+        "corpus-outline-views-answer1",
+        "corpus-02-grade-rest1",
+        "corpus-02-force-audit",
+        "force-correction-b1",
+        "force-accept-b02",
+        "force-ov-answer1",
+        "outline-interaction-exam2",
+        "force-b02-grade-rest1",
+        "outline-interaction-correction2",
+        "outline-interaction-accept2",
+        "outline-interaction-answer2",
+        "outline-interaction-grade2",
+        "charts-outline-claim-exam",
+        "outline-claim-answer",
+        "outline-claim-grade",
+        "outline-claim-grade-resume"
+      ],
+      "billing_usage": null,
+      "accepted_at": "2026-09-13T19:14:58.433505+00:00",
+      "runtime_integration": "pending corpus completion"
+    }
+  ]
+}

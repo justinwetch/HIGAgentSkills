@@ -1,0 +1,1091 @@
+{
+  "format": "native-hig-capture-assessment-v1",
+  "capture_errors": [],
+  "explained_aliases": [
+    {
+      "slug": "components/layout-and-organization/tab-views",
+      "canonical": "tab-views",
+      "reason": "Previously documented same-source alias now returns 404 in both formats; canonical source captured."
+    },
+    {
+      "slug": "components/presentation/page-controls",
+      "canonical": "page-controls",
+      "reason": "Previously documented same-source alias now returns 404 in both formats; canonical source captured."
+    },
+    {
+      "slug": "components/system-experiences/complications",
+      "canonical": "complications",
+      "reason": "Previously documented same-source alias now returns 404 in both formats; canonical source captured."
+    },
+    {
+      "slug": "spatial-interactions",
+      "canonical": "nearby-interactions",
+      "reason": "Previously documented same-source alias now returns 404 in both formats; canonical source captured."
+    }
+  ],
+  "counts": {
+    "source_text_segments_checked": 7570,
+    "source_text_segments_absent": 156,
+    "renderer-other-difference": 19,
+    "renderer-url-case-only": 128,
+    "renderer-identical": 25,
+    "new-page": 1
+  },
+  "deltas": [
+    {
+      "slug": "__root__",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "accessibility",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "action-button",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "action-sheets",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "activity-rings",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "activity-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "airplay",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "alerts",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "always-on",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "app-clips",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "app-icons",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "app-shortcuts",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "apple-pay",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "apple-pencil-and-scribble",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "augmented-reality",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "boxes",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "branding",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "buttons",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "camera-control",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "carekit",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "carplay",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "charting-data",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "charts",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "collaboration-and-sharing",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "collections",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "color",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "color-wells",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "column-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "combo-boxes",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "complications",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "components",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "content",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "context-menus",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "controls",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "dark-mode",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "design-principles",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "designing-for-games",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "designing-for-ios",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "designing-for-ipados",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "designing-for-iphone-duo",
+      "category": "new-page"
+    },
+    {
+      "slug": "designing-for-macos",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "designing-for-tvos",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "designing-for-visionos",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "designing-for-watchos",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "digit-entry-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "digital-crown",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "disclosure-controls",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "dock-menus",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "drag-and-drop",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "edit-menus",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "entering-data",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "eyes",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "feedback",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "file-management",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "focus-and-selection",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "foundations",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "game-center",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "game-controls",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "gauges",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "generative-ai",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "gestures",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "getting-started",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "going-full-screen",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "gyro-and-accelerometer",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "healthkit",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "home-screen-quick-actions",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "homekit",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "icloud",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "icons",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "id-verifier",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "image-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "image-wells",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "images",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "imessage-apps-and-stickers",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "immersive-experiences",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "in-app-purchase",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "inclusion",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "inputs",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "keyboards",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "labels",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "launching",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "layout",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "layout-and-organization",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "lists-and-tables",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "live-activities",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "live-photos",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "live-viewing-apps",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "loading",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "lockups",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "mac-catalyst",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "machine-learning",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "managing-accounts",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "managing-notifications",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "maps",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "materials",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "menus",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "menus-and-actions",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "modality",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "motion",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "multitasking",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "navigation-and-search",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "nearby-interactions",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "nfc",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "notifications",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "offering-help",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "onboarding",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "ornaments",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "outline-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "page-controls",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "panels",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "path-controls",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "patterns",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "photo-editing",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "pickers",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "playing-audio",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "playing-haptics",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "playing-video",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "pointing-devices",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "pop-up-buttons",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "popovers",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "presentation",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "printing",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "privacy",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "progress-indicators",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "pull-down-buttons",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "rating-indicators",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "ratings-and-reviews",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "remotes",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "researchkit",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "right-to-left",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "scroll-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "search-fields",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "searching",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "segmented-controls",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "selection-and-input",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "settings",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "sf-symbols",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "shareplay",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "shazamkit",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "sheets",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "sidebars",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "sign-in-with-apple",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "siri",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "sliders",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "snippets",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "spatial-layout",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "split-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "status",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "status-bars",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "steppers",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "system-experiences",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "tab-bars",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "tab-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "tap-to-pay-on-iphone",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "technologies",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "text-fields",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "text-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "the-menu-bar",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "toggles",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "token-fields",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "toolbars",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "top-shelf",
+      "category": "renderer-identical"
+    },
+    {
+      "slug": "typography",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "undo-and-redo",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "virtual-keyboards",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "voiceover",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "wallet",
+      "category": "renderer-other-difference"
+    },
+    {
+      "slug": "watch-faces",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "web-views",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "widgets",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "windows",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "workouts",
+      "category": "renderer-url-case-only"
+    },
+    {
+      "slug": "writing",
+      "category": "renderer-identical"
+    }
+  ],
+  "lexical_export_check_candidates": [
+    {
+      "slug": "accessibility",
+      "unmatched_segments": [
+        "A button with insufficient color contrast",
+        "A button with sufficient color contrast",
+        "Both visual indicators and color help differentiate between indicators.",
+        "Consider increasing the font size when using a thin weight.",
+        "Elements with insufficient padding",
+        "For someone with red-green color blindness, these indicators might appear the same.",
+        "Thicker weights are easier to read for smaller font sizes."
+      ]
+    },
+    {
+      "slug": "apple-pay",
+      "unmatched_segments": [
+        "Custom detail view error messaging",
+        "No payment required at authorization",
+        "Variable subscription (where local regulations allow)"
+      ]
+    },
+    {
+      "slug": "augmented-reality",
+      "unmatched_segments": [
+        "If necessary, use a 2D hint in a 3D context.",
+        "Limit movement to the two-dimensional surface on which the object rests.",
+        "Limit object rotation to a single axis."
+      ]
+    },
+    {
+      "slug": "camera-control",
+      "unmatched_segments": [
+        " symbol that represents a control for filters",
+        " symbol that represents a control for the camera flash",
+        "Avoid showing controls in the viewfinder that people access in the overlay."
+      ]
+    },
+    {
+      "slug": "charts",
+      "unmatched_segments": [
+        "For the focused section of this cycling elevation chart, VoiceOver provides information about that portion of the route, including distance and elevation changes."
+      ]
+    },
+    {
+      "slug": "color",
+      "unmatched_segments": [
+        "By default, Liquid Glass picks up the color from the content layer behind it.",
+        "Controls can use color in the Liquid Glass background, like in a primary action button.",
+        "Green indicates a positive trend in the Stocks app in English.",
+        "Red indicates a positive trend in the Stocks app in Chinese.",
+        "Symbols and text that appear on Liquid Glass can have color, like in a selected tab bar item."
+      ]
+    },
+    {
+      "slug": "controls",
+      "unmatched_segments": [
+        "Control toggle in the Dynamic Island",
+        "Control toggle with information hidden on a locked device",
+        "Control toggle with no information hidden",
+        "Nontinted control toggle in the off state",
+        "Tinted control toggle in the on state"
+      ]
+    },
+    {
+      "slug": "dark-mode",
+      "unmatched_segments": [
+        "Icon in the dark appearance with border for better contrast",
+        "Icon in the light appearance with no border",
+        "Illustration adjusted for better contrast on a dark background",
+        "Illustration on a light background",
+        "On a dark background, the same illustration has poor contrast and many details are lost",
+        "Primary label in the light appearance",
+        "Secondary label in the dark appearance",
+        "The Stocks app uses a dark-only appearance"
+      ]
+    },
+    {
+      "slug": "digital-crown",
+      "unmatched_segments": [
+        "The Digital Crown on Apple\u00a0Vision\u00a0Pro"
+      ]
+    },
+    {
+      "slug": "game-controls",
+      "unmatched_segments": [
+        "Placing virtual controls within reach of people\u2019s thumbs can make your game more comfortable to play.",
+        "When the thumbstick is at rest, the virtual control fades to show it\u2019s not in use.",
+        "When the thumbstick moves to the right, it becomes more visible and shows a highlight to indicate the movement direction."
+      ]
+    },
+    {
+      "slug": "gestures",
+      "unmatched_segments": [
+        "A person looks at their palm to reveal the Home indicator.",
+        "A person turns their hand to reveal the status bar, and can tap to open Control Center.",
+        "Default behavior in the Shared Space",
+        "The area reserved for interacting with system overlays."
+      ]
+    },
+    {
+      "slug": "homekit",
+      "unmatched_segments": [
+        "Using the icon and name in setup or instructional content",
+        "Using the icon and name referencing the Apple Home app"
+      ]
+    },
+    {
+      "slug": "icons",
+      "unmatched_segments": [
+        "An asymmetric icon can look off center even though it\u2019s not.",
+        "Before optical centering (left) and after optical centering (right).",
+        "Create a flipped version of an icon that suggests reading direction.",
+        "Create localized versions of an icon that displays individual characters.",
+        "In a toolbar, a selected icon receives the app\u2019s accent color.",
+        "Moving the icon a few pixels higher optically centers it; including the pixels in padding simplifies centering.",
+        "The 16x16 px @1x icon has no EKG line and no grid lines.",
+        "The 16x16 px @2x icon retains the EKG line but has no grid lines.",
+        "The 32x32 px icon has fewer grid lines and a thicker EKG line.",
+        "To help achieve visual consistency, adjust individual icon sizes as necessary\u2026",
+        "macOS composites the elements you supply to produce your custom document icon.",
+        "\u2026and use the same stroke weight in every icon."
+      ]
+    },
+    {
+      "slug": "immersive-experiences",
+      "unmatched_segments": [
+        "Full immersion style in a Full Space showing a 360-degree custom environment",
+        "Mixed immersion style in a Full Space blending in-app objects with real-world surroundings",
+        "Progressive immersion style in a Full Space blending the app\u2019s custom environment with real-world surroundings"
+      ]
+    },
+    {
+      "slug": "in-app-purchase",
+      "unmatched_segments": [
+        "A description that clarifies how the subscription works on Apple Watch in contrast with other devices",
+        "A description that might lead people to expect access to 90,000 maps on their Apple Watch",
+        "One payment option per list row, followed by a button that updates to display the chosen option"
+      ]
+    },
+    {
+      "slug": "lists-and-tables",
+      "unmatched_segments": [
+        "A disclosure indicator reveals the next level in a hierarchy; it doesn\u2019t show details about the item.",
+        "An info button shows details about a list item; it doesn\u2019t support navigation."
+      ]
+    },
+    {
+      "slug": "maps",
+      "unmatched_segments": [
+        "Individual points of interest when zoomed in"
+      ]
+    },
+    {
+      "slug": "materials",
+      "unmatched_segments": [
+        "Good contrast between the material and vibrant color label",
+        "Poor contrast between the material and "
+      ]
+    },
+    {
+      "slug": "multitasking",
+      "unmatched_segments": [
+        "A current FaceTime call can continue while people use another app.",
+        "The app switcher displays all currently open apps."
+      ]
+    },
+    {
+      "slug": "page-controls",
+      "unmatched_segments": [
+        "Using only two different indicators looks well-organized and provides a consistent experience.",
+        "Using several different indicators can make a page control look busy and difficult to use."
+      ]
+    },
+    {
+      "slug": "pickers",
+      "unmatched_segments": [
+        "Another example of an inline picker uses wheels to choose values for date and time.",
+        "In a compact layout, a picker opens as a popover over your content.",
+        "In an inline layout, a picker opens inline with your content."
+      ]
+    },
+    {
+      "slug": "playing-video",
+      "unmatched_segments": [
+        "21:9 video in fit-to-screen viewing mode",
+        "21:9 video with embedded padding, in fit-to-screen viewing mode",
+        "4:3 video in full-screen viewing mode",
+        "4:3 video with embedded padding, in full-screen viewing mode"
+      ]
+    },
+    {
+      "slug": "privacy",
+      "unmatched_segments": [
+        "An app\u2019s App Store product page helps people understand the app\u2019s privacy practices before they download it.",
+        "Don\u2019t add a visual cue that draws people\u2019s attention to the system alert\u2019s Allow buttons.",
+        "Don\u2019t display a custom screen that mirrors the functionality of the system alert. In particular, don\u2019t create a button title that uses \u201cAllow\u201d or similar terms, because people don\u2019t allow anything in a pre-alert screen.",
+        "Don\u2019t include an option to close the view.",
+        "Don\u2019t offer incentives for granting the request. You can\u2019t offer people compensation for granting their permission, and you can\u2019t withhold functionality or content or make your app unusable until people allow you to track them.",
+        "Don\u2019t show an image of the standard alert and modify it in any way."
+      ]
+    },
+    {
+      "slug": "progress-indicators",
+      "unmatched_segments": [
+        "Indeterminate circular progress indicator"
+      ]
+    },
+    {
+      "slug": "researchkit",
+      "unmatched_segments": [
+        "These guidelines are for informational purposes only and don\u2019t constitute legal advice. Contact an attorney to obtain advice with respect to the development of a research app and any applicable laws."
+      ]
+    },
+    {
+      "slug": "right-to-left",
+      "unmatched_segments": [
+        "A directional control in the LTR context",
+        "A directional control in the RTL context",
+        "A left-aligned paragraph in the RTL context",
+        "A right-aligned paragraph in the RTL context",
+        "Arabic and Hebrew text can look too small next to uppercased Latin text of the same font size.",
+        "Items with meaningful positions in the LTR context",
+        "Items with meaningful positions in the RTL context",
+        "LTR variant of a symbol that depicts a tool",
+        "LTR variant of a symbol that depicts forward motion",
+        "LTR variant of a symbol that includes a backslash",
+        "LTR variant of a symbol that represents text",
+        "LTR variants of directional symbols",
+        "Left-aligned text in the LTR context",
+        "RTL variant of a symbol that depicts a tool",
+        "RTL variant of a symbol that depicts forward motion",
+        "RTL variant of a symbol that includes a backslash",
+        "RTL variant of a symbol that represents text",
+        "RTL variants of directional symbols",
+        "Right-aligned content in the RTL context",
+        "You can slightly increase the font size of Arabic and Hebrew text to visually balance uppercased Latin text."
+      ]
+    },
+    {
+      "slug": "segmented-controls",
+      "unmatched_segments": [
+        "In the iOS Health app, a segmented control provides a choice of time ranges for the activity graphs to display."
+      ]
+    },
+    {
+      "slug": "sheets",
+      "unmatched_segments": [
+        "Because the sheet is nonmodal, people can make additional text selections without dismissing the sheet.",
+        "On subsequent steps, the Back button replaces the Cancel button to let people navigate back.",
+        "On the final confirmation step, the Done button becomes active to let people acknowledge completion of the task and dismiss the sheet.",
+        "On the first step, where there isn\u2019t a Back button, the Cancel button belongs on the leading edge. When present, the Done button belongs on the trailing edge, in an inactive state to indicate that the task isn\u2019t complete yet.",
+        "The Notes format sheet lets people apply formatting to selected text in the editing view."
+      ]
+    },
+    {
+      "slug": "snippets",
+      "unmatched_segments": [
+        "A confirmation snippet requires additional input to proceed.",
+        "A result snippet provides information without requiring further action."
+      ]
+    },
+    {
+      "slug": "status-bars",
+      "unmatched_segments": [
+        "The Photos app with the status bar hidden",
+        "The Photos app with the status bar visible"
+      ]
+    },
+    {
+      "slug": "tab-bars",
+      "unmatched_segments": [
+        "A tab bar with an attached accessory, expanded",
+        "A tab bar with an attached accessory, minimized"
+      ]
+    },
+    {
+      "slug": "tap-to-pay-on-iphone",
+      "unmatched_segments": [
+        "An app screen that displays a determinate progress indicator during configuration",
+        "An app screen that displays an indeterminate progress indicator during configuration",
+        "An app screen that offers a way to accept Tap to Pay on iPhone terms and conditions",
+        "An app screen that shows Tap to Pay on iPhone is enabled and offers a way to try it",
+        "The merchant education tutorial provided by the ",
+        "Your app\u2019s settings area is a good place to make sure the tutorial is always available."
+      ]
+    },
+    {
+      "slug": "toggles",
+      "unmatched_segments": [
+        "The Phone app uses a toggle to switch between all recent calls and various filter options. When someone chooses a filter, the toggle appears with a custom background drawn behind the symbol.",
+        "When someone returns to the main Recents view, the toggle appears without anything behind the symbol."
+      ]
+    },
+    {
+      "slug": "toolbars",
+      "unmatched_segments": [
+        "As the window narrows, the More menu moves into an overflow menu along with other toolbar items that no longer fit.",
+        "The standard toolbar in macOS Notes includes a More menu with extra commands."
+      ]
+    },
+    {
+      "slug": "typography",
+      "unmatched_segments": [
+        "Increasing text size and adding visible background shapes can help make text easier to read.",
+        "Mail content at the default text size",
+        "Mail content at the largest accessibility text size",
+        "Not all apps express tracking values as 1/1000 em. Point size based on image resolution of 144 ppi for @2x and 216 ppi for @3x designs.",
+        "Not all apps express tracking values as 1/1000 em. Point size based on image resolution of 144 ppi for @2x designs.",
+        "Point size based on image resolution of 144 ppi for @2x and 216 ppi for @3x designs.",
+        "Point size based on image resolution of 144 ppi for @2x designs.",
+        "Point size based on image resolution of 72 ppi for @1x and 144 ppi for @2x designs.",
+        "Testing a game on a new platform can show where text is hard to read."
+      ]
+    },
+    {
+      "slug": "virtual-keyboards",
+      "unmatched_segments": [
+        "The keyboard layout guide helps ensure that app UI and the keyboard work well together.",
+        "Without the layout guide, the keyboard could make entering text more difficult.",
+        "Without the layout guide, the keyboard could make tapping a button more difficult."
+      ]
+    },
+    {
+      "slug": "voiceover",
+      "unmatched_segments": [
+        "Grouped related elements help VoiceOver accurately describe the UI.",
+        "Ungrouped related elements make it hard for VoiceOver to accurately describe the UI."
+      ]
+    },
+    {
+      "slug": "wallet",
+      "unmatched_segments": [
+        "Backgrounds appear blurred behind content on older event tickets.",
+        "Backgrounds appear unblurred on poster event tickets and poster generic passes.",
+        "Event ticket with background and thumbnail",
+        "Insufficient contrast between a solid background and label text",
+        "Insufficient contrast between an image background and label text",
+        "Rectangular primary logo with no logo text",
+        "Sufficient contrast between a solid background and label text",
+        "Sufficient contrast between an image background and label text"
+      ]
+    },
+    {
+      "slug": "widgets",
+      "unmatched_segments": [
+        "* When Display Zoom is set to More Space.",
+        "iPhone in StandBy during low-light conditions"
+      ]
+    },
+    {
+      "slug": "workouts",
+      "unmatched_segments": [
+        "If supported, media playback controls appear on the rightmost screen.",
+        "Large buttons that control the in-progress session \u2014 such as End, Resume, and New \u2014 appear on the leftmost screen.",
+        "Metrics and other data appear on a dedicated screen that people can read at a glance."
+      ]
+    }
+  ],
+  "limitations": [
+    "Renderer differences can include export structure, links, captions, ordering, and prose; they do not prove substantive changes.",
+    "Lexical segment presence does not prove table alignment, hierarchy, visual fidelity, completeness, or semantic equivalence.",
+    "External developer documentation and media are inventoried, not downloaded or reviewed."
+  ]
+}

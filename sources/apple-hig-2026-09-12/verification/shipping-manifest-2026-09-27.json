@@ -1,0 +1,836 @@
+{
+  "schema_version": 1,
+  "approval": "approved-for-packaging",
+  "release": "2026-09-27",
+  "source_snapshot": "2026-09-12",
+  "scope": "Ordinary Apple HIG guidance, opt-in enforce, and guided native Duo mode. All 157 HIG references redistilled for fidelity-first compression (2026-09-23/24); README images are linked from GitHub rather than packaged. Duo mode adds references/duo.md, references/duo-checklist.md and commands/duo.md. Packaging approval binds membership and bytes, not host discovery or native-device behavior.",
+  "topics": [
+    "accessibility",
+    "action-button",
+    "action-sheets",
+    "activity-rings",
+    "activity-views",
+    "airplay",
+    "alerts",
+    "always-on",
+    "app-clips",
+    "app-icons",
+    "app-shortcuts",
+    "apple-pay",
+    "apple-pencil-and-scribble",
+    "augmented-reality",
+    "boxes",
+    "branding",
+    "buttons",
+    "camera-control",
+    "carekit",
+    "carplay",
+    "charting-data",
+    "charts",
+    "collaboration-and-sharing",
+    "collections",
+    "color",
+    "color-wells",
+    "column-views",
+    "combo-boxes",
+    "complications",
+    "context-menus",
+    "controls",
+    "dark-mode",
+    "design-principles",
+    "designing-for-games",
+    "designing-for-ios",
+    "designing-for-ipados",
+    "designing-for-iphone-duo",
+    "designing-for-macos",
+    "designing-for-tvos",
+    "designing-for-visionos",
+    "designing-for-watchos",
+    "digit-entry-views",
+    "digital-crown",
+    "disclosure-controls",
+    "dock-menus",
+    "drag-and-drop",
+    "edit-menus",
+    "entering-data",
+    "eyes",
+    "feedback",
+    "file-management",
+    "focus-and-selection",
+    "game-center",
+    "game-controls",
+    "gauges",
+    "generative-ai",
+    "gestures",
+    "going-full-screen",
+    "gyro-and-accelerometer",
+    "healthkit",
+    "home-screen-quick-actions",
+    "homekit",
+    "icloud",
+    "icons",
+    "id-verifier",
+    "image-views",
+    "image-wells",
+    "images",
+    "imessage-apps-and-stickers",
+    "immersive-experiences",
+    "in-app-purchase",
+    "inclusion",
+    "keyboards",
+    "labels",
+    "launching",
+    "layout",
+    "lists-and-tables",
+    "live-activities",
+    "live-photos",
+    "live-viewing-apps",
+    "loading",
+    "lockups",
+    "mac-catalyst",
+    "machine-learning",
+    "managing-accounts",
+    "maps",
+    "materials",
+    "menus",
+    "modality",
+    "motion",
+    "multitasking",
+    "nearby-interactions",
+    "nfc",
+    "notifications",
+    "offering-help",
+    "onboarding",
+    "ornaments",
+    "outline-views",
+    "page-controls",
+    "panels",
+    "path-controls",
+    "photo-editing",
+    "pickers",
+    "playing-audio",
+    "playing-haptics",
+    "playing-video",
+    "pointing-devices",
+    "pop-up-buttons",
+    "popovers",
+    "printing",
+    "privacy",
+    "progress-indicators",
+    "pull-down-buttons",
+    "rating-indicators",
+    "ratings-and-reviews",
+    "remotes",
+    "researchkit",
+    "right-to-left",
+    "scroll-views",
+    "search-fields",
+    "searching",
+    "segmented-controls",
+    "settings",
+    "sf-symbols",
+    "shareplay",
+    "shazamkit",
+    "sheets",
+    "sidebars",
+    "sign-in-with-apple",
+    "siri",
+    "sliders",
+    "snippets",
+    "spatial-layout",
+    "split-views",
+    "status-bars",
+    "steppers",
+    "tab-bars",
+    "tab-views",
+    "tap-to-pay-on-iphone",
+    "text-fields",
+    "text-views",
+    "the-menu-bar",
+    "toggles",
+    "token-fields",
+    "toolbars",
+    "top-shelf",
+    "typography",
+    "undo-and-redo",
+    "virtual-keyboards",
+    "voiceover",
+    "wallet",
+    "watch-faces",
+    "web-views",
+    "widgets",
+    "windows",
+    "workouts",
+    "writing"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "3883d9a8926d0fe55fe3fef32b500c88927998f53b3f54cc5e361b28bb1add19"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "f31e8fa24d9d22121db4406ef05c36e53f40d7249587afc559db5016eaefd82d"
+    },
+    {
+      "path": "commands/duo.md",
+      "sha256": "e7958fa402dd231b52e96ee1355b5997e555a703969cfa91c78ea7a1fa510f2e"
+    },
+    {
+      "path": "references/duo-checklist.md",
+      "sha256": "6cec5d4eaebf76bb3af11af43775ed9247607412898aff148eff83880b606544"
+    },
+    {
+      "path": "references/duo.md",
+      "sha256": "704857502015fb69ff947230d13e575ee2607183c669771ca132599afdfbeda2"
+    },
+    {
+      "path": "references/enforce-format.md",
+      "sha256": "4204a8aad81686f5fbaea1278c320591397dc100307a882ec4b2d1f3987686b9"
+    },
+    {
+      "path": "references/enforce.md",
+      "sha256": "1bf9337b6056994d1936c4f6f0edde7f572c8568648cd81330db0b08c083680c"
+    },
+    {
+      "path": "references/hig/accessibility.md",
+      "sha256": "87f8d46f4dcb3691358bd0b4e8e71a260cebc5fedadc7d82dc14f09d21f2c8f0"
+    },
+    {
+      "path": "references/hig/action-button.md",
+      "sha256": "9920cf58ad6fd5cd4246523cea15c558f766da9f89a45363864c2f66199fcf87"
+    },
+    {
+      "path": "references/hig/action-sheets.md",
+      "sha256": "7b38a978c0277c5723a0c0992b6a55c58abee94eef206e05710cd3ea1c0a926a"
+    },
+    {
+      "path": "references/hig/activity-rings.md",
+      "sha256": "0cfd3b4f5e3121046954912432090f6b92a327d6e1048921ba3a363a7135f37a"
+    },
+    {
+      "path": "references/hig/activity-views.md",
+      "sha256": "f40cdfb605ca3501e3594f27ec7f093d27f07ab842a5a1f4cf1e2728572c7c56"
+    },
+    {
+      "path": "references/hig/airplay.md",
+      "sha256": "51747b7da8aa0c3715dc7aa010a37b2ecceda48b07784eec03a13fe4fce6ff82"
+    },
+    {
+      "path": "references/hig/alerts.md",
+      "sha256": "082bf02cf2ad92fa6935860a20d79fc108c9f90a6a3c94cacc2e76351f7af69a"
+    },
+    {
+      "path": "references/hig/always-on.md",
+      "sha256": "7a7c0e480240d7194669a1598bed740628874d4480fe8ee26581c69a4de00610"
+    },
+    {
+      "path": "references/hig/app-clips.md",
+      "sha256": "b8c17e8a3a1cb6f5bf8bfeef9c800000bea30e2709d13cc084c129d980e3d308"
+    },
+    {
+      "path": "references/hig/app-icons.md",
+      "sha256": "61a155df6b8aff050525112838e234e315418e211733e62b4bb5a468394a066f"
+    },
+    {
+      "path": "references/hig/app-shortcuts.md",
+      "sha256": "2465d376b24dfd7f26f66de059abafb0cbfb43a1abb598ff2b10a0f81cfc9561"
+    },
+    {
+      "path": "references/hig/apple-pay.md",
+      "sha256": "2f835c759a3b5f62c7a6c37b2fff5446298d462006c54c6d2c48fefa739999c4"
+    },
+    {
+      "path": "references/hig/apple-pencil-and-scribble.md",
+      "sha256": "f1eb5204ddbe388a8aab2d5534944b5d9fb5dd23a6b36728b3a59a7c2166da84"
+    },
+    {
+      "path": "references/hig/augmented-reality.md",
+      "sha256": "d4a44fec1bb4def6c08f553ced73659ac493e103d15ee5bff115b69615ec8da4"
+    },
+    {
+      "path": "references/hig/boxes.md",
+      "sha256": "c9cdd146eeb6d45ee1dd4e6555531f581531b1b429efce27e8edfb6c60b64b2e"
+    },
+    {
+      "path": "references/hig/branding.md",
+      "sha256": "8288432263a16cf152c1bb92b313425127ffa46b6ee16825e93a99740ce4b203"
+    },
+    {
+      "path": "references/hig/buttons.md",
+      "sha256": "8196b491dd97354fdb0b1d2c8476a600bb6c33ebf233368b2b888ee376074724"
+    },
+    {
+      "path": "references/hig/camera-control.md",
+      "sha256": "b8f0e8869869e64f77dbd845de29a404a48df7636773dd5501ecd8e2d3a967c1"
+    },
+    {
+      "path": "references/hig/carekit.md",
+      "sha256": "4ed6237c4b966ce4dfb22387e06a4284286c507c1b88449a0f69c711de2fea59"
+    },
+    {
+      "path": "references/hig/carplay.md",
+      "sha256": "126ba8ab232cfb486f7917e02e88b7316a0e3db980c708adc32ec4a2d00bea14"
+    },
+    {
+      "path": "references/hig/charting-data.md",
+      "sha256": "bf7da901885bbfe3adf2936df6e788b8bdaaa850ef7169e4c0ba397a51b761c9"
+    },
+    {
+      "path": "references/hig/charts.md",
+      "sha256": "e04e58bc9afb249ccc76b583b53223941345d0ba01386286dcf85726987633c0"
+    },
+    {
+      "path": "references/hig/collaboration-and-sharing.md",
+      "sha256": "cc1ac75600e1eacedfe531557612f8973975713407ac0e28bbefaeddef6b4117"
+    },
+    {
+      "path": "references/hig/collections.md",
+      "sha256": "187bc342b650995d200e978bbc74cb32655afce90d0f9f9b1c2798b753af4725"
+    },
+    {
+      "path": "references/hig/color-wells.md",
+      "sha256": "db280090e020df57bbde9a5d3ffc5c645f83a5a6d3f36801f299f238d727ed17"
+    },
+    {
+      "path": "references/hig/color.md",
+      "sha256": "14f3b13f8489d566ed54ef1ac0150ae2e8f45e6b11327cc5b3bf9dfbdb41a626"
+    },
+    {
+      "path": "references/hig/column-views.md",
+      "sha256": "29562bd3c5140804f6482d7f1dfbaee88de22c59c84dc72d4661ccdbced47fd7"
+    },
+    {
+      "path": "references/hig/combo-boxes.md",
+      "sha256": "c917f8f6f0e0c50688a03ea30d2b2a2857f4b81026322a8a805556d0a687c702"
+    },
+    {
+      "path": "references/hig/complications.md",
+      "sha256": "54bd13382c75add7046084055928c30ca46d2d6f61f38790f66c84e98f62bf46"
+    },
+    {
+      "path": "references/hig/context-menus.md",
+      "sha256": "c02ef64b351b8c51d6cf876d5dc13cb44ac1cac6449f31d304a270feb4d86905"
+    },
+    {
+      "path": "references/hig/controls.md",
+      "sha256": "3890509690fe4932f94a4fc00ca8fe9cae6be4785f9451a5d784310862388bd5"
+    },
+    {
+      "path": "references/hig/dark-mode.md",
+      "sha256": "633c41a17971b1037db25fefb92ee183034a4e1b7987e2eb8a935ca6e7e3ca22"
+    },
+    {
+      "path": "references/hig/design-principles.md",
+      "sha256": "5b14d8e2e4e1a5a0d0e789016d90c7791ac0fe626d9d1d638f4997010afea5b0"
+    },
+    {
+      "path": "references/hig/designing-for-games.md",
+      "sha256": "fae6fd5efdf7ad8c7c8985535d0d275bb0e2ea30d8633828d9cf221579ae7f78"
+    },
+    {
+      "path": "references/hig/designing-for-ios.md",
+      "sha256": "11c6c8572478ded3369771c6f96783d8e251b7a22a2db1b829b1c5ae20137958"
+    },
+    {
+      "path": "references/hig/designing-for-ipados.md",
+      "sha256": "165b81da9eff26b21c3fa6d0609305855b1891929ba57af2b0fc36b5798b8d84"
+    },
+    {
+      "path": "references/hig/designing-for-iphone-duo.md",
+      "sha256": "9474a898efd251b83d79315f93ef85bb9ff568c4e213bf94bee9a8ee1993d79e"
+    },
+    {
+      "path": "references/hig/designing-for-macos.md",
+      "sha256": "a5960b78e8bbd1fed3badfbb58c51485e6478107a9796d83d6912e864f4776a7"
+    },
+    {
+      "path": "references/hig/designing-for-tvos.md",
+      "sha256": "504e5df12f5ed585bc044aeab2e872567f9293ddd560471c5b2131f82e1b8f52"
+    },
+    {
+      "path": "references/hig/designing-for-visionos.md",
+      "sha256": "f3532fa5971ea86b910bbdbaf434f79b3ded41af10d257903103d64fcf786e6a"
+    },
+    {
+      "path": "references/hig/designing-for-watchos.md",
+      "sha256": "cb7b90d11a590d19636e98977566055522e250f93493273fce3a8ec8e3d66628"
+    },
+    {
+      "path": "references/hig/digit-entry-views.md",
+      "sha256": "115a0d80a2e83cf35986e6180e91e54ed82a8e82384f8368903e730a8a230832"
+    },
+    {
+      "path": "references/hig/digital-crown.md",
+      "sha256": "ab16461785fda30dc422370af8bab37e888f4c7fb9d62d2eed189ba0e4ebec32"
+    },
+    {
+      "path": "references/hig/disclosure-controls.md",
+      "sha256": "b83bb6af55d9c418ae5e615da0a1783609925ade304e08ce044e068960a150e7"
+    },
+    {
+      "path": "references/hig/dock-menus.md",
+      "sha256": "4fc112018144c1581464f094858f037310ba60c00f076c5fd317db7314521830"
+    },
+    {
+      "path": "references/hig/drag-and-drop.md",
+      "sha256": "69187e62db844cf865154f9cb12c1b25b552470646c75e6018c71eba1976d47f"
+    },
+    {
+      "path": "references/hig/edit-menus.md",
+      "sha256": "fa4b8171de8be1cc86f64f68501c1840c93710668767729753690cde681f7ef2"
+    },
+    {
+      "path": "references/hig/entering-data.md",
+      "sha256": "e3238f9b1885947888e64e9af161179e5f78e399565d22dbd89878066b462a38"
+    },
+    {
+      "path": "references/hig/eyes.md",
+      "sha256": "1a8ee941b49600731223d8ac5a2fcaeb34f930d61d510f797871e1840e8dd630"
+    },
+    {
+      "path": "references/hig/feedback.md",
+      "sha256": "da05fc4a9468b75046815b042ff90daaa32d0b9e63d6097495eb42e6989c5b11"
+    },
+    {
+      "path": "references/hig/file-management.md",
+      "sha256": "7aef15e8305d90d51df848266f6b1b9a5976cdccd4b30c4876569dc7820e0ea7"
+    },
+    {
+      "path": "references/hig/focus-and-selection.md",
+      "sha256": "ac77045c03cdc6e1beb3262b5fe1bf8e204fb8b3421b6c24e49de1ca0adcf8b5"
+    },
+    {
+      "path": "references/hig/game-center.md",
+      "sha256": "367531640124b10f04b800e7e4e5b13e8344eccccb360d431ee56ea253c62aec"
+    },
+    {
+      "path": "references/hig/game-controls.md",
+      "sha256": "e5f29421544bfdfc34ac0287edcd10dca6c0b2d19e460ced498d6cf032c7be1f"
+    },
+    {
+      "path": "references/hig/gauges.md",
+      "sha256": "ca39c9e9590b57cc52c1d147e287763a1b5d51f78b944af84d932473cc15f7d0"
+    },
+    {
+      "path": "references/hig/generative-ai.md",
+      "sha256": "03d001fe94436295e1635043fa036d1b1565e12455d80e2cd9ebef001ff35a02"
+    },
+    {
+      "path": "references/hig/gestures.md",
+      "sha256": "717767fceea27743da58742037dfd52c5de335e59c178e1a40ab9566519adc3a"
+    },
+    {
+      "path": "references/hig/going-full-screen.md",
+      "sha256": "391254ff6b1d73c95947c4cc70be2608715a73f11dcbe7b8bcfb50ae7faebef7"
+    },
+    {
+      "path": "references/hig/gyro-and-accelerometer.md",
+      "sha256": "6278fe5a647e1fc63aeffa6f6e95b1562fc998e8774bf8c170ef531b02c97397"
+    },
+    {
+      "path": "references/hig/healthkit.md",
+      "sha256": "d44f3f74449ec2ad035b9406d236dccd01326b2161f27d5855585d8d759c92d8"
+    },
+    {
+      "path": "references/hig/home-screen-quick-actions.md",
+      "sha256": "b840bfc52fc2ba9d1005a5e6ad83df02d8bdfeda8ee637a6fe39fd3ecf34b667"
+    },
+    {
+      "path": "references/hig/homekit.md",
+      "sha256": "8f82353254ebaa5e9a8505a8e624c336b7a00a06e07df5059b488673a40c1064"
+    },
+    {
+      "path": "references/hig/icloud.md",
+      "sha256": "e8be312e52ea041d7e4655d324fbb556727b6ecc26e905cd3b68bbc530e79322"
+    },
+    {
+      "path": "references/hig/icons.md",
+      "sha256": "3408afe661f5d41585f0705c96444374d7da9af7964f91004f16d51cd0ab8661"
+    },
+    {
+      "path": "references/hig/id-verifier.md",
+      "sha256": "fdf7991f79679df02270ac1428a0e4cde1f3d9eaeb56725eaace3cade3a32ba4"
+    },
+    {
+      "path": "references/hig/image-views.md",
+      "sha256": "d7b5185762e33e908086a9df810f6e4b5ca903abb68a52f5f231dca79bbc24ec"
+    },
+    {
+      "path": "references/hig/image-wells.md",
+      "sha256": "dd53ac20fb53540277a2c0102298085f37747eced9f94815129bb655e1ac0513"
+    },
+    {
+      "path": "references/hig/images.md",
+      "sha256": "6e0e09ad229ec0950dd3b9e3dbdbe8dc083d0503d87e9a257515a9aca1606141"
+    },
+    {
+      "path": "references/hig/imessage-apps-and-stickers.md",
+      "sha256": "d54700dfb6d48e3f0619e2ce37703bc3aa4f76d4a7821e98aeb1c12d0cbe24f8"
+    },
+    {
+      "path": "references/hig/immersive-experiences.md",
+      "sha256": "abf1c702224aa269153e83b8298c152bab2d7ab78b99e7bd8672292170ebf99a"
+    },
+    {
+      "path": "references/hig/in-app-purchase.md",
+      "sha256": "629b8578f95c824ee5494a2a52dead1838756af12741c6a7b88c77ee0ae813d1"
+    },
+    {
+      "path": "references/hig/inclusion.md",
+      "sha256": "18d6dcf08df246ccd50b21110ea5f2ced0c01ba08dd64f19bd78d024ebbb0280"
+    },
+    {
+      "path": "references/hig/keyboards.md",
+      "sha256": "3e37964504118bbca03cf899cf7b3d221fb2ecbadc6a402581c08bf1cd5d383b"
+    },
+    {
+      "path": "references/hig/labels.md",
+      "sha256": "406769615306e4972abfbec83b8b4cca818ea82fe1311567004af37dc09f1156"
+    },
+    {
+      "path": "references/hig/launching.md",
+      "sha256": "3992b15abf8140c2e402953a9074be3a17b35f00eb4fd9d562a04df5cd28dfa5"
+    },
+    {
+      "path": "references/hig/layout.md",
+      "sha256": "36d951ed29be9e7564b9b01c7b581934213e541dbed54c0330fd85363b31dd16"
+    },
+    {
+      "path": "references/hig/lists-and-tables.md",
+      "sha256": "992d195c76c3ae6a997a82771ba24e4e866d408f2f15382399e1d90bb1bb8f5a"
+    },
+    {
+      "path": "references/hig/live-activities.md",
+      "sha256": "3578db24fa0ae3ddcb15f800e8dea79576bbaa7baabbb242fc408a748971b046"
+    },
+    {
+      "path": "references/hig/live-photos.md",
+      "sha256": "5e5a701269254b1544761a707c18c9ab8aed59f22dd11382e29321e95567650c"
+    },
+    {
+      "path": "references/hig/live-viewing-apps.md",
+      "sha256": "ac55afb9fd9184a8dc5e4ec159604e3f262b6431bb26fdda3dc48ac1a5b59a47"
+    },
+    {
+      "path": "references/hig/loading.md",
+      "sha256": "1bc4db3c9749365c8dbd8657bf63a6e93ca18915c640bbf6fc6a696b8030c713"
+    },
+    {
+      "path": "references/hig/lockups.md",
+      "sha256": "1f9486c9b6638ce303d309b2bd89f8f18ba32e08808c94b5448de16b8b472536"
+    },
+    {
+      "path": "references/hig/mac-catalyst.md",
+      "sha256": "0e147b4570c96724e1879f2a02e132daae1baa593851674be0e32a1b7e0d9915"
+    },
+    {
+      "path": "references/hig/machine-learning.md",
+      "sha256": "3b0bb7a6decec7bef179ee63ab72b18ff321cfc8402068ed491fa79a54870829"
+    },
+    {
+      "path": "references/hig/managing-accounts.md",
+      "sha256": "623875b573635425c2834c8db5ce3b628a85249a8f7c6abb29bcb06f45bc9407"
+    },
+    {
+      "path": "references/hig/maps.md",
+      "sha256": "dd6d8798a01ed28dd7b997a4fe707c1a0406db64ccb8bd8f3f0c2a19f6cdd2b4"
+    },
+    {
+      "path": "references/hig/materials.md",
+      "sha256": "fb8507554daec72025fabb542e47819ab09953739566b8930ddf690e99c6b30a"
+    },
+    {
+      "path": "references/hig/menus.md",
+      "sha256": "62323f9ff0b61dbf3d890f03d53d48d7efd71e75f305fba35220f65c294bbc85"
+    },
+    {
+      "path": "references/hig/modality.md",
+      "sha256": "9a6d9fafa64fe48a8e7457bfdf25ef3f6ad6546a15360651928a099431656025"
+    },
+    {
+      "path": "references/hig/motion.md",
+      "sha256": "d30bab95548b51eadf7aaf62a9ccd6a67acb3732da0fd43aa2692ed6d747d7ea"
+    },
+    {
+      "path": "references/hig/multitasking.md",
+      "sha256": "4b6990d22b285db4be1c804630b57785eef2cf245644faa004e1133d0938db37"
+    },
+    {
+      "path": "references/hig/nearby-interactions.md",
+      "sha256": "ece0d786f2070b2cff66e9cbb0ee3c5b5a59d49ae9d036b49640cb8b4df29ec4"
+    },
+    {
+      "path": "references/hig/nfc.md",
+      "sha256": "6900d64b1946bd36fdf71fdcfd3b998464969699938151e209eaefa27ca28652"
+    },
+    {
+      "path": "references/hig/notifications.md",
+      "sha256": "880ff36c74fb95a277afb537eaf4bc97414cebae8867d1b366a4826a0650701a"
+    },
+    {
+      "path": "references/hig/offering-help.md",
+      "sha256": "048edca2989472b8b5b69ea3907ec02854ebe721ca8745d838e967892649ee88"
+    },
+    {
+      "path": "references/hig/onboarding.md",
+      "sha256": "17ae7f65e0f1f4189c7ecf1f1a7a1b7da8c9988d4422ee1c6e65658994e6c5c4"
+    },
+    {
+      "path": "references/hig/ornaments.md",
+      "sha256": "01a62fb1b9d9aa944e7c757ed290f859a7c466e5bbe423aee4671ce8806187f4"
+    },
+    {
+      "path": "references/hig/outline-views.md",
+      "sha256": "204f55ca696854aeacf2afa369d922c25545c34c28ee89ca24fcd5caace8b4c0"
+    },
+    {
+      "path": "references/hig/page-controls.md",
+      "sha256": "fbb1a40b9961cae5dbe71e9e9352d63bcb88226c1a6042918cd5b667f7c0d7b3"
+    },
+    {
+      "path": "references/hig/panels.md",
+      "sha256": "a52587dbb8e5c2f9f62aa5d0ed00f1c8f44452c73bf00f2ae2a3ef952d2e67b4"
+    },
+    {
+      "path": "references/hig/path-controls.md",
+      "sha256": "741f2b026de44610b6662b1254a5e634dbc7c1b655c179bfb59d37f5a8180fb5"
+    },
+    {
+      "path": "references/hig/photo-editing.md",
+      "sha256": "1fe236ffad7c9deff2aec35b27a8002cf396e25e34ab09b4e54a899ca77be0b9"
+    },
+    {
+      "path": "references/hig/pickers.md",
+      "sha256": "4910976e3f37cde8b0fe49f56d4e736f771a131d203c267193589a9fc60f31da"
+    },
+    {
+      "path": "references/hig/playing-audio.md",
+      "sha256": "ee1ca783ab313e35181c0a3fc618782a77ea911492ad13899c7e81fec875f7d2"
+    },
+    {
+      "path": "references/hig/playing-haptics.md",
+      "sha256": "51da026136540f88d89ce440dab1271d32c7fef076c121cd064c79ab09a6c97f"
+    },
+    {
+      "path": "references/hig/playing-video.md",
+      "sha256": "d041e34835e7c1e71da01a4730a2fc1355495687a31b2f9c18585798d26557f7"
+    },
+    {
+      "path": "references/hig/pointing-devices.md",
+      "sha256": "66d8670721ed894c802ef0e6e4632c435c0683771feb2a52a423841323c128a8"
+    },
+    {
+      "path": "references/hig/pop-up-buttons.md",
+      "sha256": "4e1a1b7169dc6a072f2b14d136d1c6c318f0090f8a4c96c11091a3b12428495a"
+    },
+    {
+      "path": "references/hig/popovers.md",
+      "sha256": "fe31fa588ba67aea7db97054dad84cc5b07e7a5ec05593466fe6494884520973"
+    },
+    {
+      "path": "references/hig/printing.md",
+      "sha256": "d0085092ef4682a2ff303a9d14c81867b2568f952f13703a66ed568018ca136c"
+    },
+    {
+      "path": "references/hig/privacy.md",
+      "sha256": "827ebf280cbc74ebc9aef622903a87fa9a21a69735c40f030f3853d7020f05a1"
+    },
+    {
+      "path": "references/hig/progress-indicators.md",
+      "sha256": "6a64ce3b1a48880d787f4aec0e0fde55059a6429cda0fbd9ea785c91b22f3cde"
+    },
+    {
+      "path": "references/hig/pull-down-buttons.md",
+      "sha256": "d6b4c51a1d8024c6d45ad3392ac1db3d3425af44c30239d254b9294cef5c2e91"
+    },
+    {
+      "path": "references/hig/rating-indicators.md",
+      "sha256": "9a928c76982764f6e962ac936ee2407f9c0facf09edb028da436becc0cb27078"
+    },
+    {
+      "path": "references/hig/ratings-and-reviews.md",
+      "sha256": "d4dc5b45d218f469a7a06ff1b0aea63cfa667d18121e4001996d7c25f9180bcd"
+    },
+    {
+      "path": "references/hig/remotes.md",
+      "sha256": "bdf90666be2cb7092efaa6d39f3a6131fe9724f1563304a3d696950f1a14762c"
+    },
+    {
+      "path": "references/hig/researchkit.md",
+      "sha256": "8e0e116346a80eb1959fde0f017c82d82386a2f47a0fa01bd4d88b03b72b6279"
+    },
+    {
+      "path": "references/hig/right-to-left.md",
+      "sha256": "aadf392fc1856c67501557748eccedcb04aa93831b924af42d8a82632defe746"
+    },
+    {
+      "path": "references/hig/scroll-views.md",
+      "sha256": "d02d96628b7e24cf4c8813f7c7f3fff39cb256a9f20f1147b4477a5331d53e05"
+    },
+    {
+      "path": "references/hig/search-fields.md",
+      "sha256": "e67d6f02b50492e9ddb48edbc08e757c32bafa45d4aab7b33781bbb58a28b509"
+    },
+    {
+      "path": "references/hig/searching.md",
+      "sha256": "40a9afecd88548ff61fa88e2c2a3205df4d05645da08add2e4a097a12eb9a28f"
+    },
+    {
+      "path": "references/hig/segmented-controls.md",
+      "sha256": "9e6d1d53b92c7862824c656ce43b2ca1b4db4ae975957c5d7d23e1bb3a1968c6"
+    },
+    {
+      "path": "references/hig/settings.md",
+      "sha256": "1c1bd2f40b581219e7f9d45e7e18a9791bf94fc828aa3ec768b40fdd73e8c5e1"
+    },
+    {
+      "path": "references/hig/sf-symbols.md",
+      "sha256": "1f5a20912d86d318064aafd03a733d29cd08ddb9e5f39701a00bfb7a0e2860c8"
+    },
+    {
+      "path": "references/hig/shareplay.md",
+      "sha256": "989e5b37591c2898522d4c683197c0e050d459812c266ac3aad66a825bf68d19"
+    },
+    {
+      "path": "references/hig/shazamkit.md",
+      "sha256": "70232444cb33d75f85803fc61b01446c8023c4233c9d0a387f146a0aa834721a"
+    },
+    {
+      "path": "references/hig/sheets.md",
+      "sha256": "e405a03fd194c4168b62019ca892a85409a32a7ee532ccf19f5930bc73beb5e7"
+    },
+    {
+      "path": "references/hig/sidebars.md",
+      "sha256": "004fefc802d2261e9a536f024e6f4d97ba562764720b8727b5b0ca825db0f045"
+    },
+    {
+      "path": "references/hig/sign-in-with-apple.md",
+      "sha256": "479e078a58327b223f9ce13ad9b1abc4696ac1b4f75819af81b097a9e97eb4e2"
+    },
+    {
+      "path": "references/hig/siri.md",
+      "sha256": "db528870b4084b55377922ea3267a96407fa89fa67685018766445b2742085dc"
+    },
+    {
+      "path": "references/hig/sliders.md",
+      "sha256": "7c451cf49d8691ba9ffc4f9121b055de5307c38806d8e0d5bc5e9d313715f8cc"
+    },
+    {
+      "path": "references/hig/snippets.md",
+      "sha256": "67054baaef21768833d9dbcda125f71162d6a5ed814251973e2b82ada6d748f1"
+    },
+    {
+      "path": "references/hig/spatial-layout.md",
+      "sha256": "e63fe23226db94c79f34b8fdf8ff6d3d35b9e3bce35230c9816b00f40ef06665"
+    },
+    {
+      "path": "references/hig/split-views.md",
+      "sha256": "1295afced61a77cc1dbd36f0655f52be925cb6321d54e8f7648261c877c41521"
+    },
+    {
+      "path": "references/hig/status-bars.md",
+      "sha256": "44fa6b449a9cf812bed0ccec9f8e8b4c472ae196e28190468492c991cfa9d7a0"
+    },
+    {
+      "path": "references/hig/steppers.md",
+      "sha256": "6a4affc9fa9f578083fd5bb3e2ada80d74720e72456ff6a8eb1c4875073f4060"
+    },
+    {
+      "path": "references/hig/tab-bars.md",
+      "sha256": "384e3d2ecfde566b797c897d3beca4325d9702b0d5888fe2b800e2c0e92dce89"
+    },
+    {
+      "path": "references/hig/tab-views.md",
+      "sha256": "d60a3faec4a58eacf799fcfd508f9fc5da645f00ad54ecf00ff981546ba38f3f"
+    },
+    {
+      "path": "references/hig/tap-to-pay-on-iphone.md",
+      "sha256": "736d4186692db34568ab0d6769685ea56b9e7f7a9e642e443f892f9d1c4a1a73"
+    },
+    {
+      "path": "references/hig/text-fields.md",
+      "sha256": "83c1a675f75c53379635ef0b25fa26f224be9d9978bb229b136894dfdc27dbe7"
+    },
+    {
+      "path": "references/hig/text-views.md",
+      "sha256": "3dcc1a816206c377cb0e87c37d6a2e162450182b9280a7823b13553d3a14e82e"
+    },
+    {
+      "path": "references/hig/the-menu-bar.md",
+      "sha256": "27649e3c7bf54de235c5744a8563666f7a1670b148af0d9ced5cd95c1eb1fcfb"
+    },
+    {
+      "path": "references/hig/toggles.md",
+      "sha256": "9563e448e27b56578c3e0a20eead96e752d99da606395503d96275b0b1b19a4c"
+    },
+    {
+      "path": "references/hig/token-fields.md",
+      "sha256": "a99e3768516edc9496bcf9bfb29ef6e47bee3d2e889808e839a0588659d764e5"
+    },
+    {
+      "path": "references/hig/toolbars.md",
+      "sha256": "182c6204b364feacd1ef3254346c987d04f8d20220934d3e4a568ff8f8b774a8"
+    },
+    {
+      "path": "references/hig/top-shelf.md",
+      "sha256": "c308a8b789269eee8f21736b86ab99d180d7765d3b7e458a432d18c70499bc7a"
+    },
+    {
+      "path": "references/hig/typography.md",
+      "sha256": "48e414a7cf86918b14f4d21234b4bc1e36de50952a46329479be08829bdf6db5"
+    },
+    {
+      "path": "references/hig/undo-and-redo.md",
+      "sha256": "3d9c18ef940b87b5f49671f8feefe52ee0f1da624c410ab3ca4e6d6e1100c3d2"
+    },
+    {
+      "path": "references/hig/virtual-keyboards.md",
+      "sha256": "67179bbc60ebb95e39e58e022d1f385b7206c62dc3674f309afad6378540d652"
+    },
+    {
+      "path": "references/hig/voiceover.md",
+      "sha256": "68c5dd2931c9e12c82e86f089b7d81634ba1922def614313fb22d4d35fa4c208"
+    },
+    {
+      "path": "references/hig/wallet.md",
+      "sha256": "59cecd6a80764d2372a1da1a92ab0b9c11a1dd5abfc5c5846cde0ad1403f6ed5"
+    },
+    {
+      "path": "references/hig/watch-faces.md",
+      "sha256": "b5a72d249a2ac03e77988542f857e70c272945a6d8789d9f57e57ee850409ed3"
+    },
+    {
+      "path": "references/hig/web-views.md",
+      "sha256": "2d68bb9293f900fda92d54b2a576ef96fb79f6bf061b5b02d1344156183a53ae"
+    },
+    {
+      "path": "references/hig/widgets.md",
+      "sha256": "ae7b515af50216b7e0f00131bbedcb4944bdcd7a7cbb539a8c066875d2178afe"
+    },
+    {
+      "path": "references/hig/windows.md",
+      "sha256": "bfaf1fabda9f3f4f7285e6177ee9e9097101411512845b5884b011eaea90975c"
+    },
+    {
+      "path": "references/hig/workouts.md",
+      "sha256": "3cbf65d70016a44dbbf8dbbf3f45ad378196f8f259b38ecf40a9cce9adfb78c9"
+    },
+    {
+      "path": "references/hig/writing.md",
+      "sha256": "f31c21ba0575a2429ca07e96b16d5535dcf821781e86e6a8400c619c57feb90f"
+    },
+    {
+      "path": "routing-index.md",
+      "sha256": "7060825fae281140170df2813e5ce840bc783403b0e44fb94cab92c599093ad7"
+    },
+    {
+      "path": "scripts/hig_enforce.py",
+      "sha256": "45af52d47951f3144016cdd207fd4698e6d43359d7e8a0cb096a859735d62316"
+    },
+    {
+      "path": "scripts/hig_route.py",
+      "sha256": "70e58ba9761ff0d1683e81f5fae0b32a9c980e921fc3bc405798f8ef5f9b6681"
+    }
+  ]
+}

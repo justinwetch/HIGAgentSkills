@@ -11,6 +11,7 @@ accessibility, branding, color, dark-mode, design-principles, icons, images, inc
 game, gaming, game design, game loop, game controller → designing-for-games
 ios, iphone, swiftui ios, uikit → designing-for-ios
 ipados, ipad, pointer → designing-for-ipados
+iphone duo, folding iphone, foldable iphone, reserved regions, toolbaritemvisibilitypriority, uibarbuttonitemvisibilitypriority, toolbaroverflowmenu → designing-for-iphone-duo
 macos, mac, appkit, mac catalyst, desktop → designing-for-macos
 tvos, apple tv, siri remote, 8 feet or more, lean-back → designing-for-tvos
 visionos, apple vision pro, spatial, immersive → designing-for-visionos

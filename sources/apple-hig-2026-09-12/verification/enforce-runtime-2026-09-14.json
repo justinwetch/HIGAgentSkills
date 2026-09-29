@@ -1,0 +1,202 @@
+{
+  "status": "pass",
+  "scope": "Accepted September 12 source corpus and opt-in enforce runtime. Browser fixture validation is bounded to names, keyboard/focus, layout, press feedback and viewport state continuity; no native Apple device certification.",
+  "package": {
+    "entries": 167,
+    "distilled_count": 157,
+    "sha256": "aecb0529453d3aa18a02be383ed7fcc517dc3aa14957be77bb080fa9885362e0",
+    "membership_and_hashes": "pass",
+    "path": "release/apple-hig-2026-09-14-enforce.zip",
+    "reproducible": true,
+    "clean_extraction": "pass"
+  },
+  "manifest_sha256": "6ec73a7b098d190e0109a7357b25fa104755c23a133387cae3a823a0d32e9813",
+  "unit_tests": {
+    "passed": 28,
+    "output_sha256": "810b50131b47f0e27ae804663948d2ddde5a94c2e335325bafc3d71783c657b7"
+  },
+  "corpus": {
+    "topics": 157,
+    "source_guidance_words": 261621,
+    "output_guidance_words": 108104,
+    "word_reduction_percent": 58.679,
+    "accepted_reference_hashes_unchanged": true,
+    "june_baseline_unchanged": true
+  },
+  "enforce_cycles": [
+    {
+      "cycle": 0,
+      "artifact_revision": "reading-list-r0",
+      "status": "needs changes",
+      "score": {
+        "earned": 11,
+        "percent": 68.75,
+        "possible": 16
+      },
+      "evidence_complete": true,
+      "regressions": [],
+      "reviewers": [
+        "enforce_actual_a",
+        "/root/enforce_actual_b"
+      ],
+      "register_hash": "0deaf6384e8515fed17c10b46f5e2679e6737583211c62ba14801e04d4968881"
+    },
+    {
+      "cycle": 1,
+      "artifact_revision": "reading-list-r1",
+      "status": "pass",
+      "score": {
+        "earned": 16,
+        "percent": 100.0,
+        "possible": 16
+      },
+      "evidence_complete": true,
+      "regressions": [],
+      "reviewers": [
+        "enforce_actual_a",
+        "/root/enforce_actual_b"
+      ],
+      "register_hash": "0deaf6384e8515fed17c10b46f5e2679e6737583211c62ba14801e04d4968881"
+    },
+    {
+      "cycle": 2,
+      "artifact_revision": "reading-list-r2",
+      "status": "needs changes",
+      "score": {
+        "earned": 15,
+        "percent": 93.75,
+        "possible": 16
+      },
+      "evidence_complete": true,
+      "regressions": [
+        "b-action-names"
+      ],
+      "reviewers": [
+        "enforce_actual_a",
+        "/root/enforce_actual_b"
+      ],
+      "register_hash": "0deaf6384e8515fed17c10b46f5e2679e6737583211c62ba14801e04d4968881"
+    },
+    {
+      "cycle": 3,
+      "artifact_revision": "reading-list-r3",
+      "status": "pass",
+      "score": {
+        "earned": 16,
+        "percent": 100.0,
+        "possible": 16
+      },
+      "evidence_complete": true,
+      "regressions": [],
+      "reviewers": [
+        "enforce_actual_a",
+        "/root/enforce_actual_b"
+      ],
+      "register_hash": "0deaf6384e8515fed17c10b46f5e2679e6737583211c62ba14801e04d4968881"
+    }
+  ],
+  "cycle_result_hashes": {
+    "0": "c694e78954472825630fcabf9fe1b3eed0a8823b59f17c33c599bddc5e7319b1",
+    "1": "3c1bf17835cb94d36988bb677b9926b280c79872a7026fee49b3748c7e35215a",
+    "2": "f187fbd3953e7f83f33f142968dd0f3d278ac54c27c3ae9c218fae1f053eac89",
+    "3": "b9227a8096a8588c0799e0dfd01f4bbd2337d39614a0f77156c282a9a0bb7271"
+  },
+  "boundary_cases": {
+    "missing_evidence": "blocked",
+    "missing_review_file": "blocked",
+    "actual_worker_without_delegation": "worker-reported blocked; original artifact independently verified unchanged; actual response preserved in capability-case/worker-result.txt",
+    "nonmaterial_optional_shortfall": "24 enforce tests include 95-point passing residual and optional exclusion"
+  },
+  "ordinary_guidance": {
+    "status": "pass",
+    "reviewer_identity": "/root/enforce_integration_review",
+    "reference_package": "work/enforce-2026-09-14/extracted-v5/apple-hig",
+    "package_entry_sha256": "ae03875604d44af7ae0ef4fea2608423ea1e1a43d25a14bc908c95fee7c59c97",
+    "routing_helper_sha256": "35a4ae8bdd21ca7ee63c0729261979947a3947e0c34c2a205a24ba5a47044a1c",
+    "answer": {
+      "path": "work/enforce-2026-09-14/ordinary-final/answer.md",
+      "sha256": "b4cf3903f458b4f3e492acf627d32845a02c1c24a0c81ee1ee92b9d54be5380c"
+    },
+    "read_log": {
+      "path": "work/enforce-2026-09-14/ordinary-final/read-log.json",
+      "sha256": "8fe873d87100168dec75784f23fd5c94b11dd0e4c7aef3c8c42902c884e6422e"
+    },
+    "request_sha256": "845af88e6f98b8c9edf5d2e2767d903004b3eafa901c1301ee5690368fb2fa57",
+    "checked_cases": [
+      "Tab navigation versus current-content toolbar actions",
+      "Outer display order and compact width",
+      "Inner portrait horizontal bars and inner landscape side controls",
+      "Full Duo hardware-side RTL scope without photo prohibition or unconditional directional mirroring",
+      "Two apps use their respective outer edge and safe areas",
+      "Limited-space navigation-focused versus task-focused conditions",
+      "Non-text-only title/symbol condition retained",
+      "Arrangement views lay out content and do not replace navigation containers",
+      "Ordinary enforce-definition request did not load enforce references",
+      "All seven quotations match visible source wording",
+      "Exact helper-derived readset: 29 HIG references plus entry and index, no missing, extra, or duplicate logged reads",
+      "All 31 source hashes and request hash verified"
+    ],
+    "findings": [],
+    "scope": "This grades the saved ordinary answer and read log against the extracted package. It does not independently establish every read operation or native app behavior. Earlier failed trials remain separate and unchanged."
+  },
+  "shipped_text_tokens": {
+    "o200k_base": 216697,
+    "cl100k_base": 215245
+  },
+  "read_sets": {
+    "ordinary_initial": {
+      "ledger": "ordinary/read-log.json",
+      "unique_files": 33,
+      "unique_full_file_tokens": {
+        "o200k_base": 56223,
+        "cl100k_base": 55885
+      }
+    },
+    "ordinary_retest": {
+      "ledger": "ordinary-retest/read-log.json",
+      "unique_files": 30,
+      "unique_full_file_tokens": {
+        "o200k_base": 50690,
+        "cl100k_base": 50421
+      }
+    },
+    "ordinary_final": {
+      "ledger": "ordinary-final/read-log.json",
+      "unique_files": 31,
+      "unique_full_file_tokens": {
+        "o200k_base": 52195,
+        "cl100k_base": 51912
+      }
+    },
+    "enforce_A_initial": {
+      "ledger": "reviewed/work/hig-enforce/A/read-ledger-0.json",
+      "unique_files": 44,
+      "unique_full_file_tokens": {
+        "o200k_base": 68669,
+        "cl100k_base": 68221
+      }
+    },
+    "enforce_B_initial": {
+      "ledger": "reviewed/work/hig-enforce/B/read-manifest.json",
+      "unique_files": 36,
+      "unique_full_file_tokens": {
+        "o200k_base": 60905,
+        "cl100k_base": 60575
+      }
+    }
+  },
+  "read_set_limit": "Hash-verified full-file sizes of the agents recorded actual read sets. Deduplicates repeated reads; does not claim exact model input, output spans, prompt overhead, or billed usage. Includes supporting skill files when recorded.",
+  "failure_retention": "work/enforce-2026-09-14 preserves initial worker pre-review edits and original ordinary routing/RTL failures, plus corrected runs. They are not counted as passes.",
+  "reproduction": [
+    "python -X utf8 -m unittest discover -s tests -p \"test_hig_*.py\"",
+    "python -X utf8 scripts/generate_routing_index.py --check",
+    "python -X utf8 scripts/validate_corpus.py --distilled-dir references/hig",
+    "python -X utf8 scripts/package_runtime_zip.py --output release/apple-hig-2026-09-14-enforce.zip"
+  ],
+  "evidence_root": "work/enforce-2026-09-14",
+  "limits": [
+    "No native Duo folding, VoiceOver or full six-platform runtime certification.",
+    "No complete repository UI workflow claim from the controlled browser prototype.",
+    "Hash/scoring helper validates mechanics; actual reviewer independence, scope completeness and semantic truth require agents."
+  ]
+}

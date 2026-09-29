@@ -130,7 +130,7 @@ def validate(distilled_dir: Path) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--distilled-dir", default="distilled")
+    parser.add_argument("--distilled-dir", default="references/hig")
     args = parser.parse_args()
     return validate(Path(args.distilled_dir))
 

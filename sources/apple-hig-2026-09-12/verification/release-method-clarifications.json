@@ -1,0 +1,44 @@
+{
+  "adopted_at": "2026-09-13T05:57:34.672663+00:00",
+  "reviewer": "/root/corpus_03_force_audit",
+  "model": "review-tier",
+  "reasoning": "xhigh",
+  "status": "approved for prospective dispatch; effectiveness requires observed tests",
+  "unchanged_protocol_files": [
+    "CONTRACT.md",
+    "DRAFTER.md",
+    "REVIEWER.md",
+    "EXAMINER.md",
+    "BLIND-ANSWERER.md"
+  ],
+  "clarifications": [
+    {
+      "path": "work/release-2026-09-12/INTERACTION-CLARITY.md",
+      "sha256": "bea231efe16c533db9af69bc68fc357a0702fab74d66b2c81896976c4819c45e"
+    },
+    {
+      "path": "work/release-2026-09-12/BEHAVIOR-SAMPLING.md",
+      "sha256": "24042075bb55b26173ef4fc3c97d6397c8180aab00e9cd5a029717e185b7b2fe"
+    },
+    {
+      "path": "work/release-2026-09-12/ANSWER-CONSISTENCY.draft.md",
+      "sha256": "aa06da190bc460fafb4f78551166a98d9166a406aee7ae061b418869ed7f904b"
+    }
+  ],
+  "independent_reviews": [
+    {
+      "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/answers-round1/method-review.json",
+      "sha256": "2ef425b15609235b45db88c8ec38da22de96a491caa3c61a4c2b1d27442fd850"
+    },
+    {
+      "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/answers-round1/answer-consistency-review.json",
+      "sha256": "f1d5c88cc1343c598aa22ccb52d6c10f6187f623cb8140a30b984c0358409f18"
+    }
+  ],
+  "application": {
+    "drafters_and_source_reviewers": "Explicit event/result, conditions and example scope alongside existing force and coverage contracts.",
+    "source_examiners": "Focused coherent3ordinary/5highrisk minimum cases, exactelicitation;3\u20136facts aim notceiling; full fidelity remains exhaustive.",
+    "blind_answerers": "Prominent generic dispatch reminder of existing rules: short operative reference anchor in actualanswer plus application; compare answer and audit against reference and eachother, retain optional subordinate mechanisms, certainty and requested rationale. No extra packet file or topic-specific answer."
+  },
+  "limitations": "No existing cases removed, no fixed gold changed, no acceptance threshold changed. Existing failures remain regressions. Draft/pending markers on unchanged method documents are superseded by these external approval records, not silently rewritten."
+}

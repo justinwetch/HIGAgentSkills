@@ -1,5 +1,58 @@
 # Apple HIG Update Process
 
+## September 27, 2026: iOS 27, iPhone Duo, and native Duo mode
+
+Release 2026-09-27 ships the September 12 source snapshot (the OS 27 HIG updates
+and Apple's new iPhone Duo page) in a corpus redistilled on September 23–24 for
+fidelity-first compression (261,621 → 90,027 words, 65.6%). A new guided Duo mode
+(`references/duo.md`, `references/duo-checklist.md`, and the `/duo` command in `commands/duo.md`)
+adapts an existing iOS app to iPhone Duo in its own native code, with no HTML or
+web mockups; the checklist paraphrases the HIG and Apple's iPhone Duo tech talks.
+Maintainer records name model tiers (drafting, review) rather than specific agents
+or models. README images are linked from GitHub, not packaged. Release assessment and verification are in `docs/release-2026-09-27/`;
+packaging defaults to
+`sources/apple-hig-2026-09-12/verification/shipping-manifest-2026-09-27.json`.
+
+## September 21, 2026: Shipping scope
+
+Ship ordinary HIG guidance and opt-in enforce only. The standalone Duo redesign
+feature is removed; Apple's iPhone Duo reference guidance stays in the accepted
+157-topic corpus. No browser intake or setup UI is part of the product. Current
+release assessment and verification are in `docs/release-2026-09-21/`; packaging
+defaults to `sources/apple-hig-2026-09-12/verification/shipping-manifest-2026-09-21.json`.
+
+## September 14, 2026: Current project layout
+
+The current entry point loads the independently accepted September corpus from `references/hig/` (157 topics); `distilled/` retains the unchanged June baseline. Corpus acceptance and measurements are in `docs/corpus-2026-09-12/`. `references/enforce.md` and `references/enforce-format.md` define the opt-in review/repair loop; `scripts/hig_enforce.py` validates its inputs and scoring. Runtime tests use actual controlled artifacts and do not turn source-QA approval into an app-behavior claim. The September 12 notes below are historical planning records, not the current completion status.
+
+## September 12, 2026: Preplanning Source Capture
+
+The June runtime below remains the current released corpus. A new native Markdown/JSON source capture and historical review are ready at [September reconnaissance](sources/apple-hig-2026-09-12/verification/reconnaissance.md). It contains 173 native Apple Markdown pages and 173 JSON companions, including Designing for iPhone Duo; four obsolete aliases are explained. Preserve the captured JSON and generated supplements: native Markdown omits some captions and small-print text. See the report for coverage, integrity checks, change triage, and limitations before planning the next distillation.
+
+Justin's requested runtime feature is recorded in [enforce mode requirements](sources/apple-hig-2026-09-12/verification/enforce-mode-requirements.md): independent reviewer subagents score HIG adherence, require corrective changes, and re-review before a pass. The mode is a recorded requirement, not an implemented feature. The sections below describe the June workflow and must not be mistaken for September completion status.
+
+## September 12 Agreement: Compression And Validation Ownership
+
+Justin accepts approximately **75% word reduction as a corpus-wide heuristic**, with variation according to how compressible each topic is. It is not a per-file quota or a reason to discard useful information. Use the existing distillation skill as the foundation, with these HIG-specific source, output, and validation requirements. The generic skill need not be forked for this project.
+
+The implementing agent owns validation, investigation of failures, corrections, and revalidation. Do not wait for Justin to discover omissions, request broader audits, or prescribe routine fixes. Report material findings and unresolved decisions; do not transfer routine quality control to the user.
+
+Before scaling the next distillation, validate a representative pilot covering a new topic, substantially revised guidance, specification-heavy content, and a short component page. Initial candidates: iPhone Duo, Layout, Typography, Branding, and a short control topic. Establish source-derived questions and expected answers before assessing the distills; include exceptions, exact values, recommendation strength, and visual/caption-dependent rules. Validate against native Markdown plus JSON, supplements, and relevant visuals. Do not use the old distill as source truth.
+
+Pilot acceptance requires independent source-to-output comparison, correction and re-review of substantive findings, and evidence that the output is compact enough to serve as an agent reference. If the pilot exposes a systematic failure, repair the method and check the affected cases before applying it corpus-wide. The executed five-topic pilot and its evidence are recorded in the [September pilot report](sources/apple-hig-2026-09-12/verification/distillation-pilot.md); its staged files are not a full-corpus release.
+
+The pilot established additional checks for the full update: inspect caption relationships and API deprecation metadata in original JSON, not just lexically missing text; inspect relevant source figures; independently reconstruct every factored specification record including platform exceptions; and test generated answers for recommendation-strength drift separately from reference accuracy. Make one-hop routing and scoped device exceptions explicit. Measure the mandatory foundation loading cost as well as per-file compression before changing the runtime loading policy.
+
+For the full update:
+
+- Independently verify every distilled topic, including topics provisionally marked unchanged. Check the reverse direction too: every output rule must have source support. Preserve conditions, quantities, units, APIs, prohibitions, and the distinction between requirements and recommendations.
+- Review compression separately from fidelity. Remove repetition and unnecessary prose; allow dense specifications to retain more of their source length. Compare source and output using the same counting method, and report corpus totals alongside topic-level outliers. Measure actual token use separately from word reduction, including routing/frontmatter and representative loaded-file sets.
+- Check continuity against the June distills, investigating removed guidance against current sources before deciding whether to restore it. Audit related topics when a finding exposes a shared failure mechanism.
+- Verify schema and routing mechanically, then run actual agent invocations with retained file-access evidence and answers. Computed expected loading is not evidence that an agent actually loaded or used the files. Include Duo exceptions and negative trigger cases.
+- Close required findings with evidence from the corrected artifact before reporting readiness. An aggregate score, compression ratio, or passing structural validator cannot override unresolved substantive defects. Keep runtime enforce-mode evaluation separate from corpus-distillation validation.
+
+## June Workflow Record
+
 This document is the operating procedure for updating this skill against the current Apple Human Interface Guidelines. The goal is not to summarize the HIG. The goal is to preserve Apple-specific design rules in a compact, triggerable agent reference corpus with verifiable coverage.
 
 ## Baseline And Current Status

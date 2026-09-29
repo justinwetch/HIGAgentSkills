@@ -18,6 +18,7 @@ package/
 !README.md
 !process.md
 !.gitignore
+!.gitattributes
 
 # Allow maintenance scripts
 !scripts/
@@ -30,12 +31,16 @@ scripts/**/*.pyc
 !sources/*/
 !sources/*/inventory.json
 !sources/*/failures.json
+!sources/*/capture-summary.json
 !sources/*/dispositions.md
 !sources/*/disposition-overrides.json
 !sources/*/verification/
 !sources/*/verification/**
 sources/*/raw/
 sources/*/rendered/
+sources/*/native/
+sources/*/diffs/
+sources/*/supplements/
 sources/*/cache/
 sources/*/caches/
 sources/*/normalized/
@@ -45,3 +50,34 @@ sources/*/temp/
 # Allow the distilled reference files
 !distilled/
 !distilled/**
+
+# Selected September runtime instructions and README illustrations
+!references/
+!references/enforce.md
+!references/enforce-format.md
+!references/duo.md
+!references/duo-checklist.md
+!commands/
+!commands/duo.md
+!references/hig/
+!references/hig/**
+!tests/
+!tests/test_hig_enforce.py
+!tests/test_hig_route.py
+!docs/
+!docs/readme-graphics/
+!docs/readme-graphics/2026-09-12/
+!docs/readme-graphics/2026-09-12/01-header-light.png
+!docs/readme-graphics/2026-09-27/
+!docs/readme-graphics/2026-09-27/**
+
+# Verified September reference-corpus summary and compact reproducible accounting
+!docs/corpus-2026-09-12/
+!docs/corpus-2026-09-12/**
+
+
+# Current shipping assessment
+!docs/release-2026-09-21/
+!docs/release-2026-09-21/**
+!docs/release-2026-09-27/
+!docs/release-2026-09-27/**

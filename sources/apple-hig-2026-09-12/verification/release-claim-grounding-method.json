@@ -1,0 +1,52 @@
+{
+  "adopted_at": "2026-09-13T08:05:17.426492+00:00",
+  "status": "adopted for prospective topic-only reference-use tests",
+  "basis": "Five actual Scroll Views answers pass31/31 material fact groups; independent generic-tool review65/65 checks. Complete source fidelity and independent answer semantics remain separate required gates.",
+  "unchanged_acceptance_requirements": [
+    "All topic source facts retained without changed force/conditions/values",
+    "Source-only exams and fresh isolated drafting-tier answerers",
+    "Actual file-read evidence and independent review-tier grading",
+    "All prior failures and regression/new-case lineage retained",
+    "Final extracted-release runtime validation still required"
+  ],
+  "procedure": "Read one frozen topic-only five-input packet. Select complete clauses, run supplied generic audit checker and save actual results before answering. Put verified clauses directly in actual claims with scenario mappings; validate final saved answers. Checker is not semantic, chronology, model or read proof.",
+  "artifacts": [
+    {
+      "path": "scripts/check_hig_claims.py",
+      "sha256": "613d6b5d77383a7ef779292c88cde1e2c39d5750969d627a1d082686f3bff618"
+    },
+    {
+      "path": "scripts/prepare_hig_blind.py",
+      "sha256": "02a8dd57ca522f9f33c83e94e4021834c27e8d58cb9ed27395416e5d4579ccc6"
+    },
+    {
+      "path": "work/release-2026-09-12/CLAIM-GROUNDING.md",
+      "sha256": "521b2162776bd517e35ecf1d15d5937a24d971b2805b4e5ebcabbb5cb6d6bd3c"
+    }
+  ],
+  "independent_reviews": [
+    {
+      "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/claim-trial/method-assessment.json",
+      "sha256": "7ef9c0375bfa573adb130343782aa877508972ee98ee9d71d9aded3783d89278"
+    },
+    {
+      "path": "work/release-2026-09-12/reviews/force-precision/corpus-03/claim-trial/scroll-views-grades.json",
+      "sha256": "c63ae7c71eda0017811d9eb926df92dfe8e1655b9515d768c728755c6449bdf5"
+    },
+    {
+      "path": "work/release-2026-09-12/reviews/claim-checker-tool/review.json",
+      "sha256": "7ca236818a077ec3ada64d06d30f0afe2b98da059e2ab164162933581dec47a9"
+    },
+    {
+      "path": "work/release-2026-09-12/reviews/claim-checker-tool/manifest.json",
+      "sha256": "df8d5a992db6317d16c01fe16e37f8149416cca26cbaff37036e698f66cb977e"
+    }
+  ],
+  "scope_limits": [
+    "One successful topic trial is not broad runtime reliability.",
+    "No earlier failed trial relabeled as pass.",
+    "Five inputs include generic instructions/checker only; no source/gold/maps/reviewer evidence.",
+    "Default four-input packet path and all earlier packets remain unchanged.",
+    "Technical self-repairs and actual observed time retained; file-content tokens are not billing."
+  ]
+}

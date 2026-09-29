@@ -1,0 +1,71 @@
+{
+  "status": "Source findings closed on final bytes; behavioral acceptance pending",
+  "recorded_at": "2026-09-13T08:46:36.932900+00:00",
+  "reviewer": "/root/corpus_01_claim_grade",
+  "model": "review-tier",
+  "reasoning": "high",
+  "current_candidate": {
+    "path": "work/release-2026-09-12/candidates/charts.md",
+    "sha256": "8bdc763b8ad9c6991dd7231e9d678663ff77be748599eb7befc44e24917c6f1d"
+  },
+  "independent_summary": {
+    "path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/summary.json",
+    "sha256": "188e78a8783fe97ec0b7146ed91d3f199ba6c959f776559dd63bd573b4bda530"
+  },
+  "review_manifest": {
+    "path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/output-manifest.json",
+    "sha256": "fb34594460ed97ca4e39941ebbbca78a727b75a7a0fe1ff56c235d31c0020ada"
+  },
+  "finding": "CH-CLAIM-03: relative bar-height comparison yielding a reasonable estimate of data values omitted from candidate and elicited answers.",
+  "withdrawn_behavior_case": "charts-source-02 / charts.28.2",
+  "prior_source_acceptance_qualified": "Prior final-byte source pass cannot certify the newly exposed missing rationale. Preserve original reports and re-review changed clause and affected carryovers after correction.",
+  "additional_answer_only_findings": [
+    "CH-CLAIM-01",
+    "CH-CLAIM-02"
+  ],
+  "remaining_work": [
+    "Fresh regression and withheld answers",
+    "Independent actual-answer grading and unchanged-case carryover"
+  ],
+  "old_artifacts_preserved": true,
+  "updated_at": "2026-09-13T09:19:43.357917+00:00",
+  "source_acceptance": {
+    "path": "work/release-2026-09-12/reviews/force-precision/corpus-01/charts-point-correction/acceptance.json",
+    "sha256": "3a2dc9bf3e0acf917d207a54b1b01677a7756edd46f25bfd934a71c9a5efc1dd"
+  },
+  "history": [
+    {
+      "status": "revise; no current Charts acceptance",
+      "recorded_at": "2026-09-13T08:46:36.932900+00:00",
+      "reviewer": "/root/corpus_01_claim_grade",
+      "model": "review-tier",
+      "reasoning": "high",
+      "current_candidate": {
+        "path": "work/release-2026-09-12/candidates/charts.md",
+        "sha256": "e9cec757c78a8b8cc3233983bf2f26334ab4d6d2f80a743e7aace2e5a05358eb"
+      },
+      "independent_summary": {
+        "path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/summary.json",
+        "sha256": "188e78a8783fe97ec0b7146ed91d3f199ba6c959f776559dd63bd573b4bda530"
+      },
+      "review_manifest": {
+        "path": "work/release-2026-09-12/reviews/force-precision/corpus-01/claim-retest/output-manifest.json",
+        "sha256": "fb34594460ed97ca4e39941ebbbca78a727b75a7a0fe1ff56c235d31c0020ada"
+      },
+      "finding": "CH-CLAIM-03: relative bar-height comparison yielding a reasonable estimate of data values omitted from candidate and elicited answers.",
+      "withdrawn_behavior_case": "charts-source-02 / charts.28.2",
+      "prior_source_acceptance_qualified": "Prior final-byte source pass cannot certify the newly exposed missing rationale. Preserve original reports and re-review changed clause and affected carryovers after correction.",
+      "additional_answer_only_findings": [
+        "CH-CLAIM-01",
+        "CH-CLAIM-02"
+      ],
+      "remaining_work": [
+        "Source correction and independent acceptance on new immutable pair",
+        "Regressions charts-source-02, charts-source-07, charts-source-08, CI2-CH-01",
+        "New source-only cases prepared by fresh examiner before candidate exposure",
+        "Independent grading and explicit unchanged-case carryover"
+      ],
+      "old_artifacts_preserved": true
+    }
+  ]
+}

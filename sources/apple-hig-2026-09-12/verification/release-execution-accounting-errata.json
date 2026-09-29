@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-13T07:30:14.276556+00:00",
+  "scope": "Counter-label clarification only; actual model, elapsed observations, inputs/outputs, billing-null and original history unchanged.",
+  "corrections": [
+    {
+      "id": "corpus-04-correction1",
+      "recorded_attempt": 2,
+      "actual_semantic_correction_attempt": 1,
+      "status": "completed",
+      "record_snapshot_sha256": "c25bd6f4bd50e25672883f1c71f99f0dfbec0a58a3c493049b70279b8a2f8bff",
+      "reason": "Lead used overall draft-plus-correction numbering for this field. This ID is the first semantic correction, as its assignment, dispatch and preserved outputs show. Source review did not count as a correction. Original ledger record retained."
+    },
+    {
+      "id": "corpus-05-correction1",
+      "recorded_attempt": 2,
+      "actual_semantic_correction_attempt": 1,
+      "status": "completed",
+      "record_snapshot_sha256": "fc4f2ff783f1b360f6f7ebaca3d9d44433eca68cb9b84774de2ca5845994396d",
+      "reason": "Lead used overall draft-plus-correction numbering for this field. This ID is the first semantic correction, as its assignment, dispatch and preserved outputs show. Source review did not count as a correction. Original ledger record retained."
+    }
+  ],
+  "subsequent_rule": "Correction-phase attempt means semantic correction count. corpus-04-correction2 correctly uses2 and is the second cheaper correction. After two failed cheaper correction attempts, escalate author to review-tier and use another independent review-tier acceptance reviewer.",
+  "rejected_pre_dispatch_call": {
+    "id": "corpus-04-correction2",
+    "attempt_requested": 4,
+    "result": "Ledger guard rejected before writing a record or dispatching an agent; corrected to actual semantic attempt2. This was argument validation, not a model correction or billed worker retry."
+  }
+}
