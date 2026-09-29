@@ -6,7 +6,7 @@
 
 Release **2026-09-27** · Apple source snapshot **2026-09-12**.
 
-[![Watch the demo](https://img.youtube.com/vi/UGaSV21ff18/maxresdefault.jpg)](https://www.youtube.com/watch?v=UGaSV21ff18)
+[![Watch the demo](https://img.youtube.com/vi/jnD82EqZ2VQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=jnD82EqZ2VQ)
 
 ## Copy-paste install prompt
 

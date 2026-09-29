@@ -70,8 +70,8 @@ The candidate contains **167 files**: the previous 166, plus `references/duo.md`
 
 `.gitattributes` now keeps text files LF in every checkout, so manifest hashes are the same on any platform.
 
-The full shipped text totals **187,987 o200k_base / 187,401 cl100k_base tokens** (tiktoken 0.14.0). Normal requests load only a relevant subset.
-- `SKILL.md` plus `README.md` total 4,154 / 4,148.
+The full shipped text totals **187,991 o200k_base / 187,405 cl100k_base tokens** (tiktoken 0.14.0). Normal requests load only a relevant subset.
+- `SKILL.md` plus `README.md` total 4,158 / 4,152.
 - Duo mode's three files total 5,658 / 5,651, loaded only in Duo mode.
 
 ## Remaining limits

@@ -5,14 +5,14 @@
  "package": {
   "entries": 167,
   "distilled_count": 157,
-  "sha256": "1460edd73e355bfa553deebb5d13c85496d34dcb19b7811088f5bac20db8296d",
+  "sha256": "6ecc12ec15580dcc268b95a2abc9aaaba36231cd25e41374ed919192a424b47e",
   "membership_and_hashes": "pass",
   "reproducible": true,
   "path": "release/apple-hig-2026-09-27.zip",
-  "bytes": 386235
+  "bytes": 386236
  },
  "manifest": "sources/apple-hig-2026-09-12/verification/shipping-manifest-2026-09-27.json",
- "manifest_sha256": "9d69a74a24c9c7f6a360a06eccc812a51e1a854effa178159c322005f46d48b0",
+ "manifest_sha256": "7925a294aa454e9966e2e42b7250a6d36ca3ecf8e7a76f1d87608c88cf41a5ba",
  "clean_extraction": {
   "status": "pass",
   "expected_files": 167,
@@ -44,12 +44,12 @@
  "static_tokens": {
   "tokenizer_version": "0.14.0",
   "shipped_text": {
-   "o200k_base": 187987,
-   "cl100k_base": 187401
+   "o200k_base": 187991,
+   "cl100k_base": 187405
   },
   "setup_help_entry_and_readme": {
-   "o200k_base": 4154,
-   "cl100k_base": 4148
+   "o200k_base": 4158,
+   "cl100k_base": 4152
   },
   "duo_mode_files": {
    "o200k_base": 5658,
