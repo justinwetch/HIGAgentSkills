@@ -20,6 +20,12 @@ package/
 !.gitignore
 !.gitattributes
 
+# Allow root licensing and attribution documents
+!/LICENSE
+!/LICENSE.md
+!/NOTICE
+!/NOTICE.md
+
 # Allow maintenance scripts
 !scripts/
 !scripts/**
