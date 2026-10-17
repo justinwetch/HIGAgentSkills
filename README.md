@@ -101,3 +101,7 @@ The maintainer's `scripts/package_runtime_zip.py` builds a deterministic ZIP fro
 ## Attribution
 
 Distilled from [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines). The Duo checklist also paraphrases Apple's iPhone Duo developer tech talks, linked in it. This independent project is not affiliated with or endorsed by Apple Inc. The enforce diagnostic workflow is informed by [shadcn/ui lint](https://github.com/shadcn-ui/lint); it uses HIG review and artifact evidence rather than adopting Tailwind-specific rules.
+
+## License
+
+Code and original material are MIT licensed. The license does not claim to extend to material owned by Apple or others, including the guidelines the reference files are distilled from. See [LICENSE](https://github.com/justinwetch/HIGAgentSkills/blob/main/LICENSE) and [NOTICE](https://github.com/justinwetch/HIGAgentSkills/blob/main/NOTICE).
